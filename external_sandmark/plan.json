@@ -1,0 +1,938 @@
+{
+  "schema": "toolchainmark-contract-v1",
+  "id": "sandmark-static-preservation-v1",
+  "inputs": {
+    "algorithm": "string",
+    "host": "string",
+    "payload": "string",
+    "key": "string",
+    "seed": "integer",
+    "extractor_mode": "string",
+    "requires_png": "boolean"
+  },
+  "actions": [
+    {
+      "id": "source",
+      "operation": "sandmark.prepare",
+      "arguments": {
+        "host": {
+          "input": "host"
+        }
+      }
+    },
+    {
+      "parallel": [
+        {
+          "id": "source-host",
+          "operation": "sandmark.host",
+          "arguments": {
+            "host": {
+              "input": "host"
+            },
+            "artifact": {
+              "ref": "source",
+              "path": [
+                "artifact",
+                "path"
+              ]
+            }
+          }
+        },
+        {
+          "id": "embed",
+          "operation": "sandmark.embed",
+          "arguments": {
+            "algorithm": {
+              "input": "algorithm"
+            },
+            "artifact": {
+              "ref": "source",
+              "path": [
+                "artifact",
+                "path"
+              ]
+            },
+            "payload": {
+              "input": "payload"
+            },
+            "key": {
+              "input": "key"
+            },
+            "seed": {
+              "input": "seed"
+            }
+          },
+          "when": {
+            "op": "or",
+            "args": [
+              {
+                "op": "not",
+                "args": [
+                  {
+                    "input": "requires_png"
+                  }
+                ]
+              },
+              {
+                "op": "lt",
+                "args": [
+                  {
+                    "literal": 0
+                  },
+                  {
+                    "ref": "source",
+                    "path": [
+                      "png_count"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "parallel": [
+        {
+          "id": "source-extract",
+          "operation": "sandmark.extract",
+          "arguments": {
+            "algorithm": {
+              "input": "algorithm"
+            },
+            "payload": {
+              "input": "payload"
+            },
+            "key": {
+              "input": "key"
+            },
+            "seed": {
+              "input": "seed"
+            },
+            "extractor_mode": {
+              "input": "extractor_mode"
+            },
+            "artifact": {
+              "ref": "embed",
+              "path": [
+                "artifact",
+                "path"
+              ]
+            },
+            "original_file": {
+              "ref": "embed",
+              "path": [
+                "original_file"
+              ]
+            },
+            "key_file": {
+              "ref": "embed",
+              "path": [
+                "key_file"
+              ]
+            }
+          },
+          "when": {
+            "available": "embed"
+          }
+        },
+        {
+          "id": "embedded-host",
+          "operation": "sandmark.host",
+          "arguments": {
+            "host": {
+              "input": "host"
+            },
+            "artifact": {
+              "ref": "embed",
+              "path": [
+                "artifact",
+                "path"
+              ]
+            }
+          },
+          "when": {
+            "available": "embed"
+          }
+        }
+      ]
+    },
+    {
+      "parallel": [
+        {
+          "id": "relocate",
+          "operation": "sandmark.transform",
+          "arguments": {
+            "kind": {
+              "literal": "relocation"
+            },
+            "artifact": {
+              "ref": "embed",
+              "path": [
+                "artifact",
+                "path"
+              ]
+            },
+            "original_file": {
+              "ref": "embed",
+              "path": [
+                "original_file"
+              ]
+            },
+            "key_file": {
+              "ref": "embed",
+              "path": [
+                "key_file"
+              ]
+            }
+          },
+          "when": {
+            "available": "embed"
+          }
+        },
+        {
+          "id": "repack",
+          "operation": "sandmark.transform",
+          "arguments": {
+            "kind": {
+              "literal": "entry-identical-repack"
+            },
+            "artifact": {
+              "ref": "embed",
+              "path": [
+                "artifact",
+                "path"
+              ]
+            },
+            "original_file": {
+              "ref": "embed",
+              "path": [
+                "original_file"
+              ]
+            },
+            "key_file": {
+              "ref": "embed",
+              "path": [
+                "key_file"
+              ]
+            }
+          },
+          "when": {
+            "available": "embed"
+          }
+        }
+      ]
+    },
+    {
+      "parallel": [
+        {
+          "id": "relocated-extract",
+          "operation": "sandmark.extract",
+          "arguments": {
+            "algorithm": {
+              "input": "algorithm"
+            },
+            "payload": {
+              "input": "payload"
+            },
+            "key": {
+              "input": "key"
+            },
+            "seed": {
+              "input": "seed"
+            },
+            "extractor_mode": {
+              "input": "extractor_mode"
+            },
+            "artifact": {
+              "ref": "relocate",
+              "path": [
+                "artifact",
+                "path"
+              ]
+            },
+            "original_file": {
+              "ref": "relocate",
+              "path": [
+                "original_file"
+              ]
+            },
+            "key_file": {
+              "ref": "relocate",
+              "path": [
+                "key_file"
+              ]
+            }
+          },
+          "when": {
+            "available": "relocate"
+          }
+        },
+        {
+          "id": "repacked-extract",
+          "operation": "sandmark.extract",
+          "arguments": {
+            "algorithm": {
+              "input": "algorithm"
+            },
+            "payload": {
+              "input": "payload"
+            },
+            "key": {
+              "input": "key"
+            },
+            "seed": {
+              "input": "seed"
+            },
+            "extractor_mode": {
+              "input": "extractor_mode"
+            },
+            "artifact": {
+              "ref": "repack",
+              "path": [
+                "artifact",
+                "path"
+              ]
+            },
+            "original_file": {
+              "ref": "repack",
+              "path": [
+                "original_file"
+              ]
+            },
+            "key_file": {
+              "ref": "repack",
+              "path": [
+                "key_file"
+              ]
+            }
+          },
+          "when": {
+            "available": "repack"
+          }
+        }
+      ]
+    },
+    {
+      "parallel": [
+        {
+          "id": "relocated-host",
+          "operation": "sandmark.host",
+          "arguments": {
+            "host": {
+              "input": "host"
+            },
+            "artifact": {
+              "ref": "relocate",
+              "path": [
+                "artifact",
+                "path"
+              ]
+            }
+          },
+          "when": {
+            "available": "relocate"
+          }
+        },
+        {
+          "id": "repacked-host",
+          "operation": "sandmark.host",
+          "arguments": {
+            "host": {
+              "input": "host"
+            },
+            "artifact": {
+              "ref": "repack",
+              "path": [
+                "artifact",
+                "path"
+              ]
+            }
+          },
+          "when": {
+            "available": "repack"
+          }
+        }
+      ]
+    }
+  ],
+  "obligations": [
+    {
+      "id": "identity",
+      "stage": "source",
+      "clause": "Requested payload belongs to the native candidate result on the original marked artifact.",
+      "requires": [
+        {
+          "name": "source acquired",
+          "expr": {
+            "available": "source"
+          }
+        },
+        {
+          "name": "documented PNG carrier present when required",
+          "expr": {
+            "op": "or",
+            "args": [
+              {
+                "op": "not",
+                "args": [
+                  {
+                    "input": "requires_png"
+                  }
+                ]
+              },
+              {
+                "op": "lt",
+                "args": [
+                  {
+                    "literal": 0
+                  },
+                  {
+                    "ref": "source",
+                    "path": [
+                      "png_count"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "embedding returned an artifact",
+          "expr": {
+            "available": "embed"
+          }
+        },
+        {
+          "name": "extractor returned",
+          "expr": {
+            "available": "source-extract"
+          }
+        },
+        {
+          "name": "target endpoint bytes equal",
+          "expr": {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "source-extract",
+                "path": [
+                  "artifact_before",
+                  "sha256"
+                ]
+              },
+              {
+                "ref": "source-extract",
+                "path": [
+                  "artifact_after",
+                  "sha256"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "auxiliary endpoint bytes equal",
+          "expr": {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "source-extract",
+                "path": [
+                  "auxiliary_before"
+                ]
+              },
+              {
+                "ref": "source-extract",
+                "path": [
+                  "auxiliary_after"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "predicate": {
+        "op": "contains",
+        "args": [
+          {
+            "ref": "source-extract",
+            "path": [
+              "candidates"
+            ]
+          },
+          {
+            "input": "payload"
+          }
+        ]
+      }
+    },
+    {
+      "id": "embedding-host",
+      "stage": "host",
+      "clause": "Three declared application tasks preserve stdout, stderr, exit status and generated file bytes.",
+      "requires": [
+        {
+          "name": "baseline host observed",
+          "expr": {
+            "available": "source-host"
+          }
+        },
+        {
+          "name": "baseline tasks completed successfully",
+          "expr": {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "source-host",
+                "path": [
+                  "returncodes"
+                ]
+              },
+              {
+                "literal": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "changed host observed",
+          "expr": {
+            "available": "embedded-host"
+          }
+        }
+      ],
+      "predicate": {
+        "op": "eq",
+        "args": [
+          {
+            "ref": "source-host",
+            "path": [
+              "tasks"
+            ]
+          },
+          {
+            "ref": "embedded-host",
+            "path": [
+              "tasks"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "relocation-transformation",
+      "stage": "transformation",
+      "clause": "Relocation preserves all archive bytes; repacking changes the archive representation while preserving every named entry byte.",
+      "requires": [
+        {
+          "name": "embedding returned",
+          "expr": {
+            "available": "embed"
+          }
+        },
+        {
+          "name": "transformation observed",
+          "expr": {
+            "available": "relocate"
+          }
+        }
+      ],
+      "predicate": {
+        "op": "eq",
+        "args": [
+          {
+            "ref": "relocate",
+            "path": [
+              "source",
+              "sha256"
+            ]
+          },
+          {
+            "ref": "relocate",
+            "path": [
+              "artifact",
+              "sha256"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "relocation-recovery",
+      "stage": "extraction",
+      "clause": "The requested payload remains in the native candidate result under the declared preservation transformation.",
+      "requires": [
+        {
+          "name": "source payload recovered",
+          "expr": {
+            "op": "eq",
+            "args": [
+              {
+                "verdict": "identity"
+              },
+              {
+                "literal": "SATISFIED"
+              }
+            ]
+          }
+        },
+        {
+          "name": "transformation postcondition holds",
+          "expr": {
+            "op": "eq",
+            "args": [
+              {
+                "verdict": "relocation-transformation"
+              },
+              {
+                "literal": "SATISFIED"
+              }
+            ]
+          }
+        },
+        {
+          "name": "extractor returned",
+          "expr": {
+            "available": "relocated-extract"
+          }
+        },
+        {
+          "name": "target endpoint bytes equal",
+          "expr": {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "relocated-extract",
+                "path": [
+                  "artifact_before",
+                  "sha256"
+                ]
+              },
+              {
+                "ref": "relocated-extract",
+                "path": [
+                  "artifact_after",
+                  "sha256"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "auxiliary endpoint bytes equal",
+          "expr": {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "relocated-extract",
+                "path": [
+                  "auxiliary_before"
+                ]
+              },
+              {
+                "ref": "relocated-extract",
+                "path": [
+                  "auxiliary_after"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "predicate": {
+        "op": "contains",
+        "args": [
+          {
+            "ref": "relocated-extract",
+            "path": [
+              "candidates"
+            ]
+          },
+          {
+            "input": "payload"
+          }
+        ]
+      }
+    },
+    {
+      "id": "relocation-host",
+      "stage": "host",
+      "clause": "Three declared application tasks preserve stdout, stderr, exit status and generated file bytes.",
+      "requires": [
+        {
+          "name": "baseline host observed",
+          "expr": {
+            "available": "source-host"
+          }
+        },
+        {
+          "name": "baseline tasks completed successfully",
+          "expr": {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "source-host",
+                "path": [
+                  "returncodes"
+                ]
+              },
+              {
+                "literal": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "changed host observed",
+          "expr": {
+            "available": "relocated-host"
+          }
+        }
+      ],
+      "predicate": {
+        "op": "eq",
+        "args": [
+          {
+            "ref": "source-host",
+            "path": [
+              "tasks"
+            ]
+          },
+          {
+            "ref": "relocated-host",
+            "path": [
+              "tasks"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "repack-transformation",
+      "stage": "transformation",
+      "clause": "Relocation preserves all archive bytes; repacking changes the archive representation while preserving every named entry byte.",
+      "requires": [
+        {
+          "name": "embedding returned",
+          "expr": {
+            "available": "embed"
+          }
+        },
+        {
+          "name": "transformation observed",
+          "expr": {
+            "available": "repack"
+          }
+        }
+      ],
+      "predicate": {
+        "op": "and",
+        "args": [
+          {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "repack",
+                "path": [
+                  "source",
+                  "entries"
+                ]
+              },
+              {
+                "ref": "repack",
+                "path": [
+                  "artifact",
+                  "entries"
+                ]
+              }
+            ]
+          },
+          {
+            "op": "ne",
+            "args": [
+              {
+                "ref": "repack",
+                "path": [
+                  "source",
+                  "sha256"
+                ]
+              },
+              {
+                "ref": "repack",
+                "path": [
+                  "artifact",
+                  "sha256"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "repack-recovery",
+      "stage": "extraction",
+      "clause": "The requested payload remains in the native candidate result under the declared preservation transformation.",
+      "requires": [
+        {
+          "name": "source payload recovered",
+          "expr": {
+            "op": "eq",
+            "args": [
+              {
+                "verdict": "identity"
+              },
+              {
+                "literal": "SATISFIED"
+              }
+            ]
+          }
+        },
+        {
+          "name": "transformation postcondition holds",
+          "expr": {
+            "op": "eq",
+            "args": [
+              {
+                "verdict": "repack-transformation"
+              },
+              {
+                "literal": "SATISFIED"
+              }
+            ]
+          }
+        },
+        {
+          "name": "extractor returned",
+          "expr": {
+            "available": "repacked-extract"
+          }
+        },
+        {
+          "name": "target endpoint bytes equal",
+          "expr": {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "repacked-extract",
+                "path": [
+                  "artifact_before",
+                  "sha256"
+                ]
+              },
+              {
+                "ref": "repacked-extract",
+                "path": [
+                  "artifact_after",
+                  "sha256"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "auxiliary endpoint bytes equal",
+          "expr": {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "repacked-extract",
+                "path": [
+                  "auxiliary_before"
+                ]
+              },
+              {
+                "ref": "repacked-extract",
+                "path": [
+                  "auxiliary_after"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "predicate": {
+        "op": "contains",
+        "args": [
+          {
+            "ref": "repacked-extract",
+            "path": [
+              "candidates"
+            ]
+          },
+          {
+            "input": "payload"
+          }
+        ]
+      }
+    },
+    {
+      "id": "repack-host",
+      "stage": "host",
+      "clause": "Three declared application tasks preserve stdout, stderr, exit status and generated file bytes.",
+      "requires": [
+        {
+          "name": "baseline host observed",
+          "expr": {
+            "available": "source-host"
+          }
+        },
+        {
+          "name": "baseline tasks completed successfully",
+          "expr": {
+            "op": "eq",
+            "args": [
+              {
+                "ref": "source-host",
+                "path": [
+                  "returncodes"
+                ]
+              },
+              {
+                "literal": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "changed host observed",
+          "expr": {
+            "available": "repacked-host"
+          }
+        }
+      ],
+      "predicate": {
+        "op": "eq",
+        "args": [
+          {
+            "ref": "source-host",
+            "path": [
+              "tasks"
+            ]
+          },
+          {
+            "ref": "repacked-host",
+            "path": [
+              "tasks"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

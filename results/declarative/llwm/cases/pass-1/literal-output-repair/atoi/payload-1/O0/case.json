@@ -1,0 +1,20 @@
+{
+  "action_statuses": {
+    "OK": 11
+  },
+  "command_count": 13,
+  "id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+  "interface": "atoi",
+  "legacy": null,
+  "optimization": "O0",
+  "payload": "A%%B",
+  "primary": {
+    "ER01": "SATISFIED",
+    "ER02": "SATISFIED",
+    "ER03": "SATISFIED",
+    "ER04": "SATISFIED"
+  },
+  "run": 1,
+  "seconds": 0.9284162589974585,
+  "variant": "literal-output-repair"
+}

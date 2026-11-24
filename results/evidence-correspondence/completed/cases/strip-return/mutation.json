@@ -1,0 +1,20 @@
+{
+  "association": "An available strip action contains a nonzero process return code.",
+  "base": "llvm-satisfied",
+  "id": "strip-return",
+  "patches": [
+    {
+      "after": 7,
+      "before": 0,
+      "op": "replace",
+      "path": [
+        "actions",
+        8,
+        "evidence",
+        1,
+        "returncode"
+      ]
+    }
+  ],
+  "valid_record": false
+}

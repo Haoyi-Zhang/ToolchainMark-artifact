@@ -1,0 +1,576 @@
+{
+  "actions": [
+    {
+      "arguments": {
+        "interface": {
+          "input": "interface",
+          "path": []
+        },
+        "key": {
+          "input": "key",
+          "path": []
+        },
+        "optimization": {
+          "input": "optimization",
+          "path": []
+        },
+        "payload": {
+          "input": "payload",
+          "path": []
+        },
+        "variant": {
+          "input": "variant",
+          "path": []
+        }
+      },
+      "id": "build",
+      "operation": "llvm_build"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "unmarked"
+          ],
+          "ref": "build"
+        },
+        "input": {
+          "input": "key",
+          "path": []
+        },
+        "interface": {
+          "input": "interface",
+          "path": []
+        }
+      },
+      "id": "unmarked-key",
+      "operation": "invoke"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "marked"
+          ],
+          "ref": "build"
+        },
+        "input": {
+          "input": "key",
+          "path": []
+        },
+        "interface": {
+          "input": "interface",
+          "path": []
+        }
+      },
+      "id": "marked-key",
+      "operation": "invoke"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "unmarked"
+          ],
+          "ref": "build"
+        },
+        "input": {
+          "input": "ordinary",
+          "path": []
+        },
+        "interface": {
+          "input": "interface",
+          "path": []
+        }
+      },
+      "id": "unmarked-ordinary",
+      "operation": "invoke"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "marked"
+          ],
+          "ref": "build"
+        },
+        "input": {
+          "input": "ordinary",
+          "path": []
+        },
+        "interface": {
+          "input": "interface",
+          "path": []
+        }
+      },
+      "id": "marked-ordinary",
+      "operation": "invoke"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "marked"
+          ],
+          "ref": "build"
+        }
+      },
+      "id": "move",
+      "operation": "relocate"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "move"
+        },
+        "input": {
+          "input": "key",
+          "path": []
+        },
+        "interface": {
+          "input": "interface",
+          "path": []
+        }
+      },
+      "id": "moved-key",
+      "operation": "invoke"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "marked"
+          ],
+          "ref": "build"
+        }
+      },
+      "id": "debug-before",
+      "operation": "sections"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "marked"
+          ],
+          "ref": "build"
+        }
+      },
+      "id": "strip",
+      "operation": "strip_debug"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "strip"
+        }
+      },
+      "id": "debug-after",
+      "operation": "sections"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "strip"
+        },
+        "input": {
+          "input": "key",
+          "path": []
+        },
+        "interface": {
+          "input": "interface",
+          "path": []
+        }
+      },
+      "id": "stripped-key",
+      "operation": "invoke"
+    }
+  ],
+  "id": "LLWM-fgets",
+  "inputs": {
+    "interface": "string",
+    "key": "string",
+    "optimization": "string",
+    "ordinary": "string",
+    "payload": "string",
+    "payload_hex": "string",
+    "variant": "string"
+  },
+  "obligations": [
+    {
+      "clause": "literal payload output",
+      "id": "ER01",
+      "predicate": {
+        "args": [
+          {
+            "path": [
+              "stdout_hex"
+            ],
+            "ref": "marked-key"
+          },
+          {
+            "args": [
+              {
+                "input": "payload_hex",
+                "path": []
+              },
+              {
+                "path": [
+                  "stdout_hex"
+                ],
+                "ref": "unmarked-key"
+              }
+            ],
+            "op": "concat_hex"
+          }
+        ],
+        "op": "eq"
+      },
+      "requires": [
+        {
+          "expr": {
+            "available": "build"
+          },
+          "name": "available:build"
+        },
+        {
+          "expr": {
+            "available": "unmarked-key"
+          },
+          "name": "available:unmarked-key"
+        },
+        {
+          "expr": {
+            "available": "marked-key"
+          },
+          "name": "available:marked-key"
+        }
+      ],
+      "stage": "extraction"
+    },
+    {
+      "clause": "ordinary host output",
+      "id": "ER02",
+      "predicate": {
+        "args": [
+          {
+            "path": [
+              "stdout_hex"
+            ],
+            "ref": "marked-ordinary"
+          },
+          {
+            "path": [
+              "stdout_hex"
+            ],
+            "ref": "unmarked-ordinary"
+          }
+        ],
+        "op": "eq"
+      },
+      "requires": [
+        {
+          "expr": {
+            "available": "build"
+          },
+          "name": "available:build"
+        },
+        {
+          "expr": {
+            "available": "unmarked-ordinary"
+          },
+          "name": "available:unmarked-ordinary"
+        },
+        {
+          "expr": {
+            "available": "marked-ordinary"
+          },
+          "name": "available:marked-ordinary"
+        }
+      ],
+      "stage": "host"
+    },
+    {
+      "clause": "byte-identical artifact-only relocation",
+      "id": "ER03",
+      "predicate": {
+        "args": [
+          {
+            "path": [
+              "stdout_hex"
+            ],
+            "ref": "moved-key"
+          },
+          {
+            "path": [
+              "stdout_hex"
+            ],
+            "ref": "marked-key"
+          }
+        ],
+        "op": "eq"
+      },
+      "requires": [
+        {
+          "expr": {
+            "available": "move"
+          },
+          "name": "available:move"
+        },
+        {
+          "expr": {
+            "available": "moved-key"
+          },
+          "name": "available:moved-key"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "verdict": "ER01"
+              },
+              {
+                "literal": "SATISFIED"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "source-valid"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "entries"
+                ],
+                "ref": "move"
+              },
+              {
+                "literal": [
+                  "program"
+                ]
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "artifact-only"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "source",
+                  "sha256"
+                ],
+                "ref": "move"
+              },
+              {
+                "path": [
+                  "artifact",
+                  "sha256"
+                ],
+                "ref": "move"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "same-bytes"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "artifact"
+                ],
+                "ref": "move"
+              },
+              {
+                "path": [
+                  "before"
+                ],
+                "ref": "moved-key"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "same-version-before"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "before"
+                ],
+                "ref": "moved-key"
+              },
+              {
+                "path": [
+                  "after"
+                ],
+                "ref": "moved-key"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "same-version-after"
+        }
+      ],
+      "stage": "extraction"
+    },
+    {
+      "clause": "debug-only removal",
+      "id": "ER04",
+      "predicate": {
+        "args": [
+          {
+            "path": [
+              "stdout_hex"
+            ],
+            "ref": "stripped-key"
+          },
+          {
+            "path": [
+              "stdout_hex"
+            ],
+            "ref": "marked-key"
+          }
+        ],
+        "op": "eq"
+      },
+      "requires": [
+        {
+          "expr": {
+            "available": "strip"
+          },
+          "name": "available:strip"
+        },
+        {
+          "expr": {
+            "available": "debug-before"
+          },
+          "name": "available:debug-before"
+        },
+        {
+          "expr": {
+            "available": "debug-after"
+          },
+          "name": "available:debug-after"
+        },
+        {
+          "expr": {
+            "available": "stripped-key"
+          },
+          "name": "available:stripped-key"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "verdict": "ER01"
+              },
+              {
+                "literal": "SATISFIED"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "source-valid"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "text"
+                ],
+                "ref": "debug-before"
+              },
+              {
+                "literal": ".debug_info"
+              }
+            ],
+            "op": "contains"
+          },
+          "name": "debug-present-before"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "path": [
+                      "text"
+                    ],
+                    "ref": "debug-after"
+                  },
+                  {
+                    "literal": ".debug_"
+                  }
+                ],
+                "op": "contains"
+              }
+            ],
+            "op": "not"
+          },
+          "name": "debug-absent-after"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "artifact"
+                ],
+                "ref": "strip"
+              },
+              {
+                "path": [
+                  "before"
+                ],
+                "ref": "stripped-key"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "same-version-before"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "before"
+                ],
+                "ref": "stripped-key"
+              },
+              {
+                "path": [
+                  "after"
+                ],
+                "ref": "stripped-key"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "same-version-after"
+        }
+      ],
+      "stage": "extraction"
+    }
+  ],
+  "schema": "toolchainmark-contract-v1"
+}

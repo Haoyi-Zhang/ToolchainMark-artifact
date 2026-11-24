@@ -1,0 +1,2270 @@
+{
+  "actions": [
+    {
+      "argument_evaluations": {
+        "carrier": {
+          "dependencies": [
+            "input:carrier"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "string"
+        },
+        "implementation": {
+          "dependencies": [
+            "input:implementation"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "CLEAN"
+        }
+      },
+      "arguments": {
+        "carrier": "string",
+        "implementation": "CLEAN"
+      },
+      "consumed_references": [
+        "input:carrier",
+        "input:implementation"
+      ],
+      "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+      "end_event": 2,
+      "evidence": [],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "session",
+      "operation": "session",
+      "reason": null,
+      "start_event": 1,
+      "status": "OK",
+      "value": {
+        "carrier": "string",
+        "implementation": "CLEAN",
+        "session_id": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "compiler": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": "gcc"
+        },
+        "guarded": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": false
+        },
+        "host": {
+          "dependencies": [
+            "input:host"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "label": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": "build-0"
+        },
+        "marked": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": true
+        },
+        "optimization": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": "O0"
+        },
+        "payload_hex": {
+          "dependencies": [
+            "input:payload1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "4d6f7270682d3031"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+        }
+      },
+      "arguments": {
+        "compiler": "gcc",
+        "guarded": false,
+        "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+        "key": "key-alpha",
+        "label": "build-0",
+        "marked": true,
+        "optimization": "O0",
+        "payload_hex": "4d6f7270682d3031",
+        "session": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+      },
+      "consumed_references": [
+        "input:host",
+        "input:key1",
+        "input:payload1",
+        "action:session"
+      ],
+      "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+      "end_event": 4,
+      "evidence": [
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c.bin.gz",
+              "bytes": 1106,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+              "sha256": "bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "build-0"
+        },
+        {
+          "argv": [
+            "gcc",
+            "-std=c11",
+            "-fno-ident",
+            "-no-pie",
+            "-O0",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/host.c",
+            "-o",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-gcc-14",
+            "sha256": "a23ecab8ff08f09ad8c80602c2c5df7f49e09c25905cb8975902e101bf72635f"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/host.c",
+              "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/host.c",
+              "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.056153958998038433,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "build-0"
+        },
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/host.c",
+              "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "build-0"
+        },
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+              "bytes": 16024,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+              "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "build-0"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "build-0",
+      "operation": "build",
+      "reason": null,
+      "start_event": 3,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+          "bytes": 16024,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+          "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+        },
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+        "command": [
+          "gcc",
+          "-std=c11",
+          "-fno-ident",
+          "-no-pie",
+          "-O0",
+          "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/host.c",
+          "-o",
+          "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin"
+        ],
+        "compiler": "gcc",
+        "optimization": "O0",
+        "returncode": 0,
+        "session_id": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder",
+        "source": {
+          "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+          "bytes": 1296,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/host.c",
+          "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+        }
+      }
+    },
+    {
+      "argument_evaluations": {
+        "compiler": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": "gcc"
+        },
+        "guarded": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": false
+        },
+        "host": {
+          "dependencies": [
+            "input:host"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "label": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": "build-1"
+        },
+        "marked": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": true
+        },
+        "optimization": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": "O2"
+        },
+        "payload_hex": {
+          "dependencies": [
+            "input:payload1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "4d6f7270682d3031"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+        }
+      },
+      "arguments": {
+        "compiler": "gcc",
+        "guarded": false,
+        "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+        "key": "key-alpha",
+        "label": "build-1",
+        "marked": true,
+        "optimization": "O2",
+        "payload_hex": "4d6f7270682d3031",
+        "session": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+      },
+      "consumed_references": [
+        "input:host",
+        "input:key1",
+        "input:payload1",
+        "action:session"
+      ],
+      "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+      "end_event": 6,
+      "evidence": [
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c.bin.gz",
+              "bytes": 1106,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+              "sha256": "bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "build-1"
+        },
+        {
+          "argv": [
+            "gcc",
+            "-std=c11",
+            "-fno-ident",
+            "-no-pie",
+            "-O2",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/host.c",
+            "-o",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-gcc-14",
+            "sha256": "a23ecab8ff08f09ad8c80602c2c5df7f49e09c25905cb8975902e101bf72635f"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/host.c",
+              "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/host.c",
+              "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.04970623400004115,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "build-1"
+        },
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/host.c",
+              "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "build-1"
+        },
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "build-1"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "build-1",
+      "operation": "build",
+      "reason": null,
+      "start_event": 5,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+          "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+        },
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+        "command": [
+          "gcc",
+          "-std=c11",
+          "-fno-ident",
+          "-no-pie",
+          "-O2",
+          "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/host.c",
+          "-o",
+          "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin"
+        ],
+        "compiler": "gcc",
+        "optimization": "O2",
+        "returncode": 0,
+        "session_id": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder",
+        "source": {
+          "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+          "bytes": 1296,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/host.c",
+          "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+        }
+      }
+    },
+    {
+      "argument_evaluations": {
+        "compiler": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": "gcc"
+        },
+        "guarded": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": false
+        },
+        "host": {
+          "dependencies": [
+            "input:host"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "label": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": "build-2"
+        },
+        "marked": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": true
+        },
+        "optimization": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": "Os"
+        },
+        "payload_hex": {
+          "dependencies": [
+            "input:payload1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "4d6f7270682d3031"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+        }
+      },
+      "arguments": {
+        "compiler": "gcc",
+        "guarded": false,
+        "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+        "key": "key-alpha",
+        "label": "build-2",
+        "marked": true,
+        "optimization": "Os",
+        "payload_hex": "4d6f7270682d3031",
+        "session": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+      },
+      "consumed_references": [
+        "input:host",
+        "input:key1",
+        "input:payload1",
+        "action:session"
+      ],
+      "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+      "end_event": 8,
+      "evidence": [
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c.bin.gz",
+              "bytes": 1106,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+              "sha256": "bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "build-2"
+        },
+        {
+          "argv": [
+            "gcc",
+            "-std=c11",
+            "-fno-ident",
+            "-no-pie",
+            "-Os",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/host.c",
+            "-o",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-gcc-14",
+            "sha256": "a23ecab8ff08f09ad8c80602c2c5df7f49e09c25905cb8975902e101bf72635f"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/host.c",
+              "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/host.c",
+              "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.04964507200202206,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "build-2"
+        },
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/host.c",
+              "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "build-2"
+        },
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+              "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "build-2"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "build-2",
+      "operation": "build",
+      "reason": null,
+      "start_event": 7,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+          "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+        },
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+        "command": [
+          "gcc",
+          "-std=c11",
+          "-fno-ident",
+          "-no-pie",
+          "-Os",
+          "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/host.c",
+          "-o",
+          "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin"
+        ],
+        "compiler": "gcc",
+        "optimization": "Os",
+        "returncode": 0,
+        "session_id": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder",
+        "source": {
+          "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+          "bytes": 1296,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/host.c",
+          "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+        }
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:build-0"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+        "key": "key-alpha",
+        "session": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+      },
+      "consumed_references": [
+        "action:build-0",
+        "input:key1",
+        "action:session"
+      ],
+      "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+      "end_event": 10,
+      "evidence": [
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+              "bytes": 16024,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+              "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "extract-0"
+        },
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+              "bytes": 16024,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+              "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "extract-0"
+        },
+        {
+          "after": {
+            "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+            "bytes": 16024,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+            "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+          },
+          "before": {
+            "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+            "bytes": 16024,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+            "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+          },
+          "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+          "call": "Pipeline.extract",
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "key": "key-alpha",
+          "kind": "python-return",
+          "return_value": {
+            "kind": "payload",
+            "value": "4d6f7270682d3031"
+          },
+          "session_id": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder",
+          "step_id": "extract-0"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "extract-0",
+      "operation": "extract",
+      "reason": null,
+      "start_event": 9,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+          "bytes": 16024,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+          "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+        },
+        "before": {
+          "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+          "bytes": 16024,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+          "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+        },
+        "key": "key-alpha",
+        "observation": {
+          "kind": "payload",
+          "value": "4d6f7270682d3031"
+        },
+        "session_id": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:build-0"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin"
+        },
+        "inputs": {
+          "dependencies": [
+            "input:host_inputs"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": [
+            0,
+            1,
+            5,
+            13,
+            144,
+            99991
+          ]
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+        "inputs": [
+          0,
+          1,
+          5,
+          13,
+          144,
+          99991
+        ],
+        "session": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+      },
+      "consumed_references": [
+        "action:build-0",
+        "input:host_inputs",
+        "action:session"
+      ],
+      "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+      "end_event": 12,
+      "evidence": [
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+              "bytes": 16024,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+              "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "host-0"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+            "0"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+            "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+              "bytes": 16024,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+              "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+              "bytes": 16024,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+              "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0015184229996521026,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "31330a",
+          "step_id": "host-0"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+            "1"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+            "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+              "bytes": 16024,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+              "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+              "bytes": 16024,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+              "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0016478070028824732,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "340a",
+          "step_id": "host-0"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+            "5"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+            "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+              "bytes": 16024,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+              "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+              "bytes": 16024,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+              "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0012465550025808625,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "31360a",
+          "step_id": "host-0"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+            "13"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+            "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+              "bytes": 16024,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+              "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+              "bytes": 16024,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+              "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0009888360000331886,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "3130340a",
+          "step_id": "host-0"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+            "144"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+            "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+              "bytes": 16024,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+              "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+              "bytes": 16024,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+              "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0009989019963541068,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "310a",
+          "step_id": "host-0"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+            "99991"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+            "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+              "bytes": 16024,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+              "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+              "bytes": 16024,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+              "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.001284281002881471,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "320a",
+          "step_id": "host-0"
+        },
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+              "bytes": 16024,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+              "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "host-0"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "host-0",
+      "operation": "host",
+      "reason": null,
+      "start_event": 11,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+          "bytes": 16024,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+          "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+        },
+        "before": {
+          "blob": "blobs/aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0.bin.gz",
+          "bytes": 16024,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-0/build-01/artifact.bin",
+          "sha256": "aa4ee3211125033bc560f008603cdc043ea899be400e5a47d99debbac691ede0"
+        },
+        "inputs": [
+          0,
+          1,
+          5,
+          13,
+          144,
+          99991
+        ],
+        "outputs": [
+          "13",
+          "4",
+          "16",
+          "104",
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:build-1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+        "key": "key-alpha",
+        "session": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+      },
+      "consumed_references": [
+        "action:build-1",
+        "input:key1",
+        "action:session"
+      ],
+      "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+      "end_event": 14,
+      "evidence": [
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "extract-1"
+        },
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "extract-1"
+        },
+        {
+          "after": {
+            "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+            "bytes": 15928,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+            "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+          },
+          "before": {
+            "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+            "bytes": 15928,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+            "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+          },
+          "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+          "call": "Pipeline.extract",
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "key": "key-alpha",
+          "kind": "python-return",
+          "return_value": {
+            "kind": "payload",
+            "value": "4d6f7270682d3031"
+          },
+          "session_id": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder",
+          "step_id": "extract-1"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "extract-1",
+      "operation": "extract",
+      "reason": null,
+      "start_event": 13,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+          "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+        },
+        "before": {
+          "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+          "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+        },
+        "key": "key-alpha",
+        "observation": {
+          "kind": "payload",
+          "value": "4d6f7270682d3031"
+        },
+        "session_id": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:build-1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin"
+        },
+        "inputs": {
+          "dependencies": [
+            "input:host_inputs"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": [
+            0,
+            1,
+            5,
+            13,
+            144,
+            99991
+          ]
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+        "inputs": [
+          0,
+          1,
+          5,
+          13,
+          144,
+          99991
+        ],
+        "session": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+      },
+      "consumed_references": [
+        "action:build-1",
+        "input:host_inputs",
+        "action:session"
+      ],
+      "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+      "end_event": 16,
+      "evidence": [
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "host-1"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+            "0"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+            "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.001121786997828167,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "31330a",
+          "step_id": "host-1"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+            "1"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+            "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0009026970001286827,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "340a",
+          "step_id": "host-1"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+            "5"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+            "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0008746849998715334,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "31360a",
+          "step_id": "host-1"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+            "13"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+            "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0014677259969175793,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "3130340a",
+          "step_id": "host-1"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+            "144"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+            "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0010127619971171953,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "310a",
+          "step_id": "host-1"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+            "99991"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+            "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0009724769988679327,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "320a",
+          "step_id": "host-1"
+        },
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "host-1"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "host-1",
+      "operation": "host",
+      "reason": null,
+      "start_event": 15,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+          "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+        },
+        "before": {
+          "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-1/build-02/artifact.bin",
+          "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+        },
+        "inputs": [
+          0,
+          1,
+          5,
+          13,
+          144,
+          99991
+        ],
+        "outputs": [
+          "13",
+          "4",
+          "16",
+          "104",
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:build-2"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+        "key": "key-alpha",
+        "session": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+      },
+      "consumed_references": [
+        "action:build-2",
+        "input:key1",
+        "action:session"
+      ],
+      "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+      "end_event": 18,
+      "evidence": [
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+              "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "extract-2"
+        },
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+              "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "extract-2"
+        },
+        {
+          "after": {
+            "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+            "bytes": 15928,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+            "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+          },
+          "before": {
+            "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+            "bytes": 15928,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+            "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+          },
+          "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+          "call": "Pipeline.extract",
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "key": "key-alpha",
+          "kind": "python-return",
+          "return_value": {
+            "kind": "payload",
+            "value": "4d6f7270682d3031"
+          },
+          "session_id": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder",
+          "step_id": "extract-2"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "extract-2",
+      "operation": "extract",
+      "reason": null,
+      "start_event": 17,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+          "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+        },
+        "before": {
+          "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+          "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+        },
+        "key": "key-alpha",
+        "observation": {
+          "kind": "payload",
+          "value": "4d6f7270682d3031"
+        },
+        "session_id": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:build-2"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin"
+        },
+        "inputs": {
+          "dependencies": [
+            "input:host_inputs"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": [
+            0,
+            1,
+            5,
+            13,
+            144,
+            99991
+          ]
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+        "inputs": [
+          0,
+          1,
+          5,
+          13,
+          144,
+          99991
+        ],
+        "session": "pass-1/string/CLEAN/catalog/MR07:cost-study:decoder"
+      },
+      "consumed_references": [
+        "action:build-2",
+        "input:host_inputs",
+        "action:session"
+      ],
+      "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+      "end_event": 20,
+      "evidence": [
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+              "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "host-2"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+            "0"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+            "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+              "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+              "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0009594419971108437,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "31330a",
+          "step_id": "host-2"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+            "1"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+            "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+              "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+              "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0009415259992238134,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "340a",
+          "step_id": "host-2"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+            "5"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+            "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+              "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+              "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0009762680056155659,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "31360a",
+          "step_id": "host-2"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+            "13"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+            "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+              "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+              "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.001026232996082399,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "3130340a",
+          "step_id": "host-2"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+            "144"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+            "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+              "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+              "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0009434189996682107,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "310a",
+          "step_id": "host-2"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+            "99991"
+          ],
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+            "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+              "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+              "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0009574889991199598,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "320a",
+          "step_id": "host-2"
+        },
+        {
+          "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+          "files": [
+            {
+              "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+              "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "host-2"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "host-2",
+      "operation": "host",
+      "reason": null,
+      "start_event": 19,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+          "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+        },
+        "before": {
+          "blob": "blobs/6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR07/native/build-2/build-03/artifact.bin",
+          "sha256": "6229fadbf21a1675f445b8e07af7967457eaccdfb826afce65dbb2413911252d"
+        },
+        "inputs": [
+          0,
+          1,
+          5,
+          13,
+          144,
+          99991
+        ],
+        "outputs": [
+          "13",
+          "4",
+          "16",
+          "104",
+          "1",
+          "2"
+        ]
+      }
+    }
+  ],
+  "context_id": "pass-1/string/CLEAN/catalog/MR07:cost-study",
+  "inputs": {
+    "carrier": "string",
+    "compiler": "gcc",
+    "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+    "host_inputs": [
+      0,
+      1,
+      5,
+      13,
+      144,
+      99991
+    ],
+    "implementation": "CLEAN",
+    "key1": "key-alpha",
+    "key2": "key-beta",
+    "optimization": "O2",
+    "payload1": "4d6f7270682d3031",
+    "payload2": "5365636f6e642d32"
+  },
+  "inputs_sha256": "5eb4d420d7c4e9d2cd6d6c72119be81ccbb97121bae8dba06fa4b432fb8d0330",
+  "obligations": [
+    {
+      "clause": "MR07",
+      "consumed_references": [
+        "action:build-0",
+        "action:extract-0",
+        "action:host-0",
+        "action:build-1",
+        "action:extract-1",
+        "action:host-1",
+        "action:build-2",
+        "action:extract-2",
+        "action:host-2",
+        "input:payload1"
+      ],
+      "failed_gate": null,
+      "gates": [
+        {
+          "dependencies": [
+            "action:build-0"
+          ],
+          "name": "available:build-0",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:extract-0"
+          ],
+          "name": "available:extract-0",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:host-0"
+          ],
+          "name": "available:host-0",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:build-1"
+          ],
+          "name": "available:build-1",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:extract-1"
+          ],
+          "name": "available:extract-1",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:host-1"
+          ],
+          "name": "available:host-1",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:build-2"
+          ],
+          "name": "available:build-2",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:extract-2"
+          ],
+          "name": "available:extract-2",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:host-2"
+          ],
+          "name": "available:host-2",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:build-0"
+          ],
+          "name": "build-0:compiler",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:build-0"
+          ],
+          "name": "build-0:optimization",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:build-1"
+          ],
+          "name": "build-1:compiler",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:build-1"
+          ],
+          "name": "build-1:optimization",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:build-2"
+          ],
+          "name": "build-2:compiler",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:build-2"
+          ],
+          "name": "build-2:optimization",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        }
+      ],
+      "id": "MR07",
+      "predicate": {
+        "dependencies": [
+          "action:extract-0",
+          "input:payload1",
+          "action:extract-1",
+          "action:host-1",
+          "action:host-0",
+          "action:extract-2",
+          "action:host-2"
+        ],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "reason": "predicate-true",
+      "stage": "tested-contract",
+      "verdict": "SATISFIED"
+    }
+  ],
+  "plan_sha256": "4f17f41aec16b1637a7f332f87162137ff654abcbf9fb558af2ca9f5a52b0a33",
+  "schema": "toolchainmark-execution-v1"
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "case": "pass-1/string/CLEAN",
+    "deleted_action": "intervening",
+    "reason": "prefix action set/order differs",
+    "rejected": true
+  },
+  {
+    "case": "pass-1/string/M23",
+    "deleted_action": "intervening",
+    "reason": "prefix action set/order differs",
+    "rejected": true
+  },
+  {
+    "case": "pass-1/symbol/CLEAN",
+    "deleted_action": "intervening",
+    "reason": "prefix action set/order differs",
+    "rejected": true
+  },
+  {
+    "case": "pass-1/symbol/M23",
+    "deleted_action": "intervening",
+    "reason": "prefix action set/order differs",
+    "rejected": true
+  },
+  {
+    "case": "pass-1/section/CLEAN",
+    "deleted_action": "intervening",
+    "reason": "prefix action set/order differs",
+    "rejected": true
+  },
+  {
+    "case": "pass-1/section/M23",
+    "deleted_action": "intervening",
+    "reason": "prefix action set/order differs",
+    "rejected": true
+  },
+  {
+    "case": "pass-2/string/CLEAN",
+    "deleted_action": "intervening",
+    "reason": "prefix action set/order differs",
+    "rejected": true
+  },
+  {
+    "case": "pass-2/string/M23",
+    "deleted_action": "intervening",
+    "reason": "prefix action set/order differs",
+    "rejected": true
+  },
+  {
+    "case": "pass-2/symbol/CLEAN",
+    "deleted_action": "intervening",
+    "reason": "prefix action set/order differs",
+    "rejected": true
+  },
+  {
+    "case": "pass-2/symbol/M23",
+    "deleted_action": "intervening",
+    "reason": "prefix action set/order differs",
+    "rejected": true
+  },
+  {
+    "case": "pass-2/section/CLEAN",
+    "deleted_action": "intervening",
+    "reason": "prefix action set/order differs",
+    "rejected": true
+  },
+  {
+    "case": "pass-2/section/M23",
+    "deleted_action": "intervening",
+    "reason": "prefix action set/order differs",
+    "rejected": true
+  }
+]

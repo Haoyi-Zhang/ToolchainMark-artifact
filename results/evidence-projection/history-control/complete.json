@@ -1,0 +1,12 @@
+{
+  "completed_utc": "2026-11-19T12:30:28.695424+00:00",
+  "pairs": {
+    "bytes": 12989,
+    "sha256": "917101db971db89c442156be1b76fa924ba511ed6577a16770954476751ce311"
+  },
+  "status": "COMPLETE",
+  "summary": {
+    "bytes": 570,
+    "sha256": "10bf52f04d9bb3a766cb4dfd0dcdba4ae7498d290f286848121e5f5aa6b8d016"
+  }
+}

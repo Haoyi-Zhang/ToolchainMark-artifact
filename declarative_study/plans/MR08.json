@@ -1,0 +1,486 @@
+{
+  "actions": [
+    {
+      "arguments": {
+        "carrier": {
+          "input": "carrier",
+          "path": []
+        },
+        "implementation": {
+          "input": "implementation",
+          "path": []
+        }
+      },
+      "id": "session",
+      "operation": "session"
+    },
+    {
+      "arguments": {
+        "compiler": {
+          "input": "compiler",
+          "path": []
+        },
+        "guarded": {
+          "literal": false
+        },
+        "host": {
+          "input": "host",
+          "path": []
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "label": {
+          "literal": "source"
+        },
+        "marked": {
+          "literal": true
+        },
+        "optimization": {
+          "input": "optimization",
+          "path": []
+        },
+        "payload_hex": {
+          "input": "payload1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "source",
+      "operation": "build"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "source"
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "recover",
+      "operation": "extract"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "source"
+        },
+        "inputs": {
+          "input": "host_inputs",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "source-host",
+      "operation": "host",
+      "when": {
+        "args": [
+          {
+            "args": [
+              {
+                "path": [
+                  "observation",
+                  "kind"
+                ],
+                "ref": "recover"
+              },
+              {
+                "literal": "payload"
+              }
+            ],
+            "op": "eq"
+          },
+          {
+            "args": [
+              {
+                "path": [
+                  "observation",
+                  "value"
+                ],
+                "ref": "recover"
+              },
+              {
+                "input": "payload1",
+                "path": []
+              }
+            ],
+            "op": "eq"
+          }
+        ],
+        "op": "and"
+      }
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "source"
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "move",
+      "operation": "relocate",
+      "when": {
+        "args": [
+          {
+            "args": [
+              {
+                "path": [
+                  "observation",
+                  "kind"
+                ],
+                "ref": "recover"
+              },
+              {
+                "literal": "payload"
+              }
+            ],
+            "op": "eq"
+          },
+          {
+            "args": [
+              {
+                "path": [
+                  "observation",
+                  "value"
+                ],
+                "ref": "recover"
+              },
+              {
+                "input": "payload1",
+                "path": []
+              }
+            ],
+            "op": "eq"
+          }
+        ],
+        "op": "and"
+      }
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "move"
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "moved-value",
+      "operation": "extract"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "move"
+        },
+        "inputs": {
+          "input": "host_inputs",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "moved-host",
+      "operation": "host"
+    }
+  ],
+  "id": "MR08",
+  "inputs": {
+    "carrier": "string",
+    "compiler": "string",
+    "host": "string",
+    "host_inputs": "array",
+    "implementation": "string",
+    "key1": "string",
+    "key2": "string",
+    "optimization": "string",
+    "payload1": "string",
+    "payload2": "string"
+  },
+  "obligations": [
+    {
+      "clause": "literal recovery",
+      "id": "SOURCE",
+      "predicate": {
+        "args": [
+          {
+            "args": [
+              {
+                "path": [
+                  "observation",
+                  "kind"
+                ],
+                "ref": "recover"
+              },
+              {
+                "literal": "payload"
+              }
+            ],
+            "op": "eq"
+          },
+          {
+            "args": [
+              {
+                "path": [
+                  "observation",
+                  "value"
+                ],
+                "ref": "recover"
+              },
+              {
+                "input": "payload1",
+                "path": []
+              }
+            ],
+            "op": "eq"
+          }
+        ],
+        "op": "and"
+      },
+      "requires": [
+        {
+          "expr": {
+            "available": "recover"
+          },
+          "name": "available:recover"
+        }
+      ],
+      "stage": "embedding"
+    },
+    {
+      "clause": "MR08",
+      "id": "MR08",
+      "predicate": {
+        "args": [
+          {
+            "args": [
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "kind"
+                    ],
+                    "ref": "moved-value"
+                  },
+                  {
+                    "literal": "payload"
+                  }
+                ],
+                "op": "eq"
+              },
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "value"
+                    ],
+                    "ref": "moved-value"
+                  },
+                  {
+                    "input": "payload1",
+                    "path": []
+                  }
+                ],
+                "op": "eq"
+              }
+            ],
+            "op": "and"
+          },
+          {
+            "args": [
+              {
+                "path": [
+                  "outputs"
+                ],
+                "ref": "source-host"
+              },
+              {
+                "path": [
+                  "outputs"
+                ],
+                "ref": "moved-host"
+              }
+            ],
+            "op": "eq"
+          }
+        ],
+        "op": "and"
+      },
+      "requires": [
+        {
+          "expr": {
+            "available": "move"
+          },
+          "name": "available:move"
+        },
+        {
+          "expr": {
+            "available": "moved-value"
+          },
+          "name": "available:moved-value"
+        },
+        {
+          "expr": {
+            "available": "source-host"
+          },
+          "name": "available:source-host"
+        },
+        {
+          "expr": {
+            "available": "moved-host"
+          },
+          "name": "available:moved-host"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "verdict": "SOURCE"
+              },
+              {
+                "literal": "SATISFIED"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "source-valid"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "entries"
+                ],
+                "ref": "move"
+              },
+              {
+                "literal": [
+                  "program"
+                ]
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "artifact-only-directory"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "source",
+                  "sha256"
+                ],
+                "ref": "move"
+              },
+              {
+                "path": [
+                  "artifact",
+                  "sha256"
+                ],
+                "ref": "move"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "copy-bytes-match"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "artifact"
+                ],
+                "ref": "move"
+              },
+              {
+                "path": [
+                  "before"
+                ],
+                "ref": "moved-value"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "moved-version-current"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "before"
+                ],
+                "ref": "moved-value"
+              },
+              {
+                "path": [
+                  "after"
+                ],
+                "ref": "moved-value"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "moved-version-after"
+        }
+      ],
+      "stage": "tested-contract"
+    }
+  ],
+  "schema": "toolchainmark-contract-v1"
+}

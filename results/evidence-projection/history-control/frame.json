@@ -1,0 +1,74 @@
+[
+  {
+    "carrier": "string",
+    "id": "pass-1/string/CLEAN",
+    "implementation": "CLEAN",
+    "pass": 1
+  },
+  {
+    "carrier": "string",
+    "id": "pass-1/string/M23",
+    "implementation": "M23",
+    "pass": 1
+  },
+  {
+    "carrier": "symbol",
+    "id": "pass-1/symbol/CLEAN",
+    "implementation": "CLEAN",
+    "pass": 1
+  },
+  {
+    "carrier": "symbol",
+    "id": "pass-1/symbol/M23",
+    "implementation": "M23",
+    "pass": 1
+  },
+  {
+    "carrier": "section",
+    "id": "pass-1/section/CLEAN",
+    "implementation": "CLEAN",
+    "pass": 1
+  },
+  {
+    "carrier": "section",
+    "id": "pass-1/section/M23",
+    "implementation": "M23",
+    "pass": 1
+  },
+  {
+    "carrier": "string",
+    "id": "pass-2/string/CLEAN",
+    "implementation": "CLEAN",
+    "pass": 2
+  },
+  {
+    "carrier": "string",
+    "id": "pass-2/string/M23",
+    "implementation": "M23",
+    "pass": 2
+  },
+  {
+    "carrier": "symbol",
+    "id": "pass-2/symbol/CLEAN",
+    "implementation": "CLEAN",
+    "pass": 2
+  },
+  {
+    "carrier": "symbol",
+    "id": "pass-2/symbol/M23",
+    "implementation": "M23",
+    "pass": 2
+  },
+  {
+    "carrier": "section",
+    "id": "pass-2/section/CLEAN",
+    "implementation": "CLEAN",
+    "pass": 2
+  },
+  {
+    "carrier": "section",
+    "id": "pass-2/section/M23",
+    "implementation": "M23",
+    "pass": 2
+  }
+]

@@ -1,0 +1,196 @@
+{
+  "actions": [
+    {
+      "arguments": {
+        "carrier": {
+          "input": "carrier",
+          "path": []
+        },
+        "implementation": {
+          "input": "implementation",
+          "path": []
+        }
+      },
+      "id": "session",
+      "operation": "session"
+    },
+    {
+      "arguments": {
+        "compiler": {
+          "input": "compiler",
+          "path": []
+        },
+        "guarded": {
+          "literal": false
+        },
+        "host": {
+          "input": "host",
+          "path": []
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "label": {
+          "literal": "unmarked"
+        },
+        "marked": {
+          "literal": false
+        },
+        "optimization": {
+          "input": "optimization",
+          "path": []
+        },
+        "payload_hex": {
+          "input": "payload1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "unmarked",
+      "operation": "build"
+    },
+    {
+      "arguments": {
+        "compiler": {
+          "input": "compiler",
+          "path": []
+        },
+        "guarded": {
+          "literal": false
+        },
+        "host": {
+          "input": "host",
+          "path": []
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "label": {
+          "literal": "marked"
+        },
+        "marked": {
+          "literal": true
+        },
+        "optimization": {
+          "input": "optimization",
+          "path": []
+        },
+        "payload_hex": {
+          "input": "payload1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "marked",
+      "operation": "build"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "unmarked"
+        },
+        "inputs": {
+          "input": "host_inputs",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "base-host",
+      "operation": "host"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "marked"
+        },
+        "inputs": {
+          "input": "host_inputs",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "marked-host",
+      "operation": "host"
+    }
+  ],
+  "id": "MR02",
+  "inputs": {
+    "carrier": "string",
+    "compiler": "string",
+    "host": "string",
+    "host_inputs": "array",
+    "implementation": "string",
+    "key1": "string",
+    "key2": "string",
+    "optimization": "string",
+    "payload1": "string",
+    "payload2": "string"
+  },
+  "obligations": [
+    {
+      "clause": "MR02",
+      "id": "MR02",
+      "predicate": {
+        "args": [
+          {
+            "path": [
+              "outputs"
+            ],
+            "ref": "base-host"
+          },
+          {
+            "path": [
+              "outputs"
+            ],
+            "ref": "marked-host"
+          }
+        ],
+        "op": "eq"
+      },
+      "requires": [
+        {
+          "expr": {
+            "available": "base-host"
+          },
+          "name": "available:base-host"
+        },
+        {
+          "expr": {
+            "available": "marked-host"
+          },
+          "name": "available:marked-host"
+        }
+      ],
+      "stage": "tested-contract"
+    }
+  ],
+  "schema": "toolchainmark-contract-v1"
+}

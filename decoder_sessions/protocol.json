@@ -1,0 +1,46 @@
+{
+  "schema": "sandmark-decoder-session-protocol-v1",
+  "research_question": "How do recognition observations change across supported sequential process and algorithm-object lifetimes, with fresh Applications and fixed archive bytes?",
+  "population": "All 156 configurations in the retained SandMark formal frame; no source-success filtering",
+  "a_b_mapping": {"7": "42", "42": "1234", "1234": "7"},
+  "fixed_pair_factors": ["algorithm", "host", "archived_embedding_seed"],
+  "histories": {"AA": ["A", "A"], "AAA": ["A", "A", "A"], "ABA": ["A", "B", "A"]},
+  "lifetimes": {
+    "P": "Fresh JVM, algorithm, Application and parameters for each request",
+    "O": "One JVM per word; fresh algorithm, Application and parameters for each request",
+    "R": "One JVM and algorithm per word; fresh Application and parameters for each request"
+  },
+  "acquisition_passes": 2,
+  "pass_orders": {
+    "1": {"history": ["AA", "AAA", "ABA"], "lifetime": ["P", "O", "R"]},
+    "2": {"history": ["ABA", "AAA", "AA"], "lifetime": ["R", "O", "P"]}
+  },
+  "concurrency": "At most four independent cells concurrently; all nine words for one cell/pass are serial in the declared order; pass two starts after pass one completes",
+  "startup_rng_seed": 0,
+  "launch_environment": {"PATH": "/usr/bin:/bin", "LANG": "C.UTF-8", "LC_ALL": "C.UTF-8", "TZ": "UTC"},
+  "harness_reseeds_between_requests": false,
+  "graph_list_cleared_before_each_request": true,
+  "iteration": "Exhaust before any next request or configuration change; preserve partial candidates but do not admit incomplete enumeration",
+  "key_policy": "Use the exact archived request key; Stern receives its requested payload as the verification candidate",
+  "auxiliary_policy": "Bind target, original, GTW key, and present/absent target/original smconfig files; keep host_wm.jar and host.jar naming",
+  "request_timeout_seconds": 30,
+  "startup_timeout_seconds": 30,
+  "shutdown_timeout_seconds": 5,
+  "maximum_heap_mb": 512,
+  "maximum_candidates": 10000,
+  "unavailable_inputs": "Retain the planned common-executor receipt; skip the whole word without replacing a missing B or selecting a successful alternative",
+  "native_failure": "Stop the remaining word after a failed native call; never restart an O/R JVM and call it the same session",
+  "observed_unit": "A fully completed public-API iterator return is a valid observation even if later process shutdown fails; all nonzero exits and shutdown failures are reported separately and are never represented as clean exits",
+  "scientific_source_failure": "A completed result missing its intended payload is retained and does not stop the remaining word",
+  "local_judgments": "Each completed source request tests intended-payload membership with its before context equal to the prepared input and stable before/after endpoints; revisit additionally requires first-A source success, completed required calls and unchanged A context, including every AAA A-version link; B source success is not a revisit premise, but B must begin with its prepared context",
+  "paired_analysis": {
+    "grouping": ["cell", "history", "acquisition_pass"],
+    "stable_cold_control": "Every source-A observation in the selected history, including intermediate A in AAA, and revisit in P are satisfied",
+    "object_lifetime_loss": "Stable P and O controls, first-A success in R, and an admitted inconsistent R revisit",
+    "process_lifetime_loss": "Stable P control and an admitted inconsistent revisit in O or R; identify which arms without assigning a field-level cause",
+    "intervening_request_loss": "For one cell/pass and lifetime, AA and every A-source plus revisit in AAA are satisfied, ABA has an admitted inconsistent revisit, and the corresponding P controls for all three histories are stable; this associates loss with the different intervening request, not a particular field or cause",
+    "secondary": "Typed sequence, multiset and set comparisons are descriptive; enumeration order or multiplicity is not a promised recovery contract",
+    "denominator": "Report planned, input-available, attempted, completed and admitted observations separately; repeated words and shared JARs are not independent defect samples"
+  },
+  "bounds": "Archived implementation and hosts, two- and three-request histories, no concurrent iterator use, no reused Application, no promise about recovery after tool errors, no prevalence or universal reuse-safety inference"
+}

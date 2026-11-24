@@ -1,0 +1,10 @@
+{
+  "kind": "exploratory diagnostic instrumentation only",
+  "original_sha256": "f1e5f793da3e98c7d7960b901adb2d0c2720168bbab6ba8010bc248fba4dfe8c",
+  "instrumented_sha256": "22aa6b0c4dbc0fb64f96e9ee0683a65a2f694f0470f04823ec0de3680f5b8dba",
+  "patch_sha256": "1e6f14fac5cbce6acc18dac93a8f3380c9f6f93a0ed47e2074998b19ebcc3692",
+  "class_files": {
+    "AssignLV$Recognizer.class": "a72c613159fce9596aca4cae55a989440b8652974414d2502ff8974a9455dae9",
+    "AssignLV.class": "994b887e84d9ad1c960985d522230619af512c239994cf89df824f31a4ea9e20"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "association": "Sibling events form a serial interval instead of the declared parallel ordering.",
+  "base": "parallel",
+  "id": "parallel-order",
+  "patches": [
+    {
+      "after": 6,
+      "before": 7,
+      "op": "replace",
+      "path": [
+        "actions",
+        2,
+        "end_event"
+      ]
+    },
+    {
+      "after": 7,
+      "before": 6,
+      "op": "replace",
+      "path": [
+        "actions",
+        3,
+        "start_event"
+      ]
+    }
+  ],
+  "valid_record": false
+}

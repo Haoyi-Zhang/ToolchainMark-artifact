@@ -1,0 +1,199 @@
+{
+  "declarations": {
+    "carriers": [
+      "string",
+      "symbol",
+      "section"
+    ],
+    "passes": 2,
+    "purpose": "Observe actual operations, payloads, predicates, skipped work and group structure change solely from plan data with the same adapter bytes.",
+    "variants": [
+      "MR01-baseline",
+      "MR01-literal-request",
+      "MR01-predicate-reversed",
+      "MR08-guard-false",
+      "MR06-two-gcc-branches",
+      "MR12-sequential"
+    ]
+  },
+  "identity": {
+    "arms": [
+      "frozen-v5-handler",
+      "declaration-interpreter"
+    ],
+    "carriers": [
+      "string",
+      "symbol",
+      "section"
+    ],
+    "implementations": [
+      "CLEAN",
+      "replace-on-B"
+    ],
+    "passes": 2,
+    "purpose": "Controlled missing-premise correction: endpoint artifact replacement between calls must invalidate state attribution; does not establish atomic input reads.",
+    "relation": "MR13"
+  },
+  "llwm": {
+    "interfaces": [
+      "atoi",
+      "fgets",
+      "sidedata"
+    ],
+    "native_cases": 180,
+    "optimizations": [
+      "O0",
+      "O2",
+      "Os"
+    ],
+    "passes": 2,
+    "payloads": [
+      "ABCD",
+      "A%%B",
+      "%%AB",
+      "AB%%",
+      "%%%%"
+    ],
+    "purpose": "New native execution of ER01--ER04 through the same JSON interpreter as reference and SandMark; prior v5 results remain a separate experiment.",
+    "variants": [
+      "upstream",
+      "literal-output-repair"
+    ]
+  },
+  "reference": {
+    "arms": [
+      "frozen-v5-handler",
+      "declaration-interpreter"
+    ],
+    "carriers": [
+      "string",
+      "symbol",
+      "section"
+    ],
+    "frame_units_per_pass_per_arm": 1050,
+    "implementations": [
+      "CLEAN",
+      "M01",
+      "M02",
+      "M03",
+      "M04",
+      "M05",
+      "M06",
+      "M07",
+      "M08",
+      "M09",
+      "M10",
+      "M11",
+      "M12",
+      "M13",
+      "M14",
+      "M15",
+      "M16",
+      "M17",
+      "M18",
+      "M19",
+      "M20",
+      "M21",
+      "M22",
+      "M23",
+      "M24"
+    ],
+    "passes": 2,
+    "purpose": "Native conformance of catalog migration, not additional independent fault discovery or field prevalence. Reverse arm order in the second pass.",
+    "relations": [
+      "MR01",
+      "MR02",
+      "MR03",
+      "MR04",
+      "MR05",
+      "MR06",
+      "MR07",
+      "MR08",
+      "MR09",
+      "MR10",
+      "MR11",
+      "MR12",
+      "MR13",
+      "MR14"
+    ],
+    "subjects": [
+      "H01-gcd.c"
+    ]
+  },
+  "schema": "toolchainmark-v6-native-protocol-v1",
+  "state": {
+    "alphabet": [
+      "A+",
+      "A-",
+      "B+"
+    ],
+    "carriers": [
+      "string",
+      "symbol",
+      "section"
+    ],
+    "fresh_decoder_per_word": true,
+    "implementations": [
+      "CLEAN",
+      "latch-1",
+      "latch-2",
+      "latch-3",
+      "latch-4",
+      "cross-object"
+    ],
+    "known_bound_probe": "latch-4 first requires four wrong requests followed by a correct request, beyond depth 4; no completeness claim beyond the declared words.",
+    "lockout_excluded": true,
+    "maximum_generated_suffix_length": 4,
+    "meaning": {
+      "A+": "correct key on first artifact",
+      "A-": "distinct incorrect key on first artifact",
+      "B+": "correct key on second artifact"
+    },
+    "ordinary_reuse_permitted": true,
+    "passes": 2,
+    "prefix": [
+      "A+"
+    ],
+    "purpose": "Generate the whole bounded word set from a declared alphabet; identify shortest observed distinguishers without adding one named relation per latch threshold.",
+    "suffix_words_per_configuration": 121
+  },
+  "state-baseline": {
+    "carriers": [
+      "string",
+      "symbol",
+      "section"
+    ],
+    "implementations": [
+      "CLEAN",
+      "latch-1",
+      "latch-2",
+      "latch-3",
+      "latch-4",
+      "cross-object"
+    ],
+    "native_cases": 540,
+    "passes": 2,
+    "purpose": "Actual fixed 14-relation catalog and existing one-rejection SR01 sequence on the same declared state targets. Their lower request budget is reported, not treated as equal-cost exhaustive word exploration.",
+    "relations": [
+      "MR01",
+      "MR02",
+      "MR03",
+      "MR04",
+      "MR05",
+      "MR06",
+      "MR07",
+      "MR08",
+      "MR09",
+      "MR10",
+      "MR11",
+      "MR12",
+      "MR13",
+      "MR14",
+      "SR01"
+    ],
+    "subjects": [
+      "H01-gcd.c"
+    ]
+  },
+  "status": "pre-execution-definition"
+}

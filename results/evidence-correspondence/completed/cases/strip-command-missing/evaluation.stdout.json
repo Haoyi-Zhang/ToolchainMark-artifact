@@ -1,0 +1,81 @@
+{
+  "layers": [
+    {
+      "accepted": true,
+      "cpu_seconds": 0.0005012449999999974,
+      "detail": {
+        "stage_verdicts": [
+          {
+            "id": "ER01",
+            "verdict": "SATISFIED"
+          },
+          {
+            "id": "ER02",
+            "verdict": "SATISFIED"
+          },
+          {
+            "id": "ER03",
+            "verdict": "SATISFIED"
+          },
+          {
+            "id": "ER04",
+            "verdict": "SATISFIED"
+          }
+        ]
+      },
+      "error": null,
+      "tier": "oracle-replay",
+      "wall_seconds": 0.0005036980001023039
+    },
+    {
+      "accepted": true,
+      "cpu_seconds": 0.0035640339999999937,
+      "detail": {
+        "action_status_counts": {
+          "OK": 11
+        },
+        "actions": 11,
+        "checks": {
+          "consumed_dependencies": true,
+          "event_order_and_parallel_groups": true,
+          "exact_action_frame": true,
+          "guards_and_arguments": true,
+          "independent_stage_judgments": true,
+          "plan_and_input_hashes": true,
+          "plan_schema_and_reference_order": true
+        },
+        "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+        "event_ordinals": 22,
+        "external_context_checked": true,
+        "external_inputs_checked": true,
+        "inputs_sha256": "51d0674c8f4fec9a09b46bc9426de772bf1eae913275ad9d2d7a714904345c38",
+        "obligations": 4,
+        "plan_id": "LLWM-atoi",
+        "plan_sha256": "d9a9094bb99f95f276cb7b0391586738387d572f9eb8396569061d01e1763cf9",
+        "schema": "toolchainmark-receipt-receiver-v1",
+        "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+        "verdict": "PASS",
+        "verdict_counts": {
+          "SATISFIED": 4
+        }
+      },
+      "error": null,
+      "tier": "plan-receiver",
+      "wall_seconds": 0.003596868002205156
+    },
+    {
+      "accepted": false,
+      "cpu_seconds": 0.020391014,
+      "detail": null,
+      "error": {
+        "message": "debug stripping lacks exactly one native command",
+        "type": "ValueError"
+      },
+      "tier": "native-binding",
+      "wall_seconds": 0.020444987996597774
+    }
+  ],
+  "native_programs_reexecuted": false,
+  "official_ctf_api_called": false,
+  "schema": "execution-correspondence-layer-results-v1"
+}

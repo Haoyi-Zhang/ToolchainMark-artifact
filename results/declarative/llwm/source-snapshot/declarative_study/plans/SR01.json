@@ -1,0 +1,613 @@
+{
+  "actions": [
+    {
+      "arguments": {
+        "carrier": {
+          "input": "carrier",
+          "path": []
+        },
+        "implementation": {
+          "input": "implementation",
+          "path": []
+        }
+      },
+      "id": "session",
+      "operation": "session"
+    },
+    {
+      "arguments": {
+        "compiler": {
+          "input": "compiler",
+          "path": []
+        },
+        "guarded": {
+          "literal": false
+        },
+        "host": {
+          "input": "host",
+          "path": []
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "label": {
+          "literal": "first"
+        },
+        "marked": {
+          "literal": true
+        },
+        "optimization": {
+          "input": "optimization",
+          "path": []
+        },
+        "payload_hex": {
+          "input": "payload1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "first",
+      "operation": "build"
+    },
+    {
+      "arguments": {
+        "compiler": {
+          "input": "compiler",
+          "path": []
+        },
+        "guarded": {
+          "literal": false
+        },
+        "host": {
+          "input": "host",
+          "path": []
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "label": {
+          "literal": "second"
+        },
+        "marked": {
+          "literal": true
+        },
+        "optimization": {
+          "input": "optimization",
+          "path": []
+        },
+        "payload_hex": {
+          "input": "payload2",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "second",
+      "operation": "build"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "first"
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "physical-A",
+      "operation": "inspect"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "second"
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "physical-B",
+      "operation": "inspect"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "first"
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "initial",
+      "operation": "extract"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "first"
+        },
+        "key": {
+          "input": "key2",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "request-0",
+      "operation": "extract"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "first"
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "request-1",
+      "operation": "extract"
+    }
+  ],
+  "id": "SR01",
+  "inputs": {
+    "carrier": "string",
+    "compiler": "string",
+    "host": "string",
+    "host_inputs": "array",
+    "implementation": "string",
+    "key1": "string",
+    "key2": "string",
+    "lockout_excluded": "boolean",
+    "optimization": "string",
+    "payload1": "string",
+    "payload2": "string",
+    "reuse_permitted": "boolean"
+  },
+  "obligations": [
+    {
+      "clause": "reusable decoder on fixed artifact versions",
+      "id": "STATE",
+      "predicate": {
+        "args": [
+          {
+            "literal": true
+          },
+          {
+            "args": [
+              {
+                "path": [
+                  "observation"
+                ],
+                "ref": "request-0"
+              },
+              {
+                "literal": {
+                  "kind": "rejection",
+                  "value": "wrong-key"
+                }
+              }
+            ],
+            "op": "eq"
+          },
+          {
+            "args": [
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "kind"
+                    ],
+                    "ref": "request-1"
+                  },
+                  {
+                    "literal": "payload"
+                  }
+                ],
+                "op": "eq"
+              },
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "value"
+                    ],
+                    "ref": "request-1"
+                  },
+                  {
+                    "input": "payload1",
+                    "path": []
+                  }
+                ],
+                "op": "eq"
+              }
+            ],
+            "op": "and"
+          }
+        ],
+        "op": "and"
+      },
+      "requires": [
+        {
+          "expr": {
+            "available": "physical-A"
+          },
+          "name": "available:physical-A"
+        },
+        {
+          "expr": {
+            "available": "physical-B"
+          },
+          "name": "available:physical-B"
+        },
+        {
+          "expr": {
+            "available": "initial"
+          },
+          "name": "available:initial"
+        },
+        {
+          "expr": {
+            "available": "request-0"
+          },
+          "name": "available:request-0"
+        },
+        {
+          "expr": {
+            "available": "request-1"
+          },
+          "name": "available:request-1"
+        },
+        {
+          "expr": {
+            "input": "reuse_permitted",
+            "path": []
+          },
+          "name": "reuse-permitted"
+        },
+        {
+          "expr": {
+            "input": "lockout_excluded",
+            "path": []
+          },
+          "name": "lockout-excluded"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "input": "key1",
+                "path": []
+              },
+              {
+                "input": "key2",
+                "path": []
+              }
+            ],
+            "op": "ne"
+          },
+          "name": "keys-distinct"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "kind"
+                    ],
+                    "ref": "physical-A"
+                  },
+                  {
+                    "literal": "payload"
+                  }
+                ],
+                "op": "eq"
+              },
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "value"
+                    ],
+                    "ref": "physical-A"
+                  },
+                  {
+                    "input": "payload1",
+                    "path": []
+                  }
+                ],
+                "op": "eq"
+              }
+            ],
+            "op": "and"
+          },
+          "name": "physical-A-valid"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "kind"
+                    ],
+                    "ref": "physical-B"
+                  },
+                  {
+                    "literal": "payload"
+                  }
+                ],
+                "op": "eq"
+              },
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "value"
+                    ],
+                    "ref": "physical-B"
+                  },
+                  {
+                    "input": "payload2",
+                    "path": []
+                  }
+                ],
+                "op": "eq"
+              }
+            ],
+            "op": "and"
+          },
+          "name": "physical-B-valid"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "kind"
+                    ],
+                    "ref": "initial"
+                  },
+                  {
+                    "literal": "payload"
+                  }
+                ],
+                "op": "eq"
+              },
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "value"
+                    ],
+                    "ref": "initial"
+                  },
+                  {
+                    "input": "payload1",
+                    "path": []
+                  }
+                ],
+                "op": "eq"
+              }
+            ],
+            "op": "and"
+          },
+          "name": "initial-source-valid"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "before"
+                ],
+                "ref": "initial"
+              },
+              {
+                "path": [
+                  "after"
+                ],
+                "ref": "initial"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "initial-endpoints"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "before"
+                ],
+                "ref": "request-0"
+              },
+              {
+                "path": [
+                  "artifact"
+                ],
+                "ref": "first"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "request-0:version-before"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "before"
+                ],
+                "ref": "request-0"
+              },
+              {
+                "path": [
+                  "after"
+                ],
+                "ref": "request-0"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "request-0:version-after"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "session_id"
+                ],
+                "ref": "request-0"
+              },
+              {
+                "path": [
+                  "session_id"
+                ],
+                "ref": "initial"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "request-0:same-session"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "before"
+                ],
+                "ref": "request-1"
+              },
+              {
+                "path": [
+                  "artifact"
+                ],
+                "ref": "first"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "request-1:version-before"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "before"
+                ],
+                "ref": "request-1"
+              },
+              {
+                "path": [
+                  "after"
+                ],
+                "ref": "request-1"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "request-1:version-after"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "session_id"
+                ],
+                "ref": "request-1"
+              },
+              {
+                "path": [
+                  "session_id"
+                ],
+                "ref": "initial"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "request-1:same-session"
+        }
+      ],
+      "stage": "decoder-context"
+    }
+  ],
+  "schema": "toolchainmark-contract-v1"
+}

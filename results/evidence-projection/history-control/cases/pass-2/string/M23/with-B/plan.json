@@ -1,0 +1,378 @@
+{
+  "actions": [
+    {
+      "arguments": {
+        "carrier": {
+          "input": "carrier",
+          "path": []
+        },
+        "implementation": {
+          "input": "implementation",
+          "path": []
+        }
+      },
+      "id": "session",
+      "operation": "session"
+    },
+    {
+      "arguments": {
+        "compiler": {
+          "input": "compiler",
+          "path": []
+        },
+        "guarded": {
+          "literal": false
+        },
+        "host": {
+          "input": "host",
+          "path": []
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "label": {
+          "literal": "first"
+        },
+        "marked": {
+          "literal": true
+        },
+        "optimization": {
+          "input": "optimization",
+          "path": []
+        },
+        "payload_hex": {
+          "input": "payload1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "first",
+      "operation": "build"
+    },
+    {
+      "arguments": {
+        "compiler": {
+          "input": "compiler",
+          "path": []
+        },
+        "guarded": {
+          "literal": false
+        },
+        "host": {
+          "input": "host",
+          "path": []
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "label": {
+          "literal": "second"
+        },
+        "marked": {
+          "literal": true
+        },
+        "optimization": {
+          "input": "optimization",
+          "path": []
+        },
+        "payload_hex": {
+          "input": "payload2",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "second",
+      "operation": "build"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "first"
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "before",
+      "operation": "extract"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "second"
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "intervening",
+      "operation": "extract"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "first"
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "after",
+      "operation": "extract"
+    }
+  ],
+  "id": "HISTORY-REVISIT",
+  "inputs": {
+    "carrier": "string",
+    "compiler": "string",
+    "host": "string",
+    "host_inputs": "array",
+    "implementation": "string",
+    "key1": "string",
+    "key2": "string",
+    "optimization": "string",
+    "payload1": "string",
+    "payload2": "string"
+  },
+  "obligations": [
+    {
+      "clause": "A recovery after the declared history",
+      "id": "REVISIT",
+      "predicate": {
+        "args": [
+          {
+            "args": [
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "kind"
+                    ],
+                    "ref": "before"
+                  },
+                  {
+                    "literal": "payload"
+                  }
+                ],
+                "op": "eq"
+              },
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "value"
+                    ],
+                    "ref": "before"
+                  },
+                  {
+                    "input": "payload1",
+                    "path": []
+                  }
+                ],
+                "op": "eq"
+              }
+            ],
+            "op": "and"
+          },
+          {
+            "args": [
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "kind"
+                    ],
+                    "ref": "after"
+                  },
+                  {
+                    "literal": "payload"
+                  }
+                ],
+                "op": "eq"
+              },
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "value"
+                    ],
+                    "ref": "after"
+                  },
+                  {
+                    "input": "payload1",
+                    "path": []
+                  }
+                ],
+                "op": "eq"
+              }
+            ],
+            "op": "and"
+          }
+        ],
+        "op": "and"
+      },
+      "requires": [
+        {
+          "expr": {
+            "available": "before"
+          },
+          "name": "available:before"
+        },
+        {
+          "expr": {
+            "available": "after"
+          },
+          "name": "available:after"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "before"
+                ],
+                "ref": "before"
+              },
+              {
+                "path": [
+                  "after"
+                ],
+                "ref": "before"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "first-call-endpoints"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "before"
+                ],
+                "ref": "after"
+              },
+              {
+                "path": [
+                  "after"
+                ],
+                "ref": "after"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "revisit-endpoints"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "after"
+                ],
+                "ref": "before"
+              },
+              {
+                "path": [
+                  "before"
+                ],
+                "ref": "after"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "same-version-on-revisit"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "session_id"
+                ],
+                "ref": "before"
+              },
+              {
+                "path": [
+                  "session_id"
+                ],
+                "ref": "after"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "same-session"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "key"
+                ],
+                "ref": "before"
+              },
+              {
+                "path": [
+                  "key"
+                ],
+                "ref": "after"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "same-key"
+        }
+      ],
+      "stage": "decoder-revisit"
+    }
+  ],
+  "schema": "toolchainmark-contract-v1"
+}

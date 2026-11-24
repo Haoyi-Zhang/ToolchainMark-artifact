@@ -1,0 +1,74 @@
+--- original/AssignLV.java
++++ instrumented/AssignLV.java
+@@ -100,6 +100,7 @@
+    ToBinary binaryObject = new ToBinary(watermark, true);
+    String markToEmbed = binaryObject.getBinary();
+    int wmLength = markToEmbed.length();
++   System.err.println("QPTRACE FRAME|" + markToEmbed);
+ 
+    //convert the watermark to a binary without adding the length at the begining
+    ToBinary bo = new ToBinary(watermark, false);
+@@ -175,7 +176,7 @@
+             //System.out.println(igNodes);
+             
+             //add edges to the interference graph based upon the watermark
+-            workingWM = IGModifier(ig, igNodes, workingWM, justWM,method.getName());
++            workingWM = IGModifier(ig, igNodes, workingWM, justWM,method.getClassName()+"."+method.getName()+method.getSignature());
+ 
+             //do the register allocation on the new interference graph
+             //sandmark.analysis.controlflowgraph.RegisterAllocator.DEBUG = true;
+@@ -191,6 +192,7 @@
+             method.setMaxLocals();
+           
+    } 
++   System.err.println("QPTRACE COUNT|" + bitsEmbedded + "|" + wmLength);
+    //check if we embedded the whole watermark
+    if(bitsEmbedded < wmLength){
+      throw new sandmark.watermark.WatermarkingException(
+@@ -311,8 +313,8 @@
+          }//end if
+       }//end if
+    }//end for
+-   if(DEBUG && printwm != null && printwm.length() != 0)
+-      System.out.println("embedded: " + printwm + " in " + methodName);
++   if(printwm.length() != 0)
++      System.err.println("QPTRACE EMBED|" + methodName + "|" + printwm);
+    return workingWM;
+    
+ }
+@@ -408,7 +410,7 @@
+                   //System.out.println(origColoring);
+ 
+                   //compare the coloring to obtain the watermark
+-                  workingWM += compare(ig,origColoring, indices,method.getName());
++                  workingWM += compare(ig,origColoring, indices,method.getClassName()+"."+method.getName()+method.getSignature());
+          }//end iteration over methods
+ 
+                //If binary watermark does not have length at least 16 search for
+@@ -416,6 +418,7 @@
+                //System.out.println("********The complete binary watermark obtained from the methods" + workingWM);
+ 
+                //changed all 16's to 8's
++               System.err.println("QPTRACE RECOVERED|" + workingWM);
+                if(workingWM.length() < 8){
+                   result.add("null");
+                   
+@@ -427,6 +430,7 @@
+                   String sbl = binaryObject.getString();
+                   Integer intObject = new Integer(sbl);
+                   int wmLength = intObject.intValue();
++                  System.err.println("QPTRACE DECODED_LENGTH|" + wmLength + "|" + workingWM.length());
+ 
+                   //if the binary watermark is not that length search for the field
+                   //that contains the remaining protion of the watermark
+@@ -551,8 +555,8 @@
+                }//end if
+             }//end if
+          }//end for
+-         if(DEBUG && wm != null && wm.length() != 0)
+-            System.out.println("found: " + wm + " in " + methodName);
++         if(wm.length() != 0)
++            System.err.println("QPTRACE EXTRACT|" + methodName + "|" + wm);
+          return wm;
+       }
+ 

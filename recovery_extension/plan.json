@@ -1,0 +1,120 @@
+{
+  "call_sequence": [
+    "Build source P1 using K1.",
+    "Capture source bytes; separately parse using K1; extract using K1 with the tested decoder.",
+    "Capture before-wrong-key snapshot; extract using K2 with the same decoder; capture after-wrong-key snapshot.",
+    "Only the declared target-replacement boundary cohort builds a second native P2 artifact using K1 and copies its bytes onto the same requested source path.",
+    "Capture before-recovery snapshot; extract using K1 with the same decoder; capture after-recovery snapshot.",
+    "Derive ordered premises and the verdict from retained evidence. Complete the full controlled sequence even if a policy or earlier premise is false; do not infer admission from cohort labels."
+  ],
+  "carriers": [
+    "string",
+    "symbol",
+    "section"
+  ],
+  "cases_per_pass": 270,
+  "classification": "Any false or unavailable premise yields INADMISSIBLE with the first such premise. With all premises true, recovery equals the requested P1 payload => SATISFIED; otherwise => INCONSISTENT. An I/O or tool error is not a typed rejection.",
+  "cohorts": [
+    {
+      "id": "clean-reusable",
+      "lockout_excluded_by_contract": true,
+      "replace_after_rejection": false,
+      "reuse_after_rejection_declared": true,
+      "variant": "CLEAN"
+    },
+    {
+      "id": "latched-rejection-reusable",
+      "lockout_excluded_by_contract": true,
+      "replace_after_rejection": false,
+      "reuse_after_rejection_declared": true,
+      "variant": "N02"
+    },
+    {
+      "id": "latched-rejection-lockout-allowed",
+      "lockout_excluded_by_contract": false,
+      "replace_after_rejection": false,
+      "reuse_after_rejection_declared": false,
+      "variant": "N02"
+    },
+    {
+      "id": "wrong-key-accepted",
+      "lockout_excluded_by_contract": true,
+      "replace_after_rejection": false,
+      "reuse_after_rejection_declared": true,
+      "variant": "N01"
+    },
+    {
+      "id": "target-replaced-after-rejection",
+      "lockout_excluded_by_contract": true,
+      "replace_after_rejection": true,
+      "reuse_after_rejection_declared": true,
+      "variant": "CLEAN"
+    }
+  ],
+  "compiler": "gcc",
+  "contract_scope": "The contract is an explicit controlled input, not inferred from a mutant identity. SR01 applies only when the target declares that this decoder/context may immediately be reused after a wrong-key rejection and excludes a lockout policy. It makes no claim against configurations that allow lockout.",
+  "hosts": [
+    "H01-gcd.c",
+    "H02-fibonacci.c",
+    "H03-bitmix.c",
+    "H04-polynomial.c",
+    "H05-crc.c",
+    "H06-primecount.c",
+    "H07-sortfold.c",
+    "H08-statemachine.c",
+    "H09-matrix.c",
+    "H10-parser.c",
+    "H11-popcount.c",
+    "H12-lcg.c",
+    "H13-zlib.c",
+    "H14-openssl.c",
+    "H15-sqlite.c",
+    "H16-xml.c",
+    "H17-json.c",
+    "H18-png.c"
+  ],
+  "keys": {
+    "K1": "key-alpha",
+    "K2": "key-beta"
+  },
+  "measurement": "Per-case wall and process CPU, per-pass end-to-end wall including retained records, actual Python subprocess invocation attempts and returned native builds. Compiler-internal children are not separately counted; no human-hours inference.",
+  "optimization": "O2",
+  "passes": [
+    "first",
+    "second"
+  ],
+  "payloads": {
+    "P1": "4d6f7270682d3031",
+    "P2": "5365636f6e642d32"
+  },
+  "preexecution_hypotheses": {
+    "clean-reusable": "SATISFIED",
+    "latched-rejection-lockout-allowed": "INADMISSIBLE",
+    "latched-rejection-reusable": "INCONSISTENT",
+    "target-replaced-after-rejection": "INADMISSIBLE",
+    "wrong-key-accepted": "INADMISSIBLE"
+  },
+  "premises": [
+    "reuse_after_rejection_declared",
+    "lockout_excluded_by_contract",
+    "keys_distinct",
+    "source_is_valid_requested_payload",
+    "source_extracts_requested_payload",
+    "same_decoder_context",
+    "wrong_key_returns_typed_wrong_key_rejection",
+    "source_current_before_wrong_key",
+    "source_unchanged_during_wrong_key",
+    "source_current_before_recovery",
+    "source_unchanged_during_recovery",
+    "recovery_observation_available"
+  ],
+  "protocol": "recovery-obligation-v1",
+  "registered_utc": "2026-11-19T08:02:12.810206+00:00",
+  "registration_scope": "Local prospective execution plan for an adaptive extension devised after N02 was unexposed by the frozen fourteen-relation challenge. This is not a held-out test or a revision of that challenge denominator.",
+  "relation": "SR01",
+  "reporting": "All five cohort denominators are separate. Preserve frozen14 N02 0/54 and full-catalog 162/216; do not pool SR01 into these scores.",
+  "retention": "Retain all 540 planned cases, typed results, events, native snapshots, command attempts, resource readings and failures. Refuse an existing output directory. Any infrastructure failure must remain labeled and must not be silently rerun into the same record.",
+  "snapshot_scope": "Retained endpoint bytes and the absence of a reset in the recorded controlled trace; this is not continuous file-system monitoring and does not exclude an unobserved ABA replacement between checkpoints.",
+  "source_freeze_sha256": "f124f73297ccf4f89cb4863dd7032cd9a4b679ccba413693abade846136eca3a",
+  "workers": 4
+}

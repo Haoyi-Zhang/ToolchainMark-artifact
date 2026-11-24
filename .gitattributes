@@ -1,0 +1,8 @@
+# Keep every file byte-for-byte: retained records, fixtures, and test corpora
+# (for example external_sandmark_arboit/corpus/comment-crlf.java) are bound to
+# their exact bytes, including CRLF line endings.
+* -text
+ctf_comparison/vendor/** linguist-vendored
+external_llwm/vendor/** linguist-vendored
+external_sandmark/qp_diagnosis/original-source/** linguist-vendored
+results/** linguist-generated

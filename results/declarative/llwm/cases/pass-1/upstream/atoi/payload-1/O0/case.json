@@ -1,0 +1,20 @@
+{
+  "action_statuses": {
+    "OK": 11
+  },
+  "command_count": 13,
+  "id": "pass-1/upstream/atoi/payload-1/O0",
+  "interface": "atoi",
+  "legacy": null,
+  "optimization": "O0",
+  "payload": "A%%B",
+  "primary": {
+    "ER01": "INCONSISTENT",
+    "ER02": "SATISFIED",
+    "ER03": "INADMISSIBLE",
+    "ER04": "INADMISSIBLE"
+  },
+  "run": 1,
+  "seconds": 0.6119602100006887,
+  "variant": "upstream"
+}

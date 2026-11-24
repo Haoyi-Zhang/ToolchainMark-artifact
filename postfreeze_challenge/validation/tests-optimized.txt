@@ -1,0 +1,23 @@
+test_changed_current_source_cannot_pass_initial_freeze (postfreeze_challenge.test_records.ReceptionTests.test_changed_current_source_cannot_pass_initial_freeze) ... ok
+test_changed_verdict_is_rejected_for_a_new_trigger_identity (postfreeze_challenge.test_records.ReceptionTests.test_changed_verdict_is_rejected_for_a_new_trigger_identity) ... ok
+test_complete_original_is_read_only_without_native_subprocesses (postfreeze_challenge.test_records.ReceptionTests.test_complete_original_is_read_only_without_native_subprocesses) ... ok
+test_declared_blob_must_be_used_by_a_captured_event (postfreeze_challenge.test_records.ReceptionTests.test_declared_blob_must_be_used_by_a_captured_event) ... ok
+test_decoder_path_must_bind_its_own_snapshot (postfreeze_challenge.test_records.ReceptionTests.test_decoder_path_must_bind_its_own_snapshot) ... ok
+test_relabeling_latched_rejection_is_rejected (postfreeze_challenge.test_records.ReceptionTests.test_relabeling_latched_rejection_is_rejected) ... ok
+test_repeated_blob_cannot_change_its_compressed_identity (postfreeze_challenge.test_records.ReceptionTests.test_repeated_blob_cannot_change_its_compressed_identity) ... ok
+test_resigned_compressed_identity_does_not_bypass_gzip_crc (postfreeze_challenge.test_records.ReceptionTests.test_resigned_compressed_identity_does_not_bypass_gzip_crc) ... ok
+test_typed_rejection_kind_does_not_conflict_with_event_name (postfreeze_challenge.test_records.RecordingTests.test_typed_rejection_kind_does_not_conflict_with_event_name) ... ok
+test_allowed_lockout_is_not_blameworthy (recovery_extension.test_records.AdmissionTests.test_allowed_lockout_is_not_blameworthy) ... ok
+test_changed_target_is_not_attributed_to_decoder_state (recovery_extension.test_records.AdmissionTests.test_changed_target_is_not_attributed_to_decoder_state) ... ok
+test_normal_recovery_and_latched_rejection_diverge (recovery_extension.test_records.AdmissionTests.test_normal_recovery_and_latched_rejection_diverge) ... ok
+test_tool_failure_is_not_a_domain_recovery_failure (recovery_extension.test_records.AdmissionTests.test_tool_failure_is_not_a_domain_recovery_failure) ... ok
+test_wrong_key_acceptance_does_not_establish_recovery_premise (recovery_extension.test_records.AdmissionTests.test_wrong_key_acceptance_does_not_establish_recovery_premise) ... ok
+test_changed_bytes_cannot_be_hidden_in_summary_evidence (recovery_extension.test_records.ReceptionTests.test_changed_bytes_cannot_be_hidden_in_summary_evidence) ... ok
+test_claimed_negative_premise_must_match_actual_wrong_key_call (recovery_extension.test_records.ReceptionTests.test_claimed_negative_premise_must_match_actual_wrong_key_call) ... ok
+test_original_is_read_only_without_native_subprocesses (recovery_extension.test_records.ReceptionTests.test_original_is_read_only_without_native_subprocesses) ... ok
+test_policy_boundary_cannot_be_promoted_by_relabeling_admission (recovery_extension.test_records.ReceptionTests.test_policy_boundary_cannot_be_promoted_by_relabeling_admission) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 5.692s
+
+OK

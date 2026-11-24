@@ -1,0 +1,60 @@
+--- a/include/llwm/semacall/AtoiPatcher.hpp
++++ b/include/llwm/semacall/AtoiPatcher.hpp
+@@ -133,7 +133,7 @@
+                              eventBuilder.CreateGEP(charType, easterString, i));
+     //  call printf with prepared string
+     eventBuilder.CreateCall(FunctionPatcher::getPrintf(F.getParent()),
+-                            easterString);
++                            {eventBuilder.CreateGlobalStringPtr("%s"), easterString});
+     eventBuilder.CreateLifetimeEnd(easterString, nullptr);
+     eventBuilder.CreateBr(jumpBlock);
+     CmpInst *hashCmp = ICmpInst::Create(
+@@ -161,7 +161,7 @@
+         easterBuilder.CreateGEP(charType, easterString, indexList);
+     easterBuilder.CreateStore(ConstantInt::get(charType, '\0'), storeAddr);
+     // get printf function
+-    Value *printParams[1] = {easterString};
++    Value *printParams[2] = {easterBuilder.CreateGlobalStringPtr("%s"), easterString};
+     easterBuilder.CreateCall(getPrintf(module), printParams);
+     easterBuilder.CreateBr(jumpBlock);
+     // create strlen test block
+--- a/include/llwm/semacall/GetsPatcher.hpp
++++ b/include/llwm/semacall/GetsPatcher.hpp
+@@ -146,7 +146,7 @@
+                              eventBuilder.CreateGEP(i32t, easterString, i));
+     //  call printf with prepared string
+     eventBuilder.CreateCall(FunctionPatcher::getPrintf(F.getParent()),
+-                            easterString);
++                            {eventBuilder.CreateGlobalStringPtr("%s"), easterString});
+     eventBuilder.CreateLifetimeEnd(easterString, nullptr);
+     eventBuilder.CreateBr(jumpBlock);
+     errs() << "included semacall in " << F.getName() << "\n";
+@@ -165,7 +165,7 @@
+     Value *indexList[1] = {ConstantInt::get(i32t, GetsWaterMarkVal.size())};
+     Value *storeAddr = easterBuilder.CreateGEP(i8t, easterString, indexList);
+     easterBuilder.CreateStore(ConstantInt::get(i8t, '\0'), storeAddr);
+-    Value *printParams[1] = {easterString};
++    Value *printParams[2] = {easterBuilder.CreateGlobalStringPtr("%s"), easterString};
+     easterBuilder.CreateCall(getPrintf(m), printParams);
+     easterBuilder.CreateBr(jumpBlock);
+     errs() << "included semacall in " << F.getName() << ", " << F.getParent()->getName() << ", " << GetsWaterMarkKey.size() << " times\n";
+--- a/include/llwm/Sidedata.hpp
++++ b/include/llwm/Sidedata.hpp
+@@ -348,7 +348,7 @@
+                              eventBuilder.CreateGEP(i8t, easterString, i));
+     //  call printf with prepared string
+     eventBuilder.CreateCall(FunctionPatcher::getPrintf(F.getParent()),
+-                            easterString);
++                            {eventBuilder.CreateGlobalStringPtr("%s"), easterString});
+     eventBuilder.CreateLifetimeEnd(easterString, nullptr);
+     eventBuilder.CreateBr(jumpBlock);
+     errs() << "included sidedata in " << F.getName() << "\n";
+@@ -369,7 +369,7 @@
+     easterBuilder.CreateStore(ConstantInt::get(i8t, '\0'), storeAddr);
+     //  call printf with prepared string
+     easterBuilder.CreateCall(FunctionPatcher::getPrintf(F.getParent()),
+-                             easterString);
++                            {easterBuilder.CreateGlobalStringPtr("%s"), easterString});
+     easterBuilder.CreateLifetimeEnd(easterString, nullptr);
+     easterBuilder.CreateBr(jumpBlock);
+ #endif

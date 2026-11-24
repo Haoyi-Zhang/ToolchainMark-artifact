@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-B",
+    "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-correspondence/completed/source-snapshot/evidence_correspondence/evaluate.py",
+    "--case",
+    "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-correspondence/completed/cases/valid-llvm-inconsistent",
+    "--artifact",
+    "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact"
+  ],
+  "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-correspondence/completed",
+  "exit": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "f34219f240a32fde8020dc48da4c8d2e3e8812539afc34a04fba00a411d9575c",
+  "wall_seconds": 0.13714852200064342
+}

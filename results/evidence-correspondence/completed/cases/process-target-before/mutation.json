@@ -1,0 +1,31 @@
+{
+  "association": "The process pre-call target is a different retained executable version from the action pre-call endpoint.",
+  "base": "llvm-satisfied",
+  "id": "process-target-before",
+  "patches": [
+    {
+      "after": {
+        "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+        "bytes": 18456,
+        "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+        "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+      },
+      "before": {
+        "blob": "blobs/6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116.bin.gz",
+        "bytes": 18376,
+        "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+        "sha256": "6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116"
+      },
+      "op": "replace",
+      "path": [
+        "actions",
+        1,
+        "evidence",
+        1,
+        "files_before",
+        0
+      ]
+    }
+  ],
+  "valid_record": false
+}

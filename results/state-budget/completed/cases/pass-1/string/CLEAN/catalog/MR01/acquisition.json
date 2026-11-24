@@ -1,0 +1,58 @@
+{
+  "action_statuses": {
+    "OK": 3
+  },
+  "case": {
+    "arm": "catalog",
+    "carrier": "string",
+    "id": "pass-1/string/CLEAN/catalog/MR01",
+    "implementation": "CLEAN",
+    "inputs": {
+      "carrier": "string",
+      "compiler": "gcc",
+      "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+      "host_inputs": [
+        0,
+        1,
+        5,
+        13,
+        144,
+        99991
+      ],
+      "implementation": "CLEAN",
+      "key1": "key-alpha",
+      "key2": "key-beta",
+      "optimization": "O2",
+      "payload1": "4d6f7270682d3031",
+      "payload2": "5365636f6e642d32"
+    },
+    "name": "MR01",
+    "pass": 1,
+    "plan": "plans/catalog/MR01.json",
+    "planned_extract_calls": 1,
+    "position": 0,
+    "relation": "MR01"
+  },
+  "child_cpu_seconds": 0.050426,
+  "extract_calls": 1,
+  "extraction_call_trace": [
+    {
+      "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR01/native/source/build-01/artifact.bin",
+      "context_id": "pass-1/string/CLEAN/catalog/MR01:cost-study",
+      "exception": null,
+      "key": "key-alpha",
+      "observation": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "ordinal": 1,
+      "step_id": "recover"
+    }
+  ],
+  "native_commands": 1,
+  "obligations": {
+    "MR01": "SATISFIED"
+  },
+  "parent_cpu_seconds": 0.009399000000000005,
+  "wall_seconds": 0.061720687997876666
+}

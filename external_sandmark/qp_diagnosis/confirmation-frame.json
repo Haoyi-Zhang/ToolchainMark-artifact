@@ -1,0 +1,161 @@
+{
+  "schema": "sandmark-qp-confirmation-frame-v1",
+  "purpose": "Confirm the observed recovery behavior on a fixed payload neighborhood after diagnosis. No repair is applied.",
+  "algorithm": "Qu/Potkonjak",
+  "host": "antlr-2.7.7",
+  "payloads": [
+    "7",
+    "42",
+    "0000",
+    "1234",
+    "9999"
+  ],
+  "repetitions": 2,
+  "expected_configurations": 10,
+  "repetition_policy": "Fresh Java invocations. Outer PRNG seeds 0 and 1 are recorded; QP internally resets its PRNG from key 17, so these are repeated executions, not independent key or RNG samples.",
+  "timeouts_seconds": {
+    "embed": 30,
+    "extract": 30,
+    "host_task": 15
+  },
+  "plan": "The unchanged eight-obligation shared SandMark plan, including source identity, relocation, repacking and the three real ANTLR generation tasks.",
+  "prior_observations": "Two original payload-1234 failures and post-hoc bit tracing were observed before selecting this confirmation frame.",
+  "exclusions": [
+    "No prevalence estimate",
+    "No general algorithm repair",
+    "No maintainer confirmation",
+    "Do not add these cases to the original156 denominator"
+  ],
+  "configurations": [
+    {
+      "id": "qp-confirm-0001",
+      "repeat": 1,
+      "inputs": {
+        "algorithm": "Qu/Potkonjak",
+        "host": "antlr-2.7.7",
+        "payload": "7",
+        "key": "17",
+        "seed": 0,
+        "extractor_mode": "candidate_set",
+        "requires_png": false
+      }
+    },
+    {
+      "id": "qp-confirm-0002",
+      "repeat": 1,
+      "inputs": {
+        "algorithm": "Qu/Potkonjak",
+        "host": "antlr-2.7.7",
+        "payload": "42",
+        "key": "17",
+        "seed": 0,
+        "extractor_mode": "candidate_set",
+        "requires_png": false
+      }
+    },
+    {
+      "id": "qp-confirm-0003",
+      "repeat": 1,
+      "inputs": {
+        "algorithm": "Qu/Potkonjak",
+        "host": "antlr-2.7.7",
+        "payload": "0000",
+        "key": "17",
+        "seed": 0,
+        "extractor_mode": "candidate_set",
+        "requires_png": false
+      }
+    },
+    {
+      "id": "qp-confirm-0004",
+      "repeat": 1,
+      "inputs": {
+        "algorithm": "Qu/Potkonjak",
+        "host": "antlr-2.7.7",
+        "payload": "1234",
+        "key": "17",
+        "seed": 0,
+        "extractor_mode": "candidate_set",
+        "requires_png": false
+      }
+    },
+    {
+      "id": "qp-confirm-0005",
+      "repeat": 1,
+      "inputs": {
+        "algorithm": "Qu/Potkonjak",
+        "host": "antlr-2.7.7",
+        "payload": "9999",
+        "key": "17",
+        "seed": 0,
+        "extractor_mode": "candidate_set",
+        "requires_png": false
+      }
+    },
+    {
+      "id": "qp-confirm-0006",
+      "repeat": 2,
+      "inputs": {
+        "algorithm": "Qu/Potkonjak",
+        "host": "antlr-2.7.7",
+        "payload": "7",
+        "key": "17",
+        "seed": 1,
+        "extractor_mode": "candidate_set",
+        "requires_png": false
+      }
+    },
+    {
+      "id": "qp-confirm-0007",
+      "repeat": 2,
+      "inputs": {
+        "algorithm": "Qu/Potkonjak",
+        "host": "antlr-2.7.7",
+        "payload": "42",
+        "key": "17",
+        "seed": 1,
+        "extractor_mode": "candidate_set",
+        "requires_png": false
+      }
+    },
+    {
+      "id": "qp-confirm-0008",
+      "repeat": 2,
+      "inputs": {
+        "algorithm": "Qu/Potkonjak",
+        "host": "antlr-2.7.7",
+        "payload": "0000",
+        "key": "17",
+        "seed": 1,
+        "extractor_mode": "candidate_set",
+        "requires_png": false
+      }
+    },
+    {
+      "id": "qp-confirm-0009",
+      "repeat": 2,
+      "inputs": {
+        "algorithm": "Qu/Potkonjak",
+        "host": "antlr-2.7.7",
+        "payload": "1234",
+        "key": "17",
+        "seed": 1,
+        "extractor_mode": "candidate_set",
+        "requires_png": false
+      }
+    },
+    {
+      "id": "qp-confirm-0010",
+      "repeat": 2,
+      "inputs": {
+        "algorithm": "Qu/Potkonjak",
+        "host": "antlr-2.7.7",
+        "payload": "9999",
+        "key": "17",
+        "seed": 1,
+        "extractor_mode": "candidate_set",
+        "requires_png": false
+      }
+    }
+  ]
+}

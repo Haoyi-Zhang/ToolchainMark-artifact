@@ -1,0 +1,68 @@
+{
+  "commands": [
+    {
+      "command": "python3 -B postfreeze_challenge/verify.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -B recovery_extension/verify.py",
+      "exit_code": 0
+    },
+    {
+      "command": "PYTHONPATH=src python3 -B -m unittest postfreeze_challenge.test_records recovery_extension.test_records -v",
+      "exit_code": 0,
+      "reported_seconds": 5.452,
+      "tests": 18
+    },
+    {
+      "command": "PYTHONPATH=src python3 -O -B -m unittest postfreeze_challenge.test_records recovery_extension.test_records -v",
+      "exit_code": 0,
+      "reported_seconds": 5.692,
+      "tests": 18
+    }
+  ],
+  "files": [
+    {
+      "bytes": 29284,
+      "path": "postfreeze_challenge/verify.py",
+      "sha256": "f510d92649f1bc6a4f9639d06cf185840b359420f4f19a0bbbd86b37088fb4ff"
+    },
+    {
+      "bytes": 5317,
+      "path": "postfreeze_challenge/test_records.py",
+      "sha256": "718640d5ba8e94f660767e94a0b7ea0b2f8b163fb12b70f13afb878e6b4a6c82"
+    },
+    {
+      "bytes": 15699,
+      "path": "recovery_extension/verify.py",
+      "sha256": "079f08f3de995aa216abfd79757aac26e5ef93f2adea37c4ef24f3bef578aef5"
+    },
+    {
+      "bytes": 5753,
+      "path": "recovery_extension/test_records.py",
+      "sha256": "b5e0f9314b6f391242c9bc3d6087911485f23cf61bbf694498c9799505873515"
+    },
+    {
+      "bytes": 3019,
+      "path": "postfreeze_challenge/validation/receiver.json",
+      "sha256": "fdc898c99be10f4dbc6c1ec261d7248cd3a49c39298ec0f84f42d5f0ff26058f"
+    },
+    {
+      "bytes": 1985,
+      "path": "recovery_extension/validation/receiver.json",
+      "sha256": "91d361475d293fcc05fa2a37782069b243d6d2ce3a22dcf36322c5cbccabf441"
+    },
+    {
+      "bytes": 3115,
+      "path": "postfreeze_challenge/validation/tests-normal.txt",
+      "sha256": "ed92af95768e071d4336a1b1418e86c960f88d6a7c03ec48ddd5367f2bff3ffe"
+    },
+    {
+      "bytes": 3115,
+      "path": "postfreeze_challenge/validation/tests-optimized.txt",
+      "sha256": "22c087074edba895322c22be1054b03d136144cdc9d7b03484e6e966ab829446"
+    }
+  ],
+  "recorded_utc": "2026-11-19T08:12:07.620383+00:00",
+  "scope": "Actual read-only reception and in-memory/copy negative controls; these runs do not rerun native measurements."
+}

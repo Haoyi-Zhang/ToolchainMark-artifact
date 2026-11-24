@@ -1,0 +1,31 @@
+{
+  "purpose": "formal",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "tools": {
+    "clang": {
+      "path": "/workspace/scratch/022f04342461/deps/toolchain/usr/lib/llvm-19/bin/clang",
+      "sha256": "0a3c55936ac43954fbe4914e6e73b577ca9e35e75d89ef13d3e28c187f41ca1a"
+    },
+    "gcc": {
+      "path": "/usr/bin/x86_64-linux-gnu-gcc-14",
+      "sha256": "a23ecab8ff08f09ad8c80602c2c5df7f49e09c25905cb8975902e101bf72635f"
+    },
+    "nm": {
+      "path": "/usr/bin/x86_64-linux-gnu-nm",
+      "sha256": "ddb55c0685721bf494aa2d090056b8b32a40614ad4464b305896f527d882c3c1"
+    },
+    "objcopy": {
+      "path": "/usr/bin/x86_64-linux-gnu-objcopy",
+      "sha256": "403f90bbd5d26c8ab9a2ad51f56255b812e8858a83aa8740ee71791071ddb580"
+    },
+    "readelf": {
+      "path": "/usr/bin/x86_64-linux-gnu-readelf",
+      "sha256": "4a387d80a70e6e97ef940a666fab59d5c38e7cf19ff907192fa983cb8505a7de"
+    },
+    "strip": {
+      "path": "/usr/bin/x86_64-linux-gnu-strip",
+      "sha256": "a97ae77cd5d88799edc0edb31caa2fc81d32eecaa9619d329bed890f6fd06e3a"
+    }
+  },
+  "workers": 2
+}

@@ -1,0 +1,15 @@
+{
+  "action_statuses": {
+    "OK": 5
+  },
+  "carrier": "string",
+  "command_count": 14,
+  "host": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+  "id": "pass-1/string/CLEAN/MR02",
+  "implementation": "CLEAN",
+  "legacy": "SATISFIED",
+  "primary": "SATISFIED",
+  "relation": "MR02",
+  "run": 1,
+  "seconds": 0.7887537940005132
+}

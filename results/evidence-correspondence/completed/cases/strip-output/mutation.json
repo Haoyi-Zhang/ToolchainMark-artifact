@@ -1,0 +1,21 @@
+{
+  "association": "The raw strip destination differs from the returned captured output.",
+  "base": "llvm-satisfied",
+  "id": "strip-output",
+  "patches": [
+    {
+      "after": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin.other",
+      "before": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin",
+      "op": "replace",
+      "path": [
+        "actions",
+        8,
+        "evidence",
+        1,
+        "argv",
+        3
+      ]
+    }
+  ],
+  "valid_record": false
+}

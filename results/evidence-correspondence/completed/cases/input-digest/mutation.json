@@ -1,0 +1,16 @@
+{
+  "association": "The recorded input digest differs from the unchanged input object.",
+  "base": "host",
+  "id": "input-digest",
+  "patches": [
+    {
+      "after": "0000000000000000000000000000000000000000000000000000000000000000",
+      "before": "98de8896bea73afb0817117e500f9f2e9a9138db0951c1e182ecf866ca962681",
+      "op": "replace",
+      "path": [
+        "inputs_sha256"
+      ]
+    }
+  ],
+  "valid_record": false
+}

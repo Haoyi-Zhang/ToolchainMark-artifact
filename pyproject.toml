@@ -1,0 +1,12 @@
+[tool.pyright]
+pythonVersion = "3.11"
+include = ["src", "tests", "contract_runtime", "declarative_study", "evidence_correspondence", "evidence_projection", "state_budget"]
+exclude = ["results", "ctf_comparison/vendor", "external_llwm/vendor"]
+
+[tool.coverage.run]
+branch = true
+source = ["src/toolchainmark"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false

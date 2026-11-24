@@ -1,0 +1,593 @@
+{
+  "actions": [
+    {
+      "arguments": {
+        "carrier": {
+          "input": "carrier",
+          "path": []
+        },
+        "implementation": {
+          "input": "implementation",
+          "path": []
+        }
+      },
+      "id": "session",
+      "operation": "session"
+    },
+    {
+      "arguments": {
+        "compiler": {
+          "literal": "gcc"
+        },
+        "guarded": {
+          "literal": false
+        },
+        "host": {
+          "input": "host",
+          "path": []
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "label": {
+          "literal": "build-0"
+        },
+        "marked": {
+          "literal": true
+        },
+        "optimization": {
+          "literal": "O0"
+        },
+        "payload_hex": {
+          "input": "payload1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "build-0",
+      "operation": "build"
+    },
+    {
+      "arguments": {
+        "compiler": {
+          "literal": "gcc"
+        },
+        "guarded": {
+          "literal": false
+        },
+        "host": {
+          "input": "host",
+          "path": []
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "label": {
+          "literal": "build-1"
+        },
+        "marked": {
+          "literal": true
+        },
+        "optimization": {
+          "literal": "O2"
+        },
+        "payload_hex": {
+          "input": "payload1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "build-1",
+      "operation": "build"
+    },
+    {
+      "arguments": {
+        "compiler": {
+          "literal": "gcc"
+        },
+        "guarded": {
+          "literal": false
+        },
+        "host": {
+          "input": "host",
+          "path": []
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "label": {
+          "literal": "build-2"
+        },
+        "marked": {
+          "literal": true
+        },
+        "optimization": {
+          "literal": "Os"
+        },
+        "payload_hex": {
+          "input": "payload1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "build-2",
+      "operation": "build"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "build-0"
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "extract-0",
+      "operation": "extract"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "build-0"
+        },
+        "inputs": {
+          "input": "host_inputs",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "host-0",
+      "operation": "host"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "build-1"
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "extract-1",
+      "operation": "extract"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "build-1"
+        },
+        "inputs": {
+          "input": "host_inputs",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "host-1",
+      "operation": "host"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "build-2"
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "extract-2",
+      "operation": "extract"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "build-2"
+        },
+        "inputs": {
+          "input": "host_inputs",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "host-2",
+      "operation": "host"
+    }
+  ],
+  "id": "MR07",
+  "inputs": {
+    "carrier": "string",
+    "compiler": "string",
+    "host": "string",
+    "host_inputs": "array",
+    "implementation": "string",
+    "key1": "string",
+    "key2": "string",
+    "optimization": "string",
+    "payload1": "string",
+    "payload2": "string"
+  },
+  "obligations": [
+    {
+      "clause": "MR07",
+      "id": "MR07",
+      "predicate": {
+        "args": [
+          {
+            "args": [
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "kind"
+                    ],
+                    "ref": "extract-0"
+                  },
+                  {
+                    "literal": "payload"
+                  }
+                ],
+                "op": "eq"
+              },
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "value"
+                    ],
+                    "ref": "extract-0"
+                  },
+                  {
+                    "input": "payload1",
+                    "path": []
+                  }
+                ],
+                "op": "eq"
+              }
+            ],
+            "op": "and"
+          },
+          {
+            "args": [
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "kind"
+                    ],
+                    "ref": "extract-1"
+                  },
+                  {
+                    "literal": "payload"
+                  }
+                ],
+                "op": "eq"
+              },
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "value"
+                    ],
+                    "ref": "extract-1"
+                  },
+                  {
+                    "input": "payload1",
+                    "path": []
+                  }
+                ],
+                "op": "eq"
+              }
+            ],
+            "op": "and"
+          },
+          {
+            "args": [
+              {
+                "path": [
+                  "outputs"
+                ],
+                "ref": "host-1"
+              },
+              {
+                "path": [
+                  "outputs"
+                ],
+                "ref": "host-0"
+              }
+            ],
+            "op": "eq"
+          },
+          {
+            "args": [
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "kind"
+                    ],
+                    "ref": "extract-2"
+                  },
+                  {
+                    "literal": "payload"
+                  }
+                ],
+                "op": "eq"
+              },
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "value"
+                    ],
+                    "ref": "extract-2"
+                  },
+                  {
+                    "input": "payload1",
+                    "path": []
+                  }
+                ],
+                "op": "eq"
+              }
+            ],
+            "op": "and"
+          },
+          {
+            "args": [
+              {
+                "path": [
+                  "outputs"
+                ],
+                "ref": "host-2"
+              },
+              {
+                "path": [
+                  "outputs"
+                ],
+                "ref": "host-0"
+              }
+            ],
+            "op": "eq"
+          }
+        ],
+        "op": "and"
+      },
+      "requires": [
+        {
+          "expr": {
+            "available": "build-0"
+          },
+          "name": "available:build-0"
+        },
+        {
+          "expr": {
+            "available": "extract-0"
+          },
+          "name": "available:extract-0"
+        },
+        {
+          "expr": {
+            "available": "host-0"
+          },
+          "name": "available:host-0"
+        },
+        {
+          "expr": {
+            "available": "build-1"
+          },
+          "name": "available:build-1"
+        },
+        {
+          "expr": {
+            "available": "extract-1"
+          },
+          "name": "available:extract-1"
+        },
+        {
+          "expr": {
+            "available": "host-1"
+          },
+          "name": "available:host-1"
+        },
+        {
+          "expr": {
+            "available": "build-2"
+          },
+          "name": "available:build-2"
+        },
+        {
+          "expr": {
+            "available": "extract-2"
+          },
+          "name": "available:extract-2"
+        },
+        {
+          "expr": {
+            "available": "host-2"
+          },
+          "name": "available:host-2"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "compiler"
+                ],
+                "ref": "build-0"
+              },
+              {
+                "literal": "gcc"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "build-0:compiler"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "optimization"
+                ],
+                "ref": "build-0"
+              },
+              {
+                "literal": "O0"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "build-0:optimization"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "compiler"
+                ],
+                "ref": "build-1"
+              },
+              {
+                "literal": "gcc"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "build-1:compiler"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "optimization"
+                ],
+                "ref": "build-1"
+              },
+              {
+                "literal": "O2"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "build-1:optimization"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "compiler"
+                ],
+                "ref": "build-2"
+              },
+              {
+                "literal": "gcc"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "build-2:compiler"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "optimization"
+                ],
+                "ref": "build-2"
+              },
+              {
+                "literal": "Os"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "build-2:optimization"
+        }
+      ],
+      "stage": "tested-contract"
+    }
+  ],
+  "schema": "toolchainmark-contract-v1"
+}

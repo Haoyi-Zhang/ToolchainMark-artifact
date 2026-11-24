@@ -1,0 +1,44 @@
+{
+  "layers": [
+    {
+      "accepted": true,
+      "cpu_seconds": 0.00017274700000000087,
+      "detail": {
+        "stage_verdicts": [
+          {
+            "id": "MR02",
+            "verdict": "SATISFIED"
+          }
+        ]
+      },
+      "error": null,
+      "tier": "oracle-replay",
+      "wall_seconds": 0.00017459199443692341
+    },
+    {
+      "accepted": false,
+      "cpu_seconds": 0.0016036270000000102,
+      "detail": null,
+      "error": {
+        "message": "input hash: recorded value differs from independent evaluation",
+        "type": "InvalidRecord"
+      },
+      "tier": "plan-receiver",
+      "wall_seconds": 0.0016027699966798536
+    },
+    {
+      "accepted": false,
+      "cpu_seconds": 0.0014840390000000064,
+      "detail": null,
+      "error": {
+        "message": "input hash: recorded value differs from independent evaluation",
+        "type": "InvalidRecord"
+      },
+      "tier": "native-binding",
+      "wall_seconds": 0.0014831400039838627
+    }
+  ],
+  "native_programs_reexecuted": false,
+  "official_ctf_api_called": false,
+  "schema": "execution-correspondence-layer-results-v1"
+}

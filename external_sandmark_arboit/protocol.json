@@ -1,0 +1,17 @@
+{
+  "schema": "sandmark-arboit-followup-protocol-v1",
+  "purpose": "Exploratory explanation of an already observed generated-source byte difference",
+  "formal_cases": ["case-0063", "case-0141"],
+  "formal_arms": ["source-host", "embedded-host", "relocated-host", "repacked-host"],
+  "generated_files": ["JavaLexer.java", "JavaRecognizer.java", "JavaTokenTypes.java"],
+  "deduplication": "Compile each distinct exact three-file source bundle once; retain all case/arm-to-bundle mappings",
+  "probe_modes": ["tokens", "parse"],
+  "corpus_index": "corpus/index.json",
+  "membership_domain": {"first": 0, "last": 65535, "unit": "UTF-16 code unit"},
+  "old_to_marked_set_mapping": {"_tokenSet_0": "_tokenSet_0", "_tokenSet_1": "_tokenSet_2", "_tokenSet_2": "_tokenSet_3", "_tokenSet_3": "_tokenSet_4", "_tokenSet_4": "_tokenSet_5"},
+  "added_set_range": {"set": "_tokenSet_1", "first": 3, "last": 32766},
+  "native_limits": {"compiler_seconds": 45, "probe_seconds": 15, "max_heap_megabytes": 256, "max_tokens": 100000},
+  "comparison": "Exact exit status, raw standard output and raw standard error for each mode/input pair",
+  "interpretation": "Matching probe outcomes and membership tables explain these generated differences on the stated observations; they do not establish equivalence for all parser inputs or mutable public BitSet state",
+  "modifies_or_reclassifies_formal_results": false
+}

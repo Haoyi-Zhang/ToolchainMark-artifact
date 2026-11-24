@@ -1,0 +1,86 @@
+{
+  "activity_event_counts": {
+    "full-first": {
+      "changed_byte_target_reads": 486,
+      "compiler_invocation_attempts": 5940,
+      "extraction_calls": 6480,
+      "fault_branch_entries": 594,
+      "invalid_key_cache_hits": 54,
+      "poisoned_session_reads": 0,
+      "redirected_artifact_reads": 486,
+      "subprocess_invocation_attempts": 30906,
+      "successful_build_returns": 5940,
+      "typed_extraction_rejections": 918
+    },
+    "full-second": {
+      "changed_byte_target_reads": 486,
+      "compiler_invocation_attempts": 5940,
+      "extraction_calls": 6480,
+      "fault_branch_entries": 594,
+      "invalid_key_cache_hits": 54,
+      "poisoned_session_reads": 0,
+      "redirected_artifact_reads": 486,
+      "subprocess_invocation_attempts": 30906,
+      "successful_build_returns": 5940,
+      "typed_extraction_rejections": 918
+    },
+    "roundtrip-first": {
+      "changed_byte_target_reads": 0,
+      "compiler_invocation_attempts": 270,
+      "extraction_calls": 270,
+      "fault_branch_entries": 0,
+      "invalid_key_cache_hits": 0,
+      "poisoned_session_reads": 0,
+      "redirected_artifact_reads": 0,
+      "subprocess_invocation_attempts": 630,
+      "successful_build_returns": 270,
+      "typed_extraction_rejections": 0
+    },
+    "roundtrip-second": {
+      "changed_byte_target_reads": 0,
+      "compiler_invocation_attempts": 270,
+      "extraction_calls": 270,
+      "fault_branch_entries": 0,
+      "invalid_key_cache_hits": 0,
+      "poisoned_session_reads": 0,
+      "redirected_artifact_reads": 0,
+      "subprocess_invocation_attempts": 630,
+      "successful_build_returns": 270,
+      "typed_extraction_rejections": 0
+    }
+  },
+  "byte_and_call_checks": {
+    "modeled_extraction_calls_checked": 13590,
+    "records_checked": 8184,
+    "strict_byte_observations": 26964,
+    "strict_decoder_returns_checked": 13482
+  },
+  "distinction_traces": 84,
+  "failed_attempt_files_preserved": 163,
+  "frozen_input_files": 42,
+  "observed_strict_rejection_kinds": {
+    "absent": 1098,
+    "checksum": 540,
+    "path": 12,
+    "sidecar": 12,
+    "wrong-key": 570
+  },
+  "observed_tested_rejection_kinds": {
+    "absent": 984,
+    "checksum": 432,
+    "path": 12,
+    "sidecar": 12,
+    "wrong-key": 465
+  },
+  "producer_input_files": 48,
+  "protocol": "postfreeze-catalog-challenge-v1",
+  "relation_rows": 8100,
+  "scope": "Read-only identities, complete planned rows, frozen relation predicates, native-call projections, registered trigger-state replay, separately parsed strict carrier observations, and rederived counts. The local record is not an external execution attestation; host stdout and kernel file-read events are not independently reconstructed. No new native or network activity.",
+  "separate_byte_parser": {
+    "path": "independent_observers/producer/independent_observer.py",
+    "sha256": "4838ef13f86de5d421e049ae8355805a806e5420e1f8730fc1957c1ce6d471c3"
+  },
+  "unique_retained_blobs": 528,
+  "unique_strict_byte_views": 475,
+  "verdict": "PASS"
+}

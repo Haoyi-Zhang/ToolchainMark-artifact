@@ -1,0 +1,77 @@
+{
+  "layers": [
+    {
+      "accepted": true,
+      "cpu_seconds": 0.00033229400000001075,
+      "detail": {
+        "stage_verdicts": [
+          {
+            "id": "SOURCE",
+            "verdict": "SATISFIED"
+          },
+          {
+            "id": "TRANSFORM",
+            "verdict": "SATISFIED"
+          },
+          {
+            "id": "MR09",
+            "verdict": "SATISFIED"
+          }
+        ]
+      },
+      "error": null,
+      "tier": "oracle-replay",
+      "wall_seconds": 0.00033507400075905025
+    },
+    {
+      "accepted": true,
+      "cpu_seconds": 0.001757295000000006,
+      "detail": {
+        "action_status_counts": {
+          "OK": 7
+        },
+        "actions": 7,
+        "checks": {
+          "consumed_dependencies": true,
+          "event_order_and_parallel_groups": true,
+          "exact_action_frame": true,
+          "guards_and_arguments": true,
+          "independent_stage_judgments": true,
+          "plan_and_input_hashes": true,
+          "plan_schema_and_reference_order": true
+        },
+        "context_id": "pass-1/string/CLEAN/MR09:declaration",
+        "event_ordinals": 14,
+        "external_context_checked": true,
+        "external_inputs_checked": true,
+        "inputs_sha256": "98de8896bea73afb0817117e500f9f2e9a9138db0951c1e182ecf866ca962681",
+        "obligations": 3,
+        "plan_id": "MR09",
+        "plan_sha256": "f466762aa9f44646a4428e9180cb2fced64561f9d9da90144b38f1cca49183f0",
+        "schema": "toolchainmark-receipt-receiver-v1",
+        "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+        "verdict": "PASS",
+        "verdict_counts": {
+          "SATISFIED": 3
+        }
+      },
+      "error": null,
+      "tier": "plan-receiver",
+      "wall_seconds": 0.001756300996930804
+    },
+    {
+      "accepted": false,
+      "cpu_seconds": 0.0047237090000000065,
+      "detail": null,
+      "error": {
+        "message": "extraction value differs from raw call",
+        "type": "ValueError"
+      },
+      "tier": "native-binding",
+      "wall_seconds": 0.004722739999124315
+    }
+  ],
+  "native_programs_reexecuted": false,
+  "official_ctf_api_called": false,
+  "schema": "execution-correspondence-layer-results-v1"
+}

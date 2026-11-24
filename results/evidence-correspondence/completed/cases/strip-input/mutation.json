@@ -1,0 +1,21 @@
+{
+  "association": "The raw strip command names the unmarked input rather than the declared marked input.",
+  "base": "llvm-satisfied",
+  "id": "strip-input",
+  "patches": [
+    {
+      "after": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+      "before": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+      "op": "replace",
+      "path": [
+        "actions",
+        8,
+        "evidence",
+        1,
+        "argv",
+        4
+      ]
+    }
+  ],
+  "valid_record": false
+}

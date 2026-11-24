@@ -1,0 +1,18 @@
+{
+  "association": "One action names a context other than its externally selected case.",
+  "base": "host",
+  "id": "action-context",
+  "patches": [
+    {
+      "after": "pass-1/string/CLEAN/MR02:declaration:other",
+      "before": "pass-1/string/CLEAN/MR02:declaration",
+      "op": "replace",
+      "path": [
+        "actions",
+        3,
+        "context_id"
+      ]
+    }
+  ],
+  "valid_record": false
+}

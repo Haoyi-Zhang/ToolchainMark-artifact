@@ -1,0 +1,41 @@
+{
+  "checks": [
+    "Independent receiver derives the closure and prefix without importing the projection constructor",
+    "The caller supplies the original plan, case inputs, decoder context, native binding context and target",
+    "An explicitly induced local plan is used only for checking; the retained record keeps the original plan identity",
+    "Every bundle is checked in an isolated directory containing only its native members",
+    "The study compares every retained field and target judgment directly with the complete source record"
+  ],
+  "claims": "Recorded-value judgment preservation and declared-prefix correspondence. No minimum-size, execution attestation, unavailable historical-record membership, new field-defect or fresh-execution claim.",
+  "comparators": [
+    "Typed observation replay over explicit reference closure",
+    "Complete action records over transitive explicit argument and guard references",
+    "Complete action records over the conservative whole-block prefix"
+  ],
+  "controls": [
+    "Delete a guard dependency",
+    "Delete a required preceding verdict",
+    "Delete a final parallel sibling",
+    "Delete a prefix action whose return value is not referenced",
+    "Substitute the original declaration",
+    "Substitute the external case context",
+    "Substitute the target obligation",
+    "Change a retained native member"
+  ],
+  "frame": "All 7,380 native receipts and 10,134 stage obligations already enumerated in results/ctf-comparison/formal-01/frame.json",
+  "literal_handling": "Literal JSON values and path components are data, not declaration references",
+  "measures": [
+    "Retained action and obligation counts",
+    "Canonical serialized receipt and complete bundle metadata bytes",
+    "Native stored file bytes, file path count, unique content bytes and unique content count",
+    "Complete bundle metadata plus native file bytes, including full plan and native-context overhead",
+    "Per-dataset distributions and zero-reduction frequency"
+  ],
+  "native_context": "Carry the existing native binding profile and its metadata, including tools, LLVM probe/plugin identities, or SandMark protocol/catalog/input lock",
+  "native_history_control": "A separate frozen paired execution compares a REVISIT stage over A-to-B-to-A with A-to-A, on CLEAN and M23, three carriers and two passes. Both declarations build A and B; REVISIT reads only the first and final A observations.",
+  "native_members": "Every retained acquisition file or content-addressed byte object; exact member set is checked independently",
+  "parallel_handling": "Retain every sibling in the final parallel block and retain original event ordinals",
+  "selection": "Static closure of earlier obligation references in all gates and predicates, followed by the complete original action-block prefix through the last referenced action",
+  "title": "Complete-prefix evidence for individual stage judgments",
+  "unit": "One derived evidence bundle for one existing stage obligation; not a new native execution"
+}

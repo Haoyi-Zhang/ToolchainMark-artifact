@@ -1,0 +1,23 @@
+{
+  "evidence_class": "fresh API execution over retained native observations",
+  "native_programs_reexecuted": false,
+  "cases": 7380,
+  "stage_comparisons": 10134,
+  "disagreements": 0,
+  "actual_estimator_calls": 10134,
+  "actual_custom_oracle_calls": 9599,
+  "framework_verdicts": {
+    "INADMISSIBLE": 535,
+    "INCONSISTENT": 1536,
+    "SATISFIED": 8063
+  },
+  "ctf_outcomes": {
+    "FAIL": 1536,
+    "INESTIMABLE": 535,
+    "PASS": 8063
+  },
+  "same_native_observations": true,
+  "statistical_inference": false,
+  "scope": "Exact-data custom extension through real CTF entry point; not the stock causal inference estimators.",
+  "independence": "Custom expression evaluator imports neither executor, receiver, nor adapters; shared native observations are not an independent execution."
+}

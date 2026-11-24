@@ -1,0 +1,1870 @@
+{
+  "actions": [
+    {
+      "argument_evaluations": {
+        "interface": {
+          "dependencies": [
+            "input:interface"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "atoi"
+        },
+        "key": {
+          "dependencies": [
+            "input:key"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "1234"
+        },
+        "optimization": {
+          "dependencies": [
+            "input:optimization"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "O0"
+        },
+        "payload": {
+          "dependencies": [
+            "input:payload"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "A%%B"
+        },
+        "variant": {
+          "dependencies": [
+            "input:variant"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "literal-output-repair"
+        }
+      },
+      "arguments": {
+        "interface": "atoi",
+        "key": "1234",
+        "optimization": "O0",
+        "payload": "A%%B",
+        "variant": "literal-output-repair"
+      },
+      "consumed_references": [
+        "input:interface",
+        "input:key",
+        "input:optimization",
+        "input:payload",
+        "input:variant"
+      ],
+      "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+      "end_event": 2,
+      "evidence": [
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/1bb91ef11d3548cd73b78048bad23ad1ac9304c3b42ee6999de1df9f74d1ed49.bin.gz",
+              "bytes": 131,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/external_llwm/probes/atoi.c",
+              "sha256": "1bb91ef11d3548cd73b78048bad23ad1ac9304c3b42ee6999de1df9f74d1ed49"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "build"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/deps-llvm17/toolchain/usr/lib/llvm-17/bin/clang",
+            "-O1",
+            "-g",
+            "-emit-llvm",
+            "-S",
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/external_llwm/probes/atoi.c",
+            "-o",
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.ll"
+          ],
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/deps-llvm17/toolchain/usr/lib/llvm-17/bin/clang",
+            "sha256": "fd365113875142b8815e4d27a41a22df7cd2be2059f6e144f657fbdacaf54d49"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/1bb91ef11d3548cd73b78048bad23ad1ac9304c3b42ee6999de1df9f74d1ed49.bin.gz",
+              "bytes": 131,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/external_llwm/probes/atoi.c",
+              "sha256": "1bb91ef11d3548cd73b78048bad23ad1ac9304c3b42ee6999de1df9f74d1ed49"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/1bb91ef11d3548cd73b78048bad23ad1ac9304c3b42ee6999de1df9f74d1ed49.bin.gz",
+              "bytes": 131,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/external_llwm/probes/atoi.c",
+              "sha256": "1bb91ef11d3548cd73b78048bad23ad1ac9304c3b42ee6999de1df9f74d1ed49"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.30112635800105636,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "build"
+        },
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/93aaa63a6407ac83cad3d5ab15630db7651a49b195943020c4fc55cc3b966189.bin.gz",
+              "bytes": 7633,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.ll",
+              "sha256": "93aaa63a6407ac83cad3d5ab15630db7651a49b195943020c4fc55cc3b966189"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "build"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/deps-llvm17/toolchain/usr/lib/llvm-17/bin/clang",
+            "-g",
+            "-O0",
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.ll",
+            "-o",
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin"
+          ],
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/deps-llvm17/toolchain/usr/lib/llvm-17/bin/clang",
+            "sha256": "fd365113875142b8815e4d27a41a22df7cd2be2059f6e144f657fbdacaf54d49"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/93aaa63a6407ac83cad3d5ab15630db7651a49b195943020c4fc55cc3b966189.bin.gz",
+              "bytes": 7633,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.ll",
+              "sha256": "93aaa63a6407ac83cad3d5ab15630db7651a49b195943020c4fc55cc3b966189"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/93aaa63a6407ac83cad3d5ab15630db7651a49b195943020c4fc55cc3b966189.bin.gz",
+              "bytes": 7633,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.ll",
+              "sha256": "93aaa63a6407ac83cad3d5ab15630db7651a49b195943020c4fc55cc3b966189"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.23577265099811484,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "build"
+        },
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/1121e65e105ea9183ee76504357034f3cc2d89cbedbdf9ff9ceb3bffff8578aa.bin.gz",
+              "bytes": 113264,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/setup/literal-output-repair/semacall.so",
+              "sha256": "1121e65e105ea9183ee76504357034f3cc2d89cbedbdf9ff9ceb3bffff8578aa"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "build"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/deps-llvm17/toolchain/usr/lib/llvm-17/bin/opt",
+            "-load-pass-plugin=/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/setup/literal-output-repair/semacall.so",
+            "-passes=semacall-watermark",
+            "-atoi-key=1234",
+            "-atoi-val=A%%B",
+            "-S",
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.ll",
+            "-o",
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.ll"
+          ],
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/deps-llvm17/toolchain/usr/lib/llvm-17/bin/opt",
+            "sha256": "d247a890404a26457d7e3ebe9f1b8e69e51afcb126f31450917e1ec8316a69ab"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/93aaa63a6407ac83cad3d5ab15630db7651a49b195943020c4fc55cc3b966189.bin.gz",
+              "bytes": 7633,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.ll",
+              "sha256": "93aaa63a6407ac83cad3d5ab15630db7651a49b195943020c4fc55cc3b966189"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/93aaa63a6407ac83cad3d5ab15630db7651a49b195943020c4fc55cc3b966189.bin.gz",
+              "bytes": 7633,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.ll",
+              "sha256": "93aaa63a6407ac83cad3d5ab15630db7651a49b195943020c4fc55cc3b966189"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.04664007699830108,
+          "status": "COMPLETED",
+          "stderr_hex": "696e636c756465642061746f6920696e206d61696e2c202f776f726b73706163652f736372617463682f3032326630343334323436312f776f726b2d76362f546f6f6c636861696e4d61726b5f544f53454d2f61727469666163742f726573756c74732f6465636c617261746976652d76362f6c6c776d2f63617365732f706173732d312f6c69746572616c2d6f75747075742d7265706169722f61746f692f7061796c6f61642d312f4f302f6e61746976652f756e6d61726b65642e6c6c2c20342074696d65730a",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "build"
+        },
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/ddee39aaee39fe49aa97ea720e671ad3cffe4cff2e2b8934203182a2ad298545.bin.gz",
+              "bytes": 9281,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.ll",
+              "sha256": "ddee39aaee39fe49aa97ea720e671ad3cffe4cff2e2b8934203182a2ad298545"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "build"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/deps-llvm17/toolchain/usr/lib/llvm-17/bin/clang",
+            "-g",
+            "-O0",
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.ll",
+            "-o",
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin"
+          ],
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/deps-llvm17/toolchain/usr/lib/llvm-17/bin/clang",
+            "sha256": "fd365113875142b8815e4d27a41a22df7cd2be2059f6e144f657fbdacaf54d49"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/ddee39aaee39fe49aa97ea720e671ad3cffe4cff2e2b8934203182a2ad298545.bin.gz",
+              "bytes": 9281,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.ll",
+              "sha256": "ddee39aaee39fe49aa97ea720e671ad3cffe4cff2e2b8934203182a2ad298545"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/ddee39aaee39fe49aa97ea720e671ad3cffe4cff2e2b8934203182a2ad298545.bin.gz",
+              "bytes": 9281,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.ll",
+              "sha256": "ddee39aaee39fe49aa97ea720e671ad3cffe4cff2e2b8934203182a2ad298545"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.21560748499905458,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "build"
+        },
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116.bin.gz",
+              "bytes": 18376,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+              "sha256": "6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "build"
+        },
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "build"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "build",
+      "operation": "llvm_build",
+      "reason": null,
+      "start_event": 1,
+      "status": "OK",
+      "value": {
+        "marked": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+        "marked_artifact": {
+          "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+          "bytes": 18456,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+          "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+        },
+        "unmarked": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+        "unmarked_artifact": {
+          "blob": "blobs/6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116.bin.gz",
+          "bytes": 18376,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+          "sha256": "6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116"
+        }
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:build"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin"
+        },
+        "input": {
+          "dependencies": [
+            "input:key"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "1234"
+        },
+        "interface": {
+          "dependencies": [
+            "input:interface"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "atoi"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+        "input": "1234",
+        "interface": "atoi"
+      },
+      "consumed_references": [
+        "action:build",
+        "input:key",
+        "input:interface"
+      ],
+      "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+      "end_event": 4,
+      "evidence": [
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116.bin.gz",
+              "bytes": 18376,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+              "sha256": "6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "unmarked-key"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+            "1234"
+          ],
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+            "sha256": "6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116.bin.gz",
+              "bytes": 18376,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+              "sha256": "6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116.bin.gz",
+              "bytes": 18376,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+              "sha256": "6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.004821417998755351,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "686f73743a313233340a",
+          "step_id": "unmarked-key"
+        },
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116.bin.gz",
+              "bytes": 18376,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+              "sha256": "6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "unmarked-key"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "unmarked-key",
+      "operation": "invoke",
+      "reason": null,
+      "start_event": 3,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116.bin.gz",
+          "bytes": 18376,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+          "sha256": "6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116"
+        },
+        "before": {
+          "blob": "blobs/6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116.bin.gz",
+          "bytes": 18376,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+          "sha256": "6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116"
+        },
+        "returncode": 0,
+        "stderr_hex": "",
+        "stdout_hex": "686f73743a313233340a"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:build"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin"
+        },
+        "input": {
+          "dependencies": [
+            "input:key"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "1234"
+        },
+        "interface": {
+          "dependencies": [
+            "input:interface"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "atoi"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+        "input": "1234",
+        "interface": "atoi"
+      },
+      "consumed_references": [
+        "action:build",
+        "input:key",
+        "input:interface"
+      ],
+      "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+      "end_event": 6,
+      "evidence": [
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "marked-key"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+            "1234"
+          ],
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+            "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.016306371002428932,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "686f73743a313233340a41252542",
+          "step_id": "marked-key"
+        },
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "marked-key"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "marked-key",
+      "operation": "invoke",
+      "reason": null,
+      "start_event": 5,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+          "bytes": 18456,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+          "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+        },
+        "before": {
+          "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+          "bytes": 18456,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+          "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+        },
+        "returncode": 0,
+        "stderr_hex": "",
+        "stdout_hex": "686f73743a313233340a41252542"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:build"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin"
+        },
+        "input": {
+          "dependencies": [
+            "input:ordinary"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "4321"
+        },
+        "interface": {
+          "dependencies": [
+            "input:interface"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "atoi"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+        "input": "4321",
+        "interface": "atoi"
+      },
+      "consumed_references": [
+        "action:build",
+        "input:ordinary",
+        "input:interface"
+      ],
+      "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+      "end_event": 8,
+      "evidence": [
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116.bin.gz",
+              "bytes": 18376,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+              "sha256": "6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "unmarked-ordinary"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+            "4321"
+          ],
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+            "sha256": "6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116.bin.gz",
+              "bytes": 18376,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+              "sha256": "6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116.bin.gz",
+              "bytes": 18376,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+              "sha256": "6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.00558492499840213,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "686f73743a343332310a",
+          "step_id": "unmarked-ordinary"
+        },
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116.bin.gz",
+              "bytes": 18376,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+              "sha256": "6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "unmarked-ordinary"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "unmarked-ordinary",
+      "operation": "invoke",
+      "reason": null,
+      "start_event": 7,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116.bin.gz",
+          "bytes": 18376,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+          "sha256": "6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116"
+        },
+        "before": {
+          "blob": "blobs/6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116.bin.gz",
+          "bytes": 18376,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/unmarked.bin",
+          "sha256": "6a61f6d4853ddf928e8d4c8d2aa27204f1a457a79b906b967401fb7a41090116"
+        },
+        "returncode": 0,
+        "stderr_hex": "",
+        "stdout_hex": "686f73743a343332310a"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:build"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin"
+        },
+        "input": {
+          "dependencies": [
+            "input:ordinary"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "4321"
+        },
+        "interface": {
+          "dependencies": [
+            "input:interface"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "atoi"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+        "input": "4321",
+        "interface": "atoi"
+      },
+      "consumed_references": [
+        "action:build",
+        "input:ordinary",
+        "input:interface"
+      ],
+      "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+      "end_event": 10,
+      "evidence": [
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "marked-ordinary"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+            "4321"
+          ],
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+            "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.004422758000146132,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "686f73743a343332310a",
+          "step_id": "marked-ordinary"
+        },
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "marked-ordinary"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "marked-ordinary",
+      "operation": "invoke",
+      "reason": null,
+      "start_event": 9,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+          "bytes": 18456,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+          "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+        },
+        "before": {
+          "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+          "bytes": 18456,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+          "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+        },
+        "returncode": 0,
+        "stderr_hex": "",
+        "stdout_hex": "686f73743a343332310a"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:build"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin"
+      },
+      "consumed_references": [
+        "action:build"
+      ],
+      "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+      "end_event": 12,
+      "evidence": [
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "move"
+        },
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/move/program",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "move"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "move",
+      "operation": "relocate",
+      "reason": null,
+      "start_event": 11,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+          "bytes": 18456,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/move/program",
+          "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+        },
+        "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/move/program",
+        "entries": [
+          "program"
+        ],
+        "source": {
+          "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+          "bytes": 18456,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+          "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+        }
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:move"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/move/program"
+        },
+        "input": {
+          "dependencies": [
+            "input:key"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "1234"
+        },
+        "interface": {
+          "dependencies": [
+            "input:interface"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "atoi"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/move/program",
+        "input": "1234",
+        "interface": "atoi"
+      },
+      "consumed_references": [
+        "action:move",
+        "input:key",
+        "input:interface"
+      ],
+      "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+      "end_event": 14,
+      "evidence": [
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/move/program",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "moved-key"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/move/program",
+            "1234"
+          ],
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/move",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/move/program",
+            "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/move/program",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/move/program",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.004627897000318626,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "686f73743a313233340a41252542",
+          "step_id": "moved-key"
+        },
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/move/program",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "moved-key"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "moved-key",
+      "operation": "invoke",
+      "reason": null,
+      "start_event": 13,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+          "bytes": 18456,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/move/program",
+          "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+        },
+        "before": {
+          "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+          "bytes": 18456,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/move/program",
+          "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+        },
+        "returncode": 0,
+        "stderr_hex": "",
+        "stdout_hex": "686f73743a313233340a41252542"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:build"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin"
+      },
+      "consumed_references": [
+        "action:build"
+      ],
+      "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+      "end_event": 16,
+      "evidence": [
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "debug-before"
+        },
+        {
+          "argv": [
+            "/usr/bin/x86_64-linux-gnu-readelf",
+            "-W",
+            "-S",
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin"
+          ],
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-readelf",
+            "sha256": "4a387d80a70e6e97ef940a666fab59d5c38e7cf19ff907192fa983cb8505a7de"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.005872336998436367,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "5468657265206172652033392073656374696f6e20686561646572732c207374617274696e67206174206f6666736574203078336535383a0a0a53656374696f6e20486561646572733a0a20205b4e725d204e616d6520202020202020202020202020205479706520202020202020202020202041646472657373202020202020202020204f66662020202053697a65202020455320466c67204c6b20496e6620416c0a20205b20305d202020202020202020202020202020202020204e554c4c20202020202020202020202030303030303030303030303030303030203030303030302030303030303020303020202020202030202020302020300a20205b20315d202e6e6f74652e676e752e70726f7065727479204e4f544520202020202020202020202030303030303030303030303030333530203030303335302030303030323020303020202041202030202020302020380a20205b20325d202e6e6f74652e676e752e6275696c642d6964204e4f544520202020202020202020202030303030303030303030303030333730203030303337302030303030323420303020202041202030202020302020340a20205b20335d202e696e74657270202020202020202020202050524f4742495453202020202020202030303030303030303030303030333934203030303339342030303030316320303020202041202030202020302020310a20205b20345d202e676e752e68617368202020202020202020474e555f48415348202020202020202030303030303030303030303030336230203030303362302030303030323420303020202041202035202020302020380a20205b20355d202e64796e73796d202020202020202020202044594e53594d2020202020202020202030303030303030303030303030336438203030303364382030303030643820313820202041202036202020312020380a20205b20365d202e64796e73747220202020202020202020205354525441422020202020202020202030303030303030303030303030346230203030303462302030303030396420303020202041202030202020302020310a20205b20375d202e676e752e76657273696f6e20202020202056455253594d2020202020202020202030303030303030303030303030353465203030303534652030303030313220303220202041202035202020302020320a20205b20385d202e676e752e76657273696f6e5f72202020205645524e45454420202020202020202030303030303030303030303030353630203030303536302030303030333020303020202041202036202020312020380a20205b20395d202e72656c612e64796e20202020202020202052454c4120202020202020202020202030303030303030303030303030353930203030303539302030303030633020313820202041202035202020302020380a20205b31305d202e72656c612e706c7420202020202020202052454c4120202020202020202020202030303030303030303030303030363530203030303635302030303030343820313820204149202035202032342020380a20205b31315d202e696e69742020202020202020202020202050524f4742495453202020202020202030303030303030303030303031303030203030313030302030303030313720303020204158202030202020302020340a20205b31325d202e706c74202020202020202020202020202050524f4742495453202020202020202030303030303030303030303031303230203030313032302030303030343020313020204158202030202020302031360a20205b31335d202e706c742e676f742020202020202020202050524f4742495453202020202020202030303030303030303030303031303630203030313036302030303030303820303820204158202030202020302020380a20205b31345d202e746578742020202020202020202020202050524f4742495453202020202020202030303030303030303030303031303730203030313037302030303032313920303020204158202030202020302031360a20205b31355d202e66696e692020202020202020202020202050524f4742495453202020202020202030303030303030303030303031323863203030313238632030303030303920303020204158202030202020302020340a20205b31365d202e726f64617461202020202020202020202050524f4742495453202020202020202030303030303030303030303032303030203030323030302030303030313020303020202041202030202020302020340a20205b31375d202e65685f6672616d655f686472202020202050524f4742495453202020202020202030303030303030303030303032303130203030323031302030303030326320303020202041202030202020302020340a20205b31385d202e65685f6672616d6520202020202020202050524f4742495453202020202020202030303030303030303030303032303430203030323034302030303030616320303020202041202030202020302020380a20205b31395d202e6e6f74652e4142492d74616720202020204e4f544520202020202020202020202030303030303030303030303032306563203030323065632030303030323020303020202041202030202020302020340a20205b32305d202e696e69745f617272617920202020202020494e49545f415252415920202020202030303030303030303030303033646430203030326464302030303030303820303820205741202030202020302020380a20205b32315d202e66696e695f61727261792020202020202046494e495f415252415920202020202030303030303030303030303033646438203030326464382030303030303820303820205741202030202020302020380a20205b32325d202e64796e616d69632020202020202020202044594e414d494320202020202020202030303030303030303030303033646530203030326465302030303031653020313020205741202036202020302020380a20205b32335d202e676f74202020202020202020202020202050524f4742495453202020202020202030303030303030303030303033666330203030326663302030303030323820303820205741202030202020302020380a20205b32345d202e676f742e706c742020202020202020202050524f4742495453202020202020202030303030303030303030303033666538203030326665382030303030333020303820205741202030202020302020380a20205b32355d202e646174612020202020202020202020202050524f4742495453202020202020202030303030303030303030303034303138203030333031382030303030313020303020205741202030202020302020380a20205b32365d202e62737320202020202020202020202020204e4f424954532020202020202020202030303030303030303030303034303238203030333032382030303030303820303020205741202030202020302020310a20205b32375d202e636f6d6d656e742020202020202020202050524f4742495453202020202020202030303030303030303030303030303030203030333032382030303030373420303120204d53202030202020302020310a20205b32385d202e64656275675f696e666f2020202020202050524f4742495453202020202020202030303030303030303030303030303030203030333039632030303030663920303020202020202030202020302020310a20205b32395d202e64656275675f616262726576202020202050524f4742495453202020202020202030303030303030303030303030303030203030333139352030303031313520303020202020202030202020302020310a20205b33305d202e64656275675f6c696e652020202020202050524f4742495453202020202020202030303030303030303030303030303030203030333261612030303030643120303020202020202030202020302020310a20205b33315d202e64656275675f737472202020202020202050524f4742495453202020202020202030303030303030303030303030303030203030333337622030303031393820303120204d53202030202020302020310a20205b33325d202e64656275675f616464722020202020202050524f4742495453202020202020202030303030303030303030303030303030203030333531332030303030333820303020202020202030202020302020310a20205b33335d202e64656275675f6c696e655f73747220202050524f4742495453202020202020202030303030303030303030303030303030203030333534622030303031363120303120204d53202030202020302020310a20205b33345d202e64656275675f6c6f636c6973747320202050524f4742495453202020202020202030303030303030303030303030303030203030333661632030303030343420303020202020202030202020302020310a20205b33355d202e64656275675f7374725f6f6666736574732050524f4742495453202020202020202030303030303030303030303030303030203030333666302030303030343420303020202020202030202020302020310a20205b33365d202e73796d746162202020202020202020202053594d5441422020202020202020202030303030303030303030303030303030203030333733382030303033393020313820202020203337202031382020380a20205b33375d202e73747274616220202020202020202020205354525441422020202020202020202030303030303030303030303030303030203030336163382030303032303220303020202020202030202020302020310a20205b33385d202e73687374727461622020202020202020205354525441422020202020202020202030303030303030303030303030303030203030336363612030303031386120303020202020202030202020302020310a4b657920746f20466c6167733a0a20205720287772697465292c20412028616c6c6f63292c2058202865786563757465292c204d20286d65726765292c20532028737472696e6773292c20492028696e666f292c0a20204c20286c696e6b206f72646572292c204f20286578747261204f532070726f63657373696e67207265717569726564292c2047202867726f7570292c20542028544c53292c0a2020432028636f6d70726573736564292c20782028756e6b6e6f776e292c206f20284f53207370656369666963292c204520286578636c756465292c0a20204420286d62696e64292c206c20286c61726765292c2070202870726f636573736f72207370656369666963290a",
+          "step_id": "debug-before"
+        },
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "debug-before"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "debug-before",
+      "operation": "sections",
+      "reason": null,
+      "start_event": 15,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+          "bytes": 18456,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+          "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+        },
+        "before": {
+          "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+          "bytes": 18456,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+          "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+        },
+        "text": "There are 39 section headers, starting at offset 0x3e58:\n\nSection Headers:\n  [Nr] Name              Type            Address          Off    Size   ES Flg Lk Inf Al\n  [ 0]                   NULL            0000000000000000 000000 000000 00      0   0  0\n  [ 1] .note.gnu.property NOTE            0000000000000350 000350 000020 00   A  0   0  8\n  [ 2] .note.gnu.build-id NOTE            0000000000000370 000370 000024 00   A  0   0  4\n  [ 3] .interp           PROGBITS        0000000000000394 000394 00001c 00   A  0   0  1\n  [ 4] .gnu.hash         GNU_HASH        00000000000003b0 0003b0 000024 00   A  5   0  8\n  [ 5] .dynsym           DYNSYM          00000000000003d8 0003d8 0000d8 18   A  6   1  8\n  [ 6] .dynstr           STRTAB          00000000000004b0 0004b0 00009d 00   A  0   0  1\n  [ 7] .gnu.version      VERSYM          000000000000054e 00054e 000012 02   A  5   0  2\n  [ 8] .gnu.version_r    VERNEED         0000000000000560 000560 000030 00   A  6   1  8\n  [ 9] .rela.dyn         RELA            0000000000000590 000590 0000c0 18   A  5   0  8\n  [10] .rela.plt         RELA            0000000000000650 000650 000048 18  AI  5  24  8\n  [11] .init             PROGBITS        0000000000001000 001000 000017 00  AX  0   0  4\n  [12] .plt              PROGBITS        0000000000001020 001020 000040 10  AX  0   0 16\n  [13] .plt.got          PROGBITS        0000000000001060 001060 000008 08  AX  0   0  8\n  [14] .text             PROGBITS        0000000000001070 001070 000219 00  AX  0   0 16\n  [15] .fini             PROGBITS        000000000000128c 00128c 000009 00  AX  0   0  4\n  [16] .rodata           PROGBITS        0000000000002000 002000 000010 00   A  0   0  4\n  [17] .eh_frame_hdr     PROGBITS        0000000000002010 002010 00002c 00   A  0   0  4\n  [18] .eh_frame         PROGBITS        0000000000002040 002040 0000ac 00   A  0   0  8\n  [19] .note.ABI-tag     NOTE            00000000000020ec 0020ec 000020 00   A  0   0  4\n  [20] .init_array       INIT_ARRAY      0000000000003dd0 002dd0 000008 08  WA  0   0  8\n  [21] .fini_array       FINI_ARRAY      0000000000003dd8 002dd8 000008 08  WA  0   0  8\n  [22] .dynamic          DYNAMIC         0000000000003de0 002de0 0001e0 10  WA  6   0  8\n  [23] .got              PROGBITS        0000000000003fc0 002fc0 000028 08  WA  0   0  8\n  [24] .got.plt          PROGBITS        0000000000003fe8 002fe8 000030 08  WA  0   0  8\n  [25] .data             PROGBITS        0000000000004018 003018 000010 00  WA  0   0  8\n  [26] .bss              NOBITS          0000000000004028 003028 000008 00  WA  0   0  1\n  [27] .comment          PROGBITS        0000000000000000 003028 000074 01  MS  0   0  1\n  [28] .debug_info       PROGBITS        0000000000000000 00309c 0000f9 00      0   0  1\n  [29] .debug_abbrev     PROGBITS        0000000000000000 003195 000115 00      0   0  1\n  [30] .debug_line       PROGBITS        0000000000000000 0032aa 0000d1 00      0   0  1\n  [31] .debug_str        PROGBITS        0000000000000000 00337b 000198 01  MS  0   0  1\n  [32] .debug_addr       PROGBITS        0000000000000000 003513 000038 00      0   0  1\n  [33] .debug_line_str   PROGBITS        0000000000000000 00354b 000161 01  MS  0   0  1\n  [34] .debug_loclists   PROGBITS        0000000000000000 0036ac 000044 00      0   0  1\n  [35] .debug_str_offsets PROGBITS        0000000000000000 0036f0 000044 00      0   0  1\n  [36] .symtab           SYMTAB          0000000000000000 003738 000390 18     37  18  8\n  [37] .strtab           STRTAB          0000000000000000 003ac8 000202 00      0   0  1\n  [38] .shstrtab         STRTAB          0000000000000000 003cca 00018a 00      0   0  1\nKey to Flags:\n  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),\n  L (link order), O (extra OS processing required), G (group), T (TLS),\n  C (compressed), x (unknown), o (OS specific), E (exclude),\n  D (mbind), l (large), p (processor specific)\n"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:build"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin"
+      },
+      "consumed_references": [
+        "action:build"
+      ],
+      "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+      "end_event": 18,
+      "evidence": [
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "strip"
+        },
+        {
+          "argv": [
+            "/usr/bin/x86_64-linux-gnu-strip",
+            "--strip-debug",
+            "-o",
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin",
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin"
+          ],
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-strip",
+            "sha256": "a97ae77cd5d88799edc0edb31caa2fc81d32eecaa9619d329bed890f6fd06e3a"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+              "bytes": 18456,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+              "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+            }
+          ],
+          "kind": "process",
+          "returncode": 7,
+          "seconds": 0.012769428998581134,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "strip"
+        },
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75.bin.gz",
+              "bytes": 16000,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin",
+              "sha256": "1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "strip"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "strip",
+      "operation": "strip_debug",
+      "reason": null,
+      "start_event": 17,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75.bin.gz",
+          "bytes": 16000,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin",
+          "sha256": "1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75"
+        },
+        "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin",
+        "source": {
+          "blob": "blobs/8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4.bin.gz",
+          "bytes": 18456,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/marked.bin",
+          "sha256": "8adf7f822f6a234829c2f9cc2266ddba0a5c5734fb7861c65103364399d355a4"
+        }
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:strip"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin"
+      },
+      "consumed_references": [
+        "action:strip"
+      ],
+      "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+      "end_event": 20,
+      "evidence": [
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75.bin.gz",
+              "bytes": 16000,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin",
+              "sha256": "1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "debug-after"
+        },
+        {
+          "argv": [
+            "/usr/bin/x86_64-linux-gnu-readelf",
+            "-W",
+            "-S",
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin"
+          ],
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-readelf",
+            "sha256": "4a387d80a70e6e97ef940a666fab59d5c38e7cf19ff907192fa983cb8505a7de"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75.bin.gz",
+              "bytes": 16000,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin",
+              "sha256": "1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75.bin.gz",
+              "bytes": 16000,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin",
+              "sha256": "1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0031972949982446153,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "5468657265206172652033312073656374696f6e20686561646572732c207374617274696e67206174206f6666736574203078333663303a0a0a53656374696f6e20486561646572733a0a20205b4e725d204e616d6520202020202020202020202020205479706520202020202020202020202041646472657373202020202020202020204f66662020202053697a65202020455320466c67204c6b20496e6620416c0a20205b20305d202020202020202020202020202020202020204e554c4c20202020202020202020202030303030303030303030303030303030203030303030302030303030303020303020202020202030202020302020300a20205b20315d202e6e6f74652e676e752e70726f7065727479204e4f544520202020202020202020202030303030303030303030303030333530203030303335302030303030323020303020202041202030202020302020380a20205b20325d202e6e6f74652e676e752e6275696c642d6964204e4f544520202020202020202020202030303030303030303030303030333730203030303337302030303030323420303020202041202030202020302020340a20205b20335d202e696e74657270202020202020202020202050524f4742495453202020202020202030303030303030303030303030333934203030303339342030303030316320303020202041202030202020302020310a20205b20345d202e676e752e68617368202020202020202020474e555f48415348202020202020202030303030303030303030303030336230203030303362302030303030323420303020202041202035202020302020380a20205b20355d202e64796e73796d202020202020202020202044594e53594d2020202020202020202030303030303030303030303030336438203030303364382030303030643820313820202041202036202020312020380a20205b20365d202e64796e73747220202020202020202020205354525441422020202020202020202030303030303030303030303030346230203030303462302030303030396420303020202041202030202020302020310a20205b20375d202e676e752e76657273696f6e20202020202056455253594d2020202020202020202030303030303030303030303030353465203030303534652030303030313220303220202041202035202020302020320a20205b20385d202e676e752e76657273696f6e5f72202020205645524e45454420202020202020202030303030303030303030303030353630203030303536302030303030333020303020202041202036202020312020380a20205b20395d202e72656c612e64796e20202020202020202052454c4120202020202020202020202030303030303030303030303030353930203030303539302030303030633020313820202041202035202020302020380a20205b31305d202e72656c612e706c7420202020202020202052454c4120202020202020202020202030303030303030303030303030363530203030303635302030303030343820313820204149202035202032342020380a20205b31315d202e696e69742020202020202020202020202050524f4742495453202020202020202030303030303030303030303031303030203030313030302030303030313720303020204158202030202020302020340a20205b31325d202e706c74202020202020202020202020202050524f4742495453202020202020202030303030303030303030303031303230203030313032302030303030343020313020204158202030202020302031360a20205b31335d202e706c742e676f742020202020202020202050524f4742495453202020202020202030303030303030303030303031303630203030313036302030303030303820303820204158202030202020302020380a20205b31345d202e746578742020202020202020202020202050524f4742495453202020202020202030303030303030303030303031303730203030313037302030303032313920303020204158202030202020302031360a20205b31355d202e66696e692020202020202020202020202050524f4742495453202020202020202030303030303030303030303031323863203030313238632030303030303920303020204158202030202020302020340a20205b31365d202e726f64617461202020202020202020202050524f4742495453202020202020202030303030303030303030303032303030203030323030302030303030313020303020202041202030202020302020340a20205b31375d202e65685f6672616d655f686472202020202050524f4742495453202020202020202030303030303030303030303032303130203030323031302030303030326320303020202041202030202020302020340a20205b31385d202e65685f6672616d6520202020202020202050524f4742495453202020202020202030303030303030303030303032303430203030323034302030303030616320303020202041202030202020302020380a20205b31395d202e6e6f74652e4142492d74616720202020204e4f544520202020202020202020202030303030303030303030303032306563203030323065632030303030323020303020202041202030202020302020340a20205b32305d202e696e69745f617272617920202020202020494e49545f415252415920202020202030303030303030303030303033646430203030326464302030303030303820303820205741202030202020302020380a20205b32315d202e66696e695f61727261792020202020202046494e495f415252415920202020202030303030303030303030303033646438203030326464382030303030303820303820205741202030202020302020380a20205b32325d202e64796e616d69632020202020202020202044594e414d494320202020202020202030303030303030303030303033646530203030326465302030303031653020313020205741202036202020302020380a20205b32335d202e676f74202020202020202020202020202050524f4742495453202020202020202030303030303030303030303033666330203030326663302030303030323820303820205741202030202020302020380a20205b32345d202e676f742e706c742020202020202020202050524f4742495453202020202020202030303030303030303030303033666538203030326665382030303030333020303820205741202030202020302020380a20205b32355d202e646174612020202020202020202020202050524f4742495453202020202020202030303030303030303030303034303138203030333031382030303030313020303020205741202030202020302020380a20205b32365d202e62737320202020202020202020202020204e4f424954532020202020202020202030303030303030303030303034303238203030333032382030303030303820303020205741202030202020302020310a20205b32375d202e636f6d6d656e742020202020202020202050524f4742495453202020202020202030303030303030303030303030303030203030333032382030303030373420303120204d53202030202020302020310a20205b32385d202e73796d746162202020202020202020202053594d5441422020202020202020202030303030303030303030303030303030203030333061302030303033313820313820202020203239202031332020380a20205b32395d202e73747274616220202020202020202020205354525441422020202020202020202030303030303030303030303030303030203030333362382030303031653820303020202020202030202020302020310a20205b33305d202e73687374727461622020202020202020205354525441422020202020202020202030303030303030303030303030303030203030333561302030303031316120303020202020202030202020302020310a4b657920746f20466c6167733a0a20205720287772697465292c20412028616c6c6f63292c2058202865786563757465292c204d20286d65726765292c20532028737472696e6773292c20492028696e666f292c0a20204c20286c696e6b206f72646572292c204f20286578747261204f532070726f63657373696e67207265717569726564292c2047202867726f7570292c20542028544c53292c0a2020432028636f6d70726573736564292c20782028756e6b6e6f776e292c206f20284f53207370656369666963292c204520286578636c756465292c0a20204420286d62696e64292c206c20286c61726765292c2070202870726f636573736f72207370656369666963290a",
+          "step_id": "debug-after"
+        },
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75.bin.gz",
+              "bytes": 16000,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin",
+              "sha256": "1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "debug-after"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "debug-after",
+      "operation": "sections",
+      "reason": null,
+      "start_event": 19,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75.bin.gz",
+          "bytes": 16000,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin",
+          "sha256": "1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75"
+        },
+        "before": {
+          "blob": "blobs/1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75.bin.gz",
+          "bytes": 16000,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin",
+          "sha256": "1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75"
+        },
+        "text": "There are 31 section headers, starting at offset 0x36c0:\n\nSection Headers:\n  [Nr] Name              Type            Address          Off    Size   ES Flg Lk Inf Al\n  [ 0]                   NULL            0000000000000000 000000 000000 00      0   0  0\n  [ 1] .note.gnu.property NOTE            0000000000000350 000350 000020 00   A  0   0  8\n  [ 2] .note.gnu.build-id NOTE            0000000000000370 000370 000024 00   A  0   0  4\n  [ 3] .interp           PROGBITS        0000000000000394 000394 00001c 00   A  0   0  1\n  [ 4] .gnu.hash         GNU_HASH        00000000000003b0 0003b0 000024 00   A  5   0  8\n  [ 5] .dynsym           DYNSYM          00000000000003d8 0003d8 0000d8 18   A  6   1  8\n  [ 6] .dynstr           STRTAB          00000000000004b0 0004b0 00009d 00   A  0   0  1\n  [ 7] .gnu.version      VERSYM          000000000000054e 00054e 000012 02   A  5   0  2\n  [ 8] .gnu.version_r    VERNEED         0000000000000560 000560 000030 00   A  6   1  8\n  [ 9] .rela.dyn         RELA            0000000000000590 000590 0000c0 18   A  5   0  8\n  [10] .rela.plt         RELA            0000000000000650 000650 000048 18  AI  5  24  8\n  [11] .init             PROGBITS        0000000000001000 001000 000017 00  AX  0   0  4\n  [12] .plt              PROGBITS        0000000000001020 001020 000040 10  AX  0   0 16\n  [13] .plt.got          PROGBITS        0000000000001060 001060 000008 08  AX  0   0  8\n  [14] .text             PROGBITS        0000000000001070 001070 000219 00  AX  0   0 16\n  [15] .fini             PROGBITS        000000000000128c 00128c 000009 00  AX  0   0  4\n  [16] .rodata           PROGBITS        0000000000002000 002000 000010 00   A  0   0  4\n  [17] .eh_frame_hdr     PROGBITS        0000000000002010 002010 00002c 00   A  0   0  4\n  [18] .eh_frame         PROGBITS        0000000000002040 002040 0000ac 00   A  0   0  8\n  [19] .note.ABI-tag     NOTE            00000000000020ec 0020ec 000020 00   A  0   0  4\n  [20] .init_array       INIT_ARRAY      0000000000003dd0 002dd0 000008 08  WA  0   0  8\n  [21] .fini_array       FINI_ARRAY      0000000000003dd8 002dd8 000008 08  WA  0   0  8\n  [22] .dynamic          DYNAMIC         0000000000003de0 002de0 0001e0 10  WA  6   0  8\n  [23] .got              PROGBITS        0000000000003fc0 002fc0 000028 08  WA  0   0  8\n  [24] .got.plt          PROGBITS        0000000000003fe8 002fe8 000030 08  WA  0   0  8\n  [25] .data             PROGBITS        0000000000004018 003018 000010 00  WA  0   0  8\n  [26] .bss              NOBITS          0000000000004028 003028 000008 00  WA  0   0  1\n  [27] .comment          PROGBITS        0000000000000000 003028 000074 01  MS  0   0  1\n  [28] .symtab           SYMTAB          0000000000000000 0030a0 000318 18     29  13  8\n  [29] .strtab           STRTAB          0000000000000000 0033b8 0001e8 00      0   0  1\n  [30] .shstrtab         STRTAB          0000000000000000 0035a0 00011a 00      0   0  1\nKey to Flags:\n  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),\n  L (link order), O (extra OS processing required), G (group), T (TLS),\n  C (compressed), x (unknown), o (OS specific), E (exclude),\n  D (mbind), l (large), p (processor specific)\n"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:strip"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin"
+        },
+        "input": {
+          "dependencies": [
+            "input:key"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "1234"
+        },
+        "interface": {
+          "dependencies": [
+            "input:interface"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "atoi"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin",
+        "input": "1234",
+        "interface": "atoi"
+      },
+      "consumed_references": [
+        "action:strip",
+        "input:key",
+        "input:interface"
+      ],
+      "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+      "end_event": 22,
+      "evidence": [
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75.bin.gz",
+              "bytes": 16000,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin",
+              "sha256": "1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "stripped-key"
+        },
+        {
+          "argv": [
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin",
+            "1234"
+          ],
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native",
+          "executable": {
+            "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin",
+            "sha256": "1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75.bin.gz",
+              "bytes": 16000,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin",
+              "sha256": "1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75.bin.gz",
+              "bytes": 16000,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin",
+              "sha256": "1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.001821316996938549,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "686f73743a313233340a41252542",
+          "step_id": "stripped-key"
+        },
+        {
+          "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+          "files": [
+            {
+              "blob": "blobs/1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75.bin.gz",
+              "bytes": 16000,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin",
+              "sha256": "1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "stripped-key"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "stripped-key",
+      "operation": "invoke",
+      "reason": null,
+      "start_event": 21,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75.bin.gz",
+          "bytes": 16000,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin",
+          "sha256": "1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75"
+        },
+        "before": {
+          "blob": "blobs/1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75.bin.gz",
+          "bytes": 16000,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/llwm/cases/pass-1/literal-output-repair/atoi/payload-1/O0/native/stripped.bin",
+          "sha256": "1317720aaefecaf559f0dc1b138b4e31c3a8fa699b2ed00be3063ae10d4eef75"
+        },
+        "returncode": 0,
+        "stderr_hex": "",
+        "stdout_hex": "686f73743a313233340a41252542"
+      }
+    }
+  ],
+  "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+  "inputs": {
+    "interface": "atoi",
+    "key": "1234",
+    "optimization": "O0",
+    "ordinary": "4321",
+    "payload": "A%%B",
+    "payload_hex": "41252542",
+    "variant": "literal-output-repair"
+  },
+  "inputs_sha256": "51d0674c8f4fec9a09b46bc9426de772bf1eae913275ad9d2d7a714904345c38",
+  "obligations": [
+    {
+      "clause": "literal payload output",
+      "consumed_references": [
+        "action:build",
+        "action:unmarked-key",
+        "action:marked-key",
+        "input:payload_hex"
+      ],
+      "failed_gate": null,
+      "gates": [
+        {
+          "dependencies": [
+            "action:build"
+          ],
+          "name": "available:build",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:unmarked-key"
+          ],
+          "name": "available:unmarked-key",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:marked-key"
+          ],
+          "name": "available:marked-key",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        }
+      ],
+      "id": "ER01",
+      "predicate": {
+        "dependencies": [
+          "action:marked-key",
+          "action:unmarked-key",
+          "input:payload_hex"
+        ],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "reason": "predicate-true",
+      "stage": "extraction",
+      "verdict": "SATISFIED"
+    },
+    {
+      "clause": "ordinary host output",
+      "consumed_references": [
+        "action:build",
+        "action:unmarked-ordinary",
+        "action:marked-ordinary"
+      ],
+      "failed_gate": null,
+      "gates": [
+        {
+          "dependencies": [
+            "action:build"
+          ],
+          "name": "available:build",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:unmarked-ordinary"
+          ],
+          "name": "available:unmarked-ordinary",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:marked-ordinary"
+          ],
+          "name": "available:marked-ordinary",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        }
+      ],
+      "id": "ER02",
+      "predicate": {
+        "dependencies": [
+          "action:marked-ordinary",
+          "action:unmarked-ordinary"
+        ],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "reason": "predicate-true",
+      "stage": "host",
+      "verdict": "SATISFIED"
+    },
+    {
+      "clause": "byte-identical artifact-only relocation",
+      "consumed_references": [
+        "action:move",
+        "action:moved-key",
+        "obligation:ER01",
+        "action:marked-key"
+      ],
+      "failed_gate": null,
+      "gates": [
+        {
+          "dependencies": [
+            "action:move"
+          ],
+          "name": "available:move",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:moved-key"
+          ],
+          "name": "available:moved-key",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "obligation:ER01"
+          ],
+          "name": "source-valid",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:move"
+          ],
+          "name": "artifact-only",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:move"
+          ],
+          "name": "same-bytes",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:move",
+            "action:moved-key"
+          ],
+          "name": "same-version-before",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:moved-key"
+          ],
+          "name": "same-version-after",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        }
+      ],
+      "id": "ER03",
+      "predicate": {
+        "dependencies": [
+          "action:moved-key",
+          "action:marked-key"
+        ],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "reason": "predicate-true",
+      "stage": "extraction",
+      "verdict": "SATISFIED"
+    },
+    {
+      "clause": "debug-only removal",
+      "consumed_references": [
+        "action:strip",
+        "action:debug-before",
+        "action:debug-after",
+        "action:stripped-key",
+        "obligation:ER01",
+        "action:marked-key"
+      ],
+      "failed_gate": null,
+      "gates": [
+        {
+          "dependencies": [
+            "action:strip"
+          ],
+          "name": "available:strip",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:debug-before"
+          ],
+          "name": "available:debug-before",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:debug-after"
+          ],
+          "name": "available:debug-after",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:stripped-key"
+          ],
+          "name": "available:stripped-key",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "obligation:ER01"
+          ],
+          "name": "source-valid",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:debug-before"
+          ],
+          "name": "debug-present-before",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:debug-after"
+          ],
+          "name": "debug-absent-after",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:strip",
+            "action:stripped-key"
+          ],
+          "name": "same-version-before",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:stripped-key"
+          ],
+          "name": "same-version-after",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        }
+      ],
+      "id": "ER04",
+      "predicate": {
+        "dependencies": [
+          "action:stripped-key",
+          "action:marked-key"
+        ],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "reason": "predicate-true",
+      "stage": "extraction",
+      "verdict": "SATISFIED"
+    }
+  ],
+  "plan_sha256": "d9a9094bb99f95f276cb7b0391586738387d572f9eb8396569061d01e1763cf9",
+  "schema": "toolchainmark-execution-v1"
+}

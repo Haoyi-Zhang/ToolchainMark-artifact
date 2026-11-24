@@ -1,0 +1,8 @@
+{
+  "acceptance_decisions": 72,
+  "completed_utc": "2026-11-19T12:21:33.270391+00:00",
+  "frozen_source_and_data_unchanged": true,
+  "protocol_sha256": "13af6e8aab916ddea7f0027bc21657d30c0f9c9aa5918f8e06fa96e0173e3bc2",
+  "records": 24,
+  "summary_sha256": "485374c6987649a0a1d0637a645ce618967f3358a2e3cf2a5e0d919dd96bcd3f"
+}

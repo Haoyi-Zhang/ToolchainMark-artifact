@@ -1,0 +1,7 @@
+{
+  "association": "Unmodified native record, including its original scientific stage results.",
+  "base": "llvm-satisfied",
+  "id": "valid-llvm-satisfied",
+  "patches": [],
+  "valid_record": true
+}

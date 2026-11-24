@@ -1,0 +1,285 @@
+{
+  "schema": "sandmark-static-contract-inventory-v1",
+  "date": "2026-11-19",
+  "archive_provenance": "Fixed Qualitas corpus mirror preserving the original SandMark sources and precompiled artifact; not a current maintainer release or historical-execution attestation.",
+  "commit": "5e4642c83d802968cfa47c1a362fbecbd72f5802",
+  "algorithms": [
+    {
+      "algorithm": "Add Initialization",
+      "class": "sandmark.watermark.bogusinitializer.BogusInitializer",
+      "official_cli_listed": true,
+      "source": "src/sandmark/watermark/bogusinitializer/BogusInitializer.java",
+      "source_sha256": "016b9ce3bac1574ffb054ef171b5eb86c9c261d84475baf9c14aaebed90f9057",
+      "source_url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/bogusinitializer/BogusInitializer.java",
+      "document_scope": "Selected embed/recognize/configuration methods and algorithm help were read; no claim to have reviewed all transitive implementation code.",
+      "payload": "String encoded with StringInt, despite the numeric-only impression in the old help example.",
+      "key": "Unused by embed/recognize.",
+      "carrier": "Constant-pool sm$len string and initial BIPUSH/ISTORE instruction pairs in the selected concrete method.",
+      "premise": "A nonabstract, noninterface class with an instruction-bearing method is required.",
+      "debug": "Recovery reads opcodes and constant-pool metadata, not LocalVariableTable.",
+      "locations": [
+        "BogusInitializer.java:109-166",
+        "BogusInitializer.java:198-253"
+      ]
+    },
+    {
+      "algorithm": "Register Types",
+      "class": "sandmark.watermark.hattrick.HatTrick",
+      "official_cli_listed": true,
+      "source": "src/sandmark/watermark/hattrick/HatTrick.java",
+      "source_sha256": "c2b92d3a369a1d545a0147435d785bce9041630fab8e8dc04bf41a58bd01c1e1",
+      "source_url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/hattrick/HatTrick.java",
+      "document_scope": "Selected embed/recognize/configuration methods and algorithm help were read; no claim to have reviewed all transitive implementation code.",
+      "payload": "String encoded with StringInt.",
+      "key": "Unused by embed/recognize.",
+      "carrier": "hat...Trick field marker plus named/typed local-variable-table entries in a selected method.",
+      "premise": "A usable instruction-bearing method with a globally unique method name is selected; the implementation may return without embedding if none is found.",
+      "debug": "Removing LocalVariableTable removes the carrier; preservation must not be required.",
+      "locations": [
+        "HatTrick.java:152-204",
+        "HatTrick.java:294-344"
+      ]
+    },
+    {
+      "algorithm": "Add Method and Field",
+      "class": "sandmark.watermark.addmethfield.AddMethField",
+      "official_cli_listed": true,
+      "source": "src/sandmark/watermark/addmethfield/AddMethField.java",
+      "source_sha256": "7ac9da38524e8c4223e7a144809bed43ad54d128a695d1a41a87b29b4243daea",
+      "source_url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/addmethfield/AddMethField.java",
+      "document_scope": "Selected embed/recognize/configuration methods and algorithm help were read; no claim to have reviewed all transitive implementation code.",
+      "payload": "String split into field-name and method-name suffixes; use the common decimal-ASCII frame to avoid unexamined JVM name restrictions.",
+      "key": "Used to choose an embedding method. Current recognizer does not read the key; old help describes a different recognition procedure.",
+      "carrier": "Method/field name suffixes after dollar signs; recognizer emits their Cartesian-product candidates.",
+      "premise": "A nonabstract/noninterface class and suitable nonconstructor method are required.",
+      "debug": "Names are member names, not debug local-variable metadata; debug stripping does not directly remove this carrier.",
+      "locations": [
+        "AddMethField.java:90-140",
+        "AddMethField.java:274-314"
+      ]
+    },
+    {
+      "algorithm": "String Constant",
+      "class": "sandmark.watermark.constantstring.ConstantString",
+      "official_cli_listed": true,
+      "source": "src/sandmark/watermark/constantstring/ConstantString.java",
+      "source_sha256": "4be4e8175961c07c0256cf7da4d2ab006e82b1012ebccbb5029d7f5f8747e91e",
+      "source_url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/constantstring/ConstantString.java",
+      "document_scope": "Selected embed/recognize/configuration methods and algorithm help were read; no claim to have reviewed all transitive implementation code.",
+      "payload": "Java String, inserted after the configured constant-pool marker prefix.",
+      "key": "Unused.",
+      "carrier": "Constant-pool string sm$watermark=payload (prefix configurable).",
+      "premise": "At least one class.",
+      "debug": "Constant-pool strings are retained by a debug-attribute-only operation.",
+      "locations": [
+        "ConstantString.java:113-125",
+        "ConstantString.java:151-173"
+      ]
+    },
+    {
+      "algorithm": "Davidson/Myhrvold",
+      "class": "sandmark.watermark.dm.DM",
+      "official_cli_listed": true,
+      "source": "src/sandmark/watermark/dm/DM.java",
+      "source_sha256": "1617abcf1be9ab84d3bcbc23046700338f33130cb564d64dcd3db187a1bdd87b",
+      "source_url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/dm/DM.java",
+      "document_scope": "Selected embed/recognize/configuration methods and algorithm help were read; no claim to have reviewed all transitive implementation code.",
+      "payload": "String encoded as a permutation using StringInt and fixed magic delimiters; capacity depends on suitable basic-block count.",
+      "key": "Used by embedding method selection. Recognition uses original/marked code comparison rather than key rejection.",
+      "carrier": "Reordered basic blocks, interpreted against the original unwatermarked application.",
+      "premise": "Enough suitable basic blocks and an accessible original JAR; Original File configuration is read, with a filename-based fallback.",
+      "debug": "Debug-only attributes are not the documented carrier; host and structural observations are still required.",
+      "locations": [
+        "DM.java:89-101",
+        "DM.java:181-201",
+        "DM.java:365-389"
+      ]
+    },
+    {
+      "algorithm": "Add Switch",
+      "class": "sandmark.watermark.bogusswitch.Bogus_Switch",
+      "official_cli_listed": true,
+      "source": "src/sandmark/watermark/bogusswitch/Bogus_Switch.java",
+      "source_sha256": "05781e49e7e6a989a1dadfdf4cb4080b5677769eef5ff5f21f2b1b0f29c0dfaf",
+      "source_url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/bogusswitch/Bogus_Switch.java",
+      "document_scope": "Selected embed/recognize/configuration methods and algorithm help were read; no claim to have reviewed all transitive implementation code.",
+      "payload": "String characters encoded into lookup-switch match values; common frame uses decimal ASCII.",
+      "key": "Unused.",
+      "carrier": "LOOKUPSWITCH match values with positional encoding.",
+      "premise": "At least one method with an instruction list.",
+      "debug": "Switch instruction bytes are retained by debug-only attribute removal.",
+      "locations": [
+        "Bogus_Switch.java:79-129",
+        "Bogus_Switch.java:145-181"
+      ]
+    },
+    {
+      "algorithm": "Stern",
+      "class": "sandmark.watermark.objectwm.ObjectWatermark",
+      "official_cli_listed": true,
+      "source": "src/sandmark/watermark/objectwm/ObjectWatermark.java",
+      "source_sha256": "cff8f2d505831a927ff0a76f0048de81f211023f943454ac19fdfbe91dc83d9e",
+      "source_url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/objectwm/ObjectWatermark.java",
+      "document_scope": "Selected embed/recognize/configuration methods and algorithm help were read; no claim to have reviewed all transitive implementation code.",
+      "payload": "Documented domain: nonnegative decimal integer with no more than eight digits. Common frame uses canonical positive decimal strings.",
+      "key": "Candidate watermark passed to the recognizer, not a secret authentication key.",
+      "carrier": "Change in instruction-group frequency vector relative to original application.",
+      "premise": "Sufficient embedding capacity; original JAR required. API returns WATERMARK FOUND/NOT FOUND-style candidate verification, not a recovered payload. Current source has a suspicious Original File selection branch; preserve source and use the documented canonical original/marked naming for qualification.",
+      "debug": "Instruction frequencies rather than debug attributes are used; any positive assertion is candidate verification.",
+      "locations": [
+        "objectwm/doc/help.html:Restrictions and recognition",
+        "ObjectWatermark.java:186-209",
+        "ObjectWatermark.java:349-446",
+        "ObjectWatermark.java:473-489"
+      ]
+    },
+    {
+      "algorithm": "Qu/Potkonjak",
+      "class": "sandmark.watermark.assignlv.AssignLV",
+      "official_cli_listed": true,
+      "source": "src/sandmark/watermark/assignlv/AssignLV.java",
+      "source_sha256": "f1e5f793da3e98c7d7960b901adb2d0c2720168bbab6ba8010bc248fba4dfe8c",
+      "source_url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/assignlv/AssignLV.java",
+      "document_scope": "Selected embed/recognize/configuration methods and algorithm help were read; no claim to have reviewed all transitive implementation code.",
+      "payload": "The helper encodes eight bits per character and explicitly requires the bit length to be a power of two. Use ASCII strings of lengths 1, 2, and 4 in the common frame, not the earlier six-character smoke-test payload.",
+      "key": "Used to select the same method order in embedding and recognition.",
+      "carrier": "Local-variable register assignments/interference-graph constraints.",
+      "premise": "Sufficient interference-graph capacity; embedding throws when the full requested bit count cannot be embedded.",
+      "debug": "The bytecode local indices carry the watermark; the custom scope must not confuse them with debug local-variable names.",
+      "locations": [
+        "AssignLV.java:94-197",
+        "AssignLV.java:358-453",
+        "ToBinary.java:30-60",
+        "ToBinary.java:63-143",
+        "FromBinary.java:19-43"
+      ]
+    },
+    {
+      "algorithm": "Monden",
+      "class": "sandmark.watermark.mondenwmark.MondenWmark",
+      "official_cli_listed": true,
+      "source": "src/sandmark/watermark/mondenwmark/MondenWmark.java",
+      "source_sha256": "368b6f1f19ebf907ca252d34d8ef61ed4231a7de373a411d01ddec45e153b097",
+      "source_url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/mondenwmark/MondenWmark.java",
+      "document_scope": "Selected embed/recognize/configuration methods and algorithm help were read; no claim to have reviewed all transitive implementation code.",
+      "payload": "String encoded with a prefix and trailing space; recognition trims the recovered string. The common frame excludes leading/trailing whitespace rather than silently claiming byte-exact recovery for all strings.",
+      "key": "String.hashCode-derived opcode mapping is used in embedding and recognition. No collision-free key guarantee follows.",
+      "carrier": "Arithmetic opcodes and numerical operands in a newly inserted dummy method.",
+      "premise": "At least one class and a suitable method to copy/instrument.",
+      "debug": "The dummy method removes its local-variable metadata during embedding; the recognizer reads instruction opcodes/operands.",
+      "locations": [
+        "MondenWmark.java:93-121",
+        "MondenWmark.java:262-285",
+        "MondenWmark.java:398-444"
+      ]
+    },
+    {
+      "algorithm": "Graph Theoretic Watermark",
+      "class": "sandmark.watermark.gtw.GTW",
+      "official_cli_listed": true,
+      "source": "src/sandmark/watermark/gtw/GTW.java",
+      "source_sha256": "418ca57ae61660684ba73d29d34e9e9ddf5ba2bd43c1f49d4f0bbda0a26593b3",
+      "source_url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/gtw/GTW.java",
+      "document_scope": "Selected embed/recognize/configuration methods and algorithm help were read; no claim to have reviewed all transitive implementation code.",
+      "payload": "Decimal BigInteger watermark; planned values positive and canonical.",
+      "key": "Decimal BigInteger key. Default CRT mode also writes/reads a separate serialized key file.",
+      "carrier": "Control-flow graph encodings and keyed basic-block marks.",
+      "premise": "Usable method graphs; configuration and CRT key file must be bound. Do not silently switch the default mode after seeing outcomes.",
+      "debug": "Graph/opcode carrier, but graph synthesis and recognition may have implementation-specific admissibility limits.",
+      "locations": [
+        "GTW.java:13-31",
+        "GTW.java:124-169",
+        "GTW.java:329-348",
+        "GTWRecognizer.java:24-68"
+      ]
+    },
+    {
+      "algorithm": "Static Arboit",
+      "class": "sandmark.watermark.arboit.ArboitAlg",
+      "official_cli_listed": true,
+      "source": "src/sandmark/watermark/arboit/ArboitAlg.java",
+      "source_sha256": "29fba13c42b20f572cb0290df9d6371419c84e8e836d62c2496e632130ed029e",
+      "source_url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/arboit/ArboitAlg.java",
+      "document_scope": "Selected embed/recognize/configuration methods and algorithm help were read; no claim to have reviewed all transitive implementation code.",
+      "payload": "String encoded with StringInt and split into opaque-predicate pieces.",
+      "key": "Used to select embedding branches; recognition reconstructs encoded values from predicates without reading params.key.",
+      "carrier": "Opaque predicates and optionally opaque helper methods.",
+      "premise": "Suitable conditional branches and usable local variables; insufficient capacity is an explicit embedding rejection.",
+      "debug": "Instructions/predicates carry the encoded values; debug-only removal should be treated separately from branch rewriting.",
+      "locations": [
+        "ArboitAlg.java:135-171",
+        "ArboitAlg.java:181-222",
+        "UtilFunctions.java:17-88",
+        "UtilFunctions.java:95-131",
+        "UtilFunctions.java:485-495"
+      ]
+    },
+    {
+      "algorithm": "Steganography",
+      "class": "sandmark.watermark.steganography.Steganography",
+      "official_cli_listed": true,
+      "source": "src/sandmark/watermark/steganography/Steganography.java",
+      "source_sha256": "10f093a25b3aa1fff0fad87118a1230c3a8d77defabb1161a969d18229336615",
+      "source_url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/steganography/Steganography.java",
+      "document_scope": "Selected embed/recognize/configuration methods and algorithm help were read; no claim to have reviewed all transitive implementation code.",
+      "payload": "String converted through the process default charset; formal configuration must pin encoding.",
+      "key": "A non-null string converted with StringInt is required.",
+      "carrier": "PNG image containing encoded payload and a class, plus loader changes.",
+      "premise": "At least one valid PNG with capacity for the selected class and payload, and at least one class. Official ANTLR JAR has no PNG, so this combination is inapplicable and must remain visible in the coverage inventory.",
+      "debug": "Not a Java classfile debug carrier; PNG and loader changes have their own premises.",
+      "locations": [
+        "Steganography.java:31-45",
+        "Steganography.java:109-130",
+        "Steganography.java:274-307",
+        "Steganography.java:381-424"
+      ]
+    },
+    {
+      "algorithm": "Add Expression",
+      "class": "sandmark.watermark.bogusexp.BogusExpression",
+      "official_cli_listed": true,
+      "source": "src/sandmark/watermark/bogusexp/BogusExpression.java",
+      "source_sha256": "44880c9a575d14d641197af50340718fbe0bfcc2bea9984bbfa282b03446fe81",
+      "source_url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/bogusexp/BogusExpression.java",
+      "document_scope": "Selected embed/recognize/configuration methods and algorithm help were read; no claim to have reviewed all transitive implementation code.",
+      "payload": "Signed Java 32-bit integer parsed by Integer.parseInt; invalid strings return after a diagnostic instead of throwing.",
+      "key": "Unused.",
+      "carrier": "Inserted integer expression plus a local-variable-table name beginning sm$.",
+      "premise": "A suitable method and preserved named local-variable metadata are needed for recognition.",
+      "debug": "Removing LocalVariableTable invalidates the recognition premise; do not label resulting loss a failed preservation relation.",
+      "locations": [
+        "BogusExpression.java:140-162",
+        "BogusExpression.java:274-351"
+      ]
+    }
+  ],
+  "count": 13,
+  "source_archive_sha256": "305f24d467f66d54354074c7f91d6297ae381eee33563c0c85c31c0ec69916a4",
+  "sandmark_jar_sha256": "8310d3c80cc8adf13ec46f217fc458462ebe89ae498ce23c1c714ab878fb2ea9",
+  "source_archive_bytes": 35034889,
+  "common_frame_proposal": {
+    "status": "PROPOSAL_NOT_A_FROZEN_FORMAL_PLAN",
+    "algorithms": "all 13 static algorithm names returned by the pinned tool",
+    "hosts": [
+      "official ANTLR 2.7.7 antlr.jar",
+      "official SandMark TTT.jar calibration sample"
+    ],
+    "payloads": [
+      "7",
+      "42",
+      "1234"
+    ],
+    "ordinary_key": "17",
+    "stern_candidate_key": "payload",
+    "recognition_semantics": "candidate membership for extraction iterators; separate boolean candidate verification for Stern",
+    "initial_relations": [
+      "identity recovery or candidate verification",
+      "byte-identical relocation",
+      "entry-byte-identical ZIP repack"
+    ],
+    "debug_transform": "additional per-algorithm carrier scope required; never universal preservation",
+    "denominator_policy": "retain all combinations; distinguish domain exclusion, embedding rejection, tool failure, inconclusive observation, and an executed relation outcome; no post-hoc successful-algorithm subset"
+  },
+  "publication_note": "Do not copy the entire corpus ZIP into a release without a component license inventory: it contains unrelated third-party distributions, including tools.jar. Retain exact acquisition URLs, hashes, original copyright text, and notices for each actually distributed component.",
+  "scope": "Source-derived capability inventory; execution outcomes are recorded separately by the frozen study frame."
+}

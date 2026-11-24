@@ -1,0 +1,119 @@
+{
+  "actions": [
+    {
+      "arguments": {
+        "carrier": {
+          "input": "carrier",
+          "path": []
+        },
+        "implementation": {
+          "input": "implementation",
+          "path": []
+        }
+      },
+      "id": "session",
+      "operation": "session"
+    },
+    {
+      "arguments": {
+        "compiler": {
+          "literal": "clang"
+        },
+        "guarded": {
+          "literal": false
+        },
+        "host": {
+          "input": "host",
+          "path": []
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "label": {
+          "literal": "source"
+        },
+        "marked": {
+          "literal": true
+        },
+        "optimization": {
+          "literal": "Os"
+        },
+        "payload_hex": {
+          "input": "payload1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "source",
+      "operation": "build"
+    }
+  ],
+  "id": "MR11",
+  "inputs": {
+    "carrier": "string",
+    "compiler": "string",
+    "host": "string",
+    "host_inputs": "array",
+    "implementation": "string",
+    "key1": "string",
+    "key2": "string",
+    "optimization": "string",
+    "payload1": "string",
+    "payload2": "string"
+  },
+  "obligations": [
+    {
+      "clause": "MR11",
+      "id": "MR11",
+      "predicate": {
+        "args": [
+          {
+            "args": [
+              {
+                "path": [
+                  "compiler"
+                ],
+                "ref": "source"
+              },
+              {
+                "literal": "clang"
+              }
+            ],
+            "op": "eq"
+          },
+          {
+            "args": [
+              {
+                "path": [
+                  "optimization"
+                ],
+                "ref": "source"
+              },
+              {
+                "literal": "Os"
+              }
+            ],
+            "op": "eq"
+          }
+        ],
+        "op": "and"
+      },
+      "requires": [
+        {
+          "expr": {
+            "available": "source"
+          },
+          "name": "available:source"
+        }
+      ],
+      "stage": "tested-contract"
+    }
+  ],
+  "schema": "toolchainmark-contract-v1"
+}

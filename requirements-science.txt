@@ -1,0 +1,6 @@
+# Compatibility environment exercised by the CTF API checks.
+# The installer does not download these packages; provide them in the base
+# interpreter and use --with-system-science.
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0

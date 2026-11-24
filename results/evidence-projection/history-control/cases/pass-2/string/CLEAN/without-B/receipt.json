@@ -1,0 +1,848 @@
+{
+  "actions": [
+    {
+      "argument_evaluations": {
+        "carrier": {
+          "dependencies": [
+            "input:carrier"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "string"
+        },
+        "implementation": {
+          "dependencies": [
+            "input:implementation"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "CLEAN"
+        }
+      },
+      "arguments": {
+        "carrier": "string",
+        "implementation": "CLEAN"
+      },
+      "consumed_references": [
+        "input:carrier",
+        "input:implementation"
+      ],
+      "context_id": "pass-2/string/CLEAN:without-B",
+      "end_event": 2,
+      "evidence": [],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "session",
+      "operation": "session",
+      "reason": null,
+      "start_event": 1,
+      "status": "OK",
+      "value": {
+        "carrier": "string",
+        "implementation": "CLEAN",
+        "session_id": "pass-2/string/CLEAN:without-B:decoder"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "compiler": {
+          "dependencies": [
+            "input:compiler"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "gcc"
+        },
+        "guarded": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": false
+        },
+        "host": {
+          "dependencies": [
+            "input:host"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "label": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": "first"
+        },
+        "marked": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": true
+        },
+        "optimization": {
+          "dependencies": [
+            "input:optimization"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "O2"
+        },
+        "payload_hex": {
+          "dependencies": [
+            "input:payload1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "4d6f7270682d3031"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-2/string/CLEAN:without-B:decoder"
+        }
+      },
+      "arguments": {
+        "compiler": "gcc",
+        "guarded": false,
+        "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+        "key": "key-alpha",
+        "label": "first",
+        "marked": true,
+        "optimization": "O2",
+        "payload_hex": "4d6f7270682d3031",
+        "session": "pass-2/string/CLEAN:without-B:decoder"
+      },
+      "consumed_references": [
+        "input:compiler",
+        "input:host",
+        "input:key1",
+        "input:optimization",
+        "input:payload1",
+        "action:session"
+      ],
+      "context_id": "pass-2/string/CLEAN:without-B",
+      "end_event": 4,
+      "evidence": [
+        {
+          "context_id": "pass-2/string/CLEAN:without-B",
+          "files": [
+            {
+              "blob": "blobs/bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c.bin.gz",
+              "bytes": 1106,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+              "sha256": "bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "first"
+        },
+        {
+          "argv": [
+            "gcc",
+            "-std=c11",
+            "-fno-ident",
+            "-no-pie",
+            "-O2",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/host.c",
+            "-o",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin"
+          ],
+          "context_id": "pass-2/string/CLEAN:without-B",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-gcc-14",
+            "sha256": "a23ecab8ff08f09ad8c80602c2c5df7f49e09c25905cb8975902e101bf72635f"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/host.c",
+              "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/host.c",
+              "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.04371681900374824,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "first"
+        },
+        {
+          "context_id": "pass-2/string/CLEAN:without-B",
+          "files": [
+            {
+              "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/host.c",
+              "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "first"
+        },
+        {
+          "context_id": "pass-2/string/CLEAN:without-B",
+          "files": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "first"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "first",
+      "operation": "build",
+      "reason": null,
+      "start_event": 3,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin",
+          "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+        },
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin",
+        "command": [
+          "gcc",
+          "-std=c11",
+          "-fno-ident",
+          "-no-pie",
+          "-O2",
+          "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/host.c",
+          "-o",
+          "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin"
+        ],
+        "compiler": "gcc",
+        "optimization": "O2",
+        "returncode": 0,
+        "session_id": "pass-2/string/CLEAN:without-B:decoder",
+        "source": {
+          "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+          "bytes": 1296,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/host.c",
+          "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+        }
+      }
+    },
+    {
+      "argument_evaluations": {
+        "compiler": {
+          "dependencies": [
+            "input:compiler"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "gcc"
+        },
+        "guarded": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": false
+        },
+        "host": {
+          "dependencies": [
+            "input:host"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "label": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": "second"
+        },
+        "marked": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": true
+        },
+        "optimization": {
+          "dependencies": [
+            "input:optimization"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "O2"
+        },
+        "payload_hex": {
+          "dependencies": [
+            "input:payload2"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "5365636f6e642d32"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-2/string/CLEAN:without-B:decoder"
+        }
+      },
+      "arguments": {
+        "compiler": "gcc",
+        "guarded": false,
+        "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+        "key": "key-alpha",
+        "label": "second",
+        "marked": true,
+        "optimization": "O2",
+        "payload_hex": "5365636f6e642d32",
+        "session": "pass-2/string/CLEAN:without-B:decoder"
+      },
+      "consumed_references": [
+        "input:compiler",
+        "input:host",
+        "input:key1",
+        "input:optimization",
+        "input:payload2",
+        "action:session"
+      ],
+      "context_id": "pass-2/string/CLEAN:without-B",
+      "end_event": 6,
+      "evidence": [
+        {
+          "context_id": "pass-2/string/CLEAN:without-B",
+          "files": [
+            {
+              "blob": "blobs/bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c.bin.gz",
+              "bytes": 1106,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+              "sha256": "bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "second"
+        },
+        {
+          "argv": [
+            "gcc",
+            "-std=c11",
+            "-fno-ident",
+            "-no-pie",
+            "-O2",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/second/build-02/host.c",
+            "-o",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/second/build-02/artifact.bin"
+          ],
+          "context_id": "pass-2/string/CLEAN:without-B",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-gcc-14",
+            "sha256": "a23ecab8ff08f09ad8c80602c2c5df7f49e09c25905cb8975902e101bf72635f"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/90b8f28efb18009e9a773c7cf86c779c18913fc67a4469c0b13b5bfdd6172471.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/second/build-02/host.c",
+              "sha256": "90b8f28efb18009e9a773c7cf86c779c18913fc67a4469c0b13b5bfdd6172471"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/90b8f28efb18009e9a773c7cf86c779c18913fc67a4469c0b13b5bfdd6172471.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/second/build-02/host.c",
+              "sha256": "90b8f28efb18009e9a773c7cf86c779c18913fc67a4469c0b13b5bfdd6172471"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.04140262999862898,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "second"
+        },
+        {
+          "context_id": "pass-2/string/CLEAN:without-B",
+          "files": [
+            {
+              "blob": "blobs/90b8f28efb18009e9a773c7cf86c779c18913fc67a4469c0b13b5bfdd6172471.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/second/build-02/host.c",
+              "sha256": "90b8f28efb18009e9a773c7cf86c779c18913fc67a4469c0b13b5bfdd6172471"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "second"
+        },
+        {
+          "context_id": "pass-2/string/CLEAN:without-B",
+          "files": [
+            {
+              "blob": "blobs/fcca0256eb248b8cc56d18428a93d2e7ede540f05af2be62dae873cae766214b.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/second/build-02/artifact.bin",
+              "sha256": "fcca0256eb248b8cc56d18428a93d2e7ede540f05af2be62dae873cae766214b"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "second"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "second",
+      "operation": "build",
+      "reason": null,
+      "start_event": 5,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/fcca0256eb248b8cc56d18428a93d2e7ede540f05af2be62dae873cae766214b.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/second/build-02/artifact.bin",
+          "sha256": "fcca0256eb248b8cc56d18428a93d2e7ede540f05af2be62dae873cae766214b"
+        },
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/second/build-02/artifact.bin",
+        "command": [
+          "gcc",
+          "-std=c11",
+          "-fno-ident",
+          "-no-pie",
+          "-O2",
+          "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/second/build-02/host.c",
+          "-o",
+          "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/second/build-02/artifact.bin"
+        ],
+        "compiler": "gcc",
+        "optimization": "O2",
+        "returncode": 0,
+        "session_id": "pass-2/string/CLEAN:without-B:decoder",
+        "source": {
+          "blob": "blobs/90b8f28efb18009e9a773c7cf86c779c18913fc67a4469c0b13b5bfdd6172471.bin.gz",
+          "bytes": 1296,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/second/build-02/host.c",
+          "sha256": "90b8f28efb18009e9a773c7cf86c779c18913fc67a4469c0b13b5bfdd6172471"
+        }
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:first"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-2/string/CLEAN:without-B:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin",
+        "key": "key-alpha",
+        "session": "pass-2/string/CLEAN:without-B:decoder"
+      },
+      "consumed_references": [
+        "action:first",
+        "input:key1",
+        "action:session"
+      ],
+      "context_id": "pass-2/string/CLEAN:without-B",
+      "end_event": 8,
+      "evidence": [
+        {
+          "context_id": "pass-2/string/CLEAN:without-B",
+          "files": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "before"
+        },
+        {
+          "context_id": "pass-2/string/CLEAN:without-B",
+          "files": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "before"
+        },
+        {
+          "after": {
+            "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+            "bytes": 15928,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin",
+            "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+          },
+          "before": {
+            "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+            "bytes": 15928,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin",
+            "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+          },
+          "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin",
+          "call": "Pipeline.extract",
+          "context_id": "pass-2/string/CLEAN:without-B",
+          "key": "key-alpha",
+          "kind": "python-return",
+          "return_value": {
+            "kind": "payload",
+            "value": "4d6f7270682d3031"
+          },
+          "session_id": "pass-2/string/CLEAN:without-B:decoder",
+          "step_id": "before"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "before",
+      "operation": "extract",
+      "reason": null,
+      "start_event": 7,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin",
+          "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+        },
+        "before": {
+          "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin",
+          "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+        },
+        "key": "key-alpha",
+        "observation": {
+          "kind": "payload",
+          "value": "4d6f7270682d3031"
+        },
+        "session_id": "pass-2/string/CLEAN:without-B:decoder"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:first"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-2/string/CLEAN:without-B:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin",
+        "key": "key-alpha",
+        "session": "pass-2/string/CLEAN:without-B:decoder"
+      },
+      "consumed_references": [
+        "action:first",
+        "input:key1",
+        "action:session"
+      ],
+      "context_id": "pass-2/string/CLEAN:without-B",
+      "end_event": 10,
+      "evidence": [
+        {
+          "context_id": "pass-2/string/CLEAN:without-B",
+          "files": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "after"
+        },
+        {
+          "context_id": "pass-2/string/CLEAN:without-B",
+          "files": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "after"
+        },
+        {
+          "after": {
+            "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+            "bytes": 15928,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin",
+            "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+          },
+          "before": {
+            "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+            "bytes": 15928,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin",
+            "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+          },
+          "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin",
+          "call": "Pipeline.extract",
+          "context_id": "pass-2/string/CLEAN:without-B",
+          "key": "key-alpha",
+          "kind": "python-return",
+          "return_value": {
+            "kind": "payload",
+            "value": "4d6f7270682d3031"
+          },
+          "session_id": "pass-2/string/CLEAN:without-B:decoder",
+          "step_id": "after"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "after",
+      "operation": "extract",
+      "reason": null,
+      "start_event": 9,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin",
+          "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+        },
+        "before": {
+          "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-2/string/CLEAN/without-B/native/first/build-01/artifact.bin",
+          "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+        },
+        "key": "key-alpha",
+        "observation": {
+          "kind": "payload",
+          "value": "4d6f7270682d3031"
+        },
+        "session_id": "pass-2/string/CLEAN:without-B:decoder"
+      }
+    }
+  ],
+  "context_id": "pass-2/string/CLEAN:without-B",
+  "inputs": {
+    "carrier": "string",
+    "compiler": "gcc",
+    "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+    "host_inputs": [
+      0,
+      1,
+      5,
+      13,
+      144,
+      99991
+    ],
+    "implementation": "CLEAN",
+    "key1": "key-alpha",
+    "key2": "key-beta",
+    "optimization": "O2",
+    "payload1": "4d6f7270682d3031",
+    "payload2": "5365636f6e642d32"
+  },
+  "inputs_sha256": "5eb4d420d7c4e9d2cd6d6c72119be81ccbb97121bae8dba06fa4b432fb8d0330",
+  "obligations": [
+    {
+      "clause": "A recovery after the declared history",
+      "consumed_references": [
+        "action:before",
+        "action:after",
+        "input:payload1"
+      ],
+      "failed_gate": null,
+      "gates": [
+        {
+          "dependencies": [
+            "action:before"
+          ],
+          "name": "available:before",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:after"
+          ],
+          "name": "available:after",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:before"
+          ],
+          "name": "first-call-endpoints",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:after"
+          ],
+          "name": "revisit-endpoints",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:before",
+            "action:after"
+          ],
+          "name": "same-version-on-revisit",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:before",
+            "action:after"
+          ],
+          "name": "same-session",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:before",
+            "action:after"
+          ],
+          "name": "same-key",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        }
+      ],
+      "id": "REVISIT",
+      "predicate": {
+        "dependencies": [
+          "action:before",
+          "input:payload1",
+          "action:after"
+        ],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "reason": "predicate-true",
+      "stage": "decoder-revisit",
+      "verdict": "SATISFIED"
+    }
+  ],
+  "plan_sha256": "2cc39d9ad38c82c4b808e2b0e89f161e70b13b75aba452ea9aca19de294e5a91",
+  "schema": "toolchainmark-execution-v1"
+}

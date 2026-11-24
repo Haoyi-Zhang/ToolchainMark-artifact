@@ -1,0 +1,256 @@
+{
+  "actions": [
+    {
+      "arguments": {
+        "carrier": {
+          "input": "carrier",
+          "path": []
+        },
+        "implementation": {
+          "input": "implementation",
+          "path": []
+        }
+      },
+      "id": "session",
+      "operation": "session"
+    },
+    {
+      "arguments": {
+        "compiler": {
+          "input": "compiler",
+          "path": []
+        },
+        "guarded": {
+          "literal": false
+        },
+        "host": {
+          "input": "host",
+          "path": []
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "label": {
+          "literal": "first"
+        },
+        "marked": {
+          "literal": true
+        },
+        "optimization": {
+          "input": "optimization",
+          "path": []
+        },
+        "payload_hex": {
+          "input": "payload1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "first",
+      "operation": "build"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "first"
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "before",
+      "operation": "extract"
+    },
+    {
+      "arguments": {
+        "compiler": {
+          "input": "compiler",
+          "path": []
+        },
+        "guarded": {
+          "literal": false
+        },
+        "host": {
+          "input": "host",
+          "path": []
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "label": {
+          "literal": "second"
+        },
+        "marked": {
+          "literal": true
+        },
+        "optimization": {
+          "input": "optimization",
+          "path": []
+        },
+        "payload_hex": {
+          "input": "payload1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "second",
+      "operation": "build"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "second"
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "after",
+      "operation": "extract"
+    }
+  ],
+  "id": "MR14",
+  "inputs": {
+    "carrier": "string",
+    "compiler": "string",
+    "host": "string",
+    "host_inputs": "array",
+    "implementation": "string",
+    "key1": "string",
+    "key2": "string",
+    "optimization": "string",
+    "payload1": "string",
+    "payload2": "string"
+  },
+  "obligations": [
+    {
+      "clause": "MR14",
+      "id": "MR14",
+      "predicate": {
+        "args": [
+          {
+            "args": [
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "kind"
+                    ],
+                    "ref": "before"
+                  },
+                  {
+                    "literal": "payload"
+                  }
+                ],
+                "op": "eq"
+              },
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "value"
+                    ],
+                    "ref": "before"
+                  },
+                  {
+                    "input": "payload1",
+                    "path": []
+                  }
+                ],
+                "op": "eq"
+              }
+            ],
+            "op": "and"
+          },
+          {
+            "args": [
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "kind"
+                    ],
+                    "ref": "after"
+                  },
+                  {
+                    "literal": "payload"
+                  }
+                ],
+                "op": "eq"
+              },
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "value"
+                    ],
+                    "ref": "after"
+                  },
+                  {
+                    "input": "payload1",
+                    "path": []
+                  }
+                ],
+                "op": "eq"
+              }
+            ],
+            "op": "and"
+          }
+        ],
+        "op": "and"
+      },
+      "requires": [
+        {
+          "expr": {
+            "available": "before"
+          },
+          "name": "available:before"
+        },
+        {
+          "expr": {
+            "available": "after"
+          },
+          "name": "available:after"
+        }
+      ],
+      "stage": "tested-contract"
+    }
+  ],
+  "schema": "toolchainmark-contract-v1"
+}

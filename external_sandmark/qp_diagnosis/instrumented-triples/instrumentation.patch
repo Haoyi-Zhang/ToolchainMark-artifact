@@ -1,0 +1,51 @@
+--- instrumented/AssignLV.java
++++ instrumented-triples/AssignLV.java
+@@ -8,6 +8,7 @@
+    extends sandmark.watermark.StaticWatermarker {
+ 
+    private int bitsEmbedded;
++   private java.util.ArrayList diagnosticTriples = new java.util.ArrayList();
+    private boolean DEBUG = false;
+     
+     
+@@ -181,6 +182,15 @@
+             //do the register allocation on the new interference graph
+             //sandmark.analysis.controlflowgraph.RegisterAllocator.DEBUG = true;
+             new sandmark.analysis.controlflowgraph.RegisterAllocator(ig).allocate(false);
++            if(method.getClassName().equals("antlr.CppCodeGenerator") && method.getName().equals("genInclude")) {
++               for(java.util.Iterator di=diagnosticTriples.iterator();di.hasNext();) {
++                  Object[] dt=(Object[])di.next();
++                  sandmark.analysis.defuse.DUWeb dv=(sandmark.analysis.defuse.DUWeb)dt[0];
++                  sandmark.analysis.defuse.DUWeb dv1=(sandmark.analysis.defuse.DUWeb)dt[1];
++                  sandmark.analysis.defuse.DUWeb dv2=(sandmark.analysis.defuse.DUWeb)dt[2];
++                  System.err.println("QPTRACE EMBED_TRIPLE|"+method.getClassName()+"."+method.getName()+method.getSignature()+"|bit="+dt[3]+"|nodes="+dt[4]+","+dt[5]+","+dt[6]+"|before="+dt[7]+","+dt[8]+","+dt[9]+"|after="+dv.getIndex()+","+dv1.getIndex()+","+dv2.getIndex()+"|edges="+ig.hasEdge(dv,dv1)+","+ig.hasEdge(dv,dv2)+","+ig.hasEdge(dv1,dv2));
++               }
++            }
+             //sandmark.analysis.controlflowgraph.RegisterAllocator.DEBUG = false;
+       
+   
+@@ -206,6 +216,7 @@
+ 
+ private String IGModifier(sandmark.analysis.interference.InterferenceGraph ig,
+ 			  java.util.ArrayList igNodes, String workingWM, String justWM,String methodName){
++    diagnosticTriples.clear();
+     java.util.HashSet hasFakeEdge = new java.util.HashSet();
+    //sort the nodes
+    java.util.Collections.sort(igNodes);
+@@ -293,6 +304,7 @@
+                workingWM += justWM;
+             }
+             char bit = workingWM.charAt(0);
++            diagnosticTriples.add(new Object[]{v,v1,v2,new Character(bit),new Integer(i),new Integer(igNodes.indexOf(v1)),new Integer(igNodes.indexOf(v2)),new Integer(v.getIndex()),new Integer(v1.getIndex()),new Integer(v2.getIndex())});
+             if(bit == '0'){
+ 		hasFakeEdge.add(v);
+ 		hasFakeEdge.add(v1);
+@@ -539,6 +551,8 @@
+                   tripleList.add(v1);
+                   tripleList.add(v2);
+                   
++                  if(methodName.startsWith("antlr.CppCodeGenerator.genInclude"))
++                     System.err.println("QPTRACE EXTRACT_TRIPLE|"+methodName+"|nodes="+i+","+origColoring.indexOf(v1)+","+origColoring.indexOf(v2)+"|canonical="+v.getIndex()+","+v1.getIndex()+","+v2.getIndex()+"|marked="+w+","+w1+","+w2+"|edges="+ig.hasEdge(v,v1)+","+ig.hasEdge(v,v2)+","+ig.hasEdge(v1,v2));
+                   if(w != w1){
+                      wm += "0";
+ 		     ig.addEdge(v,v1);

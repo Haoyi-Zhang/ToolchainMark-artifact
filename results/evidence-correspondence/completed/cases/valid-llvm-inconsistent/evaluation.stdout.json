@@ -1,0 +1,119 @@
+{
+  "layers": [
+    {
+      "accepted": true,
+      "cpu_seconds": 0.0005691670000000093,
+      "detail": {
+        "stage_verdicts": [
+          {
+            "id": "ER01",
+            "verdict": "INCONSISTENT"
+          },
+          {
+            "id": "ER02",
+            "verdict": "SATISFIED"
+          },
+          {
+            "id": "ER03",
+            "verdict": "INADMISSIBLE"
+          },
+          {
+            "id": "ER04",
+            "verdict": "INADMISSIBLE"
+          }
+        ]
+      },
+      "error": null,
+      "tier": "oracle-replay",
+      "wall_seconds": 0.0005710580007871613
+    },
+    {
+      "accepted": true,
+      "cpu_seconds": 0.004012330999999994,
+      "detail": {
+        "action_status_counts": {
+          "OK": 11
+        },
+        "actions": 11,
+        "checks": {
+          "consumed_dependencies": true,
+          "event_order_and_parallel_groups": true,
+          "exact_action_frame": true,
+          "guards_and_arguments": true,
+          "independent_stage_judgments": true,
+          "plan_and_input_hashes": true,
+          "plan_schema_and_reference_order": true
+        },
+        "context_id": "pass-1/upstream/atoi/payload-1/O0",
+        "event_ordinals": 22,
+        "external_context_checked": true,
+        "external_inputs_checked": true,
+        "inputs_sha256": "8ed50857d5e76ff9dc6a8a587cb6588e9cc756eb7c73a6efcb7565201a4b2e89",
+        "obligations": 4,
+        "plan_id": "LLWM-atoi",
+        "plan_sha256": "d9a9094bb99f95f276cb7b0391586738387d572f9eb8396569061d01e1763cf9",
+        "schema": "toolchainmark-receipt-receiver-v1",
+        "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+        "verdict": "PASS",
+        "verdict_counts": {
+          "INADMISSIBLE": 2,
+          "INCONSISTENT": 1,
+          "SATISFIED": 1
+        }
+      },
+      "error": null,
+      "tier": "plan-receiver",
+      "wall_seconds": 0.004010220000054687
+    },
+    {
+      "accepted": true,
+      "cpu_seconds": 0.025734333999999998,
+      "detail": {
+        "native": {
+          "physical_byte_reobservations": 0,
+          "raw_process_output_bindings": 8,
+          "typed_extraction_return_bindings": 0,
+          "unique_blobs": 7
+        },
+        "plan": {
+          "action_status_counts": {
+            "OK": 11
+          },
+          "actions": 11,
+          "checks": {
+            "consumed_dependencies": true,
+            "event_order_and_parallel_groups": true,
+            "exact_action_frame": true,
+            "guards_and_arguments": true,
+            "independent_stage_judgments": true,
+            "plan_and_input_hashes": true,
+            "plan_schema_and_reference_order": true
+          },
+          "context_id": "pass-1/upstream/atoi/payload-1/O0",
+          "event_ordinals": 22,
+          "external_context_checked": true,
+          "external_inputs_checked": true,
+          "inputs_sha256": "8ed50857d5e76ff9dc6a8a587cb6588e9cc756eb7c73a6efcb7565201a4b2e89",
+          "obligations": 4,
+          "plan_id": "LLWM-atoi",
+          "plan_sha256": "d9a9094bb99f95f276cb7b0391586738387d572f9eb8396569061d01e1763cf9",
+          "schema": "toolchainmark-receipt-receiver-v1",
+          "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+          "verdict": "PASS",
+          "verdict_counts": {
+            "INADMISSIBLE": 2,
+            "INCONSISTENT": 1,
+            "SATISFIED": 1
+          }
+        },
+        "retained_file_bindings": 52
+      },
+      "error": null,
+      "tier": "native-binding",
+      "wall_seconds": 0.02586084100039443
+    }
+  ],
+  "native_programs_reexecuted": false,
+  "official_ctf_api_called": false,
+  "schema": "execution-correspondence-layer-results-v1"
+}

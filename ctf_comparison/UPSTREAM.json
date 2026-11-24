@@ -1,0 +1,194 @@
+{
+  "archive_sha256": "61c69ba59f13427943b4238937844122e07fb9e1ade32a58fdaa7fd675b1ed6a",
+  "commit": "7ab4da9fc60ea9ee43b48963a5953fca3840c75d",
+  "files": [
+    {
+      "bytes": 1084,
+      "path": "vendor/LICENSE-CTF.txt",
+      "sha256": "ab4516e57b3cf8df089f182dd4c068633d61931ad1635b85f020313b1e557acc"
+    },
+    {
+      "bytes": 333,
+      "path": "vendor/causal_testing/__init__.py",
+      "sha256": "bfc113a2aec9886ab9d46d740f82806f702f529d8e9c29beb59a8fd453e6c022"
+    },
+    {
+      "bytes": 13581,
+      "path": "vendor/causal_testing/__main__.py",
+      "sha256": "82ad715ff4725cfc5660ab77c208f02a494ce0725400f54c24f60b30bc042fc2"
+    },
+    {
+      "bytes": 12715,
+      "path": "vendor/causal_testing/causal_testing_framework.py",
+      "sha256": "fde5bf645223899576056877202cc2356a14ec1d8a9e2a44ebb8e09ea2bb7cd3"
+    },
+    {
+      "bytes": 0,
+      "path": "vendor/causal_testing/discovery/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5503,
+      "path": "vendor/causal_testing/discovery/abstract_discovery.py",
+      "sha256": "8a3079ce3395944ceb8195199383ce06ab941a498b2225759b00d76c7f8b1952"
+    },
+    {
+      "bytes": 5934,
+      "path": "vendor/causal_testing/discovery/hill_climber_discovery.py",
+      "sha256": "dd953058b0d18621d7bca10cc1241e80fb07e920e6ce347c368a3af01f5c83f5"
+    },
+    {
+      "bytes": 5569,
+      "path": "vendor/causal_testing/discovery/nsga_discovery.py",
+      "sha256": "87777c99d6431ead94521768e834f905ce44d0ac38743804b58844403a0dc4d2"
+    },
+    {
+      "bytes": 0,
+      "path": "vendor/causal_testing/estimation/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3150,
+      "path": "vendor/causal_testing/estimation/abstract_estimator.py",
+      "sha256": "de486c12d67e2e73f38b37a2035b37348b44795e9da94cc19900f8a74b502c0a"
+    },
+    {
+      "bytes": 8857,
+      "path": "vendor/causal_testing/estimation/abstract_regression_estimator.py",
+      "sha256": "8568a2b4a3cd670496a289fc70f70c32bf539d1599553aa25724432a54d26c5b"
+    },
+    {
+      "bytes": 1946,
+      "path": "vendor/causal_testing/estimation/effect_estimate.py",
+      "sha256": "1b266d1d8f1332a48279d8af7ee81b776d5086b15b04283c02ed604acd67d4f8"
+    },
+    {
+      "bytes": 5003,
+      "path": "vendor/causal_testing/estimation/experimental_estimator.py",
+      "sha256": "733a33d1bef8003539bcfbd6fe73451c7cd3917f0a6184c0e32a3761e3db4b7b"
+    },
+    {
+      "bytes": 15406,
+      "path": "vendor/causal_testing/estimation/genetic_programming_regression_fitter.py",
+      "sha256": "0976ea1d26d510a92374fe14082a3e6d9abb616f724d87ea279fff72607c6802"
+    },
+    {
+      "bytes": 3529,
+      "path": "vendor/causal_testing/estimation/instrumental_variable_estimator.py",
+      "sha256": "70e25be78b351c99bc915191d2a1a45d92be09cdd57826dbeb6ee1741ae73c7f"
+    },
+    {
+      "bytes": 17160,
+      "path": "vendor/causal_testing/estimation/ipcw_estimator.py",
+      "sha256": "084e8b4d9b4b727eff959e8623532dd832b250287db51e0128be086d3fffa348"
+    },
+    {
+      "bytes": 7368,
+      "path": "vendor/causal_testing/estimation/linear_regression_estimator.py",
+      "sha256": "c2a765900c5ae6d052363391c97b831da8f6eed980e56d552b8779988fcff272"
+    },
+    {
+      "bytes": 2260,
+      "path": "vendor/causal_testing/estimation/logistic_regression_estimator.py",
+      "sha256": "904d0f0324313fe12c9ea20d4038234fa6596d5649c168f1110d95fc342c644b"
+    },
+    {
+      "bytes": 2373,
+      "path": "vendor/causal_testing/estimation/multinomial_regression_estimator.py",
+      "sha256": "e083868fbbc1d70104f78a616b05d5a23109b783a369d5477274af8956fbdd0c"
+    },
+    {
+      "bytes": 0,
+      "path": "vendor/causal_testing/minimisation/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 10517,
+      "path": "vendor/causal_testing/minimisation/causal_cut.py",
+      "sha256": "92e99e0b36d440dc5c912b04f8127d43904506249ae17e597161717438709e03"
+    },
+    {
+      "bytes": 0,
+      "path": "vendor/causal_testing/specification/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 36474,
+      "path": "vendor/causal_testing/specification/causal_dag.py",
+      "sha256": "3ffffa41f92ab1527d6f4c5398c7b4eb4eb48ec2b2ac998292413abd6eb1b8de"
+    },
+    {
+      "bytes": 0,
+      "path": "vendor/causal_testing/testing/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 7706,
+      "path": "vendor/causal_testing/testing/causal_effect.py",
+      "sha256": "fc49794c384e1f21a4f37c1ce9c81f0425e7eae5e6785736ebfcdd51f3ea9f27"
+    },
+    {
+      "bytes": 8067,
+      "path": "vendor/causal_testing/testing/causal_test_case.py",
+      "sha256": "87bfe6844a53b318086f899d08b9051dc685db0d16c0316c1f9a9034f5a647c9"
+    },
+    {
+      "bytes": 2800,
+      "path": "vendor/causal_testing/testing/causal_test_result.py",
+      "sha256": "fb1a2618d417929d3a4490005b2b66633198d2c107683d53ffed3a92c6d2f107"
+    },
+    {
+      "bytes": 2049,
+      "path": "vendor/causal_testing/testing/dag_adequacy.py",
+      "sha256": "4b48d0c95d3d8093500be2eafee0d135f7a6fd30752392dbc82ca040ea1c21b7"
+    },
+    {
+      "bytes": 1687,
+      "path": "vendor/causal_testing/testing/data_adequacy.py",
+      "sha256": "8956ae835e727e721de97b6633a0c54a2a245c928838cf26d57ccb20e53024ec"
+    },
+    {
+      "bytes": 229,
+      "path": "vendor/causal_testing/testing/effect.py",
+      "sha256": "346eaa8676d3930d54b9a83695fcec23b3cf1361dc8dda15f21ba2873c3e1cc4"
+    },
+    {
+      "bytes": 1685,
+      "path": "vendor/causal_testing/testing/intervention.py",
+      "sha256": "c10fc4e2249639499026940e910858469e93ae9c7bbca53cdb9c53bd8cffc7cc"
+    },
+    {
+      "bytes": 0,
+      "path": "vendor/causal_testing/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2363,
+      "path": "vendor/causal_testing/utils/validation.py",
+      "sha256": "20725ed7ac6603f7f4432ddda6c5e6c251f1b556de20971a3cd087710b102dea"
+    },
+    {
+      "bytes": 5900,
+      "path": "vendor/causal_testing/visualisation/geometry.py",
+      "sha256": "bc87750ef431411495bb0d9f8fdc6846be79e7c6726b2aed512e51543b7ae73a"
+    },
+    {
+      "bytes": 16992,
+      "path": "vendor/causal_testing/visualisation/testing_dashboard.py",
+      "sha256": "e940bc6673355a7c8ae05cd6d03f1637c23c8b4573718974229981ee7360ab83"
+    },
+    {
+      "bytes": 20948,
+      "path": "vendor/causal_testing/visualisation/visualisation_plotter.py",
+      "sha256": "77815b01cb6cf5393d1d667c581f57b3e9e7469939c1d1a7f717da58f8774100"
+    },
+    {
+      "bytes": 4043,
+      "path": "vendor/upstream-pyproject.toml",
+      "sha256": "c1d39ab7e24442495ec23ebb2c00e88ac70f301d602aa77607f71dd33fbe267e"
+    }
+  ],
+  "repository": "https://github.com/CITCOM-project/CausalTestingFramework",
+  "schema": "pinned-ctf-source-v1",
+  "selection": "Unmodified causal_testing package directory, original MIT license and original project metadata; repository tests/docs are not copied."
+}

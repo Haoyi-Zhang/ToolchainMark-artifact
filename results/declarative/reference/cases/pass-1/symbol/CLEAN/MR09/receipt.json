@@ -1,0 +1,1141 @@
+{
+  "actions": [
+    {
+      "argument_evaluations": {
+        "carrier": {
+          "dependencies": [
+            "input:carrier"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "symbol"
+        },
+        "implementation": {
+          "dependencies": [
+            "input:implementation"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "CLEAN"
+        }
+      },
+      "arguments": {
+        "carrier": "symbol",
+        "implementation": "CLEAN"
+      },
+      "consumed_references": [
+        "input:carrier",
+        "input:implementation"
+      ],
+      "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+      "end_event": 2,
+      "evidence": [],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "session",
+      "operation": "session",
+      "reason": null,
+      "start_event": 1,
+      "status": "OK",
+      "value": {
+        "carrier": "symbol",
+        "implementation": "CLEAN",
+        "session_id": "pass-1/symbol/CLEAN/MR09:declaration:decoder"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "compiler": {
+          "dependencies": [
+            "input:compiler"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "gcc"
+        },
+        "guarded": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": true
+        },
+        "host": {
+          "dependencies": [
+            "input:host"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "label": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": "source"
+        },
+        "marked": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": true
+        },
+        "optimization": {
+          "dependencies": [
+            "input:optimization"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "O2"
+        },
+        "payload_hex": {
+          "dependencies": [
+            "input:payload1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "4d6f7270682d3031"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/symbol/CLEAN/MR09:declaration:decoder"
+        }
+      },
+      "arguments": {
+        "compiler": "gcc",
+        "guarded": true,
+        "host": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+        "key": "key-alpha",
+        "label": "source",
+        "marked": true,
+        "optimization": "O2",
+        "payload_hex": "4d6f7270682d3031",
+        "session": "pass-1/symbol/CLEAN/MR09:declaration:decoder"
+      },
+      "consumed_references": [
+        "input:compiler",
+        "input:host",
+        "input:key1",
+        "input:optimization",
+        "input:payload1",
+        "action:session"
+      ],
+      "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+      "end_event": 4,
+      "evidence": [
+        {
+          "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+          "files": [
+            {
+              "blob": "blobs/bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c.bin.gz",
+              "bytes": 1106,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+              "sha256": "bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "source"
+        },
+        {
+          "argv": [
+            "gcc",
+            "-std=c11",
+            "-fno-ident",
+            "-no-pie",
+            "-O2",
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/host.c",
+            "-o",
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin"
+          ],
+          "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+          "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-gcc-14",
+            "sha256": "a23ecab8ff08f09ad8c80602c2c5df7f49e09c25905cb8975902e101bf72635f"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a.bin.gz",
+              "bytes": 1373,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/host.c",
+              "sha256": "45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a.bin.gz",
+              "bytes": 1373,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/host.c",
+              "sha256": "45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.14771577899955446,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "source"
+        },
+        {
+          "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+          "files": [
+            {
+              "blob": "blobs/45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a.bin.gz",
+              "bytes": 1373,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/host.c",
+              "sha256": "45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "source"
+        },
+        {
+          "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+          "files": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "source"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "source",
+      "operation": "build",
+      "reason": null,
+      "start_event": 3,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+          "bytes": 16072,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin",
+          "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+        },
+        "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin",
+        "command": [
+          "gcc",
+          "-std=c11",
+          "-fno-ident",
+          "-no-pie",
+          "-O2",
+          "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/host.c",
+          "-o",
+          "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin"
+        ],
+        "compiler": "gcc",
+        "optimization": "O2",
+        "returncode": 0,
+        "session_id": "pass-1/symbol/CLEAN/MR09:declaration:decoder",
+        "source": {
+          "blob": "blobs/45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a.bin.gz",
+          "bytes": 1373,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/host.c",
+          "sha256": "45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a"
+        }
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:source"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/symbol/CLEAN/MR09:declaration:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin",
+        "key": "key-alpha",
+        "session": "pass-1/symbol/CLEAN/MR09:declaration:decoder"
+      },
+      "consumed_references": [
+        "action:source",
+        "input:key1",
+        "action:session"
+      ],
+      "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+      "end_event": 6,
+      "evidence": [
+        {
+          "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+          "files": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "recover"
+        },
+        {
+          "argv": [
+            "nm",
+            "-g",
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin"
+          ],
+          "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+          "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-nm",
+            "sha256": "ddb55c0685721bf494aa2d090056b8b32a40614ad4464b305896f527d882c3c1"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.006103404997702455,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "303030303030303030303430323030302052205f494f5f737464696e5f757365640a303030303030303030303430343032382044205f5f544d435f454e445f5f0a303030303030303030303430343032382042205f5f6273735f73746172740a303030303030303030303430343031382044205f5f646174615f73746172740a303030303030303030303430343032302044205f5f64736f5f68616e646c650a202020202020202020202020202020202055205f5f6572726e6f5f6c6f636174696f6e40474c4942435f322e322e350a202020202020202020202020202020202077205f5f676d6f6e5f73746172745f5f0a202020202020202020202020202020202055205f5f6c6962635f73746172745f6d61696e40474c4942435f322e33340a303030303030303030303430313134302054205f646c5f72656c6f636174655f7374617469635f7069650a303030303030303030303430343032382044205f65646174610a303030303030303030303430343033302042205f656e640a303030303030303030303430313166382054205f66696e690a303030303030303030303430313030302054205f696e69740a303030303030303030303430313131302054205f73746172740a30303030303030303030343034303138205720646174615f73746172740a303030303030303030303430313036302054206d61696e0a202020202020202020202020202020202055207072696e746640474c4942435f322e322e350a20202020202020202020202020202020205520737472746f756c6c40474c4942435f322e322e350a30303030303030303030343032303061205220776d7265635f333961303064323933353630383361395f303030385f303030305f303030325f34643666373237305f353931656430616566643462663361650a30303030303030303030343032303039205220776d7265635f333961303064323933353630383361395f303030385f303030315f303030325f36383264333033315f353931656430616566643462663361650a",
+          "step_id": "recover"
+        },
+        {
+          "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+          "files": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "recover"
+        },
+        {
+          "after": {
+            "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+            "bytes": 16072,
+            "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin",
+            "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+          },
+          "before": {
+            "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+            "bytes": 16072,
+            "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin",
+            "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+          },
+          "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin",
+          "call": "Pipeline.extract",
+          "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+          "key": "key-alpha",
+          "kind": "python-return",
+          "return_value": {
+            "kind": "payload",
+            "value": "4d6f7270682d3031"
+          },
+          "session_id": "pass-1/symbol/CLEAN/MR09:declaration:decoder",
+          "step_id": "recover"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "recover",
+      "operation": "extract",
+      "reason": null,
+      "start_event": 5,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+          "bytes": 16072,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin",
+          "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+        },
+        "before": {
+          "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+          "bytes": 16072,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin",
+          "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+        },
+        "key": "key-alpha",
+        "observation": {
+          "kind": "payload",
+          "value": "4d6f7270682d3031"
+        },
+        "session_id": "pass-1/symbol/CLEAN/MR09:declaration:decoder"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:source"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/symbol/CLEAN/MR09:declaration:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin",
+        "key": "key-alpha",
+        "session": "pass-1/symbol/CLEAN/MR09:declaration:decoder"
+      },
+      "consumed_references": [
+        "action:source",
+        "input:key1",
+        "action:session"
+      ],
+      "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+      "end_event": 8,
+      "evidence": [
+        {
+          "argv": [
+            "nm",
+            "-g",
+            "/tmp/tosem02-carrier-4eyevg35/artifact.bin"
+          ],
+          "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+          "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-nm",
+            "sha256": "ddb55c0685721bf494aa2d090056b8b32a40614ad4464b305896f527d882c3c1"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/tmp/tosem02-carrier-4eyevg35/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/tmp/tosem02-carrier-4eyevg35/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.01908761499726097,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "303030303030303030303430323030302052205f494f5f737464696e5f757365640a303030303030303030303430343032382044205f5f544d435f454e445f5f0a303030303030303030303430343032382042205f5f6273735f73746172740a303030303030303030303430343031382044205f5f646174615f73746172740a303030303030303030303430343032302044205f5f64736f5f68616e646c650a202020202020202020202020202020202055205f5f6572726e6f5f6c6f636174696f6e40474c4942435f322e322e350a202020202020202020202020202020202077205f5f676d6f6e5f73746172745f5f0a202020202020202020202020202020202055205f5f6c6962635f73746172745f6d61696e40474c4942435f322e33340a303030303030303030303430313134302054205f646c5f72656c6f636174655f7374617469635f7069650a303030303030303030303430343032382044205f65646174610a303030303030303030303430343033302042205f656e640a303030303030303030303430313166382054205f66696e690a303030303030303030303430313030302054205f696e69740a303030303030303030303430313131302054205f73746172740a30303030303030303030343034303138205720646174615f73746172740a303030303030303030303430313036302054206d61696e0a202020202020202020202020202020202055207072696e746640474c4942435f322e322e350a20202020202020202020202020202020205520737472746f756c6c40474c4942435f322e322e350a30303030303030303030343032303061205220776d7265635f333961303064323933353630383361395f303030385f303030305f303030325f34643666373237305f353931656430616566643462663361650a30303030303030303030343032303039205220776d7265635f333961303064323933353630383361395f303030385f303030315f303030325f36383264333033315f353931656430616566643462663361650a",
+          "step_id": "source-view"
+        },
+        {
+          "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+          "files": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "source-view"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "source-view",
+      "operation": "inspect",
+      "reason": null,
+      "start_event": 7,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+          "bytes": 16072,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin",
+          "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+        },
+        "key": "key-alpha",
+        "observation": {
+          "kind": "payload",
+          "value": "4d6f7270682d3031"
+        },
+        "observer": "shared-format-clean-parser"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:source"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/symbol/CLEAN/MR09:declaration:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin",
+        "session": "pass-1/symbol/CLEAN/MR09:declaration:decoder"
+      },
+      "consumed_references": [
+        "action:recover",
+        "input:payload1",
+        "action:source-view",
+        "action:source",
+        "action:session"
+      ],
+      "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+      "end_event": 10,
+      "evidence": [
+        {
+          "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+          "files": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/source/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "intervention"
+        },
+        {
+          "argv": [
+            "strip",
+            "-s",
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin"
+          ],
+          "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+          "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-strip",
+            "sha256": "a97ae77cd5d88799edc0edb31caa2fc81d32eecaa9619d329bed890f6fd06e3a"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+              "bytes": 14416,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin",
+              "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0032484540024597663,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "intervention"
+        },
+        {
+          "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+          "files": [
+            {
+              "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+              "bytes": 14416,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin",
+              "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "intervention"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [
+          "action:recover",
+          "input:payload1",
+          "action:source-view"
+        ],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "intervention",
+      "operation": "remove",
+      "reason": null,
+      "start_event": 9,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+          "bytes": 14416,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin",
+          "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+        },
+        "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:intervention"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/symbol/CLEAN/MR09:declaration:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin",
+        "key": "key-alpha",
+        "session": "pass-1/symbol/CLEAN/MR09:declaration:decoder"
+      },
+      "consumed_references": [
+        "action:intervention",
+        "input:key1",
+        "action:session"
+      ],
+      "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+      "end_event": 12,
+      "evidence": [
+        {
+          "argv": [
+            "nm",
+            "-g",
+            "/tmp/tosem02-carrier-e9wdjfot/removed.bin"
+          ],
+          "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+          "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-nm",
+            "sha256": "ddb55c0685721bf494aa2d090056b8b32a40614ad4464b305896f527d882c3c1"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+              "bytes": 14416,
+              "path": "/tmp/tosem02-carrier-e9wdjfot/removed.bin",
+              "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+              "bytes": 14416,
+              "path": "/tmp/tosem02-carrier-e9wdjfot/removed.bin",
+              "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.006974074000027031,
+          "status": "COMPLETED",
+          "stderr_hex": "6e6d3a202f746d702f746f73656d30322d636172726965722d653977646a666f742f72656d6f7665642e62696e3a206e6f2073796d626f6c730a",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "followup-view"
+        },
+        {
+          "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+          "files": [
+            {
+              "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+              "bytes": 14416,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin",
+              "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "followup-view"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "followup-view",
+      "operation": "inspect",
+      "reason": null,
+      "start_event": 11,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+          "bytes": 14416,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin",
+          "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+        },
+        "key": "key-alpha",
+        "observation": {
+          "kind": "rejection",
+          "value": "absent"
+        },
+        "observer": "shared-format-clean-parser"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:intervention"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/symbol/CLEAN/MR09:declaration:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin",
+        "key": "key-alpha",
+        "session": "pass-1/symbol/CLEAN/MR09:declaration:decoder"
+      },
+      "consumed_references": [
+        "action:intervention",
+        "input:key1",
+        "action:session"
+      ],
+      "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+      "end_event": 14,
+      "evidence": [
+        {
+          "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+          "files": [
+            {
+              "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+              "bytes": 14416,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin",
+              "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "followup-value"
+        },
+        {
+          "argv": [
+            "nm",
+            "-g",
+            "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin"
+          ],
+          "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+          "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-nm",
+            "sha256": "ddb55c0685721bf494aa2d090056b8b32a40614ad4464b305896f527d882c3c1"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+              "bytes": 14416,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin",
+              "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+              "bytes": 14416,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin",
+              "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0066909289998875465,
+          "status": "COMPLETED",
+          "stderr_hex": "6e6d3a202f776f726b73706163652f736372617463682f3032326630343334323436312f776f726b2d76362f546f6f6c636861696e4d61726b5f544f53454d2f61727469666163742f726573756c74732f6465636c617261746976652d76362f7265666572656e63652f63617365732f706173732d312f73796d626f6c2f434c45414e2f4d5230392f6465636c617265642f696e74657276656e74696f6e2f72656d6f7665642e62696e3a206e6f2073796d626f6c730a",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "followup-value"
+        },
+        {
+          "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+          "files": [
+            {
+              "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+              "bytes": 14416,
+              "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin",
+              "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "followup-value"
+        },
+        {
+          "after": {
+            "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+            "bytes": 14416,
+            "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin",
+            "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+          },
+          "before": {
+            "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+            "bytes": 14416,
+            "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin",
+            "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+          },
+          "binary": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin",
+          "call": "Pipeline.extract",
+          "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+          "key": "key-alpha",
+          "kind": "python-return",
+          "return_value": {
+            "kind": "rejection",
+            "value": "absent"
+          },
+          "session_id": "pass-1/symbol/CLEAN/MR09:declaration:decoder",
+          "step_id": "followup-value"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "followup-value",
+      "operation": "extract",
+      "reason": null,
+      "start_event": 13,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+          "bytes": 14416,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin",
+          "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+        },
+        "before": {
+          "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+          "bytes": 14416,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/reference/cases/pass-1/symbol/CLEAN/MR09/declared/intervention/removed.bin",
+          "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+        },
+        "key": "key-alpha",
+        "observation": {
+          "kind": "rejection",
+          "value": "absent"
+        },
+        "session_id": "pass-1/symbol/CLEAN/MR09:declaration:decoder"
+      }
+    }
+  ],
+  "context_id": "pass-1/symbol/CLEAN/MR09:declaration",
+  "inputs": {
+    "carrier": "symbol",
+    "compiler": "gcc",
+    "host": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+    "host_inputs": [
+      0,
+      1,
+      5,
+      13,
+      144,
+      99991
+    ],
+    "implementation": "CLEAN",
+    "key1": "key-alpha",
+    "key2": "key-beta",
+    "optimization": "O2",
+    "payload1": "4d6f7270682d3031",
+    "payload2": "5365636f6e642d32"
+  },
+  "inputs_sha256": "03def91ba8746061eb2612f74c59443941db9fc7dc041ac8a826b47b636ac1f7",
+  "obligations": [
+    {
+      "clause": "literal recovery and physical source",
+      "consumed_references": [
+        "action:recover",
+        "action:source-view",
+        "input:payload1"
+      ],
+      "failed_gate": null,
+      "gates": [
+        {
+          "dependencies": [
+            "action:recover"
+          ],
+          "name": "available:recover",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:source-view"
+          ],
+          "name": "available:source-view",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        }
+      ],
+      "id": "SOURCE",
+      "predicate": {
+        "dependencies": [
+          "action:recover",
+          "input:payload1",
+          "action:source-view"
+        ],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "reason": "predicate-true",
+      "stage": "embedding",
+      "verdict": "SATISFIED"
+    },
+    {
+      "clause": "declared intervention postcondition",
+      "consumed_references": [
+        "action:intervention",
+        "action:followup-view",
+        "obligation:SOURCE",
+        "input:carrier"
+      ],
+      "failed_gate": null,
+      "gates": [
+        {
+          "dependencies": [
+            "action:intervention"
+          ],
+          "name": "available:intervention",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:followup-view"
+          ],
+          "name": "available:followup-view",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "obligation:SOURCE"
+          ],
+          "name": "source-valid",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        }
+      ],
+      "id": "TRANSFORM",
+      "predicate": {
+        "dependencies": [
+          "action:followup-view",
+          "input:carrier"
+        ],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "reason": "predicate-true",
+      "stage": "transformation",
+      "verdict": "SATISFIED"
+    },
+    {
+      "clause": "MR09",
+      "consumed_references": [
+        "action:followup-value",
+        "obligation:SOURCE",
+        "obligation:TRANSFORM",
+        "action:followup-view"
+      ],
+      "failed_gate": null,
+      "gates": [
+        {
+          "dependencies": [
+            "action:followup-value"
+          ],
+          "name": "available:followup-value",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "obligation:SOURCE"
+          ],
+          "name": "source-valid",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "obligation:TRANSFORM"
+          ],
+          "name": "intervention-established",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:followup-view",
+            "action:followup-value"
+          ],
+          "name": "version-current",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:followup-value"
+          ],
+          "name": "version-after",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        }
+      ],
+      "id": "MR09",
+      "predicate": {
+        "dependencies": [
+          "action:followup-value",
+          "action:followup-view"
+        ],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "reason": "predicate-true",
+      "stage": "tested-contract",
+      "verdict": "SATISFIED"
+    }
+  ],
+  "plan_sha256": "f466762aa9f44646a4428e9180cb2fced64561f9d9da90144b38f1cca49183f0",
+  "schema": "toolchainmark-execution-v1"
+}

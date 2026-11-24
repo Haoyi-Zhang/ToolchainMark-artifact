@@ -1,0 +1,6 @@
+# Runtime exercised by the pinned CausalTestCase/Estimator/CausalEffect modules.
+# The complete distribution's optional estimators/dashboard are not exercised.
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0
+lifelines==0.30.0

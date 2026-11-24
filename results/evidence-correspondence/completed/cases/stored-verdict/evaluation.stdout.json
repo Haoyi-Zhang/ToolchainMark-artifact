@@ -1,0 +1,40 @@
+{
+  "layers": [
+    {
+      "accepted": false,
+      "cpu_seconds": 0.0003077479999999966,
+      "detail": null,
+      "error": {
+        "message": "stored stage labels differ from independent observation replay",
+        "type": "ValueError"
+      },
+      "tier": "oracle-replay",
+      "wall_seconds": 0.0003100460016867146
+    },
+    {
+      "accepted": false,
+      "cpu_seconds": 0.0017847760000000018,
+      "detail": null,
+      "error": {
+        "message": "MR02 obligation: recorded value differs from independent evaluation",
+        "type": "InvalidRecord"
+      },
+      "tier": "plan-receiver",
+      "wall_seconds": 0.0017836420011008158
+    },
+    {
+      "accepted": false,
+      "cpu_seconds": 0.0012700300000000053,
+      "detail": null,
+      "error": {
+        "message": "MR02 obligation: recorded value differs from independent evaluation",
+        "type": "InvalidRecord"
+      },
+      "tier": "native-binding",
+      "wall_seconds": 0.0012687569978879765
+    }
+  ],
+  "native_programs_reexecuted": false,
+  "official_ctf_api_called": false,
+  "schema": "execution-correspondence-layer-results-v1"
+}

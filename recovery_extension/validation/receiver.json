@@ -1,0 +1,67 @@
+{
+  "activity_event_counts": {
+    "first": {
+      "changed_byte_target_reads": 0,
+      "compiler_invocation_attempts": 324,
+      "extraction_calls": 810,
+      "fault_branch_entries": 162,
+      "invalid_key_cache_hits": 54,
+      "poisoned_session_reads": 108,
+      "redirected_artifact_reads": 0,
+      "subprocess_invocation_attempts": 1026,
+      "successful_build_returns": 324,
+      "typed_extraction_rejections": 324
+    },
+    "second": {
+      "changed_byte_target_reads": 0,
+      "compiler_invocation_attempts": 324,
+      "extraction_calls": 810,
+      "fault_branch_entries": 162,
+      "invalid_key_cache_hits": 54,
+      "poisoned_session_reads": 108,
+      "redirected_artifact_reads": 0,
+      "subprocess_invocation_attempts": 1026,
+      "successful_build_returns": 324,
+      "typed_extraction_rejections": 324
+    }
+  },
+  "byte_and_call_checks": {
+    "modeled_extraction_calls_checked": 1620,
+    "records_checked": 540,
+    "strict_byte_observations": 3024,
+    "strict_decoder_returns_checked": 1188
+  },
+  "native_cases": 540,
+  "observed_strict_rejection_kinds": {
+    "wrong-key": 432
+  },
+  "observed_tested_rejection_kinds": {
+    "wrong-key": 648
+  },
+  "protocol": "recovery-obligation-v1",
+  "rerun": {
+    "differences": 0,
+    "examples": [],
+    "field_comparisons": 3240,
+    "fields": [
+      "host",
+      "host_sha256",
+      "carrier",
+      "cohort",
+      "variant",
+      "relation_id",
+      "verdict",
+      "reason",
+      "contract_json",
+      "request_json",
+      "admission_json",
+      "evidence_json"
+    ],
+    "rows": 270
+  },
+  "scope": "Reconstructed source-carrier observations, call order, policy and endpoint premises; frozen trigger-state replay and all five complete cohort denominators. No cohort-label verdict oracle. No native activity, continuous file monitoring, or external execution attestation.",
+  "source_files": 54,
+  "unique_retained_blobs": 198,
+  "unique_strict_byte_views": 162,
+  "verdict": "PASS"
+}

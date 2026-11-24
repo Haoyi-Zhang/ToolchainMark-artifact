@@ -1,0 +1,155 @@
+{
+  "bfs": [
+    {
+      "name": "empty",
+      "planned_extract_calls": 1,
+      "word": []
+    },
+    {
+      "name": "Ap",
+      "planned_extract_calls": 2,
+      "word": [
+        "A+"
+      ]
+    },
+    {
+      "name": "Am",
+      "planned_extract_calls": 2,
+      "word": [
+        "A-"
+      ]
+    },
+    {
+      "name": "Bp",
+      "planned_extract_calls": 2,
+      "word": [
+        "B+"
+      ]
+    },
+    {
+      "name": "Ap_Ap",
+      "planned_extract_calls": 3,
+      "word": [
+        "A+",
+        "A+"
+      ]
+    },
+    {
+      "name": "Ap_Am",
+      "planned_extract_calls": 3,
+      "word": [
+        "A+",
+        "A-"
+      ]
+    },
+    {
+      "name": "Ap_Bp",
+      "planned_extract_calls": 3,
+      "word": [
+        "A+",
+        "B+"
+      ]
+    },
+    {
+      "name": "Am_Ap",
+      "planned_extract_calls": 3,
+      "word": [
+        "A-",
+        "A+"
+      ]
+    },
+    {
+      "name": "Am_Am",
+      "planned_extract_calls": 3,
+      "word": [
+        "A-",
+        "A-"
+      ]
+    },
+    {
+      "name": "Am_Bp",
+      "planned_extract_calls": 3,
+      "word": [
+        "A-",
+        "B+"
+      ]
+    }
+  ],
+  "catalog": [
+    {
+      "name": "MR01",
+      "planned_extract_calls": 1,
+      "relation": "MR01"
+    },
+    {
+      "name": "MR02",
+      "planned_extract_calls": 0,
+      "relation": "MR02"
+    },
+    {
+      "name": "MR03",
+      "planned_extract_calls": 1,
+      "relation": "MR03"
+    },
+    {
+      "name": "MR04",
+      "planned_extract_calls": 2,
+      "relation": "MR04"
+    },
+    {
+      "name": "MR05",
+      "planned_extract_calls": 2,
+      "relation": "MR05"
+    },
+    {
+      "name": "MR06",
+      "planned_extract_calls": 2,
+      "relation": "MR06"
+    },
+    {
+      "name": "MR07",
+      "planned_extract_calls": 3,
+      "relation": "MR07"
+    },
+    {
+      "name": "MR08",
+      "planned_extract_calls": 2,
+      "relation": "MR08"
+    },
+    {
+      "name": "MR09",
+      "planned_extract_calls": 2,
+      "relation": "MR09"
+    },
+    {
+      "name": "MR10",
+      "planned_extract_calls": 2,
+      "relation": "MR10"
+    },
+    {
+      "name": "MR11",
+      "planned_extract_calls": 0,
+      "relation": "MR11"
+    },
+    {
+      "name": "MR12",
+      "planned_extract_calls": 2,
+      "relation": "MR12"
+    },
+    {
+      "name": "MR13",
+      "planned_extract_calls": 3,
+      "relation": "MR13"
+    },
+    {
+      "name": "MR14",
+      "planned_extract_calls": 2,
+      "relation": "MR14"
+    },
+    {
+      "name": "SR01",
+      "planned_extract_calls": 3,
+      "relation": "SR01"
+    }
+  ]
+}

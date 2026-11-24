@@ -1,0 +1,17 @@
+{
+  "expected_context_id": "pass-1/upstream/atoi/payload-1/O0",
+  "expected_inputs": {
+    "interface": "atoi",
+    "key": "1234",
+    "optimization": "O0",
+    "ordinary": "4321",
+    "payload": "A%%B",
+    "payload_hex": "41252542",
+    "variant": "upstream"
+  },
+  "plan_source": "results/declarative-v6/llwm/cases/pass-1/upstream/atoi/payload-1/O0/plan.json",
+  "receipt_source": "results/declarative-v6/llwm/cases/pass-1/upstream/atoi/payload-1/O0/receipt.json",
+  "source_case": "pass-1/upstream/atoi/payload-1/O0",
+  "store": "results/declarative-v6/llwm",
+  "study": "llwm"
+}

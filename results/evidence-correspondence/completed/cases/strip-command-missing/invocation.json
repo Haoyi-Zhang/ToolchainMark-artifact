@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-B",
+    "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-correspondence/completed/source-snapshot/evidence_correspondence/evaluate.py",
+    "--case",
+    "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-correspondence/completed/cases/strip-command-missing",
+    "--artifact",
+    "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact"
+  ],
+  "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-correspondence/completed",
+  "exit": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "d08b83e1a1787cfa0ccbd4b0ebf2f742db1ca3555a11dd5e77588b60e15acda2",
+  "wall_seconds": 0.11952126899996074
+}

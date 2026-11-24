@@ -1,0 +1,13 @@
+{
+  "arm_order": "with-B first in pass 1; without-B first in pass 2",
+  "comparison": "Direct byte equality of separately built A and B artifacts; final typed observations and REVISIT judgments",
+  "conditions": "CLEAN and pre-existing controlled cross-object behavior M23; three ELF carriers; two passes",
+  "constant_operations": "Both arms create a new decoder session, build A and B, and extract A before and after the intervention position.",
+  "native_executions": 24,
+  "pairs": 12,
+  "question": "Can deleting an action with no value-reference edge change a later stage judgment?",
+  "scope": "Controlled native history counterexample; not an external defect discovery or a modification of the existing MR13 dataset",
+  "single_changed_operation": "The with-B arm invokes extraction on B between the two A calls.",
+  "stage": "REVISIT requires stable A versions, equal request context, and the declared A payload on both A calls. It does not inspect the B call return.",
+  "unit": "One fresh pair with and without the intervening B extraction"
+}

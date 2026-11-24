@@ -1,0 +1,1047 @@
+{
+  "actions": [
+    {
+      "argument_evaluations": {
+        "carrier": {
+          "dependencies": [
+            "input:carrier"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "symbol"
+        },
+        "implementation": {
+          "dependencies": [
+            "input:implementation"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "M23"
+        }
+      },
+      "arguments": {
+        "carrier": "symbol",
+        "implementation": "M23"
+      },
+      "consumed_references": [
+        "input:carrier",
+        "input:implementation"
+      ],
+      "context_id": "pass-1/symbol/M23:with-B",
+      "end_event": 2,
+      "evidence": [],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "session",
+      "operation": "session",
+      "reason": null,
+      "start_event": 1,
+      "status": "OK",
+      "value": {
+        "carrier": "symbol",
+        "implementation": "M23",
+        "session_id": "pass-1/symbol/M23:with-B:decoder"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "compiler": {
+          "dependencies": [
+            "input:compiler"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "gcc"
+        },
+        "guarded": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": false
+        },
+        "host": {
+          "dependencies": [
+            "input:host"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "label": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": "first"
+        },
+        "marked": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": true
+        },
+        "optimization": {
+          "dependencies": [
+            "input:optimization"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "O2"
+        },
+        "payload_hex": {
+          "dependencies": [
+            "input:payload1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "4d6f7270682d3031"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/symbol/M23:with-B:decoder"
+        }
+      },
+      "arguments": {
+        "compiler": "gcc",
+        "guarded": false,
+        "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+        "key": "key-alpha",
+        "label": "first",
+        "marked": true,
+        "optimization": "O2",
+        "payload_hex": "4d6f7270682d3031",
+        "session": "pass-1/symbol/M23:with-B:decoder"
+      },
+      "consumed_references": [
+        "input:compiler",
+        "input:host",
+        "input:key1",
+        "input:optimization",
+        "input:payload1",
+        "action:session"
+      ],
+      "context_id": "pass-1/symbol/M23:with-B",
+      "end_event": 4,
+      "evidence": [
+        {
+          "context_id": "pass-1/symbol/M23:with-B",
+          "files": [
+            {
+              "blob": "blobs/bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c.bin.gz",
+              "bytes": 1106,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+              "sha256": "bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "first"
+        },
+        {
+          "argv": [
+            "gcc",
+            "-std=c11",
+            "-fno-ident",
+            "-no-pie",
+            "-O2",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/host.c",
+            "-o",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin"
+          ],
+          "context_id": "pass-1/symbol/M23:with-B",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-gcc-14",
+            "sha256": "a23ecab8ff08f09ad8c80602c2c5df7f49e09c25905cb8975902e101bf72635f"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a.bin.gz",
+              "bytes": 1373,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/host.c",
+              "sha256": "45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a.bin.gz",
+              "bytes": 1373,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/host.c",
+              "sha256": "45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0679999019994284,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "first"
+        },
+        {
+          "context_id": "pass-1/symbol/M23:with-B",
+          "files": [
+            {
+              "blob": "blobs/45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a.bin.gz",
+              "bytes": 1373,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/host.c",
+              "sha256": "45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "first"
+        },
+        {
+          "context_id": "pass-1/symbol/M23:with-B",
+          "files": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "first"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "first",
+      "operation": "build",
+      "reason": null,
+      "start_event": 3,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+          "bytes": 16072,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+          "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+        },
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+        "command": [
+          "gcc",
+          "-std=c11",
+          "-fno-ident",
+          "-no-pie",
+          "-O2",
+          "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/host.c",
+          "-o",
+          "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin"
+        ],
+        "compiler": "gcc",
+        "optimization": "O2",
+        "returncode": 0,
+        "session_id": "pass-1/symbol/M23:with-B:decoder",
+        "source": {
+          "blob": "blobs/45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a.bin.gz",
+          "bytes": 1373,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/host.c",
+          "sha256": "45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a"
+        }
+      }
+    },
+    {
+      "argument_evaluations": {
+        "compiler": {
+          "dependencies": [
+            "input:compiler"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "gcc"
+        },
+        "guarded": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": false
+        },
+        "host": {
+          "dependencies": [
+            "input:host"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "label": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": "second"
+        },
+        "marked": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": true
+        },
+        "optimization": {
+          "dependencies": [
+            "input:optimization"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "O2"
+        },
+        "payload_hex": {
+          "dependencies": [
+            "input:payload2"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "5365636f6e642d32"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/symbol/M23:with-B:decoder"
+        }
+      },
+      "arguments": {
+        "compiler": "gcc",
+        "guarded": false,
+        "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+        "key": "key-alpha",
+        "label": "second",
+        "marked": true,
+        "optimization": "O2",
+        "payload_hex": "5365636f6e642d32",
+        "session": "pass-1/symbol/M23:with-B:decoder"
+      },
+      "consumed_references": [
+        "input:compiler",
+        "input:host",
+        "input:key1",
+        "input:optimization",
+        "input:payload2",
+        "action:session"
+      ],
+      "context_id": "pass-1/symbol/M23:with-B",
+      "end_event": 6,
+      "evidence": [
+        {
+          "context_id": "pass-1/symbol/M23:with-B",
+          "files": [
+            {
+              "blob": "blobs/bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c.bin.gz",
+              "bytes": 1106,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+              "sha256": "bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "second"
+        },
+        {
+          "argv": [
+            "gcc",
+            "-std=c11",
+            "-fno-ident",
+            "-no-pie",
+            "-O2",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/host.c",
+            "-o",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/artifact.bin"
+          ],
+          "context_id": "pass-1/symbol/M23:with-B",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-gcc-14",
+            "sha256": "a23ecab8ff08f09ad8c80602c2c5df7f49e09c25905cb8975902e101bf72635f"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/f2380285d3e7ddb42920d65a10198738586ebcf8beed243c02f52124b61ded66.bin.gz",
+              "bytes": 1373,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/host.c",
+              "sha256": "f2380285d3e7ddb42920d65a10198738586ebcf8beed243c02f52124b61ded66"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/f2380285d3e7ddb42920d65a10198738586ebcf8beed243c02f52124b61ded66.bin.gz",
+              "bytes": 1373,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/host.c",
+              "sha256": "f2380285d3e7ddb42920d65a10198738586ebcf8beed243c02f52124b61ded66"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.05153958599839825,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "second"
+        },
+        {
+          "context_id": "pass-1/symbol/M23:with-B",
+          "files": [
+            {
+              "blob": "blobs/f2380285d3e7ddb42920d65a10198738586ebcf8beed243c02f52124b61ded66.bin.gz",
+              "bytes": 1373,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/host.c",
+              "sha256": "f2380285d3e7ddb42920d65a10198738586ebcf8beed243c02f52124b61ded66"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "second"
+        },
+        {
+          "context_id": "pass-1/symbol/M23:with-B",
+          "files": [
+            {
+              "blob": "blobs/af88cde12980dd64cca79b918932d59db19a69b114da72d10d3f0684b37faf88.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/artifact.bin",
+              "sha256": "af88cde12980dd64cca79b918932d59db19a69b114da72d10d3f0684b37faf88"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "second"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "second",
+      "operation": "build",
+      "reason": null,
+      "start_event": 5,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/af88cde12980dd64cca79b918932d59db19a69b114da72d10d3f0684b37faf88.bin.gz",
+          "bytes": 16072,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/artifact.bin",
+          "sha256": "af88cde12980dd64cca79b918932d59db19a69b114da72d10d3f0684b37faf88"
+        },
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/artifact.bin",
+        "command": [
+          "gcc",
+          "-std=c11",
+          "-fno-ident",
+          "-no-pie",
+          "-O2",
+          "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/host.c",
+          "-o",
+          "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/artifact.bin"
+        ],
+        "compiler": "gcc",
+        "optimization": "O2",
+        "returncode": 0,
+        "session_id": "pass-1/symbol/M23:with-B:decoder",
+        "source": {
+          "blob": "blobs/f2380285d3e7ddb42920d65a10198738586ebcf8beed243c02f52124b61ded66.bin.gz",
+          "bytes": 1373,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/host.c",
+          "sha256": "f2380285d3e7ddb42920d65a10198738586ebcf8beed243c02f52124b61ded66"
+        }
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:first"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/symbol/M23:with-B:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+        "key": "key-alpha",
+        "session": "pass-1/symbol/M23:with-B:decoder"
+      },
+      "consumed_references": [
+        "action:first",
+        "input:key1",
+        "action:session"
+      ],
+      "context_id": "pass-1/symbol/M23:with-B",
+      "end_event": 8,
+      "evidence": [
+        {
+          "context_id": "pass-1/symbol/M23:with-B",
+          "files": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "before"
+        },
+        {
+          "argv": [
+            "nm",
+            "-g",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin"
+          ],
+          "context_id": "pass-1/symbol/M23:with-B",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-nm",
+            "sha256": "ddb55c0685721bf494aa2d090056b8b32a40614ad4464b305896f527d882c3c1"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.00444505299674347,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "303030303030303030303430323030302052205f494f5f737464696e5f757365640a303030303030303030303430343032382044205f5f544d435f454e445f5f0a303030303030303030303430343032382042205f5f6273735f73746172740a303030303030303030303430343031382044205f5f646174615f73746172740a303030303030303030303430343032302044205f5f64736f5f68616e646c650a202020202020202020202020202020202055205f5f6572726e6f5f6c6f636174696f6e40474c4942435f322e322e350a202020202020202020202020202020202077205f5f676d6f6e5f73746172745f5f0a202020202020202020202020202020202055205f5f6c6962635f73746172745f6d61696e40474c4942435f322e33340a303030303030303030303430313134302054205f646c5f72656c6f636174655f7374617469635f7069650a303030303030303030303430343032382044205f65646174610a303030303030303030303430343033302042205f656e640a303030303030303030303430313166382054205f66696e690a303030303030303030303430313030302054205f696e69740a303030303030303030303430313131302054205f73746172740a30303030303030303030343034303138205720646174615f73746172740a303030303030303030303430313036302054206d61696e0a202020202020202020202020202020202055207072696e746640474c4942435f322e322e350a20202020202020202020202020202020205520737472746f756c6c40474c4942435f322e322e350a30303030303030303030343032303061205220776d7265635f333961303064323933353630383361395f303030385f303030305f303030325f34643666373237305f353931656430616566643462663361650a30303030303030303030343032303039205220776d7265635f333961303064323933353630383361395f303030385f303030315f303030325f36383264333033315f353931656430616566643462663361650a",
+          "step_id": "before"
+        },
+        {
+          "context_id": "pass-1/symbol/M23:with-B",
+          "files": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "before"
+        },
+        {
+          "after": {
+            "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+            "bytes": 16072,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+            "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+          },
+          "before": {
+            "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+            "bytes": 16072,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+            "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+          },
+          "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+          "call": "Pipeline.extract",
+          "context_id": "pass-1/symbol/M23:with-B",
+          "key": "key-alpha",
+          "kind": "python-return",
+          "return_value": {
+            "kind": "payload",
+            "value": "4d6f7270682d3031"
+          },
+          "session_id": "pass-1/symbol/M23:with-B:decoder",
+          "step_id": "before"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "before",
+      "operation": "extract",
+      "reason": null,
+      "start_event": 7,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+          "bytes": 16072,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+          "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+        },
+        "before": {
+          "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+          "bytes": 16072,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+          "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+        },
+        "key": "key-alpha",
+        "observation": {
+          "kind": "payload",
+          "value": "4d6f7270682d3031"
+        },
+        "session_id": "pass-1/symbol/M23:with-B:decoder"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:second"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/artifact.bin"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/symbol/M23:with-B:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/artifact.bin",
+        "key": "key-alpha",
+        "session": "pass-1/symbol/M23:with-B:decoder"
+      },
+      "consumed_references": [
+        "action:second",
+        "input:key1",
+        "action:session"
+      ],
+      "context_id": "pass-1/symbol/M23:with-B",
+      "end_event": 10,
+      "evidence": [
+        {
+          "context_id": "pass-1/symbol/M23:with-B",
+          "files": [
+            {
+              "blob": "blobs/af88cde12980dd64cca79b918932d59db19a69b114da72d10d3f0684b37faf88.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/artifact.bin",
+              "sha256": "af88cde12980dd64cca79b918932d59db19a69b114da72d10d3f0684b37faf88"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "intervening"
+        },
+        {
+          "argv": [
+            "nm",
+            "-g",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/artifact.bin"
+          ],
+          "context_id": "pass-1/symbol/M23:with-B",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-nm",
+            "sha256": "ddb55c0685721bf494aa2d090056b8b32a40614ad4464b305896f527d882c3c1"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/af88cde12980dd64cca79b918932d59db19a69b114da72d10d3f0684b37faf88.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/artifact.bin",
+              "sha256": "af88cde12980dd64cca79b918932d59db19a69b114da72d10d3f0684b37faf88"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/af88cde12980dd64cca79b918932d59db19a69b114da72d10d3f0684b37faf88.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/artifact.bin",
+              "sha256": "af88cde12980dd64cca79b918932d59db19a69b114da72d10d3f0684b37faf88"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.003216591001546476,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "303030303030303030303430323030302052205f494f5f737464696e5f757365640a303030303030303030303430343032382044205f5f544d435f454e445f5f0a303030303030303030303430343032382042205f5f6273735f73746172740a303030303030303030303430343031382044205f5f646174615f73746172740a303030303030303030303430343032302044205f5f64736f5f68616e646c650a202020202020202020202020202020202055205f5f6572726e6f5f6c6f636174696f6e40474c4942435f322e322e350a202020202020202020202020202020202077205f5f676d6f6e5f73746172745f5f0a202020202020202020202020202020202055205f5f6c6962635f73746172745f6d61696e40474c4942435f322e33340a303030303030303030303430313134302054205f646c5f72656c6f636174655f7374617469635f7069650a303030303030303030303430343032382044205f65646174610a303030303030303030303430343033302042205f656e640a303030303030303030303430313166382054205f66696e690a303030303030303030303430313030302054205f696e69740a303030303030303030303430313131302054205f73746172740a30303030303030303030343034303138205720646174615f73746172740a303030303030303030303430313036302054206d61696e0a202020202020202020202020202020202055207072696e746640474c4942435f322e322e350a20202020202020202020202020202020205520737472746f756c6c40474c4942435f322e322e350a30303030303030303030343032303061205220776d7265635f333961303064323933353630383361395f303030385f303030305f303030325f35333635363336665f313330373632626565636339313839390a30303030303030303030343032303039205220776d7265635f333961303064323933353630383361395f303030385f303030315f303030325f36653634326433325f313330373632626565636339313839390a",
+          "step_id": "intervening"
+        },
+        {
+          "context_id": "pass-1/symbol/M23:with-B",
+          "files": [
+            {
+              "blob": "blobs/af88cde12980dd64cca79b918932d59db19a69b114da72d10d3f0684b37faf88.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/artifact.bin",
+              "sha256": "af88cde12980dd64cca79b918932d59db19a69b114da72d10d3f0684b37faf88"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "intervening"
+        },
+        {
+          "after": {
+            "blob": "blobs/af88cde12980dd64cca79b918932d59db19a69b114da72d10d3f0684b37faf88.bin.gz",
+            "bytes": 16072,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/artifact.bin",
+            "sha256": "af88cde12980dd64cca79b918932d59db19a69b114da72d10d3f0684b37faf88"
+          },
+          "before": {
+            "blob": "blobs/af88cde12980dd64cca79b918932d59db19a69b114da72d10d3f0684b37faf88.bin.gz",
+            "bytes": 16072,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/artifact.bin",
+            "sha256": "af88cde12980dd64cca79b918932d59db19a69b114da72d10d3f0684b37faf88"
+          },
+          "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/artifact.bin",
+          "call": "Pipeline.extract",
+          "context_id": "pass-1/symbol/M23:with-B",
+          "key": "key-alpha",
+          "kind": "python-return",
+          "return_value": {
+            "kind": "payload",
+            "value": "5365636f6e642d32"
+          },
+          "session_id": "pass-1/symbol/M23:with-B:decoder",
+          "step_id": "intervening"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "intervening",
+      "operation": "extract",
+      "reason": null,
+      "start_event": 9,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/af88cde12980dd64cca79b918932d59db19a69b114da72d10d3f0684b37faf88.bin.gz",
+          "bytes": 16072,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/artifact.bin",
+          "sha256": "af88cde12980dd64cca79b918932d59db19a69b114da72d10d3f0684b37faf88"
+        },
+        "before": {
+          "blob": "blobs/af88cde12980dd64cca79b918932d59db19a69b114da72d10d3f0684b37faf88.bin.gz",
+          "bytes": 16072,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/second/build-02/artifact.bin",
+          "sha256": "af88cde12980dd64cca79b918932d59db19a69b114da72d10d3f0684b37faf88"
+        },
+        "key": "key-alpha",
+        "observation": {
+          "kind": "payload",
+          "value": "5365636f6e642d32"
+        },
+        "session_id": "pass-1/symbol/M23:with-B:decoder"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:first"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/symbol/M23:with-B:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+        "key": "key-alpha",
+        "session": "pass-1/symbol/M23:with-B:decoder"
+      },
+      "consumed_references": [
+        "action:first",
+        "input:key1",
+        "action:session"
+      ],
+      "context_id": "pass-1/symbol/M23:with-B",
+      "end_event": 12,
+      "evidence": [
+        {
+          "context_id": "pass-1/symbol/M23:with-B",
+          "files": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "after"
+        },
+        {
+          "context_id": "pass-1/symbol/M23:with-B",
+          "files": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "after"
+        },
+        {
+          "after": {
+            "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+            "bytes": 16072,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+            "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+          },
+          "before": {
+            "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+            "bytes": 16072,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+            "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+          },
+          "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+          "call": "Pipeline.extract",
+          "context_id": "pass-1/symbol/M23:with-B",
+          "key": "key-alpha",
+          "kind": "python-return",
+          "return_value": {
+            "kind": "payload",
+            "value": "5365636f6e642d32"
+          },
+          "session_id": "pass-1/symbol/M23:with-B:decoder",
+          "step_id": "after"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "after",
+      "operation": "extract",
+      "reason": null,
+      "start_event": 11,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+          "bytes": 16072,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+          "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+        },
+        "before": {
+          "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+          "bytes": 16072,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-projection/history-control/cases/pass-1/symbol/M23/with-B/native/first/build-01/artifact.bin",
+          "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+        },
+        "key": "key-alpha",
+        "observation": {
+          "kind": "payload",
+          "value": "5365636f6e642d32"
+        },
+        "session_id": "pass-1/symbol/M23:with-B:decoder"
+      }
+    }
+  ],
+  "context_id": "pass-1/symbol/M23:with-B",
+  "inputs": {
+    "carrier": "symbol",
+    "compiler": "gcc",
+    "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+    "host_inputs": [
+      0,
+      1,
+      5,
+      13,
+      144,
+      99991
+    ],
+    "implementation": "M23",
+    "key1": "key-alpha",
+    "key2": "key-beta",
+    "optimization": "O2",
+    "payload1": "4d6f7270682d3031",
+    "payload2": "5365636f6e642d32"
+  },
+  "inputs_sha256": "a3b1fbf38fc79f959d969de778367f07b2dc7aa9e774315e66eb7adde4c0e290",
+  "obligations": [
+    {
+      "clause": "A recovery after the declared history",
+      "consumed_references": [
+        "action:before",
+        "action:after",
+        "input:payload1"
+      ],
+      "failed_gate": null,
+      "gates": [
+        {
+          "dependencies": [
+            "action:before"
+          ],
+          "name": "available:before",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:after"
+          ],
+          "name": "available:after",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:before"
+          ],
+          "name": "first-call-endpoints",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:after"
+          ],
+          "name": "revisit-endpoints",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:before",
+            "action:after"
+          ],
+          "name": "same-version-on-revisit",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:before",
+            "action:after"
+          ],
+          "name": "same-session",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:before",
+            "action:after"
+          ],
+          "name": "same-key",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        }
+      ],
+      "id": "REVISIT",
+      "predicate": {
+        "dependencies": [
+          "action:before",
+          "input:payload1",
+          "action:after"
+        ],
+        "reason": null,
+        "state": "FALSE",
+        "value": false
+      },
+      "reason": "predicate-false",
+      "stage": "decoder-revisit",
+      "verdict": "INCONSISTENT"
+    }
+  ],
+  "plan_sha256": "825f9de809da463f3ea28160cee67d3c1347125aea5802fdfd80505456432058",
+  "schema": "toolchainmark-execution-v1"
+}

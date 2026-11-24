@@ -1,0 +1,109 @@
+{
+  "admission": {
+    "isolated_workspace": true,
+    "subject_exists": true
+  },
+  "evidence": [
+    {
+      "argv": [
+        "gcc",
+        "-std=c11",
+        "-fno-ident",
+        "-no-pie",
+        "-O2",
+        "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/identity/cases/pass-1/string/replace-on-B/MR13/legacy/first/build-01/host.c",
+        "-o",
+        "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/identity/cases/pass-1/string/replace-on-B/MR13/legacy/first/build-01/artifact.bin"
+      ],
+      "context_id": "pass-1/string/replace-on-B/MR13:legacy",
+      "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM",
+      "executable": {
+        "path": "/usr/bin/x86_64-linux-gnu-gcc-14",
+        "sha256": "a23ecab8ff08f09ad8c80602c2c5df7f49e09c25905cb8975902e101bf72635f"
+      },
+      "files_after": [
+        {
+          "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+          "bytes": 1296,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/identity/cases/pass-1/string/replace-on-B/MR13/legacy/first/build-01/host.c",
+          "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+        }
+      ],
+      "files_before": [
+        {
+          "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+          "bytes": 1296,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/identity/cases/pass-1/string/replace-on-B/MR13/legacy/first/build-01/host.c",
+          "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+        }
+      ],
+      "kind": "process",
+      "returncode": 0,
+      "seconds": 0.10215176699784934,
+      "status": "COMPLETED",
+      "stderr_hex": "",
+      "stdin_hex": null,
+      "stdout_hex": "",
+      "step_id": "legacy-build:first"
+    },
+    {
+      "argv": [
+        "gcc",
+        "-std=c11",
+        "-fno-ident",
+        "-no-pie",
+        "-O2",
+        "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/identity/cases/pass-1/string/replace-on-B/MR13/legacy/second/build-02/host.c",
+        "-o",
+        "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/identity/cases/pass-1/string/replace-on-B/MR13/legacy/second/build-02/artifact.bin"
+      ],
+      "context_id": "pass-1/string/replace-on-B/MR13:legacy",
+      "cwd": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM",
+      "executable": {
+        "path": "/usr/bin/x86_64-linux-gnu-gcc-14",
+        "sha256": "a23ecab8ff08f09ad8c80602c2c5df7f49e09c25905cb8975902e101bf72635f"
+      },
+      "files_after": [
+        {
+          "blob": "blobs/90b8f28efb18009e9a773c7cf86c779c18913fc67a4469c0b13b5bfdd6172471.bin.gz",
+          "bytes": 1296,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/identity/cases/pass-1/string/replace-on-B/MR13/legacy/second/build-02/host.c",
+          "sha256": "90b8f28efb18009e9a773c7cf86c779c18913fc67a4469c0b13b5bfdd6172471"
+        }
+      ],
+      "files_before": [
+        {
+          "blob": "blobs/90b8f28efb18009e9a773c7cf86c779c18913fc67a4469c0b13b5bfdd6172471.bin.gz",
+          "bytes": 1296,
+          "path": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/results/declarative-v6/identity/cases/pass-1/string/replace-on-B/MR13/legacy/second/build-02/host.c",
+          "sha256": "90b8f28efb18009e9a773c7cf86c779c18913fc67a4469c0b13b5bfdd6172471"
+        }
+      ],
+      "kind": "process",
+      "returncode": 0,
+      "seconds": 0.1517515519990411,
+      "status": "COMPLETED",
+      "stderr_hex": "",
+      "stdin_hex": null,
+      "stdout_hex": "",
+      "step_id": "legacy-build:second"
+    }
+  ],
+  "observations": {
+    "after": {
+      "kind": "payload",
+      "value": "5365636f6e642d32"
+    },
+    "before": {
+      "kind": "payload",
+      "value": "4d6f7270682d3031"
+    },
+    "intervening": {
+      "kind": "payload",
+      "value": "5365636f6e642d32"
+    }
+  },
+  "phase": "order-observation",
+  "reason": "predicate-violated",
+  "verdict": "INCONSISTENT"
+}

@@ -1,0 +1,45 @@
+{
+  "clean_rows": 756,
+  "configured_rows": 18900,
+  "fault_active_inadmissible_rows": 1008,
+  "fault_active_inconsistent_rows": 4266,
+  "fault_active_rows": 17172,
+  "fault_active_satisfied_rows": 11898,
+  "guard_scope": {
+    "interpretation": "antecedent stage isolation; upstream fault disabled",
+    "operators": [
+      "M01",
+      "M02",
+      "M03",
+      "M04",
+      "M05",
+      "M12"
+    ],
+    "relations": [
+      "MR04",
+      "MR09",
+      "MR10"
+    ]
+  },
+  "nonclean_configured_rows": 18144,
+  "source_matrix": "results/admission-study/matrix.csv.gz",
+  "source_matrix_sha256": "e10d9382242dd0804c71fae088bc5824439c0e42852e7deae6af8fa81dd654f0",
+  "stage_isolation_inadmissible_rows": 0,
+  "stage_isolation_inconsistent_rows": 0,
+  "stage_isolation_rows": 972,
+  "stage_isolation_satisfied_rows": 972,
+  "tri_valued_context_replay_rule": "Compare all three verdicts. Two inadmissible rows match only when their normalized reason category matches.",
+  "verdicts_by_activation": {
+    "CLEAN": {
+      "SATISFIED": 756
+    },
+    "FAULT_ACTIVE": {
+      "INADMISSIBLE": 1008,
+      "INCONSISTENT": 4266,
+      "SATISFIED": 11898
+    },
+    "STAGE_ISOLATION": {
+      "SATISFIED": 972
+    }
+  }
+}

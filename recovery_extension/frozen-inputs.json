@@ -1,0 +1,251 @@
+{
+  "files": [
+    {
+      "bytes": 1106,
+      "path": "hosts/H01-gcd.c",
+      "sha256": "bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c"
+    },
+    {
+      "bytes": 1047,
+      "path": "hosts/H02-fibonacci.c",
+      "sha256": "212d1fe91cf52f33ed783791c34fc023fdf99dccb0ca341d3844d624ff3a4b70"
+    },
+    {
+      "bytes": 1059,
+      "path": "hosts/H03-bitmix.c",
+      "sha256": "5c27c9eebd7692fad7689408e2fe6584e1fafdbe035b8bf2aaeecea6312deca3"
+    },
+    {
+      "bytes": 1034,
+      "path": "hosts/H04-polynomial.c",
+      "sha256": "d2aec92b283acd9bfc238b742e3966d7868fcb935c1ea8b67926a8941942ffd0"
+    },
+    {
+      "bytes": 1241,
+      "path": "hosts/H05-crc.c",
+      "sha256": "f4e43543a1f68ad2694da9eded1b815451884dc21de7bc57e541d288ab5519c8"
+    },
+    {
+      "bytes": 1197,
+      "path": "hosts/H06-primecount.c",
+      "sha256": "5bd3d0ff479b5dea18f8c5cb93f7a3c6311fbfad45eefebdc81a5c064ff2b278"
+    },
+    {
+      "bytes": 1307,
+      "path": "hosts/H07-sortfold.c",
+      "sha256": "f9fce25990cca81313af1ec178ed52e149b59d6b44ba3b93bdd181a9f2b29af7"
+    },
+    {
+      "bytes": 1125,
+      "path": "hosts/H08-statemachine.c",
+      "sha256": "fba50eec707069346cf3ea090e9a05dba20de69781363206f6c5de3f1aa21a04"
+    },
+    {
+      "bytes": 1324,
+      "path": "hosts/H09-matrix.c",
+      "sha256": "6a5f2b049a19ea0f49f3a53409703b691082972c8497a6cffe736079c46e2330"
+    },
+    {
+      "bytes": 1145,
+      "path": "hosts/H10-parser.c",
+      "sha256": "a4904da4fdc7ab416e8490cb24d999f0d8ce953853d714ca5e2c048e4e33724c"
+    },
+    {
+      "bytes": 1005,
+      "path": "hosts/H11-popcount.c",
+      "sha256": "8880e4292bf4fb3d805bf41dbc11fb0d41e1f60a65847c692325baf9c1965d74"
+    },
+    {
+      "bytes": 1012,
+      "path": "hosts/H12-lcg.c",
+      "sha256": "4b78026842a34a5cfb9c310023c11f715ffdd0fbbe9f2a28d1ef31a48ea7fec9"
+    },
+    {
+      "bytes": 1050,
+      "path": "hosts/H13-zlib.c",
+      "sha256": "3864196be46b044ec0d4d55ef5869353e1b78af212321b233eddfa5dd5f7890a"
+    },
+    {
+      "bytes": 1182,
+      "path": "hosts/H14-openssl.c",
+      "sha256": "b098e72516816e3f8aa797daf5a95eb4c1a2f5f48677b938919164d69c3a91f3"
+    },
+    {
+      "bytes": 1460,
+      "path": "hosts/H15-sqlite.c",
+      "sha256": "1151b24c2aa179a51400ea716bc049c5f335b786ac508c85d111ee6e02ead825"
+    },
+    {
+      "bytes": 1651,
+      "path": "hosts/H16-xml.c",
+      "sha256": "ee54bbe498d5cb3fd610d8482f1233065b026e27b6facc2098b7decdddc58096"
+    },
+    {
+      "bytes": 1473,
+      "path": "hosts/H17-json.c",
+      "sha256": "aecf3f4e7cf29e00c3eeeabb622161e2725e93c3ebd07e5c7e716225420af03a"
+    },
+    {
+      "bytes": 2029,
+      "path": "hosts/H18-png.c",
+      "sha256": "3820839cecd045f3a2eda8317c29e52bc6d1154d3a824dc169545b4faecc7060"
+    },
+    {
+      "bytes": 17034,
+      "path": "scripts/derive_admission_study.py",
+      "sha256": "9918d2a529c71daf81af38be28036d75f41731da1ab6969a18b170ffcbe2436e"
+    },
+    {
+      "bytes": 3051,
+      "path": "scripts/run_admission_study.py",
+      "sha256": "3f7ae8b4ba61d659933df7475803d4f9e94048fee8f85178e282658a9486e7b5"
+    },
+    {
+      "bytes": 12977,
+      "path": "specs/evidence_relations.json",
+      "sha256": "7be589bd66b0f52544c818298f259c0f21f96519e4f338da74d7a130e416ee5e"
+    },
+    {
+      "bytes": 10783,
+      "path": "specs/mrspec.json",
+      "sha256": "140d0e65caedee94a8de1c7b3be4a991072ba6a94b0648bdf46b2578d4ee24a1"
+    },
+    {
+      "bytes": 5305,
+      "path": "specs/mutants.json",
+      "sha256": "f0273d0f8146a620c094c4f9b85e8bd94d578819055ed27133544ff2235b4c72"
+    },
+    {
+      "bytes": 22,
+      "path": "src/tosem02/__init__.py",
+      "sha256": "46c663463329acd7039bdef0a9145293aad32e04d7f0dd06ca2719c99f0eb014"
+    },
+    {
+      "bytes": 1519,
+      "path": "src/tosem02/accounting.py",
+      "sha256": "61d37df9dc57c24304efd4fbb53f8ce7a30556b92393a321f22907bbe74c4ac1"
+    },
+    {
+      "bytes": 14879,
+      "path": "src/tosem02/admission.py",
+      "sha256": "56a8b594bf92d896a9c065a6d58c23e36525aa1544656e91b6330edbf338e1fc"
+    },
+    {
+      "bytes": 1508,
+      "path": "src/tosem02/catalog.py",
+      "sha256": "8d2a9c8b4b14082a0f24131324a12127a299859048f372544a89be3728ac01b4"
+    },
+    {
+      "bytes": 5023,
+      "path": "src/tosem02/cli.py",
+      "sha256": "5d911b900b237c01f2f164dc5e20ffc12204e38afa7e34c082d97a71ab3fa6d4"
+    },
+    {
+      "bytes": 7957,
+      "path": "src/tosem02/derive.py",
+      "sha256": "44c4b025b55e281be599f295e075148b9902c1dd6af0d76fbc82506871c8580e"
+    },
+    {
+      "bytes": 6239,
+      "path": "src/tosem02/evidence_boundary.py",
+      "sha256": "33b1a7173e50041e8f454f0307b1582151defb6ab400aec97eba11caf4dd446a"
+    },
+    {
+      "bytes": 1302,
+      "path": "src/tosem02/evidence_catalog.py",
+      "sha256": "07318bec6166482229f47a4403a14c61afe524f907c9b3eb6cd1d4b8aa86b3ab"
+    },
+    {
+      "bytes": 7537,
+      "path": "src/tosem02/integrity.py",
+      "sha256": "dc653ab738c68f7b2f02d9a57c873a595c3fabcd6b7d578dc48bfb0fb1806366"
+    },
+    {
+      "bytes": 1186,
+      "path": "src/tosem02/model.py",
+      "sha256": "54394be0ee9b8c477548adb5f4013f7c99a464aacf54524082eae5291e357f0d"
+    },
+    {
+      "bytes": 17162,
+      "path": "src/tosem02/pipeline.py",
+      "sha256": "09c1ce71e4e733faa8788d305922bbe34f6753ff0b820f99d4c147fd6582cb09"
+    },
+    {
+      "bytes": 1311,
+      "path": "src/tosem02/recheck.py",
+      "sha256": "62c2bad7b74c8388720318e57d43ec58ddfb32ca3973de1a3d00be0788de3eb8"
+    },
+    {
+      "bytes": 6973,
+      "path": "src/tosem02/record.py",
+      "sha256": "1daf9519b91f24ccc11262cf236cacec79447e75e2cc06c9b8d0265c332f909e"
+    },
+    {
+      "bytes": 9831,
+      "path": "src/tosem02/relations.py",
+      "sha256": "8c431ef2cffac5c138805572f5d3c1c68efcb3b6f50ecc922af2261918af7f01"
+    },
+    {
+      "bytes": 10837,
+      "path": "src/tosem02/runner.py",
+      "sha256": "2f6ed32d002069a5e7f342eac906879b8844cda3cedfac6d5d027cf43769a1d9"
+    },
+    {
+      "bytes": 2670,
+      "path": "src/tosem02/study_coverage.py",
+      "sha256": "3afb69ea53406b8e61f82f7a74a04d972a90cd97e7a61c79b6c66ecff71eb314"
+    },
+    {
+      "bytes": 13804,
+      "path": "src/tosem02/study_validation.py",
+      "sha256": "e314fb5c969c9a14f7ec1db9bb1feba7901eca51acbd648200663ca6df17ee00"
+    },
+    {
+      "bytes": 6898,
+      "path": "src/tosem02/trace_runtime.py",
+      "sha256": "b91e127b461586b01068a8a01e533fcd564cecb526407c72c9198b6ed92fe95b"
+    },
+    {
+      "bytes": 2200,
+      "path": "src/tosem02/transform_admission.py",
+      "sha256": "0f6e8c5608dfbfad4ef6ca267c2956d9fb8d835257b81ec7341485ca2ff83411"
+    },
+    {
+      "bytes": 84,
+      "path": "postfreeze_challenge/__init__.py",
+      "sha256": "4a52a275226b9d88bef497dc2390d33c9ae2b4a7b9b7f4ddc18a9c80263c334a"
+    },
+    {
+      "bytes": 4393,
+      "path": "postfreeze_challenge/common.py",
+      "sha256": "c0e235cfa7aba9d94824b6951a6fc76cdc7f8c833536fafa51745eeccdb7c7b1"
+    },
+    {
+      "bytes": 4534,
+      "path": "postfreeze_challenge/recording.py",
+      "sha256": "ab2c508c8db7484ca52398284b4938ed3a009110b5180c63f49d7ed2306ca808"
+    },
+    {
+      "bytes": 7961,
+      "path": "postfreeze_challenge/adapters.py",
+      "sha256": "99edb5ded1cb2cdba702e9a90144451791d28d11333a1e741b4995c4bb1f2674"
+    },
+    {
+      "bytes": 14611,
+      "path": "postfreeze_challenge/run.py",
+      "sha256": "421cacfcb2c71c3bea4bf8a55bd20397bc83fb83572f52d22e7196ddc51898ec"
+    },
+    {
+      "bytes": 7214,
+      "path": "postfreeze_challenge/derive.py",
+      "sha256": "eaa12416864bf026d58225a0e453c28f4adeaba21a3f1640884e230c9f1b6c0b"
+    },
+    {
+      "bytes": 6179,
+      "path": "independent_observers/producer/independent_observer.py",
+      "sha256": "4838ef13f86de5d421e049ae8355805a806e5420e1f8730fc1957c1ce6d471c3"
+    }
+  ],
+  "registered_utc": "2026-11-19T08:02:12.809688+00:00",
+  "scope": "49 unchanged prior scientific inputs: 42 frozen v4 inputs, six completed new-trigger producer files, and a separately implemented byte parser. New SR01 producer source will be frozen before native execution."
+}

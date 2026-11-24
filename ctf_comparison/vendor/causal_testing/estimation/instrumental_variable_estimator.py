@@ -1,0 +1,91 @@
+"""This module contains the InstrumentalVariableEstimator class, for estimating
+continuous outcomes with unobservable confounding."""
+
+import logging
+from math import ceil
+
+import pandas as pd
+import statsmodels.api as sm
+
+from causal_testing.estimation.abstract_estimator import Estimator
+from causal_testing.estimation.effect_estimate import EffectEstimate
+
+logger = logging.getLogger(__name__)
+
+
+class InstrumentalVariableEstimator(Estimator):
+    """
+    Carry out estimation using instrumental variable adjustment rather than conventional adjustment. This means we do
+    not need to observe all confounders in order to adjust for them. A key assumption here is linearity.
+    """
+
+    def __init__(
+        # pylint: disable=too-many-arguments
+        # pylint: disable=duplicate-code
+        self,
+        outcome_variable: str,
+        treatment_variable: str,
+        instrument: str,
+        alpha: float = 0.05,
+        bootstrap_size=100,
+    ):
+        super().__init__(
+            treatment_variable=treatment_variable,
+            outcome_variable=outcome_variable,
+            alpha=alpha,
+        )
+
+        self.instrument = instrument
+        self.bootstrap_size = bootstrap_size
+
+    def add_modelling_assumptions(self):
+        """
+        Add modelling assumptions to the estimator. This is a list of strings which list the modelling assumptions that
+        must hold if the resulting causal inference is to be considered valid.
+        """
+        self.modelling_assumptions.append(
+            """The instrument and the treatment, and the treatment and the outcome must be
+        related linearly in the form Y = aX + b."""
+        )
+        self.modelling_assumptions.append(
+            """The three IV conditions must hold
+            (i) Instrument is associated with treatment
+            (ii) Instrument does not affect outcome except through its potential effect on treatment
+            (iii) Instrument and outcome do not share causes
+        """
+        )
+
+    def iv_coefficient(self, df) -> float:
+        """
+        Estimate the linear regression coefficient of the treatment on the
+        outcome.
+        """
+        # Estimate the total effect of instrument I on outcome Y = abI + c1
+        ab = sm.OLS(df[self.outcome_variable], df[[self.instrument]]).fit().params[self.instrument]
+
+        # Estimate the direct effect of instrument I on treatment X = aI + c1
+        a = sm.OLS(df[self.treatment_variable], df[[self.instrument]]).fit().params[self.instrument]
+
+        # Estimate the coefficient of I on X by cancelling
+        return ab / a
+
+    def estimate_coefficient(self, df: pd.DataFrame) -> EffectEstimate:
+        """
+        Estimate the unit ate (i.e. coefficient) of the treatment on the outcome.
+
+        :param df: The data to use.
+        """
+        bootstraps = sorted([self.iv_coefficient(df.sample(len(df), replace=True)) for _ in range(self.bootstrap_size)])
+        bound = ceil((self.bootstrap_size * self.alpha) / 2)
+        ci_low = pd.Series(bootstraps[bound])
+        ci_high = pd.Series(bootstraps[self.bootstrap_size - bound])
+
+        return EffectEstimate("coefficient", pd.Series(self.iv_coefficient(df)), ci_low, ci_high)
+
+    def to_dict(self) -> dict:
+        """
+        Convert the estimator to a python dictionary for easy serialisation as JSON or CSV.
+
+        :returns: A JSON serialisable dict representing the estimator.
+        """
+        return super().to_dict() | {"instrument": self.instrument, "bootstrap_size": self.bootstrap_size}

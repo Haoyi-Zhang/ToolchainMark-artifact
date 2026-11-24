@@ -1,0 +1,103 @@
+{
+  "layers": [
+    {
+      "accepted": true,
+      "cpu_seconds": 0.0001433730000000022,
+      "detail": {
+        "stage_verdicts": [
+          {
+            "id": "MR02",
+            "verdict": "SATISFIED"
+          }
+        ]
+      },
+      "error": null,
+      "tier": "oracle-replay",
+      "wall_seconds": 0.0001466510002501309
+    },
+    {
+      "accepted": true,
+      "cpu_seconds": 0.0021241010000000032,
+      "detail": {
+        "action_status_counts": {
+          "OK": 5
+        },
+        "actions": 5,
+        "checks": {
+          "consumed_dependencies": true,
+          "event_order_and_parallel_groups": true,
+          "exact_action_frame": true,
+          "guards_and_arguments": true,
+          "independent_stage_judgments": true,
+          "plan_and_input_hashes": true,
+          "plan_schema_and_reference_order": true
+        },
+        "context_id": "pass-1/string/CLEAN/MR02:declaration",
+        "event_ordinals": 10,
+        "external_context_checked": true,
+        "external_inputs_checked": true,
+        "inputs_sha256": "98de8896bea73afb0817117e500f9f2e9a9138db0951c1e182ecf866ca962681",
+        "obligations": 1,
+        "plan_id": "MR02",
+        "plan_sha256": "60a7624e5d099ac050fb18eb9a5df62fa739d66ab1523da76b4452b9db5def59",
+        "schema": "toolchainmark-receipt-receiver-v1",
+        "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+        "verdict": "PASS",
+        "verdict_counts": {
+          "SATISFIED": 1
+        }
+      },
+      "error": null,
+      "tier": "plan-receiver",
+      "wall_seconds": 0.0021224109950708225
+    },
+    {
+      "accepted": true,
+      "cpu_seconds": 0.012586909999999993,
+      "detail": {
+        "native": {
+          "physical_byte_reobservations": 0,
+          "raw_process_output_bindings": 12,
+          "typed_extraction_return_bindings": 0,
+          "unique_blobs": 4
+        },
+        "plan": {
+          "action_status_counts": {
+            "OK": 5
+          },
+          "actions": 5,
+          "checks": {
+            "consumed_dependencies": true,
+            "event_order_and_parallel_groups": true,
+            "exact_action_frame": true,
+            "guards_and_arguments": true,
+            "independent_stage_judgments": true,
+            "plan_and_input_hashes": true,
+            "plan_schema_and_reference_order": true
+          },
+          "context_id": "pass-1/string/CLEAN/MR02:declaration",
+          "event_ordinals": 10,
+          "external_context_checked": true,
+          "external_inputs_checked": true,
+          "inputs_sha256": "98de8896bea73afb0817117e500f9f2e9a9138db0951c1e182ecf866ca962681",
+          "obligations": 1,
+          "plan_id": "MR02",
+          "plan_sha256": "60a7624e5d099ac050fb18eb9a5df62fa739d66ab1523da76b4452b9db5def59",
+          "schema": "toolchainmark-receipt-receiver-v1",
+          "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+          "verdict": "PASS",
+          "verdict_counts": {
+            "SATISFIED": 1
+          }
+        },
+        "retained_file_bindings": 38
+      },
+      "error": null,
+      "tier": "native-binding",
+      "wall_seconds": 0.012584019998030271
+    }
+  ],
+  "native_programs_reexecuted": false,
+  "official_ctf_api_called": false,
+  "schema": "execution-correspondence-layer-results-v1"
+}

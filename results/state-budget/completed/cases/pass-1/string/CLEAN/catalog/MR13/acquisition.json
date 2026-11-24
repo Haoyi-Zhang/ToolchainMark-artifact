@@ -1,0 +1,82 @@
+{
+  "action_statuses": {
+    "OK": 6
+  },
+  "case": {
+    "arm": "catalog",
+    "carrier": "string",
+    "id": "pass-1/string/CLEAN/catalog/MR13",
+    "implementation": "CLEAN",
+    "inputs": {
+      "carrier": "string",
+      "compiler": "gcc",
+      "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+      "host_inputs": [
+        0,
+        1,
+        5,
+        13,
+        144,
+        99991
+      ],
+      "implementation": "CLEAN",
+      "key1": "key-alpha",
+      "key2": "key-beta",
+      "optimization": "O2",
+      "payload1": "4d6f7270682d3031",
+      "payload2": "5365636f6e642d32"
+    },
+    "name": "MR13",
+    "pass": 1,
+    "plan": "plans/catalog/MR13.json",
+    "planned_extract_calls": 3,
+    "position": 12,
+    "relation": "MR13"
+  },
+  "child_cpu_seconds": 0.09248099999999981,
+  "extract_calls": 3,
+  "extraction_call_trace": [
+    {
+      "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR13/native/first/build-01/artifact.bin",
+      "context_id": "pass-1/string/CLEAN/catalog/MR13:cost-study",
+      "exception": null,
+      "key": "key-alpha",
+      "observation": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "ordinal": 1,
+      "step_id": "before"
+    },
+    {
+      "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR13/native/second/build-02/artifact.bin",
+      "context_id": "pass-1/string/CLEAN/catalog/MR13:cost-study",
+      "exception": null,
+      "key": "key-alpha",
+      "observation": {
+        "kind": "payload",
+        "value": "5365636f6e642d32"
+      },
+      "ordinal": 2,
+      "step_id": "intervening"
+    },
+    {
+      "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR13/native/first/build-01/artifact.bin",
+      "context_id": "pass-1/string/CLEAN/catalog/MR13:cost-study",
+      "exception": null,
+      "key": "key-alpha",
+      "observation": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "ordinal": 3,
+      "step_id": "after"
+    }
+  ],
+  "native_commands": 2,
+  "obligations": {
+    "MR13": "SATISFIED"
+  },
+  "parent_cpu_seconds": 0.010324,
+  "wall_seconds": 0.10249694199592341
+}

@@ -1,0 +1,968 @@
+{
+  "actions": [
+    {
+      "arguments": {
+        "carrier": "symbol",
+        "implementation": "CLEAN"
+      },
+      "evidence": [],
+      "id": "session",
+      "operation": "session",
+      "reason": null,
+      "status": "OK",
+      "value": {
+        "carrier": "symbol",
+        "implementation": "CLEAN",
+        "session_id": "pass-1/MR09/symbol/CLEAN:gemtest:decoder"
+      }
+    },
+    {
+      "arguments": {
+        "compiler": "gcc",
+        "guarded": true,
+        "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+        "key": "key-alpha",
+        "label": "source",
+        "marked": true,
+        "optimization": "O2",
+        "payload_hex": "4d6f7270682d3031",
+        "session": "pass-1/MR09/symbol/CLEAN:gemtest:decoder"
+      },
+      "evidence": [
+        {
+          "context_id": "pass-1/MR09/symbol/CLEAN:gemtest",
+          "files": [
+            {
+              "blob": "blobs/bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c.bin.gz",
+              "bytes": 1106,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+              "sha256": "bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "source"
+        },
+        {
+          "argv": [
+            "gcc",
+            "-std=c11",
+            "-fno-ident",
+            "-no-pie",
+            "-O2",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/host.c",
+            "-o",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin"
+          ],
+          "context_id": "pass-1/MR09/symbol/CLEAN:gemtest",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/framework_comparison",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-gcc-14",
+            "sha256": "a23ecab8ff08f09ad8c80602c2c5df7f49e09c25905cb8975902e101bf72635f"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a.bin.gz",
+              "bytes": 1373,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/host.c",
+              "sha256": "45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a.bin.gz",
+              "bytes": 1373,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/host.c",
+              "sha256": "45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.04552308699931018,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "source"
+        },
+        {
+          "context_id": "pass-1/MR09/symbol/CLEAN:gemtest",
+          "files": [
+            {
+              "blob": "blobs/45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a.bin.gz",
+              "bytes": 1373,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/host.c",
+              "sha256": "45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "source"
+        },
+        {
+          "context_id": "pass-1/MR09/symbol/CLEAN:gemtest",
+          "files": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "source"
+        }
+      ],
+      "id": "source",
+      "operation": "build",
+      "reason": null,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+          "bytes": 16072,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+          "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+        },
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+        "command": [
+          "gcc",
+          "-std=c11",
+          "-fno-ident",
+          "-no-pie",
+          "-O2",
+          "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/host.c",
+          "-o",
+          "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin"
+        ],
+        "compiler": "gcc",
+        "optimization": "O2",
+        "returncode": 0,
+        "session_id": "pass-1/MR09/symbol/CLEAN:gemtest:decoder",
+        "source": {
+          "blob": "blobs/45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a.bin.gz",
+          "bytes": 1373,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/host.c",
+          "sha256": "45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a"
+        }
+      }
+    },
+    {
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+        "key": "key-alpha",
+        "session": "pass-1/MR09/symbol/CLEAN:gemtest:decoder"
+      },
+      "evidence": [
+        {
+          "context_id": "pass-1/MR09/symbol/CLEAN:gemtest",
+          "files": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "recover"
+        },
+        {
+          "argv": [
+            "nm",
+            "-g",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin"
+          ],
+          "context_id": "pass-1/MR09/symbol/CLEAN:gemtest",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/framework_comparison",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-nm",
+            "sha256": "ddb55c0685721bf494aa2d090056b8b32a40614ad4464b305896f527d882c3c1"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.00807472599990433,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "303030303030303030303430323030302052205f494f5f737464696e5f757365640a303030303030303030303430343032382044205f5f544d435f454e445f5f0a303030303030303030303430343032382042205f5f6273735f73746172740a303030303030303030303430343031382044205f5f646174615f73746172740a303030303030303030303430343032302044205f5f64736f5f68616e646c650a202020202020202020202020202020202055205f5f6572726e6f5f6c6f636174696f6e40474c4942435f322e322e350a202020202020202020202020202020202077205f5f676d6f6e5f73746172745f5f0a202020202020202020202020202020202055205f5f6c6962635f73746172745f6d61696e40474c4942435f322e33340a303030303030303030303430313134302054205f646c5f72656c6f636174655f7374617469635f7069650a303030303030303030303430343032382044205f65646174610a303030303030303030303430343033302042205f656e640a303030303030303030303430313166382054205f66696e690a303030303030303030303430313030302054205f696e69740a303030303030303030303430313131302054205f73746172740a30303030303030303030343034303138205720646174615f73746172740a303030303030303030303430313036302054206d61696e0a202020202020202020202020202020202055207072696e746640474c4942435f322e322e350a20202020202020202020202020202020205520737472746f756c6c40474c4942435f322e322e350a30303030303030303030343032303061205220776d7265635f333961303064323933353630383361395f303030385f303030305f303030325f34643666373237305f353931656430616566643462663361650a30303030303030303030343032303039205220776d7265635f333961303064323933353630383361395f303030385f303030315f303030325f36383264333033315f353931656430616566643462663361650a",
+          "step_id": "recover"
+        },
+        {
+          "context_id": "pass-1/MR09/symbol/CLEAN:gemtest",
+          "files": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "recover"
+        },
+        {
+          "after": {
+            "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+            "bytes": 16072,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+            "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+          },
+          "before": {
+            "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+            "bytes": 16072,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+            "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+          },
+          "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+          "call": "Pipeline.extract",
+          "context_id": "pass-1/MR09/symbol/CLEAN:gemtest",
+          "key": "key-alpha",
+          "kind": "python-return",
+          "return_value": {
+            "kind": "payload",
+            "value": "4d6f7270682d3031"
+          },
+          "session_id": "pass-1/MR09/symbol/CLEAN:gemtest:decoder",
+          "step_id": "recover"
+        }
+      ],
+      "id": "recover",
+      "operation": "extract",
+      "reason": null,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+          "bytes": 16072,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+          "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+        },
+        "before": {
+          "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+          "bytes": 16072,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+          "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+        },
+        "key": "key-alpha",
+        "observation": {
+          "kind": "payload",
+          "value": "4d6f7270682d3031"
+        },
+        "session_id": "pass-1/MR09/symbol/CLEAN:gemtest:decoder"
+      }
+    },
+    {
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+        "key": "key-alpha",
+        "session": "pass-1/MR09/symbol/CLEAN:gemtest:decoder"
+      },
+      "evidence": [
+        {
+          "argv": [
+            "nm",
+            "-g",
+            "/tmp/tosem02-carrier-n7k9qmrb/artifact.bin"
+          ],
+          "context_id": "pass-1/MR09/symbol/CLEAN:gemtest",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/framework_comparison",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-nm",
+            "sha256": "ddb55c0685721bf494aa2d090056b8b32a40614ad4464b305896f527d882c3c1"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/tmp/tosem02-carrier-n7k9qmrb/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/tmp/tosem02-carrier-n7k9qmrb/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.002997718002006877,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "303030303030303030303430323030302052205f494f5f737464696e5f757365640a303030303030303030303430343032382044205f5f544d435f454e445f5f0a303030303030303030303430343032382042205f5f6273735f73746172740a303030303030303030303430343031382044205f5f646174615f73746172740a303030303030303030303430343032302044205f5f64736f5f68616e646c650a202020202020202020202020202020202055205f5f6572726e6f5f6c6f636174696f6e40474c4942435f322e322e350a202020202020202020202020202020202077205f5f676d6f6e5f73746172745f5f0a202020202020202020202020202020202055205f5f6c6962635f73746172745f6d61696e40474c4942435f322e33340a303030303030303030303430313134302054205f646c5f72656c6f636174655f7374617469635f7069650a303030303030303030303430343032382044205f65646174610a303030303030303030303430343033302042205f656e640a303030303030303030303430313166382054205f66696e690a303030303030303030303430313030302054205f696e69740a303030303030303030303430313131302054205f73746172740a30303030303030303030343034303138205720646174615f73746172740a303030303030303030303430313036302054206d61696e0a202020202020202020202020202020202055207072696e746640474c4942435f322e322e350a20202020202020202020202020202020205520737472746f756c6c40474c4942435f322e322e350a30303030303030303030343032303061205220776d7265635f333961303064323933353630383361395f303030385f303030305f303030325f34643666373237305f353931656430616566643462663361650a30303030303030303030343032303039205220776d7265635f333961303064323933353630383361395f303030385f303030315f303030325f36383264333033315f353931656430616566643462663361650a",
+          "step_id": "source-view"
+        },
+        {
+          "context_id": "pass-1/MR09/symbol/CLEAN:gemtest",
+          "files": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "source-view"
+        }
+      ],
+      "id": "source-view",
+      "operation": "inspect",
+      "reason": null,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+          "bytes": 16072,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+          "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+        },
+        "key": "key-alpha",
+        "observation": {
+          "kind": "payload",
+          "value": "4d6f7270682d3031"
+        },
+        "observer": "shared-format-clean-parser"
+      }
+    },
+    {
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+        "session": "pass-1/MR09/symbol/CLEAN:gemtest:decoder"
+      },
+      "evidence": [
+        {
+          "context_id": "pass-1/MR09/symbol/CLEAN:gemtest",
+          "files": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "intervention"
+        },
+        {
+          "argv": [
+            "strip",
+            "-s",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin"
+          ],
+          "context_id": "pass-1/MR09/symbol/CLEAN:gemtest",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/framework_comparison",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-strip",
+            "sha256": "a97ae77cd5d88799edc0edb31caa2fc81d32eecaa9619d329bed890f6fd06e3a"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+              "bytes": 14416,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+              "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+              "bytes": 16072,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+              "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.004659420999814756,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "intervention"
+        },
+        {
+          "context_id": "pass-1/MR09/symbol/CLEAN:gemtest",
+          "files": [
+            {
+              "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+              "bytes": 14416,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+              "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "intervention"
+        }
+      ],
+      "id": "intervention",
+      "operation": "remove",
+      "reason": null,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+          "bytes": 14416,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+          "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+        },
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin"
+      }
+    },
+    {
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+        "key": "key-alpha",
+        "session": "pass-1/MR09/symbol/CLEAN:gemtest:decoder"
+      },
+      "evidence": [
+        {
+          "argv": [
+            "nm",
+            "-g",
+            "/tmp/tosem02-carrier-mt8ccniv/removed.bin"
+          ],
+          "context_id": "pass-1/MR09/symbol/CLEAN:gemtest",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/framework_comparison",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-nm",
+            "sha256": "ddb55c0685721bf494aa2d090056b8b32a40614ad4464b305896f527d882c3c1"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+              "bytes": 14416,
+              "path": "/tmp/tosem02-carrier-mt8ccniv/removed.bin",
+              "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+              "bytes": 14416,
+              "path": "/tmp/tosem02-carrier-mt8ccniv/removed.bin",
+              "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0027814320055767894,
+          "status": "COMPLETED",
+          "stderr_hex": "6e6d3a202f746d702f746f73656d30322d636172726965722d6d743863636e69762f72656d6f7665642e62696e3a206e6f2073796d626f6c730a",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "followup-view"
+        },
+        {
+          "context_id": "pass-1/MR09/symbol/CLEAN:gemtest",
+          "files": [
+            {
+              "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+              "bytes": 14416,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+              "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "followup-view"
+        }
+      ],
+      "id": "followup-view",
+      "operation": "inspect",
+      "reason": null,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+          "bytes": 14416,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+          "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+        },
+        "key": "key-alpha",
+        "observation": {
+          "kind": "rejection",
+          "value": "absent"
+        },
+        "observer": "shared-format-clean-parser"
+      }
+    },
+    {
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+        "key": "key-alpha",
+        "session": "pass-1/MR09/symbol/CLEAN:gemtest:decoder"
+      },
+      "evidence": [
+        {
+          "context_id": "pass-1/MR09/symbol/CLEAN:gemtest",
+          "files": [
+            {
+              "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+              "bytes": 14416,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+              "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "followup-value"
+        },
+        {
+          "argv": [
+            "nm",
+            "-g",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin"
+          ],
+          "context_id": "pass-1/MR09/symbol/CLEAN:gemtest",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/framework_comparison",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-nm",
+            "sha256": "ddb55c0685721bf494aa2d090056b8b32a40614ad4464b305896f527d882c3c1"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+              "bytes": 14416,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+              "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+              "bytes": 14416,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+              "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.0026163430011365563,
+          "status": "COMPLETED",
+          "stderr_hex": "6e6d3a202f776f726b73706163652f736372617463682f3032326630343334323436312f776f726b2d76372f546f6f6c636861696e4d61726b5f544f53454d2f61727469666163742f726573756c74732f6672616d65776f726b2d636f6d70617269736f6e2f7061697265642f63617365732f706173732d312f4d5230392f73796d626f6c2f434c45414e2f67656d746573742d6e61746976652f696e74657276656e74696f6e2f72656d6f7665642e62696e3a206e6f2073796d626f6c730a",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "followup-value"
+        },
+        {
+          "context_id": "pass-1/MR09/symbol/CLEAN:gemtest",
+          "files": [
+            {
+              "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+              "bytes": 14416,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+              "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "followup-value"
+        },
+        {
+          "after": {
+            "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+            "bytes": 14416,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+            "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+          },
+          "before": {
+            "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+            "bytes": 14416,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+            "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+          },
+          "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+          "call": "Pipeline.extract",
+          "context_id": "pass-1/MR09/symbol/CLEAN:gemtest",
+          "key": "key-alpha",
+          "kind": "python-return",
+          "return_value": {
+            "kind": "rejection",
+            "value": "absent"
+          },
+          "session_id": "pass-1/MR09/symbol/CLEAN:gemtest:decoder",
+          "step_id": "followup-value"
+        }
+      ],
+      "id": "followup-value",
+      "operation": "extract",
+      "reason": null,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+          "bytes": 14416,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+          "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+        },
+        "before": {
+          "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+          "bytes": 14416,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+          "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+        },
+        "key": "key-alpha",
+        "observation": {
+          "kind": "rejection",
+          "value": "absent"
+        },
+        "session_id": "pass-1/MR09/symbol/CLEAN:gemtest:decoder"
+      }
+    }
+  ],
+  "case": {
+    "carrier": "symbol",
+    "family": "reference",
+    "id": "pass-1/MR09/symbol/CLEAN",
+    "implementation": "CLEAN",
+    "pass": 1,
+    "relation": "MR09"
+  },
+  "context_id": "pass-1/MR09/symbol/CLEAN:gemtest",
+  "framework": {
+    "exported_by_official_data_exporter_hook": true,
+    "followup_inputs": [
+      {
+        "case_id": "pass-1/MR09/symbol/CLEAN",
+        "phase": "followup"
+      }
+    ],
+    "followup_outputs": [
+      {
+        "actions": [
+          {
+            "id": "session",
+            "status": "OK",
+            "value": {
+              "carrier": "symbol",
+              "implementation": "CLEAN",
+              "session_id": "pass-1/MR09/symbol/CLEAN:gemtest:decoder"
+            }
+          },
+          {
+            "id": "source",
+            "status": "OK",
+            "value": {
+              "artifact": {
+                "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+                "bytes": 16072,
+                "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+                "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+              },
+              "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+              "command": [
+                "gcc",
+                "-std=c11",
+                "-fno-ident",
+                "-no-pie",
+                "-O2",
+                "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/host.c",
+                "-o",
+                "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin"
+              ],
+              "compiler": "gcc",
+              "optimization": "O2",
+              "returncode": 0,
+              "session_id": "pass-1/MR09/symbol/CLEAN:gemtest:decoder",
+              "source": {
+                "blob": "blobs/45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a.bin.gz",
+                "bytes": 1373,
+                "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/host.c",
+                "sha256": "45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a"
+              }
+            }
+          },
+          {
+            "id": "recover",
+            "status": "OK",
+            "value": {
+              "after": {
+                "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+                "bytes": 16072,
+                "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+                "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+              },
+              "before": {
+                "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+                "bytes": 16072,
+                "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+                "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+              },
+              "key": "key-alpha",
+              "observation": {
+                "kind": "payload",
+                "value": "4d6f7270682d3031"
+              },
+              "session_id": "pass-1/MR09/symbol/CLEAN:gemtest:decoder"
+            }
+          },
+          {
+            "id": "source-view",
+            "status": "OK",
+            "value": {
+              "artifact": {
+                "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+                "bytes": 16072,
+                "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+                "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+              },
+              "key": "key-alpha",
+              "observation": {
+                "kind": "payload",
+                "value": "4d6f7270682d3031"
+              },
+              "observer": "shared-format-clean-parser"
+            }
+          },
+          {
+            "id": "intervention",
+            "status": "OK",
+            "value": {
+              "artifact": {
+                "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+                "bytes": 14416,
+                "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+                "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+              },
+              "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin"
+            }
+          },
+          {
+            "id": "followup-view",
+            "status": "OK",
+            "value": {
+              "artifact": {
+                "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+                "bytes": 14416,
+                "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+                "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+              },
+              "key": "key-alpha",
+              "observation": {
+                "kind": "rejection",
+                "value": "absent"
+              },
+              "observer": "shared-format-clean-parser"
+            }
+          },
+          {
+            "id": "followup-value",
+            "status": "OK",
+            "value": {
+              "after": {
+                "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+                "bytes": 14416,
+                "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+                "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+              },
+              "before": {
+                "blob": "blobs/164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca.bin.gz",
+                "bytes": 14416,
+                "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/intervention/removed.bin",
+                "sha256": "164619323dde02a4d007619768cc933d7a38545d7a9af5e734add2e77dde55ca"
+              },
+              "key": "key-alpha",
+              "observation": {
+                "kind": "rejection",
+                "value": "absent"
+              },
+              "session_id": "pass-1/MR09/symbol/CLEAN:gemtest:decoder"
+            }
+          }
+        ],
+        "case_id": "pass-1/MR09/symbol/CLEAN",
+        "inputs": {
+          "carrier": "symbol",
+          "compiler": "gcc",
+          "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+          "host_inputs": [
+            0,
+            1,
+            5,
+            13,
+            144,
+            99991
+          ],
+          "implementation": "CLEAN",
+          "key1": "key-alpha",
+          "key2": "key-beta",
+          "optimization": "O2",
+          "payload1": "4d6f7270682d3031",
+          "payload2": "5365636f6e642d32"
+        },
+        "relation": "MR09"
+      }
+    ],
+    "framework": "GeMTest",
+    "mr_name": "gemtest_cases",
+    "relation_name": "evaluate_obligations",
+    "relation_result": true,
+    "source_inputs": [
+      {
+        "case_id": "pass-1/MR09/symbol/CLEAN",
+        "phase": "source"
+      }
+    ],
+    "source_outputs": [
+      {
+        "actions": [
+          {
+            "id": "session",
+            "status": "OK",
+            "value": {
+              "carrier": "symbol",
+              "implementation": "CLEAN",
+              "session_id": "pass-1/MR09/symbol/CLEAN:gemtest:decoder"
+            }
+          },
+          {
+            "id": "source",
+            "status": "OK",
+            "value": {
+              "artifact": {
+                "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+                "bytes": 16072,
+                "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+                "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+              },
+              "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+              "command": [
+                "gcc",
+                "-std=c11",
+                "-fno-ident",
+                "-no-pie",
+                "-O2",
+                "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/host.c",
+                "-o",
+                "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin"
+              ],
+              "compiler": "gcc",
+              "optimization": "O2",
+              "returncode": 0,
+              "session_id": "pass-1/MR09/symbol/CLEAN:gemtest:decoder",
+              "source": {
+                "blob": "blobs/45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a.bin.gz",
+                "bytes": 1373,
+                "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/host.c",
+                "sha256": "45e69a3841e4e8368c9380bdbc2f287b38fe1665811764759930b7957a59ce6a"
+              }
+            }
+          },
+          {
+            "id": "recover",
+            "status": "OK",
+            "value": {
+              "after": {
+                "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+                "bytes": 16072,
+                "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+                "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+              },
+              "before": {
+                "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+                "bytes": 16072,
+                "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+                "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+              },
+              "key": "key-alpha",
+              "observation": {
+                "kind": "payload",
+                "value": "4d6f7270682d3031"
+              },
+              "session_id": "pass-1/MR09/symbol/CLEAN:gemtest:decoder"
+            }
+          },
+          {
+            "id": "source-view",
+            "status": "OK",
+            "value": {
+              "artifact": {
+                "blob": "blobs/7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1.bin.gz",
+                "bytes": 16072,
+                "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/framework-comparison/paired/cases/pass-1/MR09/symbol/CLEAN/gemtest-native/source/build-01/artifact.bin",
+                "sha256": "7b713450f899744a0e9c1995e1ea83c762e52b3b03c45f82418d86193b6be1a1"
+              },
+              "key": "key-alpha",
+              "observation": {
+                "kind": "payload",
+                "value": "4d6f7270682d3031"
+              },
+              "observer": "shared-format-clean-parser"
+            }
+          }
+        ],
+        "case_id": "pass-1/MR09/symbol/CLEAN",
+        "inputs": {
+          "carrier": "symbol",
+          "compiler": "gcc",
+          "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+          "host_inputs": [
+            0,
+            1,
+            5,
+            13,
+            144,
+            99991
+          ],
+          "implementation": "CLEAN",
+          "key1": "key-alpha",
+          "key2": "key-beta",
+          "optimization": "O2",
+          "payload1": "4d6f7270682d3031",
+          "payload2": "5365636f6e642d32"
+        },
+        "relation": "MR09"
+      }
+    ],
+    "test_result": "passed",
+    "transformation_name": "generate_followups"
+  },
+  "framework_events": [
+    "source SUT",
+    "valid_input",
+    "general_transformation",
+    "followup SUT: followup",
+    "general_relation"
+  ],
+  "inputs": {
+    "carrier": "symbol",
+    "compiler": "gcc",
+    "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+    "host_inputs": [
+      0,
+      1,
+      5,
+      13,
+      144,
+      99991
+    ],
+    "implementation": "CLEAN",
+    "key1": "key-alpha",
+    "key2": "key-beta",
+    "optimization": "O2",
+    "payload1": "4d6f7270682d3031",
+    "payload2": "5365636f6e642d32"
+  },
+  "judgments": {
+    "MR09": "SATISFIED",
+    "SOURCE": "SATISFIED",
+    "TRANSFORM": "SATISFIED"
+  },
+  "seconds": 0.07813582199742086
+}

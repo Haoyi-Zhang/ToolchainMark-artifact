@@ -1,0 +1,71 @@
+{
+  "action_statuses": {
+    "OK": 7
+  },
+  "case": {
+    "arm": "catalog",
+    "carrier": "string",
+    "id": "pass-1/string/CLEAN/catalog/MR08",
+    "implementation": "CLEAN",
+    "inputs": {
+      "carrier": "string",
+      "compiler": "gcc",
+      "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+      "host_inputs": [
+        0,
+        1,
+        5,
+        13,
+        144,
+        99991
+      ],
+      "implementation": "CLEAN",
+      "key1": "key-alpha",
+      "key2": "key-beta",
+      "optimization": "O2",
+      "payload1": "4d6f7270682d3031",
+      "payload2": "5365636f6e642d32"
+    },
+    "name": "MR08",
+    "pass": 1,
+    "plan": "plans/catalog/MR08.json",
+    "planned_extract_calls": 2,
+    "position": 7,
+    "relation": "MR08"
+  },
+  "child_cpu_seconds": 0.057199,
+  "extract_calls": 2,
+  "extraction_call_trace": [
+    {
+      "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR08/native/source/build-01/artifact.bin",
+      "context_id": "pass-1/string/CLEAN/catalog/MR08:cost-study",
+      "exception": null,
+      "key": "key-alpha",
+      "observation": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "ordinal": 1,
+      "step_id": "recover"
+    },
+    {
+      "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR08/native/move/program",
+      "context_id": "pass-1/string/CLEAN/catalog/MR08:cost-study",
+      "exception": null,
+      "key": "key-alpha",
+      "observation": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "ordinal": 2,
+      "step_id": "moved-value"
+    }
+  ],
+  "native_commands": 13,
+  "obligations": {
+    "MR08": "SATISFIED",
+    "SOURCE": "SATISFIED"
+  },
+  "parent_cpu_seconds": 0.023457000000000006,
+  "wall_seconds": 0.08115638099843636
+}

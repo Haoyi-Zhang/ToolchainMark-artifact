@@ -1,0 +1,14 @@
+{
+  "include/llwm/semacall/AtoiPatcher.hpp": {
+    "before": "1965b984e85db94d8872943a2436a1b29aa8f684c9955728ab65ca81a2e166ec",
+    "after": "2bffea9fb49c51c71fcb53628a0066f8e13ecbc9218cd0370c6c17d200f2f619"
+  },
+  "include/llwm/semacall/GetsPatcher.hpp": {
+    "before": "011bd3e350bfe65d2bbea04c51ebf6208ea7b9c78ace0d276bdd3abdf12dcd6b",
+    "after": "139fcf051f5aee34531b66d607d4652cfd0717c55dac84254e9f3fdf6e4f9049"
+  },
+  "include/llwm/Sidedata.hpp": {
+    "before": "6654863017852572521bc690b9e93e007eee9c6b752b0639fac973eeb3e1faae",
+    "after": "681daf906b53c11f7ca36f8dfbd9cfdbb24a030caf66d21bdbd5f77838b5ca6e"
+  }
+}

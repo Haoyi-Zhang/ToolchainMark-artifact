@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-B",
+    "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-correspondence/completed/source-snapshot/evidence_correspondence/evaluate.py",
+    "--case",
+    "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-correspondence/completed/cases/decoder-call-session",
+    "--artifact",
+    "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact"
+  ],
+  "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-correspondence/completed",
+  "exit": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "719194da7451574787a26e7b1bf85df4e8180a792653067b089a85f6923c6aba",
+  "wall_seconds": 0.08457649999763817
+}

@@ -1,0 +1,44 @@
+{
+  "layers": [
+    {
+      "accepted": true,
+      "cpu_seconds": 0.0010240939999999754,
+      "detail": {
+        "stage_verdicts": [
+          {
+            "id": "MR12",
+            "verdict": "SATISFIED"
+          }
+        ]
+      },
+      "error": null,
+      "tier": "oracle-replay",
+      "wall_seconds": 0.0010266340032103471
+    },
+    {
+      "accepted": false,
+      "cpu_seconds": 0.0038633690000000054,
+      "detail": null,
+      "error": {
+        "message": "parallel completion precedes a sibling start",
+        "type": "InvalidRecord"
+      },
+      "tier": "plan-receiver",
+      "wall_seconds": 0.0038616860038018785
+    },
+    {
+      "accepted": false,
+      "cpu_seconds": 0.0014609339999999693,
+      "detail": null,
+      "error": {
+        "message": "parallel completion precedes a sibling start",
+        "type": "InvalidRecord"
+      },
+      "tier": "native-binding",
+      "wall_seconds": 0.001460104998841416
+    }
+  ],
+  "native_programs_reexecuted": false,
+  "official_ctf_api_called": false,
+  "schema": "execution-correspondence-layer-results-v1"
+}

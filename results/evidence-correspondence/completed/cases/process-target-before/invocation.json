@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-B",
+    "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-correspondence/completed/source-snapshot/evidence_correspondence/evaluate.py",
+    "--case",
+    "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-correspondence/completed/cases/process-target-before",
+    "--artifact",
+    "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact"
+  ],
+  "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/evidence-correspondence/completed",
+  "exit": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "f57a451df6f379ceda9b7c76009124ce58f56c822bf743acbc26cc8b9548277b",
+  "wall_seconds": 0.11952012199617457
+}

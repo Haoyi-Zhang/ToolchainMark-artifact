@@ -1,0 +1,32 @@
+{
+  "case_order": [
+    "valid-host",
+    "valid-removal",
+    "valid-parallel",
+    "valid-changed-identity",
+    "valid-llvm-inconsistent",
+    "valid-llvm-satisfied",
+    "input-digest",
+    "action-context",
+    "action-order",
+    "parallel-order",
+    "guard-result",
+    "resolved-argument",
+    "consumed-reference",
+    "stored-verdict",
+    "paired-host-values",
+    "process-target-before",
+    "process-target-after",
+    "strip-flag",
+    "strip-return",
+    "strip-input",
+    "strip-output",
+    "strip-command-missing",
+    "decoder-call-key",
+    "decoder-call-session"
+  ],
+  "created_utc": "2026-11-19T12:21:30.098410+00:00",
+  "native_programs_to_execute": 0,
+  "protocol_sha256": "13af6e8aab916ddea7f0027bc21657d30c0f9c9aa5918f8e06fa96e0173e3bc2",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+}

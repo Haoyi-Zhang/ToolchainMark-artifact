@@ -1,0 +1,103 @@
+{
+  "scope": "Exact bytes matching the CTF activity source-surface measurement; preserved after measurement, not a new pre-acquisition freeze.",
+  "measurement": "results/ctf-comparison/formal-01/source-surface.json",
+  "recovered_from": "Previously retained complete project source tree; all identities match the original measurement.",
+  "files": [
+    {
+      "path": "contract_runtime/core.py",
+      "sha256": "a266350ba598daa4c7b773afeba5763d60cfd28f795ba7579298da7b443508b0",
+      "bytes": 19951,
+      "nonblank_noncomment_lines": 348
+    },
+    {
+      "path": "contract_runtime/__init__.py",
+      "sha256": "eb53199051a4e8d52138d8536a056143569ef98559d6fa324759652b264b4612",
+      "bytes": 309,
+      "nonblank_noncomment_lines": 3
+    },
+    {
+      "path": "contract_runtime/receiver.py",
+      "sha256": "019d91355262911e34eaf672d546e3893cd60e9a9f7d4aa7ae6c8a5ad8b41d52",
+      "bytes": 25490,
+      "nonblank_noncomment_lines": 485
+    },
+    {
+      "path": "declarative_study/llwm_adapter.py",
+      "sha256": "145a0b13a765ff7a3705588bdf03100d82620c79100f210716f298e9c39061c5",
+      "bytes": 5036,
+      "nonblank_noncomment_lines": 82
+    },
+    {
+      "path": "declarative_study/reference_adapter.py",
+      "sha256": "b19af0d1bf541f310fe06f11484a9355abb0bc88042feaa39616f24bd4361172",
+      "bytes": 8232,
+      "nonblank_noncomment_lines": 140
+    },
+    {
+      "path": "external_sandmark/adapter.py",
+      "sha256": "31d6be914377cbb8b92862e5117fe06d25265dfdb685e52e456c9090ce3b9941",
+      "bytes": 15626,
+      "nonblank_noncomment_lines": 259
+    },
+    {
+      "path": "external_sandmark/SandmarkBridge.java",
+      "sha256": "d0609af4329ef5d451ad0a5f4f1390da9ac7b34d37bfdebe2b5d72da57f64aae",
+      "bytes": 4245,
+      "nonblank_noncomment_lines": 74
+    },
+    {
+      "path": "declarative_study/native_io.py",
+      "sha256": "f69a76ab64347833890f81eabc27c7e100dd89ba35f8353f9b4f93e7be2b56d3",
+      "bytes": 6470,
+      "nonblank_noncomment_lines": 147
+    },
+    {
+      "path": "declarative_study/run.py",
+      "sha256": "1466dabaad2ced90a9b9aec781411b52b6fad6f1c8f6d66fb5e4143d7b1b9302",
+      "bytes": 13953,
+      "nonblank_noncomment_lines": 235
+    },
+    {
+      "path": "declarative_study/verify.py",
+      "sha256": "b4772947ae79b7e0c896a576aaf7daae09c01ad7afa9c026d66c5f49f25a857d",
+      "bytes": 26357,
+      "nonblank_noncomment_lines": 377
+    },
+    {
+      "path": "external_sandmark/run_study.py",
+      "sha256": "1cff10842b634aae3176e007624b2b43258197b097816c3010866ffb383a0e48",
+      "bytes": 7862,
+      "nonblank_noncomment_lines": 131
+    },
+    {
+      "path": "external_sandmark/verify_study.py",
+      "sha256": "0eadd6cbbb1550f28519c192ee44318206e7fc82d0c45f4a705798a445e8cec1",
+      "bytes": 16961,
+      "nonblank_noncomment_lines": 232
+    },
+    {
+      "path": "ctf_comparison/expressions.py",
+      "sha256": "11b6c9888380bc5fe914788ec2d1d1d24692f87951dc424afe8b6bf72bd51837",
+      "bytes": 7022,
+      "nonblank_noncomment_lines": 135
+    },
+    {
+      "path": "ctf_comparison/oracle.py",
+      "sha256": "de49ef3d60827e7712efe8c9972c06145de678372bfdf1d2a3b2b7a7cfd7f707",
+      "bytes": 10083,
+      "nonblank_noncomment_lines": 162
+    },
+    {
+      "path": "ctf_comparison/run.py",
+      "sha256": "d65e04bf7ec9b2b8da73cdb081525b6c5d21864f527bd7b78edef7f4540791ca",
+      "bytes": 13127,
+      "nonblank_noncomment_lines": 213
+    },
+    {
+      "path": "ctf_comparison/code_surface.py",
+      "sha256": "567993ca974617164fac442840b6cc739e82e249b4a624ee77fccfc0f38aecf1",
+      "bytes": 3097,
+      "nonblank_noncomment_lines": 40
+    }
+  ]
+}

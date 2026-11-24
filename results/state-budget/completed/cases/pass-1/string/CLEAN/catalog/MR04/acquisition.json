@@ -1,0 +1,74 @@
+{
+  "action_statuses": {
+    "OK": 4
+  },
+  "case": {
+    "arm": "catalog",
+    "carrier": "string",
+    "id": "pass-1/string/CLEAN/catalog/MR04",
+    "implementation": "CLEAN",
+    "inputs": {
+      "carrier": "string",
+      "compiler": "gcc",
+      "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+      "host_inputs": [
+        0,
+        1,
+        5,
+        13,
+        144,
+        99991
+      ],
+      "implementation": "CLEAN",
+      "key1": "key-alpha",
+      "key2": "key-beta",
+      "optimization": "O2",
+      "payload1": "4d6f7270682d3031",
+      "payload2": "5365636f6e642d32"
+    },
+    "name": "MR04",
+    "pass": 1,
+    "plan": "plans/catalog/MR04.json",
+    "planned_extract_calls": 2,
+    "position": 3,
+    "relation": "MR04"
+  },
+  "child_cpu_seconds": 0.051784,
+  "extract_calls": 2,
+  "extraction_call_trace": [
+    {
+      "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR04/native/source/build-01/artifact.bin",
+      "context_id": "pass-1/string/CLEAN/catalog/MR04:cost-study",
+      "exception": null,
+      "key": "key-alpha",
+      "observation": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "ordinal": 1,
+      "step_id": "recover"
+    },
+    {
+      "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/CLEAN/catalog/MR04/native/source/build-01/artifact.bin",
+      "context_id": "pass-1/string/CLEAN/catalog/MR04:cost-study",
+      "exception": {
+        "message": "key tag mismatch",
+        "type": "ExtractionError"
+      },
+      "key": "key-beta",
+      "observation": {
+        "kind": "rejection",
+        "value": "wrong-key"
+      },
+      "ordinal": 2,
+      "step_id": "wrong"
+    }
+  ],
+  "native_commands": 1,
+  "obligations": {
+    "MR04": "SATISFIED",
+    "SOURCE": "SATISFIED"
+  },
+  "parent_cpu_seconds": 0.006006999999999985,
+  "wall_seconds": 0.060451188997831196
+}

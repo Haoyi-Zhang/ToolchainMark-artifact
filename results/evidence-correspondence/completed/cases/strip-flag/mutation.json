@@ -1,0 +1,21 @@
+{
+  "association": "The raw command requests full stripping rather than the declared debug stripping.",
+  "base": "llvm-satisfied",
+  "id": "strip-flag",
+  "patches": [
+    {
+      "after": "--strip-all",
+      "before": "--strip-debug",
+      "op": "replace",
+      "path": [
+        "actions",
+        8,
+        "evidence",
+        1,
+        "argv",
+        1
+      ]
+    }
+  ],
+  "valid_record": false
+}

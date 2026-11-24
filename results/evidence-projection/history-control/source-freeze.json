@@ -1,0 +1,197 @@
+{
+  "files": [
+    {
+      "bytes": 309,
+      "path": "contract_runtime/__init__.py",
+      "sha256": "eb53199051a4e8d52138d8536a056143569ef98559d6fa324759652b264b4612"
+    },
+    {
+      "bytes": 19951,
+      "path": "contract_runtime/core.py",
+      "sha256": "a266350ba598daa4c7b773afeba5763d60cfd28f795ba7579298da7b443508b0"
+    },
+    {
+      "bytes": 25490,
+      "path": "contract_runtime/receiver.py",
+      "sha256": "019d91355262911e34eaf672d546e3893cd60e9a9f7d4aa7ae6c8a5ad8b41d52"
+    },
+    {
+      "bytes": 6470,
+      "path": "declarative_study/native_io.py",
+      "sha256": "f69a76ab64347833890f81eabc27c7e100dd89ba35f8353f9b4f93e7be2b56d3"
+    },
+    {
+      "bytes": 8794,
+      "path": "declarative_study/plans/MR13.json",
+      "sha256": "1d984a29eec534ff34870ea9a5bf0d91773e185658bd0d307663ceaf324141cc"
+    },
+    {
+      "bytes": 8232,
+      "path": "declarative_study/reference_adapter.py",
+      "sha256": "b19af0d1bf541f310fe06f11484a9355abb0bc88042feaa39616f24bd4361172"
+    },
+    {
+      "bytes": 34375,
+      "path": "declarative_study/verify.py",
+      "sha256": "7feea312182c1e908d174b36df0773c175ecc3c73538bcb62faf2832edb5ac21"
+    },
+    {
+      "bytes": 4923,
+      "path": "evidence_projection/native.py",
+      "sha256": "255b877130c229f77835879a07aa87d94a8d97ab6b0091d52cc8efbf720bb213"
+    },
+    {
+      "bytes": 4526,
+      "path": "evidence_projection/project.py",
+      "sha256": "5ad4379e057a28b43783dd3ac50bf8341264f7381ea0ac8cec601984f17e841c"
+    },
+    {
+      "bytes": 6975,
+      "path": "evidence_projection/receiver.py",
+      "sha256": "d67c54484a75bd012cc3e6f42158f69a0b209b97c6e4521c842126e6244403c4"
+    },
+    {
+      "bytes": 14169,
+      "path": "evidence_projection/run.py",
+      "sha256": "35c866e2591e913bc0422d57425a09b938541bfbc1f10ae8ffcf41b3e840440d"
+    },
+    {
+      "bytes": 10050,
+      "path": "evidence_projection/run_history_control.py",
+      "sha256": "6d1876aeeb6ba7e3e7e9bb7afd148a69b120f3bad4e4c7515aa329559256ac39"
+    },
+    {
+      "bytes": 1106,
+      "path": "hosts/H01-gcd.c",
+      "sha256": "bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c"
+    },
+    {
+      "bytes": 6179,
+      "path": "independent_observers/producer-v2/independent_observer.py",
+      "sha256": "4838ef13f86de5d421e049ae8355805a806e5420e1f8730fc1957c1ce6d471c3"
+    },
+    {
+      "bytes": 22,
+      "path": "src/tosem02/__init__.py",
+      "sha256": "46c663463329acd7039bdef0a9145293aad32e04d7f0dd06ca2719c99f0eb014"
+    },
+    {
+      "bytes": 1519,
+      "path": "src/tosem02/accounting.py",
+      "sha256": "61d37df9dc57c24304efd4fbb53f8ce7a30556b92393a321f22907bbe74c4ac1"
+    },
+    {
+      "bytes": 14879,
+      "path": "src/tosem02/admission.py",
+      "sha256": "56a8b594bf92d896a9c065a6d58c23e36525aa1544656e91b6330edbf338e1fc"
+    },
+    {
+      "bytes": 1508,
+      "path": "src/tosem02/catalog.py",
+      "sha256": "8d2a9c8b4b14082a0f24131324a12127a299859048f372544a89be3728ac01b4"
+    },
+    {
+      "bytes": 5023,
+      "path": "src/tosem02/cli.py",
+      "sha256": "5d911b900b237c01f2f164dc5e20ffc12204e38afa7e34c082d97a71ab3fa6d4"
+    },
+    {
+      "bytes": 7957,
+      "path": "src/tosem02/derive.py",
+      "sha256": "44c4b025b55e281be599f295e075148b9902c1dd6af0d76fbc82506871c8580e"
+    },
+    {
+      "bytes": 6239,
+      "path": "src/tosem02/evidence_boundary.py",
+      "sha256": "33b1a7173e50041e8f454f0307b1582151defb6ab400aec97eba11caf4dd446a"
+    },
+    {
+      "bytes": 1302,
+      "path": "src/tosem02/evidence_catalog.py",
+      "sha256": "07318bec6166482229f47a4403a14c61afe524f907c9b3eb6cd1d4b8aa86b3ab"
+    },
+    {
+      "bytes": 7537,
+      "path": "src/tosem02/integrity.py",
+      "sha256": "dc653ab738c68f7b2f02d9a57c873a595c3fabcd6b7d578dc48bfb0fb1806366"
+    },
+    {
+      "bytes": 1186,
+      "path": "src/tosem02/model.py",
+      "sha256": "54394be0ee9b8c477548adb5f4013f7c99a464aacf54524082eae5291e357f0d"
+    },
+    {
+      "bytes": 17162,
+      "path": "src/tosem02/pipeline.py",
+      "sha256": "09c1ce71e4e733faa8788d305922bbe34f6753ff0b820f99d4c147fd6582cb09"
+    },
+    {
+      "bytes": 1311,
+      "path": "src/tosem02/recheck.py",
+      "sha256": "62c2bad7b74c8388720318e57d43ec58ddfb32ca3973de1a3d00be0788de3eb8"
+    },
+    {
+      "bytes": 6973,
+      "path": "src/tosem02/record.py",
+      "sha256": "1daf9519b91f24ccc11262cf236cacec79447e75e2cc06c9b8d0265c332f909e"
+    },
+    {
+      "bytes": 9831,
+      "path": "src/tosem02/relations.py",
+      "sha256": "8c431ef2cffac5c138805572f5d3c1c68efcb3b6f50ecc922af2261918af7f01"
+    },
+    {
+      "bytes": 10837,
+      "path": "src/tosem02/runner.py",
+      "sha256": "2f6ed32d002069a5e7f342eac906879b8844cda3cedfac6d5d027cf43769a1d9"
+    },
+    {
+      "bytes": 2670,
+      "path": "src/tosem02/study_coverage.py",
+      "sha256": "3afb69ea53406b8e61f82f7a74a04d972a90cd97e7a61c79b6c66ecff71eb314"
+    },
+    {
+      "bytes": 13804,
+      "path": "src/tosem02/study_validation.py",
+      "sha256": "e314fb5c969c9a14f7ec1db9bb1feba7901eca51acbd648200663ca6df17ee00"
+    },
+    {
+      "bytes": 6898,
+      "path": "src/tosem02/trace_runtime.py",
+      "sha256": "b91e127b461586b01068a8a01e533fcd564cecb526407c72c9198b6ed92fe95b"
+    },
+    {
+      "bytes": 2200,
+      "path": "src/tosem02/transform_admission.py",
+      "sha256": "0f6e8c5608dfbfad4ef6ca267c2956d9fb8d835257b81ec7341485ca2ff83411"
+    }
+  ],
+  "frozen_before_execution": true,
+  "frozen_utc": "2026-11-19T12:30:25.172996+00:00",
+  "native_context": {
+    "llvm": null,
+    "profile": "declarative",
+    "tools": {
+      "gcc": {
+        "path": "/usr/bin/x86_64-linux-gnu-gcc-14",
+        "sha256": "a23ecab8ff08f09ad8c80602c2c5df7f49e09c25905cb8975902e101bf72635f"
+      },
+      "nm": {
+        "path": "/usr/bin/x86_64-linux-gnu-nm",
+        "sha256": "ddb55c0685721bf494aa2d090056b8b32a40614ad4464b305896f527d882c3c1"
+      },
+      "objcopy": {
+        "path": "/usr/bin/x86_64-linux-gnu-objcopy",
+        "sha256": "403f90bbd5d26c8ab9a2ad51f56255b812e8858a83aa8740ee71791071ddb580"
+      },
+      "readelf": {
+        "path": "/usr/bin/x86_64-linux-gnu-readelf",
+        "sha256": "4a387d80a70e6e97ef940a666fab59d5c38e7cf19ff907192fa983cb8505a7de"
+      },
+      "strip": {
+        "path": "/usr/bin/x86_64-linux-gnu-strip",
+        "sha256": "a97ae77cd5d88799edc0edb31caa2fc81d32eecaa9619d329bed890f6fd06e3a"
+      }
+    }
+  }
+}

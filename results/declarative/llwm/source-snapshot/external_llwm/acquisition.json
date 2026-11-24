@@ -1,0 +1,82 @@
+{
+  "source": "https://zenodo.org/records/14234819",
+  "doi": "10.5281/zenodo.14234819",
+  "archive_filename": "regexp_semacall_sidedata_repo.zip",
+  "archive_sha256": "98fc282d9f205c326c0729c00fc0e845d661e056b1dd7018d360ccfbd4b73022",
+  "archive_bytes": 9874241,
+  "license": "CC-BY-4.0",
+  "upstream_files": [
+    {
+      "path": "vendor/include/llwm/RegisterExpansion.hpp",
+      "upstream_archive_path": "regexp_semacall_repo/llvm-middleend-watermarks/llvm/include/llwm/RegisterExpansion.hpp",
+      "sha256": "f9257348a15821b7f4082880cb89d3e3f7d925a8332c522c78e55eb2e007a57b",
+      "bytes": 22664
+    },
+    {
+      "path": "vendor/include/llwm/SemaCall.hpp",
+      "upstream_archive_path": "regexp_semacall_repo/llvm-middleend-watermarks/llvm/include/llwm/SemaCall.hpp",
+      "sha256": "f203f54c2528defc50ead6cf8066a8a3b67167a9b79494f71fd64530bd7251c4",
+      "bytes": 1998
+    },
+    {
+      "path": "vendor/include/llwm/Sidedata.hpp",
+      "upstream_archive_path": "regexp_semacall_repo/llvm-middleend-watermarks/llvm/include/llwm/Sidedata.hpp",
+      "sha256": "6654863017852572521bc690b9e93e007eee9c6b752b0639fac973eeb3e1faae",
+      "bytes": 18767
+    },
+    {
+      "path": "vendor/include/llwm/semacall/AtoiPatcher.hpp",
+      "upstream_archive_path": "regexp_semacall_repo/llvm-middleend-watermarks/llvm/include/llwm/semacall/AtoiPatcher.hpp",
+      "sha256": "1965b984e85db94d8872943a2436a1b29aa8f684c9955728ab65ca81a2e166ec",
+      "bytes": 8460
+    },
+    {
+      "path": "vendor/include/llwm/semacall/FunctionPatcher.hpp",
+      "upstream_archive_path": "regexp_semacall_repo/llvm-middleend-watermarks/llvm/include/llwm/semacall/FunctionPatcher.hpp",
+      "sha256": "2a60f222a302b25b2417ee36fcdce9b4c2b0711d5947c88a8cc5889a6f49a27a",
+      "bytes": 15422
+    },
+    {
+      "path": "vendor/include/llwm/semacall/GetsPatcher.hpp",
+      "upstream_archive_path": "regexp_semacall_repo/llvm-middleend-watermarks/llvm/include/llwm/semacall/GetsPatcher.hpp",
+      "sha256": "011bd3e350bfe65d2bbea04c51ebf6208ea7b9c78ace0d276bdd3abdf12dcd6b",
+      "bytes": 7956
+    },
+    {
+      "path": "vendor/include/llwm/semacall/Polynoms.hpp",
+      "upstream_archive_path": "regexp_semacall_repo/llvm-middleend-watermarks/llvm/include/llwm/semacall/Polynoms.hpp",
+      "sha256": "ceb55f4021e8da027d15b142f53229590649b7307ebf6f408e9f6179631c9f03",
+      "bytes": 2810
+    },
+    {
+      "path": "vendor/include/llwm/semacall/TimePatcher.hpp",
+      "upstream_archive_path": "regexp_semacall_repo/llvm-middleend-watermarks/llvm/include/llwm/semacall/TimePatcher.hpp",
+      "sha256": "1bb73f89e02cb8df8a317e4f98aae2c678f89d45a279a8e94f057df4ba852ef6",
+      "bytes": 6417
+    },
+    {
+      "path": "vendor/lib/Passes/SemaCall.cpp",
+      "upstream_archive_path": "regexp_semacall_repo/llvm-middleend-watermarks/llvm/lib/Passes/SemaCall.cpp",
+      "sha256": "d86b9941e2a04734e2d61bbd92c9f97c4492b212bfac3c649008ce51b2a93c42",
+      "bytes": 1773
+    },
+    {
+      "path": "vendor/lib/Passes/Sidedata.cpp",
+      "upstream_archive_path": "regexp_semacall_repo/llvm-middleend-watermarks/llvm/lib/Passes/Sidedata.cpp",
+      "sha256": "2f920c7d336073a043772c3eeea70866facaf30e4a1b353812fc69eb04cc1d6f",
+      "bytes": 511
+    },
+    {
+      "path": "vendor/llwm/semacall/SemaCall.cpp",
+      "upstream_archive_path": "regexp_semacall_repo/llvm-middleend-watermarks/llvm/llwm/semacall/SemaCall.cpp",
+      "sha256": "7a4532642e46602ad061a91f2652327259c243089d6464b3c1eee73d23438024",
+      "bytes": 1209
+    },
+    {
+      "path": "vendor/llwm/sidedata/Sidedata.cpp",
+      "upstream_archive_path": "regexp_semacall_repo/llvm-middleend-watermarks/llvm/llwm/sidedata/Sidedata.cpp",
+      "sha256": "2530332204329e3e8baad2bedc8eed66f5053e19853b710ee9829523f4d59d35",
+      "bytes": 1421
+    }
+  ]
+}

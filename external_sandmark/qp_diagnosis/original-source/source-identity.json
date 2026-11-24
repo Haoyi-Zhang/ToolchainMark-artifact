@@ -1,0 +1,32 @@
+{
+  "repository": "https://github.com/JavaQualitasCorpus/sandmark-3.4",
+  "commit": "5e4642c83d802968cfa47c1a362fbecbd72f5802",
+  "license": "Original University of Arizona noncommercial permission and restrictions retained in COPYRIGHT.txt",
+  "files": [
+    {
+      "name": "AssignLV.java",
+      "repository_path": "src/sandmark/watermark/assignlv/AssignLV.java",
+      "sha256": "f1e5f793da3e98c7d7960b901adb2d0c2720168bbab6ba8010bc248fba4dfe8c"
+    },
+    {
+      "name": "ToBinary.java",
+      "repository_path": "src/sandmark/watermark/assignlv/ToBinary.java",
+      "sha256": "ca325b115885dff9200a7f1444693fdcc24995d5bb8cc6d59e092442883549d5"
+    },
+    {
+      "name": "FromBinary.java",
+      "repository_path": "src/sandmark/watermark/assignlv/FromBinary.java",
+      "sha256": "90c1afdb66734dd6c901b448d509b5566d8545abf1b0e885b8850416d0459fbc"
+    },
+    {
+      "name": "MethodCompare.java",
+      "repository_path": "src/sandmark/watermark/assignlv/MethodCompare.java",
+      "sha256": "1b23cc3ea3d1554daf2ad0f193dfad91fbcfc6c869ad5cf71896b0dc64ade095"
+    },
+    {
+      "name": "RegisterAllocator.java",
+      "repository_path": "src/sandmark/analysis/controlflowgraph/RegisterAllocator.java",
+      "sha256": "a2b7e50d1dff31661176bd620d976b8dafe213d2537c890ea1e1ea7554f0aa30"
+    }
+  ]
+}

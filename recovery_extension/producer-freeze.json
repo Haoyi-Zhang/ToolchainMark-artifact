@@ -1,0 +1,31 @@
+{
+  "files": [
+    {
+      "bytes": 91,
+      "path": "recovery_extension/__init__.py",
+      "sha256": "708f358a13d754244e7db232ec8c7e6d4c4c718ded6fa3ff395cd9bc4db69436"
+    },
+    {
+      "bytes": 1325,
+      "path": "recovery_extension/common.py",
+      "sha256": "63e5d287ae68f8d1955a3773ba6d7cc0ba0d6069a04f50fea3048a82009afd38"
+    },
+    {
+      "bytes": 3897,
+      "path": "recovery_extension/model.py",
+      "sha256": "871e218f56c8e9ff151b963fc4cf4b37fcca61fbf51dee5330279067964e3d91"
+    },
+    {
+      "bytes": 10794,
+      "path": "recovery_extension/run.py",
+      "sha256": "76ee5a0a074bfce49685a0a487ac6b714509413f1ed6a210c86668ddc82e1ee6"
+    },
+    {
+      "bytes": 4132,
+      "path": "recovery_extension/derive.py",
+      "sha256": "2febd0dd558326b295229693ead71c78940abd8c7fa195e8b7947dda854bf831"
+    }
+  ],
+  "registered_utc": "2026-11-19T08:04:33.205948+00:00",
+  "scope": "SR01 extension producer identity recorded after nonnative admission tests and before any SR01 native case."
+}

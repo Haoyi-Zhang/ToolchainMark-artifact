@@ -1,0 +1,146 @@
+{
+  "schema": "sandmark-arboit-corpus-v1",
+  "input_count": 20,
+  "inputs": [
+    {
+      "id": "official-T",
+      "path": "corpus/official-T.java",
+      "origin": "Original ANTLR 2.7.7 examples/java/java/tests/T.java",
+      "sha256": "99cc4b112c2df36b37456d60d50d327f9f11bce98fedbfda62e1ff6a5c373321",
+      "bytes": 408
+    },
+    {
+      "id": "official-E",
+      "path": "corpus/official-E.java",
+      "origin": "Original ANTLR 2.7.7 examples/java/java/tests/E.java",
+      "sha256": "0328b07344cca9913ebe98b4f84bf3ea3b20a1cd28d6e2d05bdac2c05c16b285",
+      "bytes": 430
+    },
+    {
+      "id": "basic",
+      "path": "corpus/basic.java",
+      "origin": "Fixed exploratory fixture selected to exercise changed comment predicates and renumbered token sets",
+      "sha256": "df03e1a075c1dc3f84224b68b7980e57513667dc7ba0b5f5b203f77e995ca821",
+      "bytes": 30
+    },
+    {
+      "id": "comment-lf",
+      "path": "corpus/comment-lf.java",
+      "origin": "Fixed exploratory fixture selected to exercise changed comment predicates and renumbered token sets",
+      "sha256": "6f2f2ae15727d91b6aab0318dc00956f96a73f92e1203112cd2209562631a496",
+      "bytes": 19
+    },
+    {
+      "id": "comment-crlf",
+      "path": "corpus/comment-crlf.java",
+      "origin": "Fixed exploratory fixture selected to exercise changed comment predicates and renumbered token sets",
+      "sha256": "adb9301eb05bac4df9ba243f6da32855f32ea6c57cd58a8ad1d1b5342c9d4343",
+      "bytes": 20
+    },
+    {
+      "id": "comment-cr",
+      "path": "corpus/comment-cr.java",
+      "origin": "Fixed exploratory fixture selected to exercise changed comment predicates and renumbered token sets",
+      "sha256": "191f36930434c4e819d85021a527fee0ad8a501bccd58fd3a734152880e24d68",
+      "bytes": 19
+    },
+    {
+      "id": "comment-stars",
+      "path": "corpus/comment-stars.java",
+      "origin": "Fixed exploratory fixture selected to exercise changed comment predicates and renumbered token sets",
+      "sha256": "ba161670a3d289701fefd220689fa5b4c07238072f7dd60c4e598a096627d730",
+      "bytes": 24
+    },
+    {
+      "id": "comment-slashes",
+      "path": "corpus/comment-slashes.java",
+      "origin": "Fixed exploratory fixture selected to exercise changed comment predicates and renumbered token sets",
+      "sha256": "752c28bdd5fbd42444cae749b76e229338c4b0992f355edebf8f0870a626f84c",
+      "bytes": 21
+    },
+    {
+      "id": "comment-empty",
+      "path": "corpus/comment-empty.java",
+      "origin": "Fixed exploratory fixture selected to exercise changed comment predicates and renumbered token sets",
+      "sha256": "a2209e25c32eccdafdbb1883e662cbdedab6019021b2296a56caa09a762a9dd7",
+      "bytes": 16
+    },
+    {
+      "id": "comment-unclosed",
+      "path": "corpus/comment-unclosed.java",
+      "origin": "Fixed exploratory fixture selected to exercise changed comment predicates and renumbered token sets",
+      "sha256": "730733a9ef6a439e2f8d05672068a63184b663cef94e2d963ed8f898353ab6a6",
+      "bytes": 22
+    },
+    {
+      "id": "comment-eof",
+      "path": "corpus/comment-eof.java",
+      "origin": "Fixed exploratory fixture selected to exercise changed comment predicates and renumbered token sets",
+      "sha256": "40a1cba2079c336d583572c1aa05ed980aa4050130bfb902ddcb5943bc930a9d",
+      "bytes": 21
+    },
+    {
+      "id": "escaped-literals",
+      "path": "corpus/escaped-literals.java",
+      "origin": "Fixed exploratory fixture selected to exercise changed comment predicates and renumbered token sets",
+      "sha256": "7366559fb4a69cbb36f5bc9c184bbb0cd4770ffa420023cf8d4a662f70ca21be",
+      "bytes": 49
+    },
+    {
+      "id": "hex-numbers",
+      "path": "corpus/hex-numbers.java",
+      "origin": "Fixed exploratory fixture selected to exercise changed comment predicates and renumbered token sets",
+      "sha256": "fad36912bf12425ce65d9404b27d38e45dea91290e1e9401b413f34e48441078",
+      "bytes": 49
+    },
+    {
+      "id": "comment-u0002",
+      "path": "corpus/comment-u0002.java",
+      "origin": "Fixed exploratory fixture selected to exercise changed comment predicates and renumbered token sets",
+      "sha256": "831d4290d536d9d0b75cf0a6d612cd393483e2bbab9a383ea92ff964269ae5a8",
+      "bytes": 22
+    },
+    {
+      "id": "comment-u0003",
+      "path": "corpus/comment-u0003.java",
+      "origin": "Fixed exploratory fixture selected to exercise changed comment predicates and renumbered token sets",
+      "sha256": "b065815d2a70b200e1dd5e0eea3d04f9c90c14b508dcea7cb3512de811a5ff54",
+      "bytes": 22
+    },
+    {
+      "id": "comment-u000d",
+      "path": "corpus/comment-u000d.java",
+      "origin": "Fixed exploratory fixture selected to exercise changed comment predicates and renumbered token sets",
+      "sha256": "303d3aebd7e881333e50c553ce68e2ad5a464e5d4d4a799091cdc23a705b6c98",
+      "bytes": 22
+    },
+    {
+      "id": "comment-u7ffe",
+      "path": "corpus/comment-u7ffe.java",
+      "origin": "Fixed exploratory fixture selected to exercise changed comment predicates and renumbered token sets",
+      "sha256": "d0e0272cdb5c5350d3b58d3f2d39bbe9555792a5a5212b296a507fa9be644926",
+      "bytes": 24
+    },
+    {
+      "id": "comment-u7fff",
+      "path": "corpus/comment-u7fff.java",
+      "origin": "Fixed exploratory fixture selected to exercise changed comment predicates and renumbered token sets",
+      "sha256": "665acb0e44250e14fe90f205d415bb4df01a3e2e5860a21d5841ca8585247f4d",
+      "bytes": 24
+    },
+    {
+      "id": "comment-u8000",
+      "path": "corpus/comment-u8000.java",
+      "origin": "Fixed exploratory fixture selected to exercise changed comment predicates and renumbered token sets",
+      "sha256": "7b09d40fa006ff96f945e36eb1eb896cc29933a52883c9f7afeed63e0f8f3e46",
+      "bytes": 24
+    },
+    {
+      "id": "comment-uffff",
+      "path": "corpus/comment-uffff.java",
+      "origin": "Fixed exploratory fixture selected to exercise changed comment predicates and renumbered token sets",
+      "sha256": "6e3e16d933adfb034aaaa7b04326c304e017650d4ad08891a0d1f34f2065d318",
+      "bytes": 24
+    }
+  ]
+}

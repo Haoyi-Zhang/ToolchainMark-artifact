@@ -1,0 +1,698 @@
+[
+  {
+    "after": {
+      "with-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "artifact_pairs": [
+      {
+        "artifact": "first",
+        "bytes": 15928,
+        "equal": true
+      },
+      {
+        "artifact": "second",
+        "bytes": 15928,
+        "equal": true
+      }
+    ],
+    "before": {
+      "with-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "case": {
+      "carrier": "string",
+      "id": "pass-1/string/CLEAN",
+      "implementation": "CLEAN",
+      "pass": 1
+    },
+    "judgments": {
+      "with-B": "SATISFIED",
+      "without-B": "SATISFIED"
+    },
+    "prefix_action_ids": [
+      "session",
+      "first",
+      "second",
+      "before",
+      "intervening",
+      "after"
+    ],
+    "reference_action_ids": [
+      "session",
+      "first",
+      "before",
+      "after"
+    ]
+  },
+  {
+    "after": {
+      "with-B": {
+        "kind": "payload",
+        "value": "5365636f6e642d32"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "artifact_pairs": [
+      {
+        "artifact": "first",
+        "bytes": 15928,
+        "equal": true
+      },
+      {
+        "artifact": "second",
+        "bytes": 15928,
+        "equal": true
+      }
+    ],
+    "before": {
+      "with-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "case": {
+      "carrier": "string",
+      "id": "pass-1/string/M23",
+      "implementation": "M23",
+      "pass": 1
+    },
+    "judgments": {
+      "with-B": "INCONSISTENT",
+      "without-B": "SATISFIED"
+    },
+    "prefix_action_ids": [
+      "session",
+      "first",
+      "second",
+      "before",
+      "intervening",
+      "after"
+    ],
+    "reference_action_ids": [
+      "session",
+      "first",
+      "before",
+      "after"
+    ]
+  },
+  {
+    "after": {
+      "with-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "artifact_pairs": [
+      {
+        "artifact": "first",
+        "bytes": 16072,
+        "equal": true
+      },
+      {
+        "artifact": "second",
+        "bytes": 16072,
+        "equal": true
+      }
+    ],
+    "before": {
+      "with-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "case": {
+      "carrier": "symbol",
+      "id": "pass-1/symbol/CLEAN",
+      "implementation": "CLEAN",
+      "pass": 1
+    },
+    "judgments": {
+      "with-B": "SATISFIED",
+      "without-B": "SATISFIED"
+    },
+    "prefix_action_ids": [
+      "session",
+      "first",
+      "second",
+      "before",
+      "intervening",
+      "after"
+    ],
+    "reference_action_ids": [
+      "session",
+      "first",
+      "before",
+      "after"
+    ]
+  },
+  {
+    "after": {
+      "with-B": {
+        "kind": "payload",
+        "value": "5365636f6e642d32"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "artifact_pairs": [
+      {
+        "artifact": "first",
+        "bytes": 16072,
+        "equal": true
+      },
+      {
+        "artifact": "second",
+        "bytes": 16072,
+        "equal": true
+      }
+    ],
+    "before": {
+      "with-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "case": {
+      "carrier": "symbol",
+      "id": "pass-1/symbol/M23",
+      "implementation": "M23",
+      "pass": 1
+    },
+    "judgments": {
+      "with-B": "INCONSISTENT",
+      "without-B": "SATISFIED"
+    },
+    "prefix_action_ids": [
+      "session",
+      "first",
+      "second",
+      "before",
+      "intervening",
+      "after"
+    ],
+    "reference_action_ids": [
+      "session",
+      "first",
+      "before",
+      "after"
+    ]
+  },
+  {
+    "after": {
+      "with-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "artifact_pairs": [
+      {
+        "artifact": "first",
+        "bytes": 16000,
+        "equal": true
+      },
+      {
+        "artifact": "second",
+        "bytes": 16000,
+        "equal": true
+      }
+    ],
+    "before": {
+      "with-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "case": {
+      "carrier": "section",
+      "id": "pass-1/section/CLEAN",
+      "implementation": "CLEAN",
+      "pass": 1
+    },
+    "judgments": {
+      "with-B": "SATISFIED",
+      "without-B": "SATISFIED"
+    },
+    "prefix_action_ids": [
+      "session",
+      "first",
+      "second",
+      "before",
+      "intervening",
+      "after"
+    ],
+    "reference_action_ids": [
+      "session",
+      "first",
+      "before",
+      "after"
+    ]
+  },
+  {
+    "after": {
+      "with-B": {
+        "kind": "payload",
+        "value": "5365636f6e642d32"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "artifact_pairs": [
+      {
+        "artifact": "first",
+        "bytes": 16000,
+        "equal": true
+      },
+      {
+        "artifact": "second",
+        "bytes": 16000,
+        "equal": true
+      }
+    ],
+    "before": {
+      "with-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "case": {
+      "carrier": "section",
+      "id": "pass-1/section/M23",
+      "implementation": "M23",
+      "pass": 1
+    },
+    "judgments": {
+      "with-B": "INCONSISTENT",
+      "without-B": "SATISFIED"
+    },
+    "prefix_action_ids": [
+      "session",
+      "first",
+      "second",
+      "before",
+      "intervening",
+      "after"
+    ],
+    "reference_action_ids": [
+      "session",
+      "first",
+      "before",
+      "after"
+    ]
+  },
+  {
+    "after": {
+      "with-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "artifact_pairs": [
+      {
+        "artifact": "first",
+        "bytes": 15928,
+        "equal": true
+      },
+      {
+        "artifact": "second",
+        "bytes": 15928,
+        "equal": true
+      }
+    ],
+    "before": {
+      "with-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "case": {
+      "carrier": "string",
+      "id": "pass-2/string/CLEAN",
+      "implementation": "CLEAN",
+      "pass": 2
+    },
+    "judgments": {
+      "with-B": "SATISFIED",
+      "without-B": "SATISFIED"
+    },
+    "prefix_action_ids": [
+      "session",
+      "first",
+      "second",
+      "before",
+      "intervening",
+      "after"
+    ],
+    "reference_action_ids": [
+      "session",
+      "first",
+      "before",
+      "after"
+    ]
+  },
+  {
+    "after": {
+      "with-B": {
+        "kind": "payload",
+        "value": "5365636f6e642d32"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "artifact_pairs": [
+      {
+        "artifact": "first",
+        "bytes": 15928,
+        "equal": true
+      },
+      {
+        "artifact": "second",
+        "bytes": 15928,
+        "equal": true
+      }
+    ],
+    "before": {
+      "with-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "case": {
+      "carrier": "string",
+      "id": "pass-2/string/M23",
+      "implementation": "M23",
+      "pass": 2
+    },
+    "judgments": {
+      "with-B": "INCONSISTENT",
+      "without-B": "SATISFIED"
+    },
+    "prefix_action_ids": [
+      "session",
+      "first",
+      "second",
+      "before",
+      "intervening",
+      "after"
+    ],
+    "reference_action_ids": [
+      "session",
+      "first",
+      "before",
+      "after"
+    ]
+  },
+  {
+    "after": {
+      "with-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "artifact_pairs": [
+      {
+        "artifact": "first",
+        "bytes": 16072,
+        "equal": true
+      },
+      {
+        "artifact": "second",
+        "bytes": 16072,
+        "equal": true
+      }
+    ],
+    "before": {
+      "with-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "case": {
+      "carrier": "symbol",
+      "id": "pass-2/symbol/CLEAN",
+      "implementation": "CLEAN",
+      "pass": 2
+    },
+    "judgments": {
+      "with-B": "SATISFIED",
+      "without-B": "SATISFIED"
+    },
+    "prefix_action_ids": [
+      "session",
+      "first",
+      "second",
+      "before",
+      "intervening",
+      "after"
+    ],
+    "reference_action_ids": [
+      "session",
+      "first",
+      "before",
+      "after"
+    ]
+  },
+  {
+    "after": {
+      "with-B": {
+        "kind": "payload",
+        "value": "5365636f6e642d32"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "artifact_pairs": [
+      {
+        "artifact": "first",
+        "bytes": 16072,
+        "equal": true
+      },
+      {
+        "artifact": "second",
+        "bytes": 16072,
+        "equal": true
+      }
+    ],
+    "before": {
+      "with-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "case": {
+      "carrier": "symbol",
+      "id": "pass-2/symbol/M23",
+      "implementation": "M23",
+      "pass": 2
+    },
+    "judgments": {
+      "with-B": "INCONSISTENT",
+      "without-B": "SATISFIED"
+    },
+    "prefix_action_ids": [
+      "session",
+      "first",
+      "second",
+      "before",
+      "intervening",
+      "after"
+    ],
+    "reference_action_ids": [
+      "session",
+      "first",
+      "before",
+      "after"
+    ]
+  },
+  {
+    "after": {
+      "with-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "artifact_pairs": [
+      {
+        "artifact": "first",
+        "bytes": 16000,
+        "equal": true
+      },
+      {
+        "artifact": "second",
+        "bytes": 16000,
+        "equal": true
+      }
+    ],
+    "before": {
+      "with-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "case": {
+      "carrier": "section",
+      "id": "pass-2/section/CLEAN",
+      "implementation": "CLEAN",
+      "pass": 2
+    },
+    "judgments": {
+      "with-B": "SATISFIED",
+      "without-B": "SATISFIED"
+    },
+    "prefix_action_ids": [
+      "session",
+      "first",
+      "second",
+      "before",
+      "intervening",
+      "after"
+    ],
+    "reference_action_ids": [
+      "session",
+      "first",
+      "before",
+      "after"
+    ]
+  },
+  {
+    "after": {
+      "with-B": {
+        "kind": "payload",
+        "value": "5365636f6e642d32"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "artifact_pairs": [
+      {
+        "artifact": "first",
+        "bytes": 16000,
+        "equal": true
+      },
+      {
+        "artifact": "second",
+        "bytes": 16000,
+        "equal": true
+      }
+    ],
+    "before": {
+      "with-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      },
+      "without-B": {
+        "kind": "payload",
+        "value": "4d6f7270682d3031"
+      }
+    },
+    "case": {
+      "carrier": "section",
+      "id": "pass-2/section/M23",
+      "implementation": "M23",
+      "pass": 2
+    },
+    "judgments": {
+      "with-B": "INCONSISTENT",
+      "without-B": "SATISFIED"
+    },
+    "prefix_action_ids": [
+      "session",
+      "first",
+      "second",
+      "before",
+      "intervening",
+      "after"
+    ],
+    "reference_action_ids": [
+      "session",
+      "first",
+      "before",
+      "after"
+    ]
+  }
+]

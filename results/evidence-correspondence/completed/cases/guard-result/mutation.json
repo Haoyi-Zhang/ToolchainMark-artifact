@@ -1,0 +1,28 @@
+{
+  "association": "An attempted host action records a false guard although the declaration has no guard.",
+  "base": "host",
+  "id": "guard-result",
+  "patches": [
+    {
+      "after": {
+        "dependencies": [],
+        "reason": null,
+        "state": "FALSE",
+        "value": false
+      },
+      "before": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "op": "replace",
+      "path": [
+        "actions",
+        3,
+        "guard"
+      ]
+    }
+  ],
+  "valid_record": false
+}

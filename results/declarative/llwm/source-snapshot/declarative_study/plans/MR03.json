@@ -1,0 +1,175 @@
+{
+  "actions": [
+    {
+      "arguments": {
+        "carrier": {
+          "input": "carrier",
+          "path": []
+        },
+        "implementation": {
+          "input": "implementation",
+          "path": []
+        }
+      },
+      "id": "session",
+      "operation": "session"
+    },
+    {
+      "arguments": {
+        "compiler": {
+          "input": "compiler",
+          "path": []
+        },
+        "guarded": {
+          "literal": false
+        },
+        "host": {
+          "input": "host",
+          "path": []
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "label": {
+          "literal": "unmarked"
+        },
+        "marked": {
+          "literal": false
+        },
+        "optimization": {
+          "input": "optimization",
+          "path": []
+        },
+        "payload_hex": {
+          "input": "payload1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "unmarked",
+      "operation": "build"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "unmarked"
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "physical",
+      "operation": "inspect"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "unmarked"
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "reject",
+      "operation": "extract"
+    }
+  ],
+  "id": "MR03",
+  "inputs": {
+    "carrier": "string",
+    "compiler": "string",
+    "host": "string",
+    "host_inputs": "array",
+    "implementation": "string",
+    "key1": "string",
+    "key2": "string",
+    "optimization": "string",
+    "payload1": "string",
+    "payload2": "string"
+  },
+  "obligations": [
+    {
+      "clause": "MR03",
+      "id": "MR03",
+      "predicate": {
+        "args": [
+          {
+            "path": [
+              "observation"
+            ],
+            "ref": "reject"
+          },
+          {
+            "literal": {
+              "kind": "rejection",
+              "value": "absent"
+            }
+          }
+        ],
+        "op": "eq"
+      },
+      "requires": [
+        {
+          "expr": {
+            "available": "physical"
+          },
+          "name": "available:physical"
+        },
+        {
+          "expr": {
+            "available": "reject"
+          },
+          "name": "available:reject"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "observation"
+                ],
+                "ref": "physical"
+              },
+              {
+                "literal": {
+                  "kind": "rejection",
+                  "value": "absent"
+                }
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "carrier-absent"
+        }
+      ],
+      "stage": "tested-contract"
+    }
+  ],
+  "schema": "toolchainmark-contract-v1"
+}

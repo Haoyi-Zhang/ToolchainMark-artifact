@@ -1,0 +1,1821 @@
+{
+  "acceptance_decisions": 72,
+  "controlled_invalid_records": 18,
+  "layers": {
+    "native-binding": {
+      "invalid_rejected": 18,
+      "valid_accepted": 6
+    },
+    "oracle-replay": {
+      "invalid_accepted": 17,
+      "invalid_rejected": 1,
+      "valid_accepted": 6
+    },
+    "plan-receiver": {
+      "invalid_accepted": 10,
+      "invalid_rejected": 8,
+      "valid_accepted": 6
+    }
+  },
+  "native_programs_reexecuted": false,
+  "official_ctf_api_called": false,
+  "records": 24,
+  "rows": [
+    {
+      "base": "host",
+      "id": "valid-host",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.0001433730000000022,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "MR02",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.0001466510002501309
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.0021241010000000032,
+          "detail": {
+            "action_status_counts": {
+              "OK": 5
+            },
+            "actions": 5,
+            "checks": {
+              "consumed_dependencies": true,
+              "event_order_and_parallel_groups": true,
+              "exact_action_frame": true,
+              "guards_and_arguments": true,
+              "independent_stage_judgments": true,
+              "plan_and_input_hashes": true,
+              "plan_schema_and_reference_order": true
+            },
+            "context_id": "pass-1/string/CLEAN/MR02:declaration",
+            "event_ordinals": 10,
+            "external_context_checked": true,
+            "external_inputs_checked": true,
+            "inputs_sha256": "98de8896bea73afb0817117e500f9f2e9a9138db0951c1e182ecf866ca962681",
+            "obligations": 1,
+            "plan_id": "MR02",
+            "plan_sha256": "60a7624e5d099ac050fb18eb9a5df62fa739d66ab1523da76b4452b9db5def59",
+            "schema": "toolchainmark-receipt-receiver-v1",
+            "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+            "verdict": "PASS",
+            "verdict_counts": {
+              "SATISFIED": 1
+            }
+          },
+          "error": null,
+          "tier": "plan-receiver",
+          "wall_seconds": 0.0021224109950708225
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.012586909999999993,
+          "detail": {
+            "native": {
+              "physical_byte_reobservations": 0,
+              "raw_process_output_bindings": 12,
+              "typed_extraction_return_bindings": 0,
+              "unique_blobs": 4
+            },
+            "plan": {
+              "action_status_counts": {
+                "OK": 5
+              },
+              "actions": 5,
+              "checks": {
+                "consumed_dependencies": true,
+                "event_order_and_parallel_groups": true,
+                "exact_action_frame": true,
+                "guards_and_arguments": true,
+                "independent_stage_judgments": true,
+                "plan_and_input_hashes": true,
+                "plan_schema_and_reference_order": true
+              },
+              "context_id": "pass-1/string/CLEAN/MR02:declaration",
+              "event_ordinals": 10,
+              "external_context_checked": true,
+              "external_inputs_checked": true,
+              "inputs_sha256": "98de8896bea73afb0817117e500f9f2e9a9138db0951c1e182ecf866ca962681",
+              "obligations": 1,
+              "plan_id": "MR02",
+              "plan_sha256": "60a7624e5d099ac050fb18eb9a5df62fa739d66ab1523da76b4452b9db5def59",
+              "schema": "toolchainmark-receipt-receiver-v1",
+              "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+              "verdict": "PASS",
+              "verdict_counts": {
+                "SATISFIED": 1
+              }
+            },
+            "retained_file_bindings": 38
+          },
+          "error": null,
+          "tier": "native-binding",
+          "wall_seconds": 0.012584019998030271
+        }
+      ],
+      "valid_record": true
+    },
+    {
+      "base": "removal",
+      "id": "valid-removal",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.0003178830000000049,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "SOURCE",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "TRANSFORM",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "MR09",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.0003202419975423254
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.002863551000000006,
+          "detail": {
+            "action_status_counts": {
+              "OK": 7
+            },
+            "actions": 7,
+            "checks": {
+              "consumed_dependencies": true,
+              "event_order_and_parallel_groups": true,
+              "exact_action_frame": true,
+              "guards_and_arguments": true,
+              "independent_stage_judgments": true,
+              "plan_and_input_hashes": true,
+              "plan_schema_and_reference_order": true
+            },
+            "context_id": "pass-1/string/CLEAN/MR09:declaration",
+            "event_ordinals": 14,
+            "external_context_checked": true,
+            "external_inputs_checked": true,
+            "inputs_sha256": "98de8896bea73afb0817117e500f9f2e9a9138db0951c1e182ecf866ca962681",
+            "obligations": 3,
+            "plan_id": "MR09",
+            "plan_sha256": "f466762aa9f44646a4428e9180cb2fced64561f9d9da90144b38f1cca49183f0",
+            "schema": "toolchainmark-receipt-receiver-v1",
+            "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+            "verdict": "PASS",
+            "verdict_counts": {
+              "SATISFIED": 3
+            }
+          },
+          "error": null,
+          "tier": "plan-receiver",
+          "wall_seconds": 0.0028619230070034973
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.0074731110000000045,
+          "detail": {
+            "native": {
+              "physical_byte_reobservations": 2,
+              "raw_process_output_bindings": 0,
+              "typed_extraction_return_bindings": 2,
+              "unique_blobs": 4
+            },
+            "plan": {
+              "action_status_counts": {
+                "OK": 7
+              },
+              "actions": 7,
+              "checks": {
+                "consumed_dependencies": true,
+                "event_order_and_parallel_groups": true,
+                "exact_action_frame": true,
+                "guards_and_arguments": true,
+                "independent_stage_judgments": true,
+                "plan_and_input_hashes": true,
+                "plan_schema_and_reference_order": true
+              },
+              "context_id": "pass-1/string/CLEAN/MR09:declaration",
+              "event_ordinals": 14,
+              "external_context_checked": true,
+              "external_inputs_checked": true,
+              "inputs_sha256": "98de8896bea73afb0817117e500f9f2e9a9138db0951c1e182ecf866ca962681",
+              "obligations": 3,
+              "plan_id": "MR09",
+              "plan_sha256": "f466762aa9f44646a4428e9180cb2fced64561f9d9da90144b38f1cca49183f0",
+              "schema": "toolchainmark-receipt-receiver-v1",
+              "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+              "verdict": "PASS",
+              "verdict_counts": {
+                "SATISFIED": 3
+              }
+            },
+            "retained_file_bindings": 13
+          },
+          "error": null,
+          "tier": "native-binding",
+          "wall_seconds": 0.007470361000741832
+        }
+      ],
+      "valid_record": true
+    },
+    {
+      "base": "parallel",
+      "id": "valid-parallel",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.00024355300000000746,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "MR12",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.0002452690023346804
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.002566688999999997,
+          "detail": {
+            "action_status_counts": {
+              "OK": 7
+            },
+            "actions": 7,
+            "checks": {
+              "consumed_dependencies": true,
+              "event_order_and_parallel_groups": true,
+              "exact_action_frame": true,
+              "guards_and_arguments": true,
+              "independent_stage_judgments": true,
+              "plan_and_input_hashes": true,
+              "plan_schema_and_reference_order": true
+            },
+            "context_id": "pass-1/string/CLEAN/MR12:declaration",
+            "event_ordinals": 14,
+            "external_context_checked": true,
+            "external_inputs_checked": true,
+            "inputs_sha256": "98de8896bea73afb0817117e500f9f2e9a9138db0951c1e182ecf866ca962681",
+            "obligations": 1,
+            "plan_id": "MR12",
+            "plan_sha256": "4a7a2e342d8b8187a433edb90aa3c8ecc7e5090dbec3b0d496cdc3754fd86d6c",
+            "schema": "toolchainmark-receipt-receiver-v1",
+            "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+            "verdict": "PASS",
+            "verdict_counts": {
+              "SATISFIED": 1
+            }
+          },
+          "error": null,
+          "tier": "plan-receiver",
+          "wall_seconds": 0.002565347997006029
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.006525750999999996,
+          "detail": {
+            "native": {
+              "physical_byte_reobservations": 0,
+              "raw_process_output_bindings": 0,
+              "typed_extraction_return_bindings": 2,
+              "unique_blobs": 5
+            },
+            "plan": {
+              "action_status_counts": {
+                "OK": 7
+              },
+              "actions": 7,
+              "checks": {
+                "consumed_dependencies": true,
+                "event_order_and_parallel_groups": true,
+                "exact_action_frame": true,
+                "guards_and_arguments": true,
+                "independent_stage_judgments": true,
+                "plan_and_input_hashes": true,
+                "plan_schema_and_reference_order": true
+              },
+              "context_id": "pass-1/string/CLEAN/MR12:declaration",
+              "event_ordinals": 14,
+              "external_context_checked": true,
+              "external_inputs_checked": true,
+              "inputs_sha256": "98de8896bea73afb0817117e500f9f2e9a9138db0951c1e182ecf866ca962681",
+              "obligations": 1,
+              "plan_id": "MR12",
+              "plan_sha256": "4a7a2e342d8b8187a433edb90aa3c8ecc7e5090dbec3b0d496cdc3754fd86d6c",
+              "schema": "toolchainmark-receipt-receiver-v1",
+              "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+              "verdict": "PASS",
+              "verdict_counts": {
+                "SATISFIED": 1
+              }
+            },
+            "retained_file_bindings": 14
+          },
+          "error": null,
+          "tier": "native-binding",
+          "wall_seconds": 0.0065246899976045825
+        }
+      ],
+      "valid_record": true
+    },
+    {
+      "base": "changed-identity",
+      "id": "valid-changed-identity",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.00024062799999999274,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "MR13",
+                "verdict": "INADMISSIBLE"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.00024243399820988998
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.0024063309999999977,
+          "detail": {
+            "action_status_counts": {
+              "OK": 6
+            },
+            "actions": 6,
+            "checks": {
+              "consumed_dependencies": true,
+              "event_order_and_parallel_groups": true,
+              "exact_action_frame": true,
+              "guards_and_arguments": true,
+              "independent_stage_judgments": true,
+              "plan_and_input_hashes": true,
+              "plan_schema_and_reference_order": true
+            },
+            "context_id": "pass-1/string/replace-on-B/MR13:declaration",
+            "event_ordinals": 12,
+            "external_context_checked": true,
+            "external_inputs_checked": true,
+            "inputs_sha256": "e40e4df733bd9c35aed046aa96b52ae3373aec7cd16ee598f19d850d672f2059",
+            "obligations": 1,
+            "plan_id": "MR13",
+            "plan_sha256": "0dd5ca9fb8db60bae881119af1945cac991dc2d0896915789a6e3629104e7d0d",
+            "schema": "toolchainmark-receipt-receiver-v1",
+            "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+            "verdict": "PASS",
+            "verdict_counts": {
+              "INADMISSIBLE": 1
+            }
+          },
+          "error": null,
+          "tier": "plan-receiver",
+          "wall_seconds": 0.0024052259977906942
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.007829039999999995,
+          "detail": {
+            "native": {
+              "physical_byte_reobservations": 0,
+              "raw_process_output_bindings": 0,
+              "typed_extraction_return_bindings": 3,
+              "unique_blobs": 5
+            },
+            "plan": {
+              "action_status_counts": {
+                "OK": 6
+              },
+              "actions": 6,
+              "checks": {
+                "consumed_dependencies": true,
+                "event_order_and_parallel_groups": true,
+                "exact_action_frame": true,
+                "guards_and_arguments": true,
+                "independent_stage_judgments": true,
+                "plan_and_input_hashes": true,
+                "plan_schema_and_reference_order": true
+              },
+              "context_id": "pass-1/string/replace-on-B/MR13:declaration",
+              "event_ordinals": 12,
+              "external_context_checked": true,
+              "external_inputs_checked": true,
+              "inputs_sha256": "e40e4df733bd9c35aed046aa96b52ae3373aec7cd16ee598f19d850d672f2059",
+              "obligations": 1,
+              "plan_id": "MR13",
+              "plan_sha256": "0dd5ca9fb8db60bae881119af1945cac991dc2d0896915789a6e3629104e7d0d",
+              "schema": "toolchainmark-receipt-receiver-v1",
+              "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+              "verdict": "PASS",
+              "verdict_counts": {
+                "INADMISSIBLE": 1
+              }
+            },
+            "retained_file_bindings": 16
+          },
+          "error": null,
+          "tier": "native-binding",
+          "wall_seconds": 0.007826517001376487
+        }
+      ],
+      "valid_record": true
+    },
+    {
+      "base": "llvm-inconsistent",
+      "id": "valid-llvm-inconsistent",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.0005691670000000093,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "ER01",
+                "verdict": "INCONSISTENT"
+              },
+              {
+                "id": "ER02",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER03",
+                "verdict": "INADMISSIBLE"
+              },
+              {
+                "id": "ER04",
+                "verdict": "INADMISSIBLE"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.0005710580007871613
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.004012330999999994,
+          "detail": {
+            "action_status_counts": {
+              "OK": 11
+            },
+            "actions": 11,
+            "checks": {
+              "consumed_dependencies": true,
+              "event_order_and_parallel_groups": true,
+              "exact_action_frame": true,
+              "guards_and_arguments": true,
+              "independent_stage_judgments": true,
+              "plan_and_input_hashes": true,
+              "plan_schema_and_reference_order": true
+            },
+            "context_id": "pass-1/upstream/atoi/payload-1/O0",
+            "event_ordinals": 22,
+            "external_context_checked": true,
+            "external_inputs_checked": true,
+            "inputs_sha256": "8ed50857d5e76ff9dc6a8a587cb6588e9cc756eb7c73a6efcb7565201a4b2e89",
+            "obligations": 4,
+            "plan_id": "LLWM-atoi",
+            "plan_sha256": "d9a9094bb99f95f276cb7b0391586738387d572f9eb8396569061d01e1763cf9",
+            "schema": "toolchainmark-receipt-receiver-v1",
+            "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+            "verdict": "PASS",
+            "verdict_counts": {
+              "INADMISSIBLE": 2,
+              "INCONSISTENT": 1,
+              "SATISFIED": 1
+            }
+          },
+          "error": null,
+          "tier": "plan-receiver",
+          "wall_seconds": 0.004010220000054687
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.025734333999999998,
+          "detail": {
+            "native": {
+              "physical_byte_reobservations": 0,
+              "raw_process_output_bindings": 8,
+              "typed_extraction_return_bindings": 0,
+              "unique_blobs": 7
+            },
+            "plan": {
+              "action_status_counts": {
+                "OK": 11
+              },
+              "actions": 11,
+              "checks": {
+                "consumed_dependencies": true,
+                "event_order_and_parallel_groups": true,
+                "exact_action_frame": true,
+                "guards_and_arguments": true,
+                "independent_stage_judgments": true,
+                "plan_and_input_hashes": true,
+                "plan_schema_and_reference_order": true
+              },
+              "context_id": "pass-1/upstream/atoi/payload-1/O0",
+              "event_ordinals": 22,
+              "external_context_checked": true,
+              "external_inputs_checked": true,
+              "inputs_sha256": "8ed50857d5e76ff9dc6a8a587cb6588e9cc756eb7c73a6efcb7565201a4b2e89",
+              "obligations": 4,
+              "plan_id": "LLWM-atoi",
+              "plan_sha256": "d9a9094bb99f95f276cb7b0391586738387d572f9eb8396569061d01e1763cf9",
+              "schema": "toolchainmark-receipt-receiver-v1",
+              "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+              "verdict": "PASS",
+              "verdict_counts": {
+                "INADMISSIBLE": 2,
+                "INCONSISTENT": 1,
+                "SATISFIED": 1
+              }
+            },
+            "retained_file_bindings": 52
+          },
+          "error": null,
+          "tier": "native-binding",
+          "wall_seconds": 0.02586084100039443
+        }
+      ],
+      "valid_record": true
+    },
+    {
+      "base": "llvm-satisfied",
+      "id": "valid-llvm-satisfied",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.0006378790000000079,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "ER01",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER02",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER03",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER04",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.0006396019962267019
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.0039006750000000062,
+          "detail": {
+            "action_status_counts": {
+              "OK": 11
+            },
+            "actions": 11,
+            "checks": {
+              "consumed_dependencies": true,
+              "event_order_and_parallel_groups": true,
+              "exact_action_frame": true,
+              "guards_and_arguments": true,
+              "independent_stage_judgments": true,
+              "plan_and_input_hashes": true,
+              "plan_schema_and_reference_order": true
+            },
+            "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+            "event_ordinals": 22,
+            "external_context_checked": true,
+            "external_inputs_checked": true,
+            "inputs_sha256": "51d0674c8f4fec9a09b46bc9426de772bf1eae913275ad9d2d7a714904345c38",
+            "obligations": 4,
+            "plan_id": "LLWM-atoi",
+            "plan_sha256": "d9a9094bb99f95f276cb7b0391586738387d572f9eb8396569061d01e1763cf9",
+            "schema": "toolchainmark-receipt-receiver-v1",
+            "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+            "verdict": "PASS",
+            "verdict_counts": {
+              "SATISFIED": 4
+            }
+          },
+          "error": null,
+          "tier": "plan-receiver",
+          "wall_seconds": 0.003898661998391617
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.025210134999999995,
+          "detail": {
+            "native": {
+              "physical_byte_reobservations": 0,
+              "raw_process_output_bindings": 8,
+              "typed_extraction_return_bindings": 0,
+              "unique_blobs": 7
+            },
+            "plan": {
+              "action_status_counts": {
+                "OK": 11
+              },
+              "actions": 11,
+              "checks": {
+                "consumed_dependencies": true,
+                "event_order_and_parallel_groups": true,
+                "exact_action_frame": true,
+                "guards_and_arguments": true,
+                "independent_stage_judgments": true,
+                "plan_and_input_hashes": true,
+                "plan_schema_and_reference_order": true
+              },
+              "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+              "event_ordinals": 22,
+              "external_context_checked": true,
+              "external_inputs_checked": true,
+              "inputs_sha256": "51d0674c8f4fec9a09b46bc9426de772bf1eae913275ad9d2d7a714904345c38",
+              "obligations": 4,
+              "plan_id": "LLWM-atoi",
+              "plan_sha256": "d9a9094bb99f95f276cb7b0391586738387d572f9eb8396569061d01e1763cf9",
+              "schema": "toolchainmark-receipt-receiver-v1",
+              "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+              "verdict": "PASS",
+              "verdict_counts": {
+                "SATISFIED": 4
+              }
+            },
+            "retained_file_bindings": 52
+          },
+          "error": null,
+          "tier": "native-binding",
+          "wall_seconds": 0.025207639999280218
+        }
+      ],
+      "valid_record": true
+    },
+    {
+      "base": "host",
+      "id": "input-digest",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.00017274700000000087,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "MR02",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.00017459199443692341
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.0016036270000000102,
+          "detail": null,
+          "error": {
+            "message": "input hash: recorded value differs from independent evaluation",
+            "type": "InvalidRecord"
+          },
+          "tier": "plan-receiver",
+          "wall_seconds": 0.0016027699966798536
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.0014840390000000064,
+          "detail": null,
+          "error": {
+            "message": "input hash: recorded value differs from independent evaluation",
+            "type": "InvalidRecord"
+          },
+          "tier": "native-binding",
+          "wall_seconds": 0.0014831400039838627
+        }
+      ],
+      "valid_record": false
+    },
+    {
+      "base": "host",
+      "id": "action-context",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.00014785000000000492,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "MR02",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.00015036600234452635
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.0020952580000000026,
+          "detail": null,
+          "error": {
+            "message": "base-host context: recorded value differs from independent evaluation",
+            "type": "InvalidRecord"
+          },
+          "tier": "plan-receiver",
+          "wall_seconds": 0.002093297000101302
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.0018374550000000017,
+          "detail": null,
+          "error": {
+            "message": "base-host context: recorded value differs from independent evaluation",
+            "type": "InvalidRecord"
+          },
+          "tier": "native-binding",
+          "wall_seconds": 0.0018358500019530766
+        }
+      ],
+      "valid_record": false
+    },
+    {
+      "base": "host",
+      "id": "action-order",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.00014555599999999114,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "MR02",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.00014864400145597756
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.0019910830000000046,
+          "detail": null,
+          "error": {
+            "message": "action identity/order: recorded value differs from independent evaluation",
+            "type": "InvalidRecord"
+          },
+          "tier": "plan-receiver",
+          "wall_seconds": 0.001989550997677725
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.001717876000000007,
+          "detail": null,
+          "error": {
+            "message": "action identity/order: recorded value differs from independent evaluation",
+            "type": "InvalidRecord"
+          },
+          "tier": "native-binding",
+          "wall_seconds": 0.0017166699981316924
+        }
+      ],
+      "valid_record": false
+    },
+    {
+      "base": "parallel",
+      "id": "parallel-order",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.0010240939999999754,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "MR12",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.0010266340032103471
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.0038633690000000054,
+          "detail": null,
+          "error": {
+            "message": "parallel completion precedes a sibling start",
+            "type": "InvalidRecord"
+          },
+          "tier": "plan-receiver",
+          "wall_seconds": 0.0038616860038018785
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.0014609339999999693,
+          "detail": null,
+          "error": {
+            "message": "parallel completion precedes a sibling start",
+            "type": "InvalidRecord"
+          },
+          "tier": "native-binding",
+          "wall_seconds": 0.001460104998841416
+        }
+      ],
+      "valid_record": false
+    },
+    {
+      "base": "host",
+      "id": "guard-result",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.00014616800000000207,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "MR02",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.00014822299999650568
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.0019923149999999945,
+          "detail": null,
+          "error": {
+            "message": "base-host guard: recorded value differs from independent evaluation",
+            "type": "InvalidRecord"
+          },
+          "tier": "plan-receiver",
+          "wall_seconds": 0.001991413999348879
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.0017371350000000008,
+          "detail": null,
+          "error": {
+            "message": "base-host guard: recorded value differs from independent evaluation",
+            "type": "InvalidRecord"
+          },
+          "tier": "native-binding",
+          "wall_seconds": 0.0017361499994876795
+        }
+      ],
+      "valid_record": false
+    },
+    {
+      "base": "host",
+      "id": "resolved-argument",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.00017479999999998885,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "MR02",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.0001769560039974749
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.0018671789999999966,
+          "detail": null,
+          "error": {
+            "message": "base-host resolved arguments: recorded value differs from independent evaluation",
+            "type": "InvalidRecord"
+          },
+          "tier": "plan-receiver",
+          "wall_seconds": 0.0018656950051081367
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.0017196889999999965,
+          "detail": null,
+          "error": {
+            "message": "base-host resolved arguments: recorded value differs from independent evaluation",
+            "type": "InvalidRecord"
+          },
+          "tier": "native-binding",
+          "wall_seconds": 0.0017186539989779703
+        }
+      ],
+      "valid_record": false
+    },
+    {
+      "base": "host",
+      "id": "consumed-reference",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.00017586199999999885,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "MR02",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.00017810799909057096
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.0019164019999999976,
+          "detail": null,
+          "error": {
+            "message": "base-host consumed references: recorded value differs from independent evaluation",
+            "type": "InvalidRecord"
+          },
+          "tier": "plan-receiver",
+          "wall_seconds": 0.0019150389998685569
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.0015774969999999972,
+          "detail": null,
+          "error": {
+            "message": "base-host consumed references: recorded value differs from independent evaluation",
+            "type": "InvalidRecord"
+          },
+          "tier": "native-binding",
+          "wall_seconds": 0.0015767110016895458
+        }
+      ],
+      "valid_record": false
+    },
+    {
+      "base": "host",
+      "id": "stored-verdict",
+      "layers": [
+        {
+          "accepted": false,
+          "cpu_seconds": 0.0003077479999999966,
+          "detail": null,
+          "error": {
+            "message": "stored stage labels differ from independent observation replay",
+            "type": "ValueError"
+          },
+          "tier": "oracle-replay",
+          "wall_seconds": 0.0003100460016867146
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.0017847760000000018,
+          "detail": null,
+          "error": {
+            "message": "MR02 obligation: recorded value differs from independent evaluation",
+            "type": "InvalidRecord"
+          },
+          "tier": "plan-receiver",
+          "wall_seconds": 0.0017836420011008158
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.0012700300000000053,
+          "detail": null,
+          "error": {
+            "message": "MR02 obligation: recorded value differs from independent evaluation",
+            "type": "InvalidRecord"
+          },
+          "tier": "native-binding",
+          "wall_seconds": 0.0012687569978879765
+        }
+      ],
+      "valid_record": false
+    },
+    {
+      "base": "host",
+      "id": "paired-host-values",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.00014106999999999315,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "MR02",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.00014302499766927212
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.002052804999999991,
+          "detail": {
+            "action_status_counts": {
+              "OK": 5
+            },
+            "actions": 5,
+            "checks": {
+              "consumed_dependencies": true,
+              "event_order_and_parallel_groups": true,
+              "exact_action_frame": true,
+              "guards_and_arguments": true,
+              "independent_stage_judgments": true,
+              "plan_and_input_hashes": true,
+              "plan_schema_and_reference_order": true
+            },
+            "context_id": "pass-1/string/CLEAN/MR02:declaration",
+            "event_ordinals": 10,
+            "external_context_checked": true,
+            "external_inputs_checked": true,
+            "inputs_sha256": "98de8896bea73afb0817117e500f9f2e9a9138db0951c1e182ecf866ca962681",
+            "obligations": 1,
+            "plan_id": "MR02",
+            "plan_sha256": "60a7624e5d099ac050fb18eb9a5df62fa739d66ab1523da76b4452b9db5def59",
+            "schema": "toolchainmark-receipt-receiver-v1",
+            "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+            "verdict": "PASS",
+            "verdict_counts": {
+              "SATISFIED": 1
+            }
+          },
+          "error": null,
+          "tier": "plan-receiver",
+          "wall_seconds": 0.002051203999144491
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.011195819999999995,
+          "detail": null,
+          "error": {
+            "message": "host values differ from raw output",
+            "type": "ValueError"
+          },
+          "tier": "native-binding",
+          "wall_seconds": 0.011192587997356895
+        }
+      ],
+      "valid_record": false
+    },
+    {
+      "base": "llvm-satisfied",
+      "id": "process-target-before",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.00039507799999999316,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "ER01",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER02",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER03",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER04",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.00039726800605421886
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.0023824850000000036,
+          "detail": {
+            "action_status_counts": {
+              "OK": 11
+            },
+            "actions": 11,
+            "checks": {
+              "consumed_dependencies": true,
+              "event_order_and_parallel_groups": true,
+              "exact_action_frame": true,
+              "guards_and_arguments": true,
+              "independent_stage_judgments": true,
+              "plan_and_input_hashes": true,
+              "plan_schema_and_reference_order": true
+            },
+            "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+            "event_ordinals": 22,
+            "external_context_checked": true,
+            "external_inputs_checked": true,
+            "inputs_sha256": "51d0674c8f4fec9a09b46bc9426de772bf1eae913275ad9d2d7a714904345c38",
+            "obligations": 4,
+            "plan_id": "LLWM-atoi",
+            "plan_sha256": "d9a9094bb99f95f276cb7b0391586738387d572f9eb8396569061d01e1763cf9",
+            "schema": "toolchainmark-receipt-receiver-v1",
+            "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+            "verdict": "PASS",
+            "verdict_counts": {
+              "SATISFIED": 4
+            }
+          },
+          "error": null,
+          "tier": "plan-receiver",
+          "wall_seconds": 0.0023806389945093542
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.014536131000000008,
+          "detail": null,
+          "error": {
+            "message": "invoke process target version differs from action files_before",
+            "type": "ValueError"
+          },
+          "tier": "native-binding",
+          "wall_seconds": 0.014613020000979304
+        }
+      ],
+      "valid_record": false
+    },
+    {
+      "base": "llvm-satisfied",
+      "id": "process-target-after",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.0005420969999999914,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "ER01",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER02",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER03",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER04",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.0005446290015242994
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.003943889000000006,
+          "detail": {
+            "action_status_counts": {
+              "OK": 11
+            },
+            "actions": 11,
+            "checks": {
+              "consumed_dependencies": true,
+              "event_order_and_parallel_groups": true,
+              "exact_action_frame": true,
+              "guards_and_arguments": true,
+              "independent_stage_judgments": true,
+              "plan_and_input_hashes": true,
+              "plan_schema_and_reference_order": true
+            },
+            "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+            "event_ordinals": 22,
+            "external_context_checked": true,
+            "external_inputs_checked": true,
+            "inputs_sha256": "51d0674c8f4fec9a09b46bc9426de772bf1eae913275ad9d2d7a714904345c38",
+            "obligations": 4,
+            "plan_id": "LLWM-atoi",
+            "plan_sha256": "d9a9094bb99f95f276cb7b0391586738387d572f9eb8396569061d01e1763cf9",
+            "schema": "toolchainmark-receipt-receiver-v1",
+            "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+            "verdict": "PASS",
+            "verdict_counts": {
+              "SATISFIED": 4
+            }
+          },
+          "error": null,
+          "tier": "plan-receiver",
+          "wall_seconds": 0.00394189700455172
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.02079365300000001,
+          "detail": null,
+          "error": {
+            "message": "invoke process target version differs from action files_after",
+            "type": "ValueError"
+          },
+          "tier": "native-binding",
+          "wall_seconds": 0.020790878996194806
+        }
+      ],
+      "valid_record": false
+    },
+    {
+      "base": "llvm-satisfied",
+      "id": "strip-flag",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.0005369590000000035,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "ER01",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER02",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER03",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER04",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.0005389709986047819
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.003809429000000003,
+          "detail": {
+            "action_status_counts": {
+              "OK": 11
+            },
+            "actions": 11,
+            "checks": {
+              "consumed_dependencies": true,
+              "event_order_and_parallel_groups": true,
+              "exact_action_frame": true,
+              "guards_and_arguments": true,
+              "independent_stage_judgments": true,
+              "plan_and_input_hashes": true,
+              "plan_schema_and_reference_order": true
+            },
+            "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+            "event_ordinals": 22,
+            "external_context_checked": true,
+            "external_inputs_checked": true,
+            "inputs_sha256": "51d0674c8f4fec9a09b46bc9426de772bf1eae913275ad9d2d7a714904345c38",
+            "obligations": 4,
+            "plan_id": "LLWM-atoi",
+            "plan_sha256": "d9a9094bb99f95f276cb7b0391586738387d572f9eb8396569061d01e1763cf9",
+            "schema": "toolchainmark-receipt-receiver-v1",
+            "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+            "verdict": "PASS",
+            "verdict_counts": {
+              "SATISFIED": 4
+            }
+          },
+          "error": null,
+          "tier": "plan-receiver",
+          "wall_seconds": 0.003807565000897739
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.02386917000000001,
+          "detail": null,
+          "error": {
+            "message": "debug stripping command differs from declared request",
+            "type": "ValueError"
+          },
+          "tier": "native-binding",
+          "wall_seconds": 0.023867214003985282
+        }
+      ],
+      "valid_record": false
+    },
+    {
+      "base": "llvm-satisfied",
+      "id": "strip-return",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.0004052130000000015,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "ER01",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER02",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER03",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER04",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.0004062910011271015
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.0025245269999999917,
+          "detail": {
+            "action_status_counts": {
+              "OK": 11
+            },
+            "actions": 11,
+            "checks": {
+              "consumed_dependencies": true,
+              "event_order_and_parallel_groups": true,
+              "exact_action_frame": true,
+              "guards_and_arguments": true,
+              "independent_stage_judgments": true,
+              "plan_and_input_hashes": true,
+              "plan_schema_and_reference_order": true
+            },
+            "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+            "event_ordinals": 22,
+            "external_context_checked": true,
+            "external_inputs_checked": true,
+            "inputs_sha256": "51d0674c8f4fec9a09b46bc9426de772bf1eae913275ad9d2d7a714904345c38",
+            "obligations": 4,
+            "plan_id": "LLWM-atoi",
+            "plan_sha256": "d9a9094bb99f95f276cb7b0391586738387d572f9eb8396569061d01e1763cf9",
+            "schema": "toolchainmark-receipt-receiver-v1",
+            "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+            "verdict": "PASS",
+            "verdict_counts": {
+              "SATISFIED": 4
+            }
+          },
+          "error": null,
+          "tier": "plan-receiver",
+          "wall_seconds": 0.002522871996916365
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.015461948000000003,
+          "detail": null,
+          "error": {
+            "message": "debug stripping lacks a successful native command",
+            "type": "ValueError"
+          },
+          "tier": "native-binding",
+          "wall_seconds": 0.01548034400184406
+        }
+      ],
+      "valid_record": false
+    },
+    {
+      "base": "llvm-satisfied",
+      "id": "strip-input",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.000508517,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "ER01",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER02",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER03",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER04",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.0005110280035296455
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.003680527000000003,
+          "detail": {
+            "action_status_counts": {
+              "OK": 11
+            },
+            "actions": 11,
+            "checks": {
+              "consumed_dependencies": true,
+              "event_order_and_parallel_groups": true,
+              "exact_action_frame": true,
+              "guards_and_arguments": true,
+              "independent_stage_judgments": true,
+              "plan_and_input_hashes": true,
+              "plan_schema_and_reference_order": true
+            },
+            "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+            "event_ordinals": 22,
+            "external_context_checked": true,
+            "external_inputs_checked": true,
+            "inputs_sha256": "51d0674c8f4fec9a09b46bc9426de772bf1eae913275ad9d2d7a714904345c38",
+            "obligations": 4,
+            "plan_id": "LLWM-atoi",
+            "plan_sha256": "d9a9094bb99f95f276cb7b0391586738387d572f9eb8396569061d01e1763cf9",
+            "schema": "toolchainmark-receipt-receiver-v1",
+            "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+            "verdict": "PASS",
+            "verdict_counts": {
+              "SATISFIED": 4
+            }
+          },
+          "error": null,
+          "tier": "plan-receiver",
+          "wall_seconds": 0.0036796220010728575
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.020927371,
+          "detail": null,
+          "error": {
+            "message": "debug stripping command differs from declared request",
+            "type": "ValueError"
+          },
+          "tier": "native-binding",
+          "wall_seconds": 0.02092465000168886
+        }
+      ],
+      "valid_record": false
+    },
+    {
+      "base": "llvm-satisfied",
+      "id": "strip-output",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.0005037000000000097,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "ER01",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER02",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER03",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER04",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.0005053489949204959
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.003501891000000007,
+          "detail": {
+            "action_status_counts": {
+              "OK": 11
+            },
+            "actions": 11,
+            "checks": {
+              "consumed_dependencies": true,
+              "event_order_and_parallel_groups": true,
+              "exact_action_frame": true,
+              "guards_and_arguments": true,
+              "independent_stage_judgments": true,
+              "plan_and_input_hashes": true,
+              "plan_schema_and_reference_order": true
+            },
+            "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+            "event_ordinals": 22,
+            "external_context_checked": true,
+            "external_inputs_checked": true,
+            "inputs_sha256": "51d0674c8f4fec9a09b46bc9426de772bf1eae913275ad9d2d7a714904345c38",
+            "obligations": 4,
+            "plan_id": "LLWM-atoi",
+            "plan_sha256": "d9a9094bb99f95f276cb7b0391586738387d572f9eb8396569061d01e1763cf9",
+            "schema": "toolchainmark-receipt-receiver-v1",
+            "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+            "verdict": "PASS",
+            "verdict_counts": {
+              "SATISFIED": 4
+            }
+          },
+          "error": null,
+          "tier": "plan-receiver",
+          "wall_seconds": 0.0035008439954253845
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.020814344,
+          "detail": null,
+          "error": {
+            "message": "debug stripping command differs from declared request",
+            "type": "ValueError"
+          },
+          "tier": "native-binding",
+          "wall_seconds": 0.02096760499989614
+        }
+      ],
+      "valid_record": false
+    },
+    {
+      "base": "llvm-satisfied",
+      "id": "strip-command-missing",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.0005012449999999974,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "ER01",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER02",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER03",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "ER04",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.0005036980001023039
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.0035640339999999937,
+          "detail": {
+            "action_status_counts": {
+              "OK": 11
+            },
+            "actions": 11,
+            "checks": {
+              "consumed_dependencies": true,
+              "event_order_and_parallel_groups": true,
+              "exact_action_frame": true,
+              "guards_and_arguments": true,
+              "independent_stage_judgments": true,
+              "plan_and_input_hashes": true,
+              "plan_schema_and_reference_order": true
+            },
+            "context_id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+            "event_ordinals": 22,
+            "external_context_checked": true,
+            "external_inputs_checked": true,
+            "inputs_sha256": "51d0674c8f4fec9a09b46bc9426de772bf1eae913275ad9d2d7a714904345c38",
+            "obligations": 4,
+            "plan_id": "LLWM-atoi",
+            "plan_sha256": "d9a9094bb99f95f276cb7b0391586738387d572f9eb8396569061d01e1763cf9",
+            "schema": "toolchainmark-receipt-receiver-v1",
+            "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+            "verdict": "PASS",
+            "verdict_counts": {
+              "SATISFIED": 4
+            }
+          },
+          "error": null,
+          "tier": "plan-receiver",
+          "wall_seconds": 0.003596868002205156
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.020391014,
+          "detail": null,
+          "error": {
+            "message": "debug stripping lacks exactly one native command",
+            "type": "ValueError"
+          },
+          "tier": "native-binding",
+          "wall_seconds": 0.020444987996597774
+        }
+      ],
+      "valid_record": false
+    },
+    {
+      "base": "removal",
+      "id": "decoder-call-key",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.00033229400000001075,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "SOURCE",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "TRANSFORM",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "MR09",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.00033507400075905025
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.001757295000000006,
+          "detail": {
+            "action_status_counts": {
+              "OK": 7
+            },
+            "actions": 7,
+            "checks": {
+              "consumed_dependencies": true,
+              "event_order_and_parallel_groups": true,
+              "exact_action_frame": true,
+              "guards_and_arguments": true,
+              "independent_stage_judgments": true,
+              "plan_and_input_hashes": true,
+              "plan_schema_and_reference_order": true
+            },
+            "context_id": "pass-1/string/CLEAN/MR09:declaration",
+            "event_ordinals": 14,
+            "external_context_checked": true,
+            "external_inputs_checked": true,
+            "inputs_sha256": "98de8896bea73afb0817117e500f9f2e9a9138db0951c1e182ecf866ca962681",
+            "obligations": 3,
+            "plan_id": "MR09",
+            "plan_sha256": "f466762aa9f44646a4428e9180cb2fced64561f9d9da90144b38f1cca49183f0",
+            "schema": "toolchainmark-receipt-receiver-v1",
+            "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+            "verdict": "PASS",
+            "verdict_counts": {
+              "SATISFIED": 3
+            }
+          },
+          "error": null,
+          "tier": "plan-receiver",
+          "wall_seconds": 0.001756300996930804
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.0047237090000000065,
+          "detail": null,
+          "error": {
+            "message": "extraction value differs from raw call",
+            "type": "ValueError"
+          },
+          "tier": "native-binding",
+          "wall_seconds": 0.004722739999124315
+        }
+      ],
+      "valid_record": false
+    },
+    {
+      "base": "removal",
+      "id": "decoder-call-session",
+      "layers": [
+        {
+          "accepted": true,
+          "cpu_seconds": 0.00021412899999999346,
+          "detail": {
+            "stage_verdicts": [
+              {
+                "id": "SOURCE",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "TRANSFORM",
+                "verdict": "SATISFIED"
+              },
+              {
+                "id": "MR09",
+                "verdict": "SATISFIED"
+              }
+            ]
+          },
+          "error": null,
+          "tier": "oracle-replay",
+          "wall_seconds": 0.00021600499894702807
+        },
+        {
+          "accepted": true,
+          "cpu_seconds": 0.0018039049999999945,
+          "detail": {
+            "action_status_counts": {
+              "OK": 7
+            },
+            "actions": 7,
+            "checks": {
+              "consumed_dependencies": true,
+              "event_order_and_parallel_groups": true,
+              "exact_action_frame": true,
+              "guards_and_arguments": true,
+              "independent_stage_judgments": true,
+              "plan_and_input_hashes": true,
+              "plan_schema_and_reference_order": true
+            },
+            "context_id": "pass-1/string/CLEAN/MR09:declaration",
+            "event_ordinals": 14,
+            "external_context_checked": true,
+            "external_inputs_checked": true,
+            "inputs_sha256": "98de8896bea73afb0817117e500f9f2e9a9138db0951c1e182ecf866ca962681",
+            "obligations": 3,
+            "plan_id": "MR09",
+            "plan_sha256": "f466762aa9f44646a4428e9180cb2fced64561f9d9da90144b38f1cca49183f0",
+            "schema": "toolchainmark-receipt-receiver-v1",
+            "scope": "Independent record/plan correspondence only; no native re-execution, adapter truth attestation, or atomic decoder-read guarantee.",
+            "verdict": "PASS",
+            "verdict_counts": {
+              "SATISFIED": 3
+            }
+          },
+          "error": null,
+          "tier": "plan-receiver",
+          "wall_seconds": 0.0018029710045084357
+        },
+        {
+          "accepted": false,
+          "cpu_seconds": 0.004643329000000002,
+          "detail": null,
+          "error": {
+            "message": "extraction value differs from raw call",
+            "type": "ValueError"
+          },
+          "tier": "native-binding",
+          "wall_seconds": 0.0046421389997703955
+        }
+      ],
+      "valid_record": false
+    }
+  ],
+  "schema": "execution-correspondence-summary-v1",
+  "scope": "Controlled record-conformance comparison on retained native observations. Designers know the receivers and earlier repair controls. This is not blind fault discovery, independent native acquisition, or a CTF/GeMTest defect study.",
+  "valid_records": 6,
+  "wall_seconds": 3.163022815999284
+}

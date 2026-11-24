@@ -1,0 +1,138 @@
+{
+  "study": "native framework comparison",
+  "relations": {
+    "MR08": {
+      "family": "reference",
+      "conditions": [
+        "CLEAN",
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "M06",
+        "M07",
+        "M08",
+        "M09",
+        "M10",
+        "M11",
+        "M12",
+        "M13",
+        "M14",
+        "M15",
+        "M16",
+        "M17",
+        "M18",
+        "M19",
+        "M20",
+        "M21",
+        "M22",
+        "M23",
+        "M24"
+      ]
+    },
+    "MR09": {
+      "family": "reference",
+      "conditions": [
+        "CLEAN",
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "M06",
+        "M07",
+        "M08",
+        "M09",
+        "M10",
+        "M11",
+        "M12",
+        "M13",
+        "M14",
+        "M15",
+        "M16",
+        "M17",
+        "M18",
+        "M19",
+        "M20",
+        "M21",
+        "M22",
+        "M23",
+        "M24"
+      ]
+    },
+    "MR13": {
+      "family": "state",
+      "conditions": [
+        "CLEAN",
+        "latch-1",
+        "latch-2",
+        "latch-3",
+        "latch-4",
+        "cross-object",
+        "replace-on-B"
+      ]
+    },
+    "SR01": {
+      "family": "state",
+      "conditions": [
+        "CLEAN",
+        "latch-1",
+        "latch-2",
+        "latch-3",
+        "latch-4",
+        "cross-object",
+        "replace-on-B"
+      ]
+    }
+  },
+  "carriers": [
+    "string",
+    "symbol",
+    "section"
+  ],
+  "passes": [
+    1,
+    2
+  ],
+  "arm_order": {
+    "1": [
+      "contract",
+      "gemtest"
+    ],
+    "2": [
+      "gemtest",
+      "contract"
+    ]
+  },
+  "expected_pairs": 384,
+  "expected_stage_obligations_per_arm": 834,
+  "host": "hosts/H01-gcd.c",
+  "host_inputs": [
+    0,
+    1,
+    5,
+    13,
+    144,
+    99991
+  ],
+  "payloads": [
+    "Morph-01",
+    "Second-2"
+  ],
+  "keys": [
+    "key-alpha",
+    "key-beta"
+  ],
+  "compiler": "gcc",
+  "optimization": "O2",
+  "comparison": [
+    "all stage judgments",
+    "real framework pass/fail/skip",
+    "invoked operations and arguments",
+    "normalized native observations",
+    "retained byte pairs",
+    "command counts"
+  ],
+  "design": "Known controlled conditions; two fresh acquisitions per pair using shared low-level native operations and independently written orchestration and predicates. No framework performance or unknown-fault generalization claim."
+}

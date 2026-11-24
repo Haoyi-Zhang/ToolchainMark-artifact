@@ -1,0 +1,345 @@
+{
+  "schema": "sandmark-session-source-contract-index-v1",
+  "commit": "5e4642c83d802968cfa47c1a362fbecbd72f5802",
+  "sources": [
+    {
+      "path": "src/sandmark/watermark/StaticWatermarker.java",
+      "present": true,
+      "bytes": 3331,
+      "sha256": "809af362511c73386235ec158d75694d5d9b9ba4daa036e054c593eadef0518c",
+      "read_line_ranges": [
+        [
+          24,
+          34
+        ],
+        [
+          39,
+          78
+        ]
+      ],
+      "supports": "Public recognition signature and global-key parameter factory",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/StaticWatermarker.java"
+    },
+    {
+      "path": "src/sandmark/watermark/StaticRecognizeParameters.java",
+      "present": true,
+      "bytes": 462,
+      "sha256": "18883c729feef76a6d043f8b2694074738218b705366ec972e62def2b9827046",
+      "read_line_ranges": [
+        [
+          16,
+          19
+        ]
+      ],
+      "supports": "Public per-request key and Application fields",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/StaticRecognizeParameters.java"
+    },
+    {
+      "path": "src/sandmark/watermark/StaticRecognize.java",
+      "present": true,
+      "bytes": 434,
+      "sha256": "5237e03c877de96d1d8f57d41c26b4d5f57255430ca19ab7408840ce69c74ae8",
+      "read_line_ranges": [
+        [
+          3,
+          13
+        ]
+      ],
+      "supports": "Forwarding wrapper; WatermarkingException becomes null",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/StaticRecognize.java"
+    },
+    {
+      "path": "src/sandmark/gui/AlgorithmComboBox.java",
+      "present": true,
+      "bytes": 3993,
+      "sha256": "038434f75cf7b63af27da3fe0d7ebf6b2d8b0aa74cb91ac237538676fec7f204",
+      "read_line_ranges": [
+        [
+          34,
+          39
+        ],
+        [
+          56,
+          74
+        ]
+      ],
+      "supports": "One constructed algorithm per combobox item; selected instance reused",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/gui/AlgorithmComboBox.java"
+    },
+    {
+      "path": "src/sandmark/gui/RecognizeButton.java",
+      "present": true,
+      "bytes": 1505,
+      "sha256": "808d8b2d35038ddfe1db424b446a3f14e4f443198e696b1683fea637b29ea9a5",
+      "read_line_ranges": [
+        [
+          12,
+          29
+        ]
+      ],
+      "supports": "Repeated selected-algorithm recognition and per-call GraphList clearing",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/gui/RecognizeButton.java"
+    },
+    {
+      "path": "src/sandmark/gui/CurrentApplicationTracker.java",
+      "present": true,
+      "bytes": 1062,
+      "sha256": "7e945578ce24cffa50ccca7765910a3d14a04ade39a8d8655d6914dafe9a3309",
+      "read_line_ranges": [
+        [
+          3,
+          24
+        ]
+      ],
+      "supports": "Path changes reload the Application",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/gui/CurrentApplicationTracker.java"
+    },
+    {
+      "path": "src/sandmark/gui/NextWMButton.java",
+      "present": true,
+      "bytes": 894,
+      "sha256": "b03e68a2a717bc01ab1c100d0895d02bb09a332efc620c6debc1f1cc6937f15c",
+      "read_line_ranges": [
+        [
+          16,
+          28
+        ]
+      ],
+      "supports": "Lazy iterator consumption in the shipped GUI",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/gui/NextWMButton.java"
+    },
+    {
+      "path": "src/sandmark/smash/SandmarkCLI.java",
+      "present": true,
+      "bytes": 15302,
+      "sha256": "ade1f652ce20cc4335f411c268e0494ff6ed4fd9393f9085107fb162d8ad0177",
+      "read_line_ranges": [
+        [
+          271,
+          285
+        ]
+      ],
+      "supports": "Per-request global key update and complete iterator exhaustion",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/smash/SandmarkCLI.java"
+    },
+    {
+      "path": "src/sandmark/util/Random.java",
+      "present": true,
+      "bytes": 228,
+      "sha256": "8fbc662972e0ffb3ff62906442a584fb05bf1fc407f19cb0d5a4b8e0d728f3fb",
+      "read_line_ranges": [
+        [
+          3,
+          10
+        ]
+      ],
+      "supports": "JVM singleton PRNG initialized with seed zero",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/util/Random.java"
+    },
+    {
+      "path": "src/sandmark/util/graph/graphview/GraphList.java",
+      "present": true,
+      "bytes": 4377,
+      "sha256": "aa01bad2566437b8eba82b9381a8c11d2e8a671a6a26f255c373662656408d7e",
+      "read_line_ranges": [
+        [
+          45,
+          58
+        ]
+      ],
+      "supports": "Visualization registry clearing invoked by the GUI",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/util/graph/graphview/GraphList.java"
+    },
+    {
+      "path": "src/sandmark/program/Application.java",
+      "present": true,
+      "bytes": 21703,
+      "sha256": "3826c00899621131b825d92002b01a22e92e28c84b3d8dfcf22805f2b02aaceb",
+      "read_line_ranges": [
+        [
+          101,
+          130
+        ],
+        [
+          309,
+          322
+        ],
+        [
+          658,
+          669
+        ]
+      ],
+      "supports": "Fresh load, close semantics, and implicit .smconfig auxiliary",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/program/Application.java"
+    },
+    {
+      "path": "src/sandmark/watermark/assignlv/AssignLV.java",
+      "present": true,
+      "bytes": 21613,
+      "sha256": "f1e5f793da3e98c7d7960b901adb2d0c2720168bbab6ba8010bc248fba4dfe8c",
+      "read_line_ranges": [
+        [
+          327,
+          371
+        ],
+        [
+          397,
+          399
+        ],
+        [
+          414,
+          444
+        ]
+      ],
+      "supports": "Fresh recognizer, key-based global reseeding, and recognition processing",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/assignlv/AssignLV.java"
+    },
+    {
+      "path": "src/sandmark/watermark/gtw/GTW.java",
+      "present": true,
+      "bytes": 16291,
+      "sha256": "418ca57ae61660684ba73d29d34e9e9ddf5ba2bd43c1f49d4f0bbda0a26593b3",
+      "read_line_ranges": [
+        [
+          328,
+          351
+        ]
+      ],
+      "supports": "Fresh GTW iterator with per-instance properties",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/gtw/GTW.java"
+    },
+    {
+      "path": "src/sandmark/watermark/gtw/GTWRecognizer.java",
+      "present": true,
+      "bytes": 7098,
+      "sha256": "8817fe687cccdb365a6019c1cd31dbda8092df44c5cd57203824eed228528e44",
+      "read_line_ranges": [
+        [
+          25,
+          35
+        ],
+        [
+          119,
+          180
+        ]
+      ],
+      "supports": "Iterator retains property object and lazily reads Key File",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/gtw/GTWRecognizer.java"
+    },
+    {
+      "path": "src/sandmark/watermark/dm/DM.java",
+      "present": true,
+      "bytes": 38600,
+      "sha256": "1617abcf1be9ab84d3bcbc23046700338f33130cb564d64dcd3db187a1bdd87b",
+      "read_line_ranges": [
+        [
+          365,
+          390
+        ]
+      ],
+      "supports": "Explicit original-file lookup with filename fallback",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/dm/DM.java"
+    },
+    {
+      "path": "src/sandmark/watermark/objectwm/ObjectWatermark.java",
+      "present": true,
+      "bytes": 17881,
+      "sha256": "cff8f2d505831a927ff0a76f0048de81f211023f943454ac19fdfbe91dc83d9e",
+      "read_line_ranges": [
+        [
+          7,
+          29
+        ],
+        [
+          303,
+          339
+        ],
+        [
+          370,
+          447
+        ],
+        [
+          471,
+          489
+        ]
+      ],
+      "supports": "Candidate-verification semantics and first/subsequent original-file handling",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/objectwm/ObjectWatermark.java"
+    },
+    {
+      "path": "src/sandmark/watermark/objectwm/VectorExtraction.java",
+      "present": true,
+      "bytes": 3593,
+      "sha256": "83e4cac0fdeed018c05e56d2c36adaf13b189cd792df4491fc121cfe798d106b",
+      "read_line_ranges": [
+        [
+          25,
+          87
+        ]
+      ],
+      "supports": "Per-call extraction vectors",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/objectwm/VectorExtraction.java"
+    },
+    {
+      "path": "src/sandmark/watermark/mondenwmark/MondenWmark.java",
+      "present": true,
+      "bytes": 19450,
+      "sha256": "368b6f1f19ebf907ca252d34d8ef61ed4231a7de373a411d01ddec45e153b097",
+      "read_line_ranges": [
+        [
+          262,
+          272
+        ],
+        [
+          398,
+          447
+        ]
+      ],
+      "supports": "Key-derived local PRNG and candidate extraction",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/mondenwmark/MondenWmark.java"
+    },
+    {
+      "path": "src/sandmark/watermark/hattrick/HatTrick.java",
+      "present": true,
+      "bytes": 13330,
+      "sha256": "c2b92d3a369a1d545a0147435d785bce9041630fab8e8dc04bf41a58bd01c1e1",
+      "read_line_ranges": [
+        [
+          14,
+          51
+        ]
+      ],
+      "supports": "Static lookup tables initialized at class loading",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/hattrick/HatTrick.java"
+    },
+    {
+      "path": "src/sandmark/watermark/arboit/ArboitAlg.java",
+      "present": true,
+      "bytes": 7931,
+      "sha256": "29fba13c42b20f572cb0290df9d6371419c84e8e836d62c2496e632130ed029e",
+      "read_line_ranges": [
+        [
+          181,
+          222
+        ]
+      ],
+      "supports": "Fresh recognition iterator and configuration-dependent recovery",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/arboit/ArboitAlg.java"
+    },
+    {
+      "path": "src/sandmark/watermark/arboit/UtilFunctions.java",
+      "present": true,
+      "bytes": 33756,
+      "sha256": "d1a7e4987f9fd4bec56df3349b76ea60f20a54fb5533ba54883f7752d984df9f",
+      "read_line_ranges": [
+        [
+          673,
+          719
+        ]
+      ],
+      "supports": "Selected recovery path; not the embedding RNG path",
+      "url": "https://github.com/JavaQualitasCorpus/sandmark-3.4/blob/5e4642c83d802968cfa47c1a362fbecbd72f5802/src/sandmark/watermark/arboit/UtilFunctions.java"
+    }
+  ],
+  "scope": "Inspected retained primary source files and selected line ranges; no exhaustive transitive-code or source-to-binary proof."
+}

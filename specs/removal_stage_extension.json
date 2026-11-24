@@ -1,0 +1,66 @@
+{
+  "protocol": "separate-TR01-MR09-stage-extension-v1",
+  "local_plan_frozen_utc": "2026-11-19T06:00:30.664756+00:00",
+  "local_registration": "Plan written before the first execution of this extension; not an external preregistration or an unseen-mechanism claim.",
+  "compiler": "gcc",
+  "optimization": "O2",
+  "hosts": [
+    "H01-gcd.c",
+    "H02-fibonacci.c",
+    "H03-bitmix.c",
+    "H04-polynomial.c",
+    "H05-crc.c",
+    "H06-primecount.c",
+    "H07-sortfold.c",
+    "H08-statemachine.c",
+    "H09-matrix.c",
+    "H10-parser.c",
+    "H11-popcount.c",
+    "H12-lcg.c",
+    "H13-zlib.c",
+    "H14-openssl.c",
+    "H15-sqlite.c",
+    "H16-xml.c",
+    "H17-json.c",
+    "H18-png.c"
+  ],
+  "carriers": [
+    "string",
+    "symbol",
+    "section"
+  ],
+  "cohorts": [
+    "clean-removal",
+    "skipped-removal",
+    "accepted-after-removal",
+    "restored-during-extraction"
+  ],
+  "cases_per_pass": 216,
+  "passes": 2,
+  "expected_pairs": {
+    "clean-removal": [
+      "SATISFIED",
+      "SATISFIED"
+    ],
+    "skipped-removal": [
+      "INCONSISTENT",
+      "INADMISSIBLE"
+    ],
+    "accepted-after-removal": [
+      "SATISFIED",
+      "INCONSISTENT"
+    ],
+    "restored-during-extraction": [
+      "SATISFIED",
+      "INADMISSIBLE"
+    ]
+  },
+  "scope": "Owned compiler/ELF fixtures: 18 hosts x 3 carrier representations x 4 predefined behavior cohorts per pass. TR01 is an ordinary removal-transform postcondition assessed before tested extraction. MR09 is extractor-focused and requires removal plus snapshot coherence. Same-information direct checks share recorded carrier observations and the parser family; no independent-parser or superior-oracle claim. Counts remain separate from the 14-relation/18,900-row matrices. Host semantics, external defects, ABA mutation and adversarial filesystem behavior are outside this extension.",
+  "failure_rules": "Unavailable source/postcondition observation or failed transformation execution makes TR01 inadmissible. A completed no-op transform with a valid residual carrier is inconsistent. Missing or changing follow-up evidence makes MR09 inadmissible; no early stop is counted as a pass.",
+  "cohort_mechanisms": {
+    "clean-removal": "Unmodified Pipeline",
+    "skipped-removal": "Existing M15 removal no-op",
+    "accepted-after-removal": "Existing M09 fallback payload after rejection",
+    "restored-during-extraction": "Owned fixture restores the original bytes at entry to follow-up extraction"
+  }
+}

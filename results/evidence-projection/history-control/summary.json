@@ -1,0 +1,30 @@
+{
+  "artifact_byte_pairs": 24,
+  "by_implementation": {
+    "CLEAN": {
+      "pairs": 6,
+      "with_B": {
+        "SATISFIED": 6
+      },
+      "without_B": {
+        "SATISFIED": 6
+      }
+    },
+    "M23": {
+      "pairs": 6,
+      "with_B": {
+        "INCONSISTENT": 6
+      },
+      "without_B": {
+        "SATISFIED": 6
+      }
+    }
+  },
+  "elapsed_seconds": 3.5217863240031875,
+  "missing_history_controls": 12,
+  "native_executions": 24,
+  "pairs": 12,
+  "rejected_missing_history_controls": 12,
+  "source_unchanged": true,
+  "unequal_artifact_byte_pairs": 0
+}

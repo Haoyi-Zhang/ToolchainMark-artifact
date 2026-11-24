@@ -1,0 +1,5 @@
+{
+  "parent_instrumented_sha256": "22aa6b0c4dbc0fb64f96e9ee0683a65a2f694f0470f04823ec0de3680f5b8dba",
+  "instrumented_triples_sha256": "62bc3971a0bdc86bed485aa42bdf5f1b396a3bb15189c4e4094f01b77016e25a",
+  "kind": "post-hoc trace instrumentation only; no intended algorithm logic changes"
+}

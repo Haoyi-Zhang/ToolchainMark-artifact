@@ -1,0 +1,25 @@
+{
+  "association": "The host-input dependency is omitted from the consumed-reference list.",
+  "base": "host",
+  "id": "consumed-reference",
+  "patches": [
+    {
+      "after": [
+        "action:unmarked",
+        "action:session"
+      ],
+      "before": [
+        "action:unmarked",
+        "input:host_inputs",
+        "action:session"
+      ],
+      "op": "replace",
+      "path": [
+        "actions",
+        3,
+        "consumed_references"
+      ]
+    }
+  ],
+  "valid_record": false
+}

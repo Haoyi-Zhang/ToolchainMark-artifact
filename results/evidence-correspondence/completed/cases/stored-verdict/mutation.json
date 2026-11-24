@@ -1,0 +1,18 @@
+{
+  "association": "The stored stage label contradicts replay of its unchanged observations.",
+  "base": "host",
+  "id": "stored-verdict",
+  "patches": [
+    {
+      "after": "INCONSISTENT",
+      "before": "SATISFIED",
+      "op": "replace",
+      "path": [
+        "obligations",
+        0,
+        "verdict"
+      ]
+    }
+  ],
+  "valid_record": false
+}

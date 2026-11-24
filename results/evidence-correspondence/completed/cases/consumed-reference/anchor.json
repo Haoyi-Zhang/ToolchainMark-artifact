@@ -1,0 +1,27 @@
+{
+  "expected_context_id": "pass-1/string/CLEAN/MR02:declaration",
+  "expected_inputs": {
+    "carrier": "string",
+    "compiler": "gcc",
+    "host": "/workspace/scratch/022f04342461/work-v6/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+    "host_inputs": [
+      0,
+      1,
+      5,
+      13,
+      144,
+      99991
+    ],
+    "implementation": "CLEAN",
+    "key1": "key-alpha",
+    "key2": "key-beta",
+    "optimization": "O2",
+    "payload1": "4d6f7270682d3031",
+    "payload2": "5365636f6e642d32"
+  },
+  "plan_source": "results/declarative-v6/reference/cases/pass-1/string/CLEAN/MR02/plan.json",
+  "receipt_source": "results/declarative-v6/reference/cases/pass-1/string/CLEAN/MR02/receipt.json",
+  "source_case": "pass-1/string/CLEAN/MR02",
+  "store": "results/declarative-v6/reference",
+  "study": "reference"
+}

@@ -1,0 +1,1250 @@
+{
+  "actions": [
+    {
+      "argument_evaluations": {
+        "carrier": {
+          "dependencies": [
+            "input:carrier"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "string"
+        },
+        "implementation": {
+          "dependencies": [
+            "input:implementation"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "latch-1"
+        }
+      },
+      "arguments": {
+        "carrier": "string",
+        "implementation": "latch-1"
+      },
+      "consumed_references": [
+        "input:carrier",
+        "input:implementation"
+      ],
+      "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+      "end_event": 2,
+      "evidence": [],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "session",
+      "operation": "session",
+      "reason": null,
+      "start_event": 1,
+      "status": "OK",
+      "value": {
+        "carrier": "string",
+        "implementation": "latch-1",
+        "session_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "compiler": {
+          "dependencies": [
+            "input:compiler"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "gcc"
+        },
+        "guarded": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": false
+        },
+        "host": {
+          "dependencies": [
+            "input:host"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "label": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": "first"
+        },
+        "marked": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": true
+        },
+        "optimization": {
+          "dependencies": [
+            "input:optimization"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "O2"
+        },
+        "payload_hex": {
+          "dependencies": [
+            "input:payload1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "4d6f7270682d3031"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder"
+        }
+      },
+      "arguments": {
+        "compiler": "gcc",
+        "guarded": false,
+        "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+        "key": "key-alpha",
+        "label": "first",
+        "marked": true,
+        "optimization": "O2",
+        "payload_hex": "4d6f7270682d3031",
+        "session": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder"
+      },
+      "consumed_references": [
+        "input:compiler",
+        "input:host",
+        "input:key1",
+        "input:optimization",
+        "input:payload1",
+        "action:session"
+      ],
+      "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+      "end_event": 4,
+      "evidence": [
+        {
+          "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+          "files": [
+            {
+              "blob": "blobs/bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c.bin.gz",
+              "bytes": 1106,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+              "sha256": "bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "first"
+        },
+        {
+          "argv": [
+            "gcc",
+            "-std=c11",
+            "-fno-ident",
+            "-no-pie",
+            "-O2",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/host.c",
+            "-o",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin"
+          ],
+          "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-gcc-14",
+            "sha256": "a23ecab8ff08f09ad8c80602c2c5df7f49e09c25905cb8975902e101bf72635f"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/host.c",
+              "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/host.c",
+              "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.05123478099994827,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "first"
+        },
+        {
+          "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+          "files": [
+            {
+              "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/host.c",
+              "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "first"
+        },
+        {
+          "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+          "files": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "first"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "first",
+      "operation": "build",
+      "reason": null,
+      "start_event": 3,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+          "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+        },
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+        "command": [
+          "gcc",
+          "-std=c11",
+          "-fno-ident",
+          "-no-pie",
+          "-O2",
+          "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/host.c",
+          "-o",
+          "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin"
+        ],
+        "compiler": "gcc",
+        "optimization": "O2",
+        "returncode": 0,
+        "session_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder",
+        "source": {
+          "blob": "blobs/de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e.bin.gz",
+          "bytes": 1296,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/host.c",
+          "sha256": "de3dd3bc3add920f6b14f3cfa83262c596594edfaf1d5fcc70bb4bc78a38fa0e"
+        }
+      }
+    },
+    {
+      "argument_evaluations": {
+        "compiler": {
+          "dependencies": [
+            "input:compiler"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "gcc"
+        },
+        "guarded": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": false
+        },
+        "host": {
+          "dependencies": [
+            "input:host"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "label": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": "second"
+        },
+        "marked": {
+          "dependencies": [],
+          "reason": null,
+          "state": "VALUE",
+          "value": true
+        },
+        "optimization": {
+          "dependencies": [
+            "input:optimization"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "O2"
+        },
+        "payload_hex": {
+          "dependencies": [
+            "input:payload2"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "5365636f6e642d32"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder"
+        }
+      },
+      "arguments": {
+        "compiler": "gcc",
+        "guarded": false,
+        "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+        "key": "key-alpha",
+        "label": "second",
+        "marked": true,
+        "optimization": "O2",
+        "payload_hex": "5365636f6e642d32",
+        "session": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder"
+      },
+      "consumed_references": [
+        "input:compiler",
+        "input:host",
+        "input:key1",
+        "input:optimization",
+        "input:payload2",
+        "action:session"
+      ],
+      "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+      "end_event": 6,
+      "evidence": [
+        {
+          "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+          "files": [
+            {
+              "blob": "blobs/bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c.bin.gz",
+              "bytes": 1106,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+              "sha256": "bf207a4afdd7e623be4bd0751bdc1917c0ee550af0f38c0531b25bb726d1710c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "second"
+        },
+        {
+          "argv": [
+            "gcc",
+            "-std=c11",
+            "-fno-ident",
+            "-no-pie",
+            "-O2",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/second/build-02/host.c",
+            "-o",
+            "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/second/build-02/artifact.bin"
+          ],
+          "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+          "cwd": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact",
+          "executable": {
+            "path": "/usr/bin/x86_64-linux-gnu-gcc-14",
+            "sha256": "a23ecab8ff08f09ad8c80602c2c5df7f49e09c25905cb8975902e101bf72635f"
+          },
+          "files_after": [
+            {
+              "blob": "blobs/90b8f28efb18009e9a773c7cf86c779c18913fc67a4469c0b13b5bfdd6172471.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/second/build-02/host.c",
+              "sha256": "90b8f28efb18009e9a773c7cf86c779c18913fc67a4469c0b13b5bfdd6172471"
+            }
+          ],
+          "files_before": [
+            {
+              "blob": "blobs/90b8f28efb18009e9a773c7cf86c779c18913fc67a4469c0b13b5bfdd6172471.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/second/build-02/host.c",
+              "sha256": "90b8f28efb18009e9a773c7cf86c779c18913fc67a4469c0b13b5bfdd6172471"
+            }
+          ],
+          "kind": "process",
+          "returncode": 0,
+          "seconds": 0.053094677001354285,
+          "status": "COMPLETED",
+          "stderr_hex": "",
+          "stdin_hex": null,
+          "stdout_hex": "",
+          "step_id": "second"
+        },
+        {
+          "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+          "files": [
+            {
+              "blob": "blobs/90b8f28efb18009e9a773c7cf86c779c18913fc67a4469c0b13b5bfdd6172471.bin.gz",
+              "bytes": 1296,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/second/build-02/host.c",
+              "sha256": "90b8f28efb18009e9a773c7cf86c779c18913fc67a4469c0b13b5bfdd6172471"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "second"
+        },
+        {
+          "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+          "files": [
+            {
+              "blob": "blobs/fcca0256eb248b8cc56d18428a93d2e7ede540f05af2be62dae873cae766214b.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/second/build-02/artifact.bin",
+              "sha256": "fcca0256eb248b8cc56d18428a93d2e7ede540f05af2be62dae873cae766214b"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "second"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "second",
+      "operation": "build",
+      "reason": null,
+      "start_event": 5,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/fcca0256eb248b8cc56d18428a93d2e7ede540f05af2be62dae873cae766214b.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/second/build-02/artifact.bin",
+          "sha256": "fcca0256eb248b8cc56d18428a93d2e7ede540f05af2be62dae873cae766214b"
+        },
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/second/build-02/artifact.bin",
+        "command": [
+          "gcc",
+          "-std=c11",
+          "-fno-ident",
+          "-no-pie",
+          "-O2",
+          "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/second/build-02/host.c",
+          "-o",
+          "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/second/build-02/artifact.bin"
+        ],
+        "compiler": "gcc",
+        "optimization": "O2",
+        "returncode": 0,
+        "session_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder",
+        "source": {
+          "blob": "blobs/90b8f28efb18009e9a773c7cf86c779c18913fc67a4469c0b13b5bfdd6172471.bin.gz",
+          "bytes": 1296,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/second/build-02/host.c",
+          "sha256": "90b8f28efb18009e9a773c7cf86c779c18913fc67a4469c0b13b5bfdd6172471"
+        }
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:first"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+        "key": "key-alpha",
+        "session": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder"
+      },
+      "consumed_references": [
+        "action:first",
+        "input:key1",
+        "action:session"
+      ],
+      "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+      "end_event": 8,
+      "evidence": [
+        {
+          "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+          "files": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "physical-A"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "physical-A",
+      "operation": "inspect",
+      "reason": null,
+      "start_event": 7,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+          "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+        },
+        "key": "key-alpha",
+        "observation": {
+          "kind": "payload",
+          "value": "4d6f7270682d3031"
+        },
+        "observer": "shared-format-clean-parser"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:second"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/second/build-02/artifact.bin"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/second/build-02/artifact.bin",
+        "key": "key-alpha",
+        "session": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder"
+      },
+      "consumed_references": [
+        "action:second",
+        "input:key1",
+        "action:session"
+      ],
+      "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+      "end_event": 10,
+      "evidence": [
+        {
+          "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+          "files": [
+            {
+              "blob": "blobs/fcca0256eb248b8cc56d18428a93d2e7ede540f05af2be62dae873cae766214b.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/second/build-02/artifact.bin",
+              "sha256": "fcca0256eb248b8cc56d18428a93d2e7ede540f05af2be62dae873cae766214b"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "physical-B"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "physical-B",
+      "operation": "inspect",
+      "reason": null,
+      "start_event": 9,
+      "status": "OK",
+      "value": {
+        "artifact": {
+          "blob": "blobs/fcca0256eb248b8cc56d18428a93d2e7ede540f05af2be62dae873cae766214b.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/second/build-02/artifact.bin",
+          "sha256": "fcca0256eb248b8cc56d18428a93d2e7ede540f05af2be62dae873cae766214b"
+        },
+        "key": "key-alpha",
+        "observation": {
+          "kind": "payload",
+          "value": "5365636f6e642d32"
+        },
+        "observer": "shared-format-clean-parser"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:first"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+        "key": "key-alpha",
+        "session": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder"
+      },
+      "consumed_references": [
+        "action:first",
+        "input:key1",
+        "action:session"
+      ],
+      "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+      "end_event": 12,
+      "evidence": [
+        {
+          "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+          "files": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "initial"
+        },
+        {
+          "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+          "files": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "initial"
+        },
+        {
+          "after": {
+            "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+            "bytes": 15928,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+            "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+          },
+          "before": {
+            "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+            "bytes": 15928,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+            "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+          },
+          "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+          "call": "Pipeline.extract",
+          "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+          "key": "key-alpha",
+          "kind": "python-return",
+          "return_value": {
+            "kind": "payload",
+            "value": "4d6f7270682d3031"
+          },
+          "session_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder",
+          "step_id": "initial"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "initial",
+      "operation": "extract",
+      "reason": null,
+      "start_event": 11,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+          "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+        },
+        "before": {
+          "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+          "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+        },
+        "key": "key-alpha",
+        "observation": {
+          "kind": "payload",
+          "value": "4d6f7270682d3031"
+        },
+        "session_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:first"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin"
+        },
+        "key": {
+          "dependencies": [
+            "input:key2"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-beta"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+        "key": "key-beta",
+        "session": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder"
+      },
+      "consumed_references": [
+        "action:first",
+        "input:key2",
+        "action:session"
+      ],
+      "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+      "end_event": 14,
+      "evidence": [
+        {
+          "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+          "files": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "request-0"
+        },
+        {
+          "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+          "files": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "request-0"
+        },
+        {
+          "after": {
+            "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+            "bytes": 15928,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+            "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+          },
+          "before": {
+            "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+            "bytes": 15928,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+            "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+          },
+          "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+          "call": "Pipeline.extract",
+          "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+          "key": "key-beta",
+          "kind": "python-return",
+          "return_value": {
+            "kind": "rejection",
+            "value": "wrong-key"
+          },
+          "session_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder",
+          "step_id": "request-0"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "request-0",
+      "operation": "extract",
+      "reason": null,
+      "start_event": 13,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+          "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+        },
+        "before": {
+          "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+          "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+        },
+        "key": "key-beta",
+        "observation": {
+          "kind": "rejection",
+          "value": "wrong-key"
+        },
+        "session_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder"
+      }
+    },
+    {
+      "argument_evaluations": {
+        "binary": {
+          "dependencies": [
+            "action:first"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin"
+        },
+        "key": {
+          "dependencies": [
+            "input:key1"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "key-alpha"
+        },
+        "session": {
+          "dependencies": [
+            "action:session"
+          ],
+          "reason": null,
+          "state": "VALUE",
+          "value": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder"
+        }
+      },
+      "arguments": {
+        "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+        "key": "key-alpha",
+        "session": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder"
+      },
+      "consumed_references": [
+        "action:first",
+        "input:key1",
+        "action:session"
+      ],
+      "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+      "end_event": 16,
+      "evidence": [
+        {
+          "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+          "files": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "request-1"
+        },
+        {
+          "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+          "files": [
+            {
+              "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+              "bytes": 15928,
+              "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+              "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+            }
+          ],
+          "kind": "file-capture",
+          "step_id": "request-1"
+        },
+        {
+          "after": {
+            "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+            "bytes": 15928,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+            "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+          },
+          "before": {
+            "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+            "bytes": 15928,
+            "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+            "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+          },
+          "binary": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+          "call": "Pipeline.extract",
+          "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+          "key": "key-alpha",
+          "kind": "python-return",
+          "return_value": {
+            "kind": "rejection",
+            "value": "wrong-key"
+          },
+          "session_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder",
+          "step_id": "request-1"
+        }
+      ],
+      "group": null,
+      "guard": {
+        "dependencies": [],
+        "reason": null,
+        "state": "TRUE",
+        "value": true
+      },
+      "id": "request-1",
+      "operation": "extract",
+      "reason": null,
+      "start_event": 15,
+      "status": "OK",
+      "value": {
+        "after": {
+          "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+          "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+        },
+        "before": {
+          "blob": "blobs/b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c.bin.gz",
+          "bytes": 15928,
+          "path": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/results/state-budget/completed/cases/pass-1/string/latch-1/bfs/Am_Ap/native/first/build-01/artifact.bin",
+          "sha256": "b8e5790f338ae8db35cfffc794a440a51f513484ba40b60dbac7eb19948f430c"
+        },
+        "key": "key-alpha",
+        "observation": {
+          "kind": "rejection",
+          "value": "wrong-key"
+        },
+        "session_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study:decoder"
+      }
+    }
+  ],
+  "context_id": "pass-1/string/latch-1/bfs/Am_Ap:cost-study",
+  "inputs": {
+    "carrier": "string",
+    "compiler": "gcc",
+    "host": "/workspace/scratch/022f04342461/work-v7/ToolchainMark_TOSEM/artifact/hosts/H01-gcd.c",
+    "host_inputs": [
+      0,
+      1,
+      5,
+      13,
+      144,
+      99991
+    ],
+    "implementation": "latch-1",
+    "key1": "key-alpha",
+    "key2": "key-beta",
+    "lockout_excluded": true,
+    "optimization": "O2",
+    "payload1": "4d6f7270682d3031",
+    "payload2": "5365636f6e642d32",
+    "reuse_permitted": true
+  },
+  "inputs_sha256": "04d8f76947bb860edf2b2e4113cf9868c40b855cc0b8e2912c78d060ab531d2f",
+  "obligations": [
+    {
+      "clause": "reusable decoder on fixed artifact versions",
+      "consumed_references": [
+        "action:physical-A",
+        "action:physical-B",
+        "action:initial",
+        "action:request-0",
+        "action:request-1",
+        "input:reuse_permitted",
+        "input:lockout_excluded",
+        "input:key1",
+        "input:key2",
+        "input:payload1",
+        "input:payload2",
+        "action:first"
+      ],
+      "failed_gate": null,
+      "gates": [
+        {
+          "dependencies": [
+            "action:physical-A"
+          ],
+          "name": "available:physical-A",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:physical-B"
+          ],
+          "name": "available:physical-B",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:initial"
+          ],
+          "name": "available:initial",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:request-0"
+          ],
+          "name": "available:request-0",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:request-1"
+          ],
+          "name": "available:request-1",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "input:reuse_permitted"
+          ],
+          "name": "reuse-permitted",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "input:lockout_excluded"
+          ],
+          "name": "lockout-excluded",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "input:key1",
+            "input:key2"
+          ],
+          "name": "keys-distinct",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:physical-A",
+            "input:payload1"
+          ],
+          "name": "physical-A-valid",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:physical-B",
+            "input:payload2"
+          ],
+          "name": "physical-B-valid",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:initial",
+            "input:payload1"
+          ],
+          "name": "initial-source-valid",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:initial"
+          ],
+          "name": "initial-endpoints",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:request-0",
+            "action:first"
+          ],
+          "name": "request-0:version-before",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:request-0"
+          ],
+          "name": "request-0:version-after",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:request-0",
+            "action:initial"
+          ],
+          "name": "request-0:same-session",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:request-1",
+            "action:first"
+          ],
+          "name": "request-1:version-before",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:request-1"
+          ],
+          "name": "request-1:version-after",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        },
+        {
+          "dependencies": [
+            "action:request-1",
+            "action:initial"
+          ],
+          "name": "request-1:same-session",
+          "reason": null,
+          "state": "TRUE",
+          "value": true
+        }
+      ],
+      "id": "STATE",
+      "predicate": {
+        "dependencies": [
+          "action:request-0",
+          "action:request-1",
+          "input:payload1"
+        ],
+        "reason": null,
+        "state": "FALSE",
+        "value": false
+      },
+      "reason": "predicate-false",
+      "stage": "decoder-context",
+      "verdict": "INCONSISTENT"
+    }
+  ],
+  "plan_sha256": "e78118aa53f16a13e458b91084a1d6f2fb806bae4f520c2f5a2d1a77aaf25e58",
+  "schema": "toolchainmark-execution-v1"
+}

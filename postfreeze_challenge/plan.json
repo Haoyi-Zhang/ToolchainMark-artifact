@@ -1,0 +1,372 @@
+{
+  "protocol": "postfreeze-catalog-challenge-v1",
+  "status": "FROZEN-BEFORE-IMPLEMENTATION-AND-EXECUTION",
+  "frozen_utc": "2026-11-19T07:33:54.099388+00:00",
+  "source_freeze_file": "frozen-inputs.json",
+  "source_freeze_sha256": "a60e4da161570ff0ea17fb0d8e7f5682e55cdb20e6ba467f608045cd3710bfe0",
+  "scope": "Locally prospective challenge with four new trigger behaviors and independently coded fault implementations in known contract families. Designers know the original catalog and its results; no claim of blind or field-defect sampling.",
+  "faults": [
+    {
+      "id": "N01",
+      "name": "Successful decode cache omits key context",
+      "contract_family": "authentication/state",
+      "trigger": "An identical artifact-byte digest is extracted after a successful extraction under a different key in the same instance.",
+      "implementation": "Cache successful payloads by artifact SHA-256 only; hits return the cached payload without revalidating the supplied key. Misses use the unchanged strict extractor.",
+      "closest_original": [
+        "M06",
+        "M08"
+      ],
+      "difference": "Cold wrong-key rejection remains intact and the carrier remains correctly key-bound; only a warm successful-cache hit omits the key.",
+      "separation_traces": [
+        "D01-cold-key",
+        "D02-warm-key"
+      ]
+    },
+    {
+      "id": "N02",
+      "name": "Typed rejection poisons a reused decoder session",
+      "contract_family": "state/error recovery",
+      "trigger": "A subsequent extraction in the same instance follows any typed ExtractionError.",
+      "implementation": "Latch the first typed extraction rejection and replay its rejection kind on later requests until a new decoder instance is constructed. Builds do not clear the latch; utility/I/O exceptions are not converted to typed rejections.",
+      "closest_original": [
+        "M08",
+        "M23"
+      ],
+      "difference": "The contaminated state is a previous failed request, not the latest payload or a successful intervening extraction. A fresh decoder reading the same bytes succeeds.",
+      "separation_traces": [
+        "D03-error-recovery"
+      ],
+      "must_retain_if_unexposed": true
+    },
+    {
+      "id": "N03",
+      "name": "Artifact resolver collapses distinct paths to a basename",
+      "contract_family": "artifact resolution/state",
+      "trigger": "A requested basename is registered by multiple completed builds in the same instance.",
+      "implementation": "Register each successful build path under binary.name, with the last completed registration winning; extraction selects that registered path, otherwise the requested path, then runs the unchanged strict carrier decoder with the actual supplied key. Builds, returned paths, physical bytes and compile settings are unmodified.",
+      "closest_original": [
+        "M07",
+        "M08",
+        "M17",
+        "M18",
+        "M20",
+        "M23"
+      ],
+      "difference": "The extractor reads an actual wrong native artifact and still checks key and integrity; separate basenames restore correct resolution. It is not payload caching, build reuse, path rejection, or overlapping staging corruption.",
+      "separation_traces": [
+        "D04-basename-collision",
+        "D05-distinct-basenames"
+      ]
+    },
+    {
+      "id": "N04",
+      "name": "Parse-error recovery reads the last successful artifact",
+      "contract_family": "artifact authority/error recovery",
+      "trigger": "Strict extraction of the requested artifact gives a typed rejection after an earlier successful extraction in the same instance.",
+      "implementation": "First read the requested artifact strictly. On a typed rejection, retry the last successfully extracted native artifact using the same supplied key; propagate a retry rejection. Keep all requested artifact bytes unchanged and record both effective read paths. No fallback exists before an extraction succeeds.",
+      "closest_original": [
+        "M07",
+        "M08",
+        "M09",
+        "M16",
+        "M17"
+      ],
+      "difference": "The returned payload is decoded from another physical artifact, can follow P2 rather than the original fixed default, and remains key-sensitive. Current-artifact checksums are not bypassed.",
+      "separation_traces": [
+        "D06-recovery-artifact"
+      ]
+    }
+  ],
+  "hosts": [
+    "H01-gcd.c",
+    "H02-fibonacci.c",
+    "H03-bitmix.c",
+    "H04-polynomial.c",
+    "H05-crc.c",
+    "H06-primecount.c",
+    "H07-sortfold.c",
+    "H08-statemachine.c",
+    "H09-matrix.c",
+    "H10-parser.c",
+    "H11-popcount.c",
+    "H12-lcg.c",
+    "H13-zlib.c",
+    "H14-openssl.c",
+    "H15-sqlite.c",
+    "H16-xml.c",
+    "H17-json.c",
+    "H18-png.c"
+  ],
+  "carriers": [
+    "string",
+    "symbol",
+    "section"
+  ],
+  "cohorts": [
+    "CLEAN",
+    "N01",
+    "N02",
+    "N03",
+    "N04"
+  ],
+  "relations": [
+    "MR01",
+    "MR02",
+    "MR03",
+    "MR04",
+    "MR05",
+    "MR06",
+    "MR07",
+    "MR08",
+    "MR09",
+    "MR10",
+    "MR11",
+    "MR12",
+    "MR13",
+    "MR14"
+  ],
+  "classifier_protocol": "evidence-gated-v4-removal-coherence",
+  "payloads": {
+    "P1": "4d6f7270682d3031",
+    "P2": "5365636f6e642d32"
+  },
+  "keys": {
+    "K1": "key-alpha",
+    "K2": "key-beta"
+  },
+  "main_passes": 2,
+  "rows_per_full_pass": 3780,
+  "seeded_units_per_pass": 216,
+  "clean_rows_per_full_pass": 756,
+  "roundtrip_rows_per_pass": 270,
+  "activity_order": [
+    "full-first",
+    "roundtrip-first",
+    "roundtrip-second",
+    "full-second"
+  ],
+  "workers": 4,
+  "distinction_host": "H01-gcd.c",
+  "distinction_traces": [
+    {
+      "id": "D01-cold-key",
+      "actions": [
+        "build:A:P1",
+        "extract:A:K2",
+        "extract:A:K1"
+      ],
+      "expected": {
+        "CLEAN": [
+          "rejection:wrong-key",
+          "payload:4d6f7270682d3031"
+        ],
+        "N01": [
+          "rejection:wrong-key",
+          "payload:4d6f7270682d3031"
+        ],
+        "M06": [
+          "payload:4d6f7270682d3031",
+          "payload:4d6f7270682d3031"
+        ],
+        "M08": [
+          "payload:4d6f7270682d3031",
+          "payload:4d6f7270682d3031"
+        ]
+      }
+    },
+    {
+      "id": "D02-warm-key",
+      "actions": [
+        "build:A:P1",
+        "extract:A:K1",
+        "extract:A:K2"
+      ],
+      "expected": {
+        "CLEAN": [
+          "payload:4d6f7270682d3031",
+          "rejection:wrong-key"
+        ],
+        "N01": [
+          "payload:4d6f7270682d3031",
+          "payload:4d6f7270682d3031"
+        ],
+        "M06": [
+          "payload:4d6f7270682d3031",
+          "payload:4d6f7270682d3031"
+        ],
+        "M08": [
+          "payload:4d6f7270682d3031",
+          "payload:4d6f7270682d3031"
+        ]
+      }
+    },
+    {
+      "id": "D03-error-recovery",
+      "actions": [
+        "build:A:P1",
+        "extract:A:K2",
+        "extract:A:K1",
+        "reset-decoder",
+        "extract:A:K1"
+      ],
+      "expected": {
+        "CLEAN": [
+          "rejection:wrong-key",
+          "payload:4d6f7270682d3031",
+          "payload:4d6f7270682d3031"
+        ],
+        "N02": [
+          "rejection:wrong-key",
+          "rejection:wrong-key",
+          "payload:4d6f7270682d3031"
+        ],
+        "M23": [
+          "rejection:wrong-key",
+          "payload:4d6f7270682d3031",
+          "payload:4d6f7270682d3031"
+        ]
+      }
+    },
+    {
+      "id": "D04-basename-collision",
+      "actions": [
+        "build:A:P1",
+        "build:B:P2",
+        "extract:A:K1",
+        "extract:B:K1",
+        "extract:A:K2"
+      ],
+      "expected": {
+        "CLEAN": [
+          "payload:4d6f7270682d3031",
+          "payload:5365636f6e642d32",
+          "rejection:wrong-key"
+        ],
+        "N03": [
+          "payload:5365636f6e642d32",
+          "payload:5365636f6e642d32",
+          "rejection:wrong-key"
+        ],
+        "M08": [
+          "payload:5365636f6e642d32",
+          "payload:5365636f6e642d32",
+          "payload:5365636f6e642d32"
+        ],
+        "M18": [
+          "payload:4d6f7270682d3031",
+          "payload:4d6f7270682d3031",
+          "rejection:wrong-key"
+        ],
+        "M23": [
+          "payload:4d6f7270682d3031",
+          "payload:5365636f6e642d32",
+          "payload:5365636f6e642d32"
+        ]
+      }
+    },
+    {
+      "id": "D05-distinct-basenames",
+      "actions": [
+        "build:A:P1",
+        "build:B:P2",
+        "copy:A:A-distinct.bin",
+        "copy:B:B-distinct.bin",
+        "extract:A-distinct.bin:K1",
+        "extract:B-distinct.bin:K1"
+      ],
+      "expected": {
+        "CLEAN": [
+          "payload:4d6f7270682d3031",
+          "payload:5365636f6e642d32"
+        ],
+        "N03": [
+          "payload:4d6f7270682d3031",
+          "payload:5365636f6e642d32"
+        ],
+        "M08": [
+          "payload:5365636f6e642d32",
+          "payload:5365636f6e642d32"
+        ],
+        "M18": [
+          "payload:4d6f7270682d3031",
+          "payload:4d6f7270682d3031"
+        ],
+        "M07": [
+          "rejection:sidecar",
+          "rejection:sidecar"
+        ],
+        "M17": [
+          "rejection:path",
+          "rejection:path"
+        ]
+      }
+    },
+    {
+      "id": "D06-recovery-artifact",
+      "actions": [
+        "build:A:P2",
+        "extract:A:K1",
+        "remove:A:R",
+        "extract:R:K1",
+        "extract:R:K2"
+      ],
+      "expected": {
+        "CLEAN": [
+          "payload:5365636f6e642d32",
+          "rejection:absent",
+          "rejection:absent"
+        ],
+        "N04": [
+          "payload:5365636f6e642d32",
+          "payload:5365636f6e642d32",
+          "rejection:wrong-key"
+        ],
+        "M09": [
+          "payload:5365636f6e642d32",
+          "payload:4d6f7270682d3031",
+          "payload:4d6f7270682d3031"
+        ],
+        "M16": [
+          "payload:5365636f6e642d32",
+          "rejection:absent",
+          "rejection:absent"
+        ],
+        "M07": [
+          "payload:5365636f6e642d32",
+          "rejection:sidecar",
+          "rejection:sidecar"
+        ],
+        "M17": [
+          "payload:5365636f6e642d32",
+          "rejection:path",
+          "rejection:path"
+        ]
+      }
+    }
+  ],
+  "distinction_cases": 84,
+  "precondition_for_main": "All registered distinction traces must match their declared typed outcomes on every carrier. Retain all attempted/failed traces. A failed infrastructure or implementation attempt is preserved; any repair may only implement these existing definitions, never change a registered trigger or relation.",
+  "sampling_and_scoring": {
+    "unit": "host/carrier/new-trigger identity",
+    "full_catalog": "At least one INCONSISTENT among all fourteen frozen relation outcomes. INADMISSIBLE never counts as exposure.",
+    "roundtrip": "MR01 on the same units, with separate fresh MR01-only activities for measured workflow cost.",
+    "all_attempts": "Retain every planned row, every outcome, every early-stop phase/reason, failure and unexposed unit. No conditional denominator restricted to activated faults.",
+    "activation": "Record fault-branch entry and material effects separately; an enabled seed or a same-payload wrong-path read is not automatically a contradiction.",
+    "not_pooled_with_v4": true
+  },
+  "measurement": {
+    "timing": "Record case elapsed wall, Python-process CPU and waited-child CPU; activity end-to-end wall/CPU includes retention and cleanup. Timing is descriptive on a shared host, not human labor or production overhead.",
+    "actual_compiler_calls": "Count Python subprocess audit events for GCC/Clang drivers as invocation attempts; separately report returned successful BuildResult records. Audit hooks observe commands without replacing frozen functions.",
+    "retained_evidence": "Original requests/results, ordered adapter calls including errors, requested/effective read paths, byte hashes and content-addressed compressed snapshots, actual subprocess invocation commands, all rows and original stdout/stderr activity logs.",
+    "integration_size": "Bytes, nonblank source lines (including comments/docstrings), AST function definitions by fault adapter, recording glue, runner and receiver. Do not infer person-hours.",
+    "rerun": "Compare complete scientific row keys and all eleven original non-timing CSV fields. Preserve raw schedules/paths and do not claim their identity for overlapping builds."
+  },
+  "freeze_rules": [
+    "Do not modify any frozen src/hosts/specs file or relation handler, predicate, observer, request constants, admission gate or action sequence.",
+    "Do not monkeypatch the classifier or observer namespace. Pass a separate Pipeline subclass through the existing evaluate API.",
+    "Do not tune a trigger after observing calibration or matrix results.",
+    "Calibration and main rows use separate instances/workspaces; do not prime primary cases with extra calls.",
+    "If a frozen source changes, stop and report the mismatch. Preserve old results and failure records.",
+    "The original 24 operators are used only as named separation controls, outside the new primary denominator."
+  ]
+}

@@ -1,0 +1,570 @@
+{
+  "actions": [
+    {
+      "arguments": {
+        "carrier": {
+          "input": "carrier",
+          "path": []
+        },
+        "implementation": {
+          "input": "implementation",
+          "path": []
+        }
+      },
+      "id": "session",
+      "operation": "session"
+    },
+    {
+      "arguments": {
+        "compiler": {
+          "input": "compiler",
+          "path": []
+        },
+        "guarded": {
+          "literal": true
+        },
+        "host": {
+          "input": "host",
+          "path": []
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "label": {
+          "literal": "source"
+        },
+        "marked": {
+          "literal": true
+        },
+        "optimization": {
+          "input": "optimization",
+          "path": []
+        },
+        "payload_hex": {
+          "input": "payload1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "source",
+      "operation": "build"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "source"
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "recover",
+      "operation": "extract"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "source"
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "source-view",
+      "operation": "checksum_view"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "source"
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "intervention",
+      "operation": "corrupt",
+      "when": {
+        "args": [
+          {
+            "args": [
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "kind"
+                    ],
+                    "ref": "recover"
+                  },
+                  {
+                    "literal": "payload"
+                  }
+                ],
+                "op": "eq"
+              },
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "value"
+                    ],
+                    "ref": "recover"
+                  },
+                  {
+                    "input": "payload1",
+                    "path": []
+                  }
+                ],
+                "op": "eq"
+              }
+            ],
+            "op": "and"
+          },
+          {
+            "args": [
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "kind"
+                    ],
+                    "ref": "source-view"
+                  },
+                  {
+                    "literal": "payload"
+                  }
+                ],
+                "op": "eq"
+              },
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "value"
+                    ],
+                    "ref": "source-view"
+                  },
+                  {
+                    "input": "payload1",
+                    "path": []
+                  }
+                ],
+                "op": "eq"
+              }
+            ],
+            "op": "and"
+          }
+        ],
+        "op": "and"
+      }
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "intervention"
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        },
+        "source_material": {
+          "path": [
+            "material"
+          ],
+          "ref": "source-view"
+        }
+      },
+      "id": "followup-view",
+      "operation": "checksum_view"
+    },
+    {
+      "arguments": {
+        "binary": {
+          "path": [
+            "binary"
+          ],
+          "ref": "intervention"
+        },
+        "key": {
+          "input": "key1",
+          "path": []
+        },
+        "session": {
+          "path": [
+            "session_id"
+          ],
+          "ref": "session"
+        }
+      },
+      "id": "followup-value",
+      "operation": "extract"
+    }
+  ],
+  "id": "MR10",
+  "inputs": {
+    "carrier": "string",
+    "compiler": "string",
+    "host": "string",
+    "host_inputs": "array",
+    "implementation": "string",
+    "key1": "string",
+    "key2": "string",
+    "optimization": "string",
+    "payload1": "string",
+    "payload2": "string"
+  },
+  "obligations": [
+    {
+      "clause": "literal recovery and physical source",
+      "id": "SOURCE",
+      "predicate": {
+        "args": [
+          {
+            "args": [
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "kind"
+                    ],
+                    "ref": "recover"
+                  },
+                  {
+                    "literal": "payload"
+                  }
+                ],
+                "op": "eq"
+              },
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "value"
+                    ],
+                    "ref": "recover"
+                  },
+                  {
+                    "input": "payload1",
+                    "path": []
+                  }
+                ],
+                "op": "eq"
+              }
+            ],
+            "op": "and"
+          },
+          {
+            "args": [
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "kind"
+                    ],
+                    "ref": "source-view"
+                  },
+                  {
+                    "literal": "payload"
+                  }
+                ],
+                "op": "eq"
+              },
+              {
+                "args": [
+                  {
+                    "path": [
+                      "observation",
+                      "value"
+                    ],
+                    "ref": "source-view"
+                  },
+                  {
+                    "input": "payload1",
+                    "path": []
+                  }
+                ],
+                "op": "eq"
+              }
+            ],
+            "op": "and"
+          }
+        ],
+        "op": "and"
+      },
+      "requires": [
+        {
+          "expr": {
+            "available": "recover"
+          },
+          "name": "available:recover"
+        },
+        {
+          "expr": {
+            "available": "source-view"
+          },
+          "name": "available:source-view"
+        }
+      ],
+      "stage": "embedding"
+    },
+    {
+      "clause": "declared intervention postcondition",
+      "id": "TRANSFORM",
+      "predicate": {
+        "args": [
+          {
+            "args": [
+              {
+                "path": [
+                  "observation"
+                ],
+                "ref": "followup-view"
+              },
+              {
+                "literal": {
+                  "kind": "rejection",
+                  "value": "checksum"
+                }
+              }
+            ],
+            "op": "eq"
+          },
+          {
+            "args": [
+              {
+                "path": [
+                  "material",
+                  "payload_hex"
+                ],
+                "ref": "source-view"
+              },
+              {
+                "path": [
+                  "material",
+                  "payload_hex"
+                ],
+                "ref": "followup-view"
+              }
+            ],
+            "op": "eq"
+          },
+          {
+            "args": [
+              {
+                "path": [
+                  "material",
+                  "protected"
+                ],
+                "ref": "source-view"
+              },
+              {
+                "path": [
+                  "material",
+                  "protected"
+                ],
+                "ref": "followup-view"
+              }
+            ],
+            "op": "eq"
+          },
+          {
+            "args": [
+              {
+                "path": [
+                  "material",
+                  "checksums"
+                ],
+                "ref": "source-view"
+              },
+              {
+                "path": [
+                  "material",
+                  "checksums"
+                ],
+                "ref": "followup-view"
+              }
+            ],
+            "op": "ne"
+          }
+        ],
+        "op": "and"
+      },
+      "requires": [
+        {
+          "expr": {
+            "available": "intervention"
+          },
+          "name": "available:intervention"
+        },
+        {
+          "expr": {
+            "available": "followup-view"
+          },
+          "name": "available:followup-view"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "verdict": "SOURCE"
+              },
+              {
+                "literal": "SATISFIED"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "source-valid"
+        }
+      ],
+      "stage": "transformation"
+    },
+    {
+      "clause": "MR10",
+      "id": "MR10",
+      "predicate": {
+        "args": [
+          {
+            "path": [
+              "observation"
+            ],
+            "ref": "followup-value"
+          },
+          {
+            "path": [
+              "observation"
+            ],
+            "ref": "followup-view"
+          }
+        ],
+        "op": "eq"
+      },
+      "requires": [
+        {
+          "expr": {
+            "available": "followup-value"
+          },
+          "name": "available:followup-value"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "verdict": "SOURCE"
+              },
+              {
+                "literal": "SATISFIED"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "source-valid"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "verdict": "TRANSFORM"
+              },
+              {
+                "literal": "SATISFIED"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "intervention-established"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "artifact"
+                ],
+                "ref": "followup-view"
+              },
+              {
+                "path": [
+                  "before"
+                ],
+                "ref": "followup-value"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "version-current"
+        },
+        {
+          "expr": {
+            "args": [
+              {
+                "path": [
+                  "before"
+                ],
+                "ref": "followup-value"
+              },
+              {
+                "path": [
+                  "after"
+                ],
+                "ref": "followup-value"
+              }
+            ],
+            "op": "eq"
+          },
+          "name": "version-after"
+        }
+      ],
+      "stage": "tested-contract"
+    }
+  ],
+  "schema": "toolchainmark-contract-v1"
+}

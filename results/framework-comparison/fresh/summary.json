@@ -1,0 +1,108 @@
+{
+  "evidence_class": "fresh exact-source compatibility execution",
+  "native_arms": 768,
+  "pairs": 384,
+  "stage_obligations_per_arm": 834,
+  "judgment_differences": 0,
+  "framework_outcome_disagreements": 0,
+  "observation_differences": 184,
+  "paired_byte_comparisons": 3690,
+  "paired_byte_differences": 0,
+  "full_pinned_environment": false,
+  "scope": "Fresh execution of the exact GeMTest 1.0.1 source and its real pytest hooks; surrounding plugin/runtime versions are not the retained pinned environment.",
+  "by_relation": {
+    "MR08": {
+      "commands": {
+        "contract": 1716,
+        "gemtest": 1716
+      },
+      "contract_judgments": {
+        "INADMISSIBLE": 42,
+        "INCONSISTENT": 54,
+        "SATISFIED": 204
+      },
+      "framework_outcomes": {
+        "failed": 12,
+        "passed": 96,
+        "skipped": 42
+      },
+      "gemtest_judgments": {
+        "INADMISSIBLE": 42,
+        "INCONSISTENT": 54,
+        "SATISFIED": 204
+      },
+      "judgment_differences": 0,
+      "observation_differences": 42,
+      "pairs": 150
+    },
+    "MR09": {
+      "commands": {
+        "contract": 752,
+        "gemtest": 752
+      },
+      "contract_judgments": {
+        "INADMISSIBLE": 30,
+        "INCONSISTENT": 42,
+        "SATISFIED": 378
+      },
+      "framework_outcomes": {
+        "failed": 24,
+        "passed": 108,
+        "skipped": 18
+      },
+      "gemtest_judgments": {
+        "INADMISSIBLE": 30,
+        "INCONSISTENT": 42,
+        "SATISFIED": 378
+      },
+      "judgment_differences": 0,
+      "observation_differences": 100,
+      "pairs": 150
+    },
+    "MR13": {
+      "commands": {
+        "contract": 232,
+        "gemtest": 232
+      },
+      "contract_judgments": {
+        "INADMISSIBLE": 6,
+        "INCONSISTENT": 6,
+        "SATISFIED": 30
+      },
+      "framework_outcomes": {
+        "failed": 6,
+        "passed": 30,
+        "skipped": 6
+      },
+      "gemtest_judgments": {
+        "INADMISSIBLE": 6,
+        "INCONSISTENT": 6,
+        "SATISFIED": 30
+      },
+      "judgment_differences": 0,
+      "observation_differences": 14,
+      "pairs": 42
+    },
+    "SR01": {
+      "commands": {
+        "contract": 316,
+        "gemtest": 316
+      },
+      "contract_judgments": {
+        "INCONSISTENT": 6,
+        "SATISFIED": 36
+      },
+      "framework_outcomes": {
+        "failed": 6,
+        "passed": 36
+      },
+      "gemtest_judgments": {
+        "INCONSISTENT": 6,
+        "SATISFIED": 36
+      },
+      "judgment_differences": 0,
+      "observation_differences": 28,
+      "pairs": 42
+    }
+  }
+}
