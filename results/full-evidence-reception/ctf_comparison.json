@@ -1,0 +1,23 @@
+{
+  "case_inputs": 7380,
+  "ctf_commit": "7ab4da9fc60ea9ee43b48963a5953fca3840c75d",
+  "ctf_outcomes": {
+    "FAIL": 1536,
+    "INESTIMABLE": 535,
+    "PASS": 8063
+  },
+  "current_source_matches": 47,
+  "dataset_bindings_checked": true,
+  "disagreements": 0,
+  "distinct_plans": 145,
+  "exact_case_frame_checked": true,
+  "native_programs_reexecuted": false,
+  "official_ctf_reexecuted": false,
+  "purpose": "formal",
+  "schema": "toolchainmark-ctf-receiver-v1",
+  "scope": "Default: binding and consistency of retained records using the same custom CTF expression semantics; not independent observation or proof that the API executed. Optional flag reexecutes the unmodified official CTF entry point.",
+  "snapshot_source_bindings_checked": true,
+  "source_files": 48,
+  "stage_comparisons": 10134,
+  "verdict": "PASS"
+}

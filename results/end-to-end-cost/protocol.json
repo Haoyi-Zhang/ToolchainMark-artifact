@@ -1,0 +1,21 @@
+{
+  "schema": "toolchainmark-end-to-end-cost-protocol-v1",
+  "declared_before_execution": "2026-11-25",
+  "producer": "scripts/measure_end_to_end.py",
+  "question": "What does producing and receiving the principal fresh activities cost end to end on one workstation, and how much domain code and declaration does each evaluated toolchain require?",
+  "steps": [
+    "correspondence-challenge: evidence_correspondence.run freeze, execute; evidence_correspondence.verify",
+    "history-control: evidence_projection.run_history_control; evidence_projection.verify_history",
+    "state-budget: state_budget.run freeze, execute; state_budget.verify",
+    "projection-population: evidence_projection.run; evidence_projection.analyze_transport; evidence_projection.verify_results"
+  ],
+  "execution": "Each step runs sequentially in a new directory of an evidence-attached disposable checkout, once, with no warm-up and no repetition selected afterwards.",
+  "measures": {
+    "wall_seconds": "From the first producer process start to the end of the last receiver process, including process start, workspace creation, native tool invocations, record writing and cleanup.",
+    "user_cpu_seconds, system_cpu_seconds": "Summed CPU of child processes (getrusage RUSAGE_CHILDREN).",
+    "peak_child_rss_mib": "Largest peak resident set size of any single child process.",
+    "output_bytes": "Bytes written to the step's output directory, hard links counted once."
+  },
+  "adaptation_surface": "Non-blank, non-comment lines of the domain adapter and bridge files, and the number of declared plans, actions, obligations and requirements per toolchain; the shared runtime, receivers and binding checks are excluded.",
+  "reporting_rule": "Every step is reported, including failures; a failed step is reported as failed and not rerun with changed settings."
+}

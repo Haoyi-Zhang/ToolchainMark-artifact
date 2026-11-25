@@ -1,7 +1,8 @@
 # ToolchainMark
 
 Research artifact for the paper *Execution Correspondence for Metamorphic Tests
-of Software Watermark Toolchains* by Haoyi Zhang, Huaijin Ran, Xunzhu Tang and Kisub Kim (submitted to ACM TOSEM).
+of Software Watermark Toolchains: Reference Contracts and Controlled
+Mechanisms* by Haoyi Zhang, Huaijin Ran, Xunzhu Tang and Kisub Kim (submitted to ACM TOSEM).
 
 ToolchainMark checks whether a metamorphic-test judgment is supported by the
 execution it names. It separates four questions that are often collapsed:
@@ -35,6 +36,7 @@ compressed, 4.6 GB extracted) is a separate object; see
 | `external_llwm/`, `external_sandmark*/`, `external-transfer/` | External-tool drivers, receivers, source boundaries, license notices |
 | `postfreeze_challenge/`, `recovery_extension/` | Post-freeze challenge and SR01 recovery extension |
 | `independent_observers/` | Independent ELF observer |
+| `input_extension/` | Randomized, boundary and malformed host inputs with exit/stdout/stderr and sanitizer builds |
 | `results/` | Compact retained records and fixtures (not the complete evidence) |
 | `scripts/` | Environment creation, validation, evidence import, derivation scripts |
 | `docs/` | Architecture, evidence levels, reviewer guide, validation notes |
@@ -113,7 +115,10 @@ The quick suite runs repository hygiene, source syntax, the core model tests,
 contract runtime, native binding, record correspondence, evidence projection,
 history, state budget, GeMTest reception, CTF API (13 tests; reported as SKIP in
 the core environment, never as a pass), ELF observer, optimized-Python
-admission, the CLI, and a small native acquisition followed by reception.
+admission, the CLI, a small native acquisition followed by reception, and the
+receivers of the records added in the revision (host-input extension,
+typed-oracle ablation, end-to-end cost record, CTF correspondence arm; see
+[Experiments added in the revision](#experiments-added-in-the-revision)).
 Expected output: one `[PASS]` line per step and
 `validation-logs/quick-status.json` with `"ok": true`. The suite stops at the
 first failing step.
@@ -259,7 +264,8 @@ embedding timeout (return code -9 after 30.1 s) on the original host, where
 ANTLR GTW embeddings took 21-30 s, while the same embedding with the same key
 takes about 12 s here. That retained `UNAVAILABLE` outcome is a resource-bound
 timeout and is only reproduced on hardware about as slow as the original. The
-paper reports the retained matrices (1,004 / 236 / 8).
+paper reports the retained matrix (1,004 / 236 / 8) together with this fresh
+acquisition (1,012 / 228 / 8).
 
 `scripts/audit_references.py` audits the manuscript's citations and needs the
 LaTeX sources, which are not part of this repository; it prints
@@ -287,17 +293,41 @@ sizes and SHA-256 values were masked (the retained run used Debian GCC 14.2 /
 Clang 19.1), and both rederived `summary.json` files were identical to the
 retained ones except timings and the producer source-size measurement.
 
+## Experiments added in the revision
+
+Each protocol below was written into this repository before its execution; the
+compact records are under `results/` and the first four are received by the
+quick suite. Numbers are the ones reported in the article.
+
+| Experiment (article section) | Protocol and producer | Record | Check | Result |
+| --- | --- | --- | --- | --- |
+| CTF arm of the correspondence challenge (RQ1) | `evidence_correspondence/ctf_arm_protocol.json`, `python -B -m evidence_correspondence.ctf_arm` (science env.) | `results/evidence-correspondence/ctf-arm/` | `python -B -m evidence_correspondence.ctf_arm --check` | CTF test-case path rejects 1 of 18 contradictions, 2 with plan/input digest binding; 6/6 valid records accepted |
+| End-to-end cost and adaptation surface (RQ3) | `results/end-to-end-cost/protocol.json`, `scripts/measure_end_to_end.py --out ...` in an evidence-attached checkout (~17 min) | `results/end-to-end-cost/summary.json` | `scripts/measure_end_to_end.py --check results/end-to-end-cost/summary.json` | 11.4 / 3.8 / 118.0 / 869.2 s wall for correspondence, history, state budget, projection; peak child RSS 23-139 MiB; fresh projection reproduces the retained transport accounting (median 1.0021880, maximum 1.0064516, 7,044 larger / 3,090 smaller) and the 1/8/18 rejections; adapter lines 140 (ELF), 136 (LLVM), 333 (SandMark static), 353 (sessions) |
+| Host-input extension (reach of the catalog) | `input_extension/run.py freeze`/`execute`; frozen `results/input-extension/formal-01/protocol.json` | `results/input-extension/formal-01/` | `python -B input_extension/verify.py --data results/input-extension/formal-01` | 972 cases, 151,632 host executions, 0 unavailable; clean 324/324 satisfied; input-13 trigger caught only by the fixed inputs; 0 judgment changes against the catalog rule; 225 LeakSanitizer reports (850 bytes in 7 allocations inside json-c, identical in unmarked and marked H17) |
+| Typed-rejection versus gate ablation | `scripts/derive_oracle_ablation.py` over `results/admission-study/matrix.csv.gz` | `results/oracle-ablation/summary.json` | `scripts/derive_oracle_ablation.py --check` | untyped oracle turns 270 inconsistent rows satisfied; 1,008 inadmissible rows and 1,242/1,296 exposed units unchanged |
+| Fresh LLVM re-acquisition | `declarative_study.run --study llwm` and `external_llwm/run_study.py` with LLVM 17.0.6 (see External tools) | `results/llwm-fresh/` (compact) | receivers `declarative_study.verify`, `external_llwm/verify_study.py` on the full run | 180 receipts PASS; identical to the retained frame except one relocation that was inadmissible (ETXTBSY) and is now satisfied |
+| Fresh SandMark re-acquisition (GTW key replay) | see External tools | `results/sandmark-fresh/` (compact) | `external_sandmark/verify_study.py` on the full run | 1,012 / 8 / 228; 155 of 156 configurations equal the retained ones |
+| Source-pair rerun under the final observation protocol | `external-transfer/run_external_transfer.py` | `results/external-transfer-rerun/` | `external-transfer/verify_external_transfer.py` on the full run | compatibility mode identical to the retained record (30 exit-only satisfied; host output 20 satisfied / 10 inconsistent, all clustering pair); native mode 5 inadmissible semantic checks, 115/120 relocations admitted |
+
+For the LLVM re-acquisition the conda-forge `clang` is a symbolic link to
+`clang-17`; the tool-identity check records the resolved name, so the
+re-acquisition used a hard link named `clang` in a private `bin/` directory.
+
 ## Validation status of this package
 
 Re-checked on 2026-11-24 from a fresh copy of this directory on Ubuntu 24.04
 (WSL 2, Python 3.12.3, system GCC 13.3 and GNU binutils, no root access),
 following this README literally with the conda-forge "Without root" setup.
 Every command above exited with status 0: the quick suite in the core
-environment (CTF reported as SKIP) and in the science environment (all 15
-steps PASS, 13 CTF tests included), `make install`/`make install-science`/
+environment (17 steps PASS, the two CTF steps reported as SKIP) and in the
+science environment (all 19 steps PASS, 13 CTF tests and the CTF
+correspondence arm included; re-checked on 2026-11-25, also in the
+evidence-attached checkout), `make install`/`make install-science`/
 `make check`, `make reproduce-admission`, `make verify-science`, the
 correspondence and history receivers (counts as in the table), the evidence
-import, `make check-full` (all 9 receivers PASS, about 5 minutes), the six
+import, `make check-full` (all 9 receivers PASS, about 5 minutes; re-checked on
+2026-11-25 after the revision records were added), the end-to-end cost
+measurement (all four steps PASS, about 17 minutes), the six
 declarative-study, post-freeze, SR01, QP-diagnosis and Arboit receivers, the
 fresh post-freeze and SR01 campaigns with their `--fresh` receivers, and the
 LLVM and key-replayed SandMark re-acquisitions with their receivers (agreement

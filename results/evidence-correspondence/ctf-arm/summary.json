@@ -1,0 +1,26 @@
+{
+  "arms": {
+    "ctf-api": {
+      "contradictions_rejected": 1,
+      "rejected_records": [
+        "stored-verdict"
+      ],
+      "valid_accepted": 6
+    },
+    "ctf-api-with-hash-binding": {
+      "contradictions_rejected": 2,
+      "rejected_records": [
+        "input-digest",
+        "stored-verdict"
+      ],
+      "valid_accepted": 6
+    }
+  },
+  "contradictions": 18,
+  "fresh_native_execution": false,
+  "layer_summary_sha256": "485374c6987649a0a1d0637a645ce618967f3358a2e3cf2a5e0d919dd96bcd3f",
+  "protocol_sha256": "166a968adcea73a393a120942998108f049053a6d9481037bb1ed32aec2b83c4",
+  "records": 24,
+  "schema": "toolchainmark-correspondence-ctf-arm-v1",
+  "valid_records": 6
+}

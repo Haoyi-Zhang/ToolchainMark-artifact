@@ -1,0 +1,539 @@
+[
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED"
+      ]
+    },
+    "plan_sha256": "f47db4f6c1eefcc3195838a1343b716d34154233aa77547b1c825c83758adfe2",
+    "receipt_sha256": "f772b3cc525c1425c00c12856672dc7fd7f191bbe869c373f55f789eb2b5550f",
+    "record": "action-context",
+    "valid": false
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED"
+      ]
+    },
+    "plan_sha256": "f47db4f6c1eefcc3195838a1343b716d34154233aa77547b1c825c83758adfe2",
+    "receipt_sha256": "df72d33d4470e385d5a7da9a61f19e9f9b6183db4b6e7a9b90cce5ba0cfc81cc",
+    "record": "action-order",
+    "valid": false
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED"
+      ]
+    },
+    "plan_sha256": "f47db4f6c1eefcc3195838a1343b716d34154233aa77547b1c825c83758adfe2",
+    "receipt_sha256": "249ef76762c94f385474843ac40580df48a9867676699d41ea47ec0142a212ca",
+    "record": "consumed-reference",
+    "valid": false
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "plan_sha256": "9bd7a293026177f3c06bad0f2eb9ebf60b09f3cd26e6b9dba6b56b31ce2424dc",
+    "receipt_sha256": "1f9cfa9351377b663294e53b0c547968c1f208b3899ad89d13f81652426d71cb",
+    "record": "decoder-call-key",
+    "valid": false
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "plan_sha256": "9bd7a293026177f3c06bad0f2eb9ebf60b09f3cd26e6b9dba6b56b31ce2424dc",
+    "receipt_sha256": "03a694eba0fdf6c4fd2738a739f7317605b1c725e52e5252c67a0fe5f150c65b",
+    "record": "decoder-call-session",
+    "valid": false
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED"
+      ]
+    },
+    "plan_sha256": "f47db4f6c1eefcc3195838a1343b716d34154233aa77547b1c825c83758adfe2",
+    "receipt_sha256": "0653b28bff16c65a74c8e1160ffee29dd3d1496b8429a9f8be748dd596b3b2b5",
+    "record": "guard-result",
+    "valid": false
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": false,
+      "reason": "canonical plan or input digest differs"
+    },
+    "plan_sha256": "f47db4f6c1eefcc3195838a1343b716d34154233aa77547b1c825c83758adfe2",
+    "receipt_sha256": "ec2f47c9404080c45eb8de9d8d0cbfc26f831eccf3078f3bd0c3c4eb16554f53",
+    "record": "input-digest",
+    "valid": false
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED"
+      ]
+    },
+    "plan_sha256": "f47db4f6c1eefcc3195838a1343b716d34154233aa77547b1c825c83758adfe2",
+    "receipt_sha256": "41e1b86b4883a19dc1168fc52d2d342da053d527f82b25ebd4b1497b71902017",
+    "record": "paired-host-values",
+    "valid": false
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED"
+      ]
+    },
+    "plan_sha256": "3beffba4bbf7086bdc614faf1eab9d7fa7998bd1e8f12b0d7e1f99c2bd00537c",
+    "receipt_sha256": "b5574bf4ce368fadbeb484788c2cbcaccb8253b15de001b52360cb32aecd46f6",
+    "record": "parallel-order",
+    "valid": false
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "plan_sha256": "4badcabc75c9cc994fd5be5a2ab2d0805a228af73393764be6a16b5fad54b2df",
+    "receipt_sha256": "17f43cc1311e7118b4300da2a6da8e80039ce0ee64bf68bdd74d313c106ea82a",
+    "record": "process-target-after",
+    "valid": false
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "plan_sha256": "4badcabc75c9cc994fd5be5a2ab2d0805a228af73393764be6a16b5fad54b2df",
+    "receipt_sha256": "32bd15793d99dcdcee044449113105638e3a752cf328bf9c2994d56a3d445645",
+    "record": "process-target-before",
+    "valid": false
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED"
+      ]
+    },
+    "plan_sha256": "f47db4f6c1eefcc3195838a1343b716d34154233aa77547b1c825c83758adfe2",
+    "receipt_sha256": "619f0f334a9831ec22fcf75da1ee312d47d2e24aa3cd13e6c2faa0a0b0101ca8",
+    "record": "resolved-argument",
+    "valid": false
+  },
+  {
+    "ctf-api": {
+      "accepted": false,
+      "reason": "recomputed stage outcome differs: MR02"
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": false,
+      "reason": "recomputed stage outcome differs: MR02"
+    },
+    "plan_sha256": "f47db4f6c1eefcc3195838a1343b716d34154233aa77547b1c825c83758adfe2",
+    "receipt_sha256": "07ba6ed0a9021eb819ad6528b4c1054e762a966f2e734ab6788068848852a84e",
+    "record": "stored-verdict",
+    "valid": false
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "plan_sha256": "4badcabc75c9cc994fd5be5a2ab2d0805a228af73393764be6a16b5fad54b2df",
+    "receipt_sha256": "3011dd12c9e1b8f000329f4345db212b95fda0263c075c36a688a6ffec4bdcdd",
+    "record": "strip-command-missing",
+    "valid": false
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "plan_sha256": "4badcabc75c9cc994fd5be5a2ab2d0805a228af73393764be6a16b5fad54b2df",
+    "receipt_sha256": "d01115bc50087f7ed70215e2c45285044951a6a37bdbf0913806187467d85c32",
+    "record": "strip-flag",
+    "valid": false
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "plan_sha256": "4badcabc75c9cc994fd5be5a2ab2d0805a228af73393764be6a16b5fad54b2df",
+    "receipt_sha256": "31ef70d3010eedf82ebdb2abf4594c833cab775c12e484b355fa2ddaaa071ea7",
+    "record": "strip-input",
+    "valid": false
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "plan_sha256": "4badcabc75c9cc994fd5be5a2ab2d0805a228af73393764be6a16b5fad54b2df",
+    "receipt_sha256": "4b6805f4808f6c19d446d711daff5c66261fc8714800e0766922b35fabc154fb",
+    "record": "strip-output",
+    "valid": false
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "plan_sha256": "4badcabc75c9cc994fd5be5a2ab2d0805a228af73393764be6a16b5fad54b2df",
+    "receipt_sha256": "e2471373348cdebb2e434d508695d01b5f59a72ee47baed941b4c5ba1ac2da6c",
+    "record": "strip-return",
+    "valid": false
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "INADMISSIBLE"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "INADMISSIBLE"
+      ]
+    },
+    "plan_sha256": "1d984a29eec534ff34870ea9a5bf0d91773e185658bd0d307663ceaf324141cc",
+    "receipt_sha256": "36d0c17e5bc9271b8dfe0a9491ea718e99133f7d45f00442f5ef10600f05f691",
+    "record": "valid-changed-identity",
+    "valid": true
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED"
+      ]
+    },
+    "plan_sha256": "f47db4f6c1eefcc3195838a1343b716d34154233aa77547b1c825c83758adfe2",
+    "receipt_sha256": "8b099cb01b78ecaad61c2d7ec1950e3291b399e574a3f5c10e109f5c409de648",
+    "record": "valid-host",
+    "valid": true
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "INCONSISTENT",
+        "SATISFIED",
+        "INADMISSIBLE",
+        "INADMISSIBLE"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "INCONSISTENT",
+        "SATISFIED",
+        "INADMISSIBLE",
+        "INADMISSIBLE"
+      ]
+    },
+    "plan_sha256": "4badcabc75c9cc994fd5be5a2ab2d0805a228af73393764be6a16b5fad54b2df",
+    "receipt_sha256": "c3643588230f7014e7da016e8aad559e8ab067b1e374b9a5ed473c50c0a6ef56",
+    "record": "valid-llvm-inconsistent",
+    "valid": true
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "plan_sha256": "4badcabc75c9cc994fd5be5a2ab2d0805a228af73393764be6a16b5fad54b2df",
+    "receipt_sha256": "25714fa98bdaf8e47f3d7c8c36c945c18f485e298a0891e0be56668b8c287310",
+    "record": "valid-llvm-satisfied",
+    "valid": true
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED"
+      ]
+    },
+    "plan_sha256": "3beffba4bbf7086bdc614faf1eab9d7fa7998bd1e8f12b0d7e1f99c2bd00537c",
+    "receipt_sha256": "c79e7a193f8533ce2f7bf44ec4ab6b9e3600f286fea9d3e1222ee1aaa6dff758",
+    "record": "valid-parallel",
+    "valid": true
+  },
+  {
+    "ctf-api": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "ctf-api-with-hash-binding": {
+      "accepted": true,
+      "reason": null,
+      "stage_outcomes": [
+        "SATISFIED",
+        "SATISFIED",
+        "SATISFIED"
+      ]
+    },
+    "plan_sha256": "9bd7a293026177f3c06bad0f2eb9ebf60b09f3cd26e6b9dba6b56b31ce2424dc",
+    "receipt_sha256": "6ea764eb920a0a5f5ec06306d74d66f268d5aa54a683f100f34122f25d9ecd1c",
+    "record": "valid-removal",
+    "valid": true
+  }
+]

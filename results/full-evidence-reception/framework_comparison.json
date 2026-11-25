@@ -1,0 +1,152 @@
+{
+  "framework_junit_cases_checked": 384,
+  "native_binding_counts": {
+    "contract:blob_case_memberships": 1376,
+    "contract:file_references": 10328,
+    "contract:physical_byte_reobservations": 372,
+    "contract:raw_process_output_bindings": 1296,
+    "contract:typed_extraction_return_bindings": 798,
+    "gemtest:blob_case_memberships": 1376,
+    "gemtest:file_references": 10328,
+    "gemtest:physical_byte_reobservations": 372,
+    "gemtest:raw_process_output_bindings": 1296,
+    "gemtest:typed_extraction_return_bindings": 798
+  },
+  "native_programs_reexecuted": false,
+  "official_framework_reexecuted": false,
+  "paired_records_checked": 768,
+  "process_path_analysis": {
+    "analysis": "post-acquisition explicit path correspondence",
+    "counts": {
+      "action_pairs": 2688,
+      "captured-observer-input": 248,
+      "pairs_with_remaining_differences": 0,
+      "private_input_endpoint_byte_pairs": 496,
+      "process_pairs": 3016,
+      "remaining_differing_fields": 0,
+      "section-dump-destination": 280
+    },
+    "exclusions": [
+      "elapsed seconds"
+    ],
+    "interpretation": "Recorded processes correspond after the enumerated workspace/context/private-path renamings. Private input bytes are directly compared. Section-dump destination bytes were not separately retained; this analysis does not claim their byte equality or historical process attestation.",
+    "original_pairs_with_raw_evidence_differences": 184,
+    "pairs": 384
+  },
+  "schema": "paired-native-framework-receiver-v1",
+  "scope": [
+    "Both arms have native byte/process/result binding. Only contract receipts have interpreter event ordinals.",
+    "GeMTest raw requests and stage predicates are checked against frozen plans without fabricating receipt events.",
+    "Recorded tool executable identities are preserved and paired; no missing pre-execution native tool manifest is supplied retrospectively.",
+    "The 184 originally differing raw pairs remain reported. Explicit path renaming is a separate post-acquisition analysis.",
+    "Record consistency does not attest historical execution or unobserved decoder reads."
+  ],
+  "source_snapshot_files_checked": 69,
+  "summary": {
+    "by_relation": {
+      "MR08": {
+        "commands": {
+          "contract": 1716,
+          "gemtest": 1716
+        },
+        "contract_judgments": {
+          "INADMISSIBLE": 42,
+          "INCONSISTENT": 54,
+          "SATISFIED": 204
+        },
+        "framework_outcomes": {
+          "failed": 12,
+          "passed": 96,
+          "skipped": 42
+        },
+        "gemtest_judgments": {
+          "INADMISSIBLE": 42,
+          "INCONSISTENT": 54,
+          "SATISFIED": 204
+        },
+        "judgment_differences": 0,
+        "observation_differences": 42,
+        "pairs": 150
+      },
+      "MR09": {
+        "commands": {
+          "contract": 752,
+          "gemtest": 752
+        },
+        "contract_judgments": {
+          "INADMISSIBLE": 30,
+          "INCONSISTENT": 42,
+          "SATISFIED": 378
+        },
+        "framework_outcomes": {
+          "failed": 24,
+          "passed": 108,
+          "skipped": 18
+        },
+        "gemtest_judgments": {
+          "INADMISSIBLE": 30,
+          "INCONSISTENT": 42,
+          "SATISFIED": 378
+        },
+        "judgment_differences": 0,
+        "observation_differences": 100,
+        "pairs": 150
+      },
+      "MR13": {
+        "commands": {
+          "contract": 232,
+          "gemtest": 232
+        },
+        "contract_judgments": {
+          "INADMISSIBLE": 6,
+          "INCONSISTENT": 6,
+          "SATISFIED": 30
+        },
+        "framework_outcomes": {
+          "failed": 6,
+          "passed": 30,
+          "skipped": 6
+        },
+        "gemtest_judgments": {
+          "INADMISSIBLE": 6,
+          "INCONSISTENT": 6,
+          "SATISFIED": 30
+        },
+        "judgment_differences": 0,
+        "observation_differences": 14,
+        "pairs": 42
+      },
+      "SR01": {
+        "commands": {
+          "contract": 316,
+          "gemtest": 316
+        },
+        "contract_judgments": {
+          "INCONSISTENT": 6,
+          "SATISFIED": 36
+        },
+        "framework_outcomes": {
+          "failed": 6,
+          "passed": 36
+        },
+        "gemtest_judgments": {
+          "INCONSISTENT": 6,
+          "SATISFIED": 36
+        },
+        "judgment_differences": 0,
+        "observation_differences": 28,
+        "pairs": 42
+      }
+    },
+    "framework_outcome_disagreements": 0,
+    "judgment_differences": 0,
+    "native_arms": 768,
+    "observation_differences": 184,
+    "paired_byte_comparisons": 3690,
+    "paired_byte_differences": 0,
+    "pairs": 384,
+    "stage_obligations_per_arm": 834,
+    "unique_paired_byte_objects": 63
+  },
+  "verdict": "PASS"
+}

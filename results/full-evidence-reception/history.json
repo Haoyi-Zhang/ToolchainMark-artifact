@@ -1,0 +1,43 @@
+{
+  "artifact_byte_pairs": 24,
+  "by_implementation": {
+    "CLEAN": {
+      "pairs": 6,
+      "with_B": {
+        "SATISFIED": 6
+      },
+      "without_B": {
+        "SATISFIED": 6
+      }
+    },
+    "M23": {
+      "pairs": 6,
+      "with_B": {
+        "INCONSISTENT": 6
+      },
+      "without_B": {
+        "SATISFIED": 6
+      }
+    }
+  },
+  "checks": {
+    "captured_file_references": 500,
+    "direct_artifact_byte_pairs": 24,
+    "native_traces_checked": 24,
+    "physical_byte_reobservations": 0,
+    "raw_process_output_bindings": 0,
+    "typed_extraction_return_bindings": 60
+  },
+  "missing_history_controls": 12,
+  "native_executions": 24,
+  "native_programs_reexecuted": false,
+  "pairs": 12,
+  "rejected_missing_history_controls": 12,
+  "schema": "native-history-receiver-v1",
+  "scope": "Separate12-pair controlled history activity: fixed plans, both raw native traces, direct paired bytes and actual missing-prefix rejections. The original MR13 activity is unchanged.",
+  "source_snapshot_files_checked": 33,
+  "source_unchanged": true,
+  "unequal_artifact_byte_pairs": 0,
+  "unique_retained_blobs": 12,
+  "verdict": "PASS"
+}

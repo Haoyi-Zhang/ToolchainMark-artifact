@@ -1,0 +1,118 @@
+{
+  "cpu_count": 20,
+  "machine": "x86_64",
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "tools": {
+    "clang": {
+      "path": "~/deps/toolchainmark/env-llvm17/bin/clang-17",
+      "sha256": "43ae177c1964e6aac2be72deb06258a07919069d5d9631e88943ddbe5a27180c"
+    },
+    "cxx": {
+      "path": "~/deps/toolchainmark/env-llvm17/bin/x86_64-conda-linux-gnu-g++",
+      "sha256": "5c3bdb89743247466eb85c4fed1e194054a62f9dc4cde0aaa6cc292245fee31c"
+    },
+    "llvm-config": {
+      "path": "~/deps/toolchainmark/env-llvm17/bin/llvm-config",
+      "sha256": "086bf7c0e2ce9ae508e22dd0c4b7e2d3541959416e65809e4b7451ca481c8775"
+    },
+    "opt": {
+      "path": "~/deps/toolchainmark/env-llvm17/bin/opt",
+      "sha256": "683b8fc7726d9c66064fbc469a50c6531697da65c6ef176c74af5905c5bb3ccd"
+    },
+    "readelf": {
+      "path": "/usr/bin/x86_64-linux-gnu-readelf",
+      "sha256": "64c58e15274bbbb5153f31078e455e9e77ee5f51489e709bba5bb788ce9df2b0"
+    },
+    "strip": {
+      "path": "/usr/bin/x86_64-linux-gnu-strip",
+      "sha256": "0d980587ada7ab12193f39271f060d5663aa2f289b0e80d2a0274ce7306e4e42"
+    }
+  },
+  "versions": [
+    {
+      "argv": [
+        "~/deps/toolchainmark/env-llvm17/bin/clang-17",
+        "--version"
+      ],
+      "available": true,
+      "cwd": "~/tmwork/llwm-rerun-01",
+      "returncode": 0,
+      "role": "clang-version",
+      "seconds": 0.15821559000005436,
+      "stderr_b64": "",
+      "stdin_b64": null,
+      "stdout_b64": "Y2xhbmcgdmVyc2lvbiAxNy4wLjYgKGh0dHBzOi8vZ2l0aHViLmNvbS9jb25kYS1mb3JnZS9jbGFuZ2Rldi1mZWVkc3RvY2sgOGQ3YTU4MTM1Y2E5YmY1ZWUyNmRmOGQ0ZGYxOWUwNTJjMzQ0NjI1NSkKVGFyZ2V0OiB4ODZfNjQtY29uZGEtbGludXgtZ251ClRocmVhZCBtb2RlbDogcG9zaXgKSW5zdGFsbGVkRGlyOiAvaG9tZS9yZXNlYXJjaC9kZXBzL3Rvb2xjaGFpbm1hcmsvZW52LWxsdm0xNy9iaW4KQ29uZmlndXJhdGlvbiBmaWxlOiAvaG9tZS9yZXNlYXJjaC9kZXBzL3Rvb2xjaGFpbm1hcmsvZW52LWxsdm0xNy9iaW4veDg2XzY0LWNvbmRhLWxpbnV4LWdudS1jbGFuZy5jZmcK"
+    },
+    {
+      "argv": [
+        "~/deps/toolchainmark/env-llvm17/bin/opt",
+        "--version"
+      ],
+      "available": true,
+      "cwd": "~/tmwork/llwm-rerun-01",
+      "returncode": 0,
+      "role": "opt-version",
+      "seconds": 0.010249048000105176,
+      "stderr_b64": "",
+      "stdin_b64": null,
+      "stdout_b64": "TExWTSAoaHR0cDovL2xsdm0ub3JnLyk6CiAgTExWTSB2ZXJzaW9uIDE3LjAuNgogIE9wdGltaXplZCBidWlsZC4KICBEZWZhdWx0IHRhcmdldDogeDg2XzY0LWNvbmRhLWxpbnV4LWdudQogIEhvc3QgQ1BVOiBhbGRlcmxha2UK"
+    },
+    {
+      "argv": [
+        "~/deps/toolchainmark/env-llvm17/bin/llvm-config",
+        "--version"
+      ],
+      "available": true,
+      "cwd": "~/tmwork/llwm-rerun-01",
+      "returncode": 0,
+      "role": "llvm-config-version",
+      "seconds": 0.0024382489999652535,
+      "stderr_b64": "",
+      "stdin_b64": null,
+      "stdout_b64": "MTcuMC42Cg=="
+    },
+    {
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-strip",
+        "--version"
+      ],
+      "available": true,
+      "cwd": "~/tmwork/llwm-rerun-01",
+      "returncode": 0,
+      "role": "strip-version",
+      "seconds": 0.0009604190000800372,
+      "stderr_b64": "",
+      "stdin_b64": null,
+      "stdout_b64": "R05VIHN0cmlwIChHTlUgQmludXRpbHMgZm9yIFVidW50dSkgMi40MgpDb3B5cmlnaHQgKEMpIDIwMjQgRnJlZSBTb2Z0d2FyZSBGb3VuZGF0aW9uLCBJbmMuClRoaXMgcHJvZ3JhbSBpcyBmcmVlIHNvZnR3YXJlOyB5b3UgbWF5IHJlZGlzdHJpYnV0ZSBpdCB1bmRlciB0aGUgdGVybXMgb2YKdGhlIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlIHZlcnNpb24gMyBvciAoYXQgeW91ciBvcHRpb24pIGFueSBsYXRlciB2ZXJzaW9uLgpUaGlzIHByb2dyYW0gaGFzIGFic29sdXRlbHkgbm8gd2FycmFudHkuCg=="
+    },
+    {
+      "argv": [
+        "/usr/bin/x86_64-linux-gnu-readelf",
+        "--version"
+      ],
+      "available": true,
+      "cwd": "~/tmwork/llwm-rerun-01",
+      "returncode": 0,
+      "role": "readelf-version",
+      "seconds": 0.0026432180000028893,
+      "stderr_b64": "",
+      "stdin_b64": null,
+      "stdout_b64": "R05VIHJlYWRlbGYgKEdOVSBCaW51dGlscyBmb3IgVWJ1bnR1KSAyLjQyCkNvcHlyaWdodCAoQykgMjAyNCBGcmVlIFNvZnR3YXJlIEZvdW5kYXRpb24sIEluYy4KVGhpcyBwcm9ncmFtIGlzIGZyZWUgc29mdHdhcmU7IHlvdSBtYXkgcmVkaXN0cmlidXRlIGl0IHVuZGVyIHRoZSB0ZXJtcyBvZgp0aGUgR05VIEdlbmVyYWwgUHVibGljIExpY2Vuc2UgdmVyc2lvbiAzIG9yIChhdCB5b3VyIG9wdGlvbikgYW55IGxhdGVyIHZlcnNpb24uClRoaXMgcHJvZ3JhbSBoYXMgYWJzb2x1dGVseSBubyB3YXJyYW50eS4K"
+    },
+    {
+      "argv": [
+        "~/deps/toolchainmark/env-llvm17/bin/x86_64-conda-linux-gnu-g++",
+        "--version"
+      ],
+      "available": true,
+      "cwd": "~/tmwork/llwm-rerun-01",
+      "returncode": 0,
+      "role": "cxx-version",
+      "seconds": 0.003371392000076412,
+      "stderr_b64": "",
+      "stdin_b64": null,
+      "stdout_b64": "eDg2XzY0LWNvbmRhLWxpbnV4LWdudS1nKysgKGNvbmRhLWZvcmdlIGdjYyAxNC4yLjAtMikgMTQuMi4wCkNvcHlyaWdodCAoQykgMjAyNCBGcmVlIFNvZnR3YXJlIEZvdW5kYXRpb24sIEluYy4KVGhpcyBpcyBmcmVlIHNvZnR3YXJlOyBzZWUgdGhlIHNvdXJjZSBmb3IgY29weWluZyBjb25kaXRpb25zLiAgVGhlcmUgaXMgTk8Kd2FycmFudHk7IG5vdCBldmVuIGZvciBNRVJDSEFOVEFCSUxJVFkgb3IgRklUTkVTUyBGT1IgQSBQQVJUSUNVTEFSIFBVUlBPU0UuCgo="
+    }
+  ]
+}

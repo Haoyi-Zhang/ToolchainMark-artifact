@@ -1,0 +1,1847 @@
+{
+  "build_failures": 0,
+  "cases": 972,
+  "cases_per_variant": {
+    "CLEAN": 324,
+    "M10": 324,
+    "M11": 324
+  },
+  "channel_differences": {
+    "M10|boundary|stdout": 1620,
+    "M10|fixed|stdout": 1944,
+    "M10|randomized|stdout": 20736,
+    "M11|fixed|stdout": 324
+  },
+  "cross_configuration": {
+    "H01-gcd.c": {
+      "builds": 6,
+      "distinct_observation_vectors": 1
+    },
+    "H02-fibonacci.c": {
+      "builds": 6,
+      "distinct_observation_vectors": 1
+    },
+    "H03-bitmix.c": {
+      "builds": 6,
+      "distinct_observation_vectors": 1
+    },
+    "H04-polynomial.c": {
+      "builds": 6,
+      "distinct_observation_vectors": 1
+    },
+    "H05-crc.c": {
+      "builds": 6,
+      "distinct_observation_vectors": 1
+    },
+    "H06-primecount.c": {
+      "builds": 6,
+      "distinct_observation_vectors": 1
+    },
+    "H07-sortfold.c": {
+      "builds": 6,
+      "distinct_observation_vectors": 1
+    },
+    "H08-statemachine.c": {
+      "builds": 6,
+      "distinct_observation_vectors": 1
+    },
+    "H09-matrix.c": {
+      "builds": 6,
+      "distinct_observation_vectors": 1
+    },
+    "H10-parser.c": {
+      "builds": 6,
+      "distinct_observation_vectors": 1
+    },
+    "H11-popcount.c": {
+      "builds": 6,
+      "distinct_observation_vectors": 1
+    },
+    "H12-lcg.c": {
+      "builds": 6,
+      "distinct_observation_vectors": 1
+    },
+    "H13-zlib.c": {
+      "builds": 6,
+      "distinct_observation_vectors": 1
+    },
+    "H14-openssl.c": {
+      "builds": 6,
+      "distinct_observation_vectors": 1
+    },
+    "H15-sqlite.c": {
+      "builds": 6,
+      "distinct_observation_vectors": 1
+    },
+    "H16-xml.c": {
+      "builds": 6,
+      "distinct_observation_vectors": 1
+    },
+    "H17-json.c": {
+      "builds": 6,
+      "distinct_observation_vectors": 1
+    },
+    "H18-png.c": {
+      "builds": 6,
+      "distinct_observation_vectors": 1
+    }
+  },
+  "elapsed_seconds": 25.95771824999997,
+  "host_executions": 151632,
+  "hosts_with_cross_configuration_difference": [],
+  "inputs_per_execution_set": {
+    "boundary": 5,
+    "fixed": 6,
+    "malformed": 3,
+    "randomized": 64
+  },
+  "judgment_changes_against_catalog_rule": 0,
+  "judgment_changes_examples": [],
+  "sanitizer_cases": 54,
+  "sanitizer_executions": 4212,
+  "sanitizer_findings": [
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "0",
+      "set": "fixed",
+      "stderr_head": "===============================================\n==168879==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x780267efd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7802685e2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "1",
+      "set": "fixed",
+      "stderr_head": "===============================================\n==169043==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x78268c0fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x78268c887d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "5",
+      "set": "fixed",
+      "stderr_head": "===============================================\n==169184==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7661d8afd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7661d919cd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "13",
+      "set": "fixed",
+      "stderr_head": "===============================================\n==169332==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7bfd68afd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7bfd690fad02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "144",
+      "set": "fixed",
+      "stderr_head": "===============================================\n==169487==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x77decfcfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x77ded0386d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "99991",
+      "set": "fixed",
+      "stderr_head": "===============================================\n==169657==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x79beed4fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x79beedbb0d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "4294967295",
+      "set": "boundary",
+      "stderr_head": "===============================================\n==169791==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x79f62f4fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x79f62fb01d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "4294967296",
+      "set": "boundary",
+      "stderr_head": "===============================================\n==169913==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7e56afefd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7e56b0525d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "9223372036854775807",
+      "set": "boundary",
+      "stderr_head": "===============================================\n==170014==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7f1b8c4fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7f1b8caf5d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "9223372036854775808",
+      "set": "boundary",
+      "stderr_head": "===============================================\n==170092==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7cc99b4fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7cc99bb4cd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "18446744073709551615",
+      "set": "boundary",
+      "stderr_head": "===============================================\n==170166==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x763141cfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7631423c7d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "7251281300475547191",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170228==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x71a8996fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x71a899d2ad02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "6133018842108021432",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170276==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x72b1b5cfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x72b1b6405d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "2003370288807597117",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170294==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x718e7c8fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x718e7cf62d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "9006213375557149385",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170300==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7909a02fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7909a0a64d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "9726706124797464998",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170306==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x737c9ecfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x737c9f3f5d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "13313957388274714075",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170312==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7c80c4cfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7c80c54c1d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "3912832499840464428",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170318==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7386ecafd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7386ec9f2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "17310901351767249190",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170324==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x75b7794fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x75b779c7cd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "11996835942180716789",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170330==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x773776efd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7737775e2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "16769409492178206736",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170336==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7603cf6fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7603cfd77d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "5595308326135795266",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170343==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7d70466fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7d7046e32d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "5949105009421532517",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170349==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x79b9bf8fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x79b9bfee4d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "9194792350727254790",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170356==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7bd4532fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7bd453a8bd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "10075266553418689588",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170362==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7a703aafd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7a703b191d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "4363533649168067755",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170368==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7482654fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x748265cb4d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "11731528687929553480",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170372==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x74c2e3cfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x74c2e438ed02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "3392658672605787946",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170379==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x712abaafd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x712abb11dd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "7247027308382005673",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170384==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7a0afa8fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7a0afb06dd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "5489268499837595459",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170391==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x72afd7cfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x72afd839fd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "13335856328773420804",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170396==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x707787efd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7077885d3d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "10431849200962749926",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170402==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x79e045efd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x79e0465e9d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "15238342969535833896",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170408==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7c63beafd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7c63bf18fd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "2381101835736096007",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170415==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7c99444fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7c9944bf6d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "7685962397736380117",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170421==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x79f921afd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x79f9222b2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "7718649582467429535",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170426==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7c0ec38fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7c0ec37f2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "13026240387909802946",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170432==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7424818fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7424820b2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "14652754317478965168",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170438==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x792eb5efd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x792eb664dd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "11186487811611771279",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170446==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7bacdaefd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7bacdb55cd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "9989889756259933630",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170452==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7e30abefd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7e30ac56fd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "16291100701854414202",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170458==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7b907d4fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7b907db41d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "8012460962458559222",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170464==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7b79906fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7b7990d65d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "8459847613906731593",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170470==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x78a2338fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x78a233f56d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "802366174337402083",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170476==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x75f3520fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x75f3526ded02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "6333854948727864352",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170482==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x76132d2fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x76132da19d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "12080943365964995244",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170488==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x75eaff6fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x75eaffe1fd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "10688444152462116360",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170492==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x764def2fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x764def943d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "13473763604309307037",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170499==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7beb84cfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7beb854a2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "6351739828242810918",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170506==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x713ec6afd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x713ec7151d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "3350459782675288013",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170511==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x79f9918fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x79f991f17d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "17516329103076930229",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170517==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7156b30fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7156b3827d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "9810521403108996517",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170524==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7ec75fcfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7ec760303d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "7867482081715389935",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170530==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7afaf18fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7afaf17f2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "822108606908450657",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170535==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x761c8d6fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x761c8dd5dd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "10109423229428337989",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170541==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7e65ab0fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7e65aaff2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "15133684543278956531",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170546==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7244ffefd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7245005c5d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "6446552958340874084",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170553==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x73a7ad2fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x73a7adaa4d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "14098394719570835444",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170560==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x779417afd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x77941828bd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "7274868194664269617",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170566==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7f6643efd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7f6644561d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "10766877504135454173",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170571==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7507cd6fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7507cde16d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "1545400817740941956",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170576==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7c6a30efd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7c6a3153ad02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "5896483106495489539",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170583==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x78807f0fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x78807f877d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "18214792620600769573",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170589==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x78a247afd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x78a24817ed02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "1275608360383673454",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170596==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x74e3de4fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x74e3deb1cd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "3166169790515366782",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170600==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x757a294fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x757a29c88d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "15930973376883395420",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170606==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7e771acfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7e771b36cd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "8599507822086616883",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170613==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7997338fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x799734099d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "10060014323375868661",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170618==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x73ac3bafd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x73ac3c14fd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "3909289861287505790",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170625==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7bb9ab4fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7bb9abc37d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "2554431263090539876",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170630==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x706b262fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x706b269bdd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "13878760890220847220",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170637==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x76556d0fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x76556d7ffd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "6555160120124888057",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170643==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7f699c8fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7f699d08ad02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "2482636538102347953",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170648==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x70819f0fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x70819f832d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "11961826065754274021",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170656==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x73a6c42fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x73a6c4959d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/unmarked",
+      "input": "2365208343308224208",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170662==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7cb1156fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7cb115cf4d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "0",
+      "set": "fixed",
+      "stderr_head": "===============================================\n==169090==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7433ab8fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7433abfb2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "1",
+      "set": "fixed",
+      "stderr_head": "===============================================\n==169239==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x79e4e80fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x79e4e889fd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "5",
+      "set": "fixed",
+      "stderr_head": "===============================================\n==169381==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7e47292fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7e47299edd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "13",
+      "set": "fixed",
+      "stderr_head": "===============================================\n==169530==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x774c060fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x774c06754d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "144",
+      "set": "fixed",
+      "stderr_head": "===============================================\n==169689==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7677366fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x767736d0fd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "99991",
+      "set": "fixed",
+      "stderr_head": "===============================================\n==169814==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7a0b346fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7a0b34d13d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "4294967295",
+      "set": "boundary",
+      "stderr_head": "===============================================\n==169937==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7f09c58fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7f09c5f82d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "4294967296",
+      "set": "boundary",
+      "stderr_head": "===============================================\n==170030==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x72d1172fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x72d117948d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "9223372036854775807",
+      "set": "boundary",
+      "stderr_head": "===============================================\n==170102==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x79b7b62fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x79b7b61f2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "9223372036854775808",
+      "set": "boundary",
+      "stderr_head": "===============================================\n==170176==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x743fcf4fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x743fcfba2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "18446744073709551615",
+      "set": "boundary",
+      "stderr_head": "===============================================\n==170237==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x785dbdafd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x785dbe10cd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "7251281300475547191",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170282==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x73e1b02fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x73e1b09d6d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "6133018842108021432",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170296==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x715e7c2fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x715e7cac1d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "2003370288807597117",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170302==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x76a4362fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x76a4369cad02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "9006213375557149385",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170308==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7d38cb6fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7d38cbd6ed02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "9726706124797464998",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170314==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7835c66fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7835c6d0fd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "13313957388274714075",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170320==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7468d6cfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7468d72e6d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "3912832499840464428",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170326==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7d91780fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7d917874bd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "17310901351767249190",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170332==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7eccbbcfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7eccbc407d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "11996835942180716789",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170338==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x78a4020fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x78a402874d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "16769409492178206736",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170342==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7551db0fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7551db83bd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "5595308326135795266",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170348==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7d756fafd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7d75702b0d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "5949105009421532517",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170355==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7c189eefd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7c189f5ded02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "9194792350727254790",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170360==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7c6a08afd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7c6a0913fd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "10075266553418689588",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170367==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7a357f2fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7a357f96ad02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "4363533649168067755",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170374==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7b3c668fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7b3c67019d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "11731528687929553480",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170380==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x71d1452fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x71d145ab7d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "3392658672605787946",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170385==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7351fc8fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7351fd0aad02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "7247027308382005673",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170392==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x709effafd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x709f002a8d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "5489268499837595459",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170398==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x74f9e06fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x74f9e0dd5d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "13335856328773420804",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170404==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x70411defd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x70411e502d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "10431849200962749926",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170410==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7193f64fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7193f6b3ed02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "15238342969535833896",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170414==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7e7e132fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7e7e139a9d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "2381101835736096007",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170422==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7c0723efd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7c072453ad02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "7685962397736380117",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170428==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7e117c2fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7e117ca0cd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "7718649582467429535",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170434==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7955592fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7955599ccd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "13026240387909802946",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170439==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7d8fdbcfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7d8fdc430d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "14652754317478965168",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170445==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7f9314efd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7f93154e1d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "11186487811611771279",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170450==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7f4b2c2fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7f4b2c98ad02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "9989889756259933630",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170457==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7823cc4fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7823ccb70d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "16291100701854414202",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170462==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x769a35cfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x769a3637dd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "8012460962458559222",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170469==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x72abf28fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x72abf3079d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "8459847613906731593",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170474==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7942bbefd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7942bbdf2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "802366174337402083",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170480==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x75bf5f4fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x75bf5faded02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "6333854948727864352",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170487==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7bf5f22fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7bf5f299ad02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "12080943365964995244",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170494==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7c2a4f6fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7c2a4fe87d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "10688444152462116360",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170500==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x72a59c0fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x72a59c6d9d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "13473763604309307037",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170504==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x73ff588fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x73ff59097d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "6351739828242810918",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170512==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7abb13efd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7abb144f2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "3350459782675288013",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170518==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7f61a0cfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7f61a137ed02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "17516329103076930229",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170522==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x759c862fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x759c86977d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "9810521403108996517",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170528==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x74c138cfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x74c13945fd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "7867482081715389935",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170534==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x757a30cfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x757a314acd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "822108606908450657",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170540==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7268ff2fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7268ffa4cd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "10109423229428337989",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170547==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x77e0050fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x77e0057ead02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "15133684543278956531",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170552==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7ff349efd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7ff34a5a2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "6446552958340874084",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170558==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7ca3496fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7ca349e9ed02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "14098394719570835444",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170564==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7fea740fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7fea747cfd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "7274868194664269617",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170572==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7897cacfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7897cb320d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "10766877504135454173",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170578==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x764819cfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x76481a2ead02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "1545400817740941956",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170582==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x716c8a8fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x716c8af92d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "5896483106495489539",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170588==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x78456acfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x78456b497d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "18214792620600769573",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170594==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x72b0836fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x72b0835f2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "1275608360383673454",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170602==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7c80e34fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7c80e3c90d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "3166169790515366782",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170607==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x71bd810fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x71bd8182dd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "15930973376883395420",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170614==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x79aefdefd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x79aefe516d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "8599507822086616883",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170620==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x74c543efd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x74c5446aed02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "10060014323375868661",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170624==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x70769a6fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x70769ad0dd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "3909289861287505790",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170631==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7756bcafd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7756bd1d5d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "2554431263090539876",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170638==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x747beccfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x747bed457d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "13878760890220847220",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170644==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x768f892fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x768f89a03d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "6555160120124888057",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170650==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7e3bb5afd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7e3bb6248d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "2482636538102347953",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170655==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7f47c28fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7f47c2ee8d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "11961826065754274021",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170660==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7ca25e6fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7ca25ece5d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/string",
+      "input": "2365208343308224208",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170666==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7e81a20fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7e81a2890d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "0",
+      "set": "fixed",
+      "stderr_head": "===============================================\n==169095==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7abfaa0fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7abfaa8c2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "1",
+      "set": "fixed",
+      "stderr_head": "===============================================\n==169256==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7fb54fafd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7fb55020fd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "5",
+      "set": "fixed",
+      "stderr_head": "===============================================\n==169390==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x79c6fb4fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x79c6fb3f2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "13",
+      "set": "fixed",
+      "stderr_head": "===============================================\n==169564==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x73c8d3efd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x73c8d3df2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "144",
+      "set": "fixed",
+      "stderr_head": "===============================================\n==169721==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x73d11eefd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x73d11f5e8d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "99991",
+      "set": "fixed",
+      "stderr_head": "===============================================\n==169842==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x72ae6bafd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x72ae6c23cd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "4294967295",
+      "set": "boundary",
+      "stderr_head": "===============================================\n==169962==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7a0c730fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7a0c7375fd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "4294967296",
+      "set": "boundary",
+      "stderr_head": "===============================================\n==170044==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7b25546fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7b2554d0ad02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "9223372036854775807",
+      "set": "boundary",
+      "stderr_head": "===============================================\n==170117==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7d49a02fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7d49a09a3d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "9223372036854775808",
+      "set": "boundary",
+      "stderr_head": "===============================================\n==170187==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7f13c54fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7f13c5bfdd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "18446744073709551615",
+      "set": "boundary",
+      "stderr_head": "===============================================\n==170246==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x759cb5afd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x759cb61a5d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "7251281300475547191",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170286==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7de4512fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7de451aa3d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "6133018842108021432",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170298==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7f4b894fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7f4b89ba4d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "2003370288807597117",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170304==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x79f911efd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x79f91264ad02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "9006213375557149385",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170310==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7cac418fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7cac41ed9d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "9726706124797464998",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170316==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x72a1182fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x72a1188f9d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "13313957388274714075",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170322==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x73c4accfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x73c4ad492d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "3912832499840464428",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170328==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x709a32cfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x709a333a7d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "17310901351767249190",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170334==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7dfe7f8fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7dfe800a0d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "11996835942180716789",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170337==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7c460c6fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7c460c5f2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "16769409492178206736",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170344==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7b710a0fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7b710a811d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "5595308326135795266",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170350==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x75936b2fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x75936ba50d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "5949105009421532517",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170354==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x791b7cafd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x791b7d27dd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "9194792350727254790",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170361==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7aa60defd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7aa60e673d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "10075266553418689588",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170366==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7c7d576fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7c7d57e0cd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "4363533649168067755",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170373==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x761addefd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x761ade5e7d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "11731528687929553480",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170378==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x703aeb0fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x703aeb705d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "3392658672605787946",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170386==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x78ba4a2fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x78ba4a8ead02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "7247027308382005673",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170390==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x755cf22fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x755cf2a19d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "5489268499837595459",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170397==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7666dc8fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7666dcee2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "13335856328773420804",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170403==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7861c92fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7861c9a76d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "10431849200962749926",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170409==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7250c40fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7250c4899d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "15238342969535833896",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170416==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x70346a8fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x70346b0a6d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "2381101835736096007",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170420==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x70b9e88fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x70b9e9075d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "7685962397736380117",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170427==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x77c8af8fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x77c8affe0d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "7718649582467429535",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170433==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x79ce228fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x79ce23065d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "13026240387909802946",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170440==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x74b3c92fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x74b3c9a8ed02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "14652754317478965168",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170444==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7bf3a68fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7bf3a6fadd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "11186487811611771279",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170451==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7d46300fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7d46308bfd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "9989889756259933630",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170456==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7e39364fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7e3936bdbd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "16291100701854414202",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170463==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x73064b4fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x73064bb10d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "8012460962458559222",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170468==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x791c57cfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x791c5846bd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "8459847613906731593",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170475==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x738d77efd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x738d78699d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "802366174337402083",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170481==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x773f334fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x773f33c13d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "6333854948727864352",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170486==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7c4ffa8fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7c4ffaf4dd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "12080943365964995244",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170493==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7b5db98fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7b5db9ff3d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "10688444152462116360",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170498==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x74ae1f8fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x74ae1ff47d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "13473763604309307037",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170505==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x783b4bcfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x783b4c3eed02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "6351739828242810918",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170510==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x78b2496fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x78b249d2fd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "3350459782675288013",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170516==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7703c9efd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7703c9df2d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "17516329103076930229",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170523==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x714a6a2fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x714a6aa34d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "9810521403108996517",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170529==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7dd3d9cfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7dd3da4b0d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "7867482081715389935",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170536==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7e9a830fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7e9a83741d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "822108606908450657",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170542==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x79a2c1efd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x79a2c2543d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "10109423229428337989",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170548==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x709e39cfd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x709e3a37fd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "15133684543278956531",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170554==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7bcea18fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7bcea200ad02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "6446552958340874084",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170559==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7880bf8fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7880bff31d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "14098394719570835444",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170565==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7d8d7cafd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7d8d7d1efd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "7274868194664269617",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170570==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x75bfeaefd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x75bfeb5ead02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "10766877504135454173",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170577==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7e32f50fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7e32f57b0d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "1545400817740941956",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170584==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x77f0760fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x77f0766fed02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "5896483106495489539",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170590==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7b394fafd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7b395013ad02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "18214792620600769573",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170595==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x75e2318fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x75e2320b9d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "1275608360383673454",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170601==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x78a4e5efd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x78a4e667ed02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "3166169790515366782",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170608==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7e608fefd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7e6090657d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "15930973376883395420",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170612==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7532706fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x753270d9ad02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "8599507822086616883",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170619==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7132df0fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7132df8a9d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "10060014323375868661",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170626==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x78b3c30fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x78b3c384bd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "3909289861287505790",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170632==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x738a1fafd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x738a20157d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "2554431263090539876",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170636==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7f74b80fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7f74b86ebd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "13878760890220847220",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170642==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7505a5efd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7505a650ed02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "6555160120124888057",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170649==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x709e020fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x709e02881d02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "2482636538102347953",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170654==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7734fa2fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7734fa9aad02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "11961826065754274021",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170661==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7ff4752fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x7ff4759dcd02 in json_object_new_array_ex"
+    },
+    {
+      "exit": 97,
+      "id": "H17-json/sanitizer/symbol",
+      "input": "2365208343308224208",
+      "set": "randomized",
+      "stderr_head": "===============================================\n==170667==ERROR: LeakSanitizer: detected memory leaks\n\nDirect leak of 48 byte(s) in 1 object(s) allocated from:\n    #0 0x7167728fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69\n    #1 0x716772fc2d02 in json_object_new_array_ex"
+    }
+  ],
+  "schema": "toolchainmark-input-extension-v1-summary",
+  "tools": {
+    "clang": "clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b)",
+    "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "nm": "GNU nm (GNU Binutils for Ubuntu) 2.42",
+    "objcopy": "GNU objcopy (GNU Binutils for Ubuntu) 2.42",
+    "strip": "GNU strip (GNU Binutils for Ubuntu) 2.42"
+  },
+  "unavailable_host_executions": 0,
+  "verdicts": {
+    "CLEAN": {
+      "all/stdout": {
+        "I": 0,
+        "IA": 0,
+        "S": 324
+      },
+      "all/triple": {
+        "I": 0,
+        "IA": 0,
+        "S": 324
+      },
+      "boundary/stdout": {
+        "I": 0,
+        "IA": 0,
+        "S": 324
+      },
+      "boundary/triple": {
+        "I": 0,
+        "IA": 0,
+        "S": 324
+      },
+      "fixed/stdout": {
+        "I": 0,
+        "IA": 0,
+        "S": 324
+      },
+      "fixed/triple": {
+        "I": 0,
+        "IA": 0,
+        "S": 324
+      },
+      "malformed/stdout": {
+        "I": 0,
+        "IA": 0,
+        "S": 324
+      },
+      "malformed/triple": {
+        "I": 0,
+        "IA": 0,
+        "S": 324
+      },
+      "randomized/stdout": {
+        "I": 0,
+        "IA": 0,
+        "S": 324
+      },
+      "randomized/triple": {
+        "I": 0,
+        "IA": 0,
+        "S": 324
+      }
+    },
+    "M10": {
+      "all/stdout": {
+        "I": 324,
+        "IA": 0,
+        "S": 0
+      },
+      "all/triple": {
+        "I": 324,
+        "IA": 0,
+        "S": 0
+      },
+      "boundary/stdout": {
+        "I": 324,
+        "IA": 0,
+        "S": 0
+      },
+      "boundary/triple": {
+        "I": 324,
+        "IA": 0,
+        "S": 0
+      },
+      "fixed/stdout": {
+        "I": 324,
+        "IA": 0,
+        "S": 0
+      },
+      "fixed/triple": {
+        "I": 324,
+        "IA": 0,
+        "S": 0
+      },
+      "malformed/stdout": {
+        "I": 0,
+        "IA": 0,
+        "S": 324
+      },
+      "malformed/triple": {
+        "I": 0,
+        "IA": 0,
+        "S": 324
+      },
+      "randomized/stdout": {
+        "I": 324,
+        "IA": 0,
+        "S": 0
+      },
+      "randomized/triple": {
+        "I": 324,
+        "IA": 0,
+        "S": 0
+      }
+    },
+    "M11": {
+      "all/stdout": {
+        "I": 324,
+        "IA": 0,
+        "S": 0
+      },
+      "all/triple": {
+        "I": 324,
+        "IA": 0,
+        "S": 0
+      },
+      "boundary/stdout": {
+        "I": 0,
+        "IA": 0,
+        "S": 324
+      },
+      "boundary/triple": {
+        "I": 0,
+        "IA": 0,
+        "S": 324
+      },
+      "fixed/stdout": {
+        "I": 324,
+        "IA": 0,
+        "S": 0
+      },
+      "fixed/triple": {
+        "I": 324,
+        "IA": 0,
+        "S": 0
+      },
+      "malformed/stdout": {
+        "I": 0,
+        "IA": 0,
+        "S": 324
+      },
+      "malformed/triple": {
+        "I": 0,
+        "IA": 0,
+        "S": 324
+      },
+      "randomized/stdout": {
+        "I": 0,
+        "IA": 0,
+        "S": 324
+      },
+      "randomized/triple": {
+        "I": 0,
+        "IA": 0,
+        "S": 324
+      }
+    }
+  },
+  "workers": 16
+}

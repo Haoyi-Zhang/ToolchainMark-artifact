@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "study": "llwm",
+  "counts": {
+    "file_bindings": 9360,
+    "physical_byte_reobservations": 0,
+    "raw_process_output_bindings": 1440,
+    "typed_extraction_return_bindings": 0,
+    "receipts": 180,
+    "obligations": 720
+  },
+  "unique_blobs": 833,
+  "repeated_case_comparisons": 90,
+  "repeated_semantic_differences": [],
+  "scope": "Plan/receipt correspondence, recorded process and return bindings, retained bytes, physical carrier reobservation; not independent historical reexecution."
+}

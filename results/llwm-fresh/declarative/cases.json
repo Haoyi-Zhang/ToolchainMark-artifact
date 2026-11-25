@@ -1,0 +1,3602 @@
+[
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/atoi/payload-0/O0",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.23816944999998668,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/atoi/payload-0/O2",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.24851117200000772,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/atoi/payload-0/Os",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 1.1627537429999393,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/atoi/payload-1/O0",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 1.1633491830000366,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/atoi/payload-1/O2",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.1874518319998515,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/atoi/payload-1/Os",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.20149619299991173,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/atoi/payload-2/O0",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.1742096819998551,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/atoi/payload-2/O2",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.19340830900000583,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/atoi/payload-2/Os",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.18910903800019696,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/atoi/payload-3/O0",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.1753044439999485,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/atoi/payload-3/O2",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.1971129880000717,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/atoi/payload-3/Os",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.19445659999996678,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/atoi/payload-4/O0",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.16389726200009136,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/atoi/payload-4/O2",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.17396369799985223,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/atoi/payload-4/Os",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.1777039959999911,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/fgets/payload-0/O0",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.17392369000003782,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/fgets/payload-0/O2",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.1798607550001634,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/fgets/payload-0/Os",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.19013541399999667,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/fgets/payload-1/O0",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.1833900630001608,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/fgets/payload-1/O2",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.19709539199993742,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/fgets/payload-1/Os",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.20080643999995118,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/fgets/payload-2/O0",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.18419969599995056,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/fgets/payload-2/O2",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.17132237600003464,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/fgets/payload-2/Os",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.1924005829998805,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/fgets/payload-3/O0",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.1690797050000583,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/fgets/payload-3/O2",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.16682667899999615,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/fgets/payload-3/Os",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.18344983100018908,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/fgets/payload-4/O0",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.18799189800006388,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/fgets/payload-4/O2",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.18992897100019945,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/fgets/payload-4/Os",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.1913108259998353,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/sidedata/payload-0/O0",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.22708166400002483,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/sidedata/payload-0/O2",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.2078773089999686,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/sidedata/payload-0/Os",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.18760428499990667,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/sidedata/payload-1/O0",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.18084206599996833,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/sidedata/payload-1/O2",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.1827293000001191,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/sidedata/payload-1/Os",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.20885563299998466,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/sidedata/payload-2/O0",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.17016568600001847,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/sidedata/payload-2/O2",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.1882235389998641,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/sidedata/payload-2/Os",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.19608855000001313,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/sidedata/payload-3/O0",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.18049029299982067,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/sidedata/payload-3/O2",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.19292305499993745,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/sidedata/payload-3/Os",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.20572808300016732,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/sidedata/payload-4/O0",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.16273395600001095,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/sidedata/payload-4/O2",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.21045997599981092,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/upstream/sidedata/payload-4/Os",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 1,
+    "seconds": 0.18667515799984358,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/atoi/payload-0/O0",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.20362664300000688,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/atoi/payload-0/O2",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.18676258599998619,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/atoi/payload-0/Os",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.23200134999979127,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.19290268099985042,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/atoi/payload-1/O2",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.2047731699999531,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/atoi/payload-1/Os",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.20822581700008413,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/atoi/payload-2/O0",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.21364644999994198,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/atoi/payload-2/O2",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.1871406019999995,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/atoi/payload-2/Os",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.17282596600011857,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/atoi/payload-3/O0",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.18801743599988185,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/atoi/payload-3/O2",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.21054181699992114,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/atoi/payload-3/Os",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.19916284700002507,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/atoi/payload-4/O0",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.18182561100002204,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/atoi/payload-4/O2",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.18337305900013234,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/atoi/payload-4/Os",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.2087733670000489,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/fgets/payload-0/O0",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.19954739800004972,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/fgets/payload-0/O2",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.18072898900004475,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/fgets/payload-0/Os",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.21818744600000173,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/fgets/payload-1/O0",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.1985653710000861,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/fgets/payload-1/O2",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.19946100099991781,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/fgets/payload-1/Os",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.1957587459999104,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/fgets/payload-2/O0",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.1839166969998587,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/fgets/payload-2/O2",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.20008284799996545,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/fgets/payload-2/Os",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.18922402799989868,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/fgets/payload-3/O0",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.1914639740000439,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/fgets/payload-3/O2",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.20987753500003237,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/fgets/payload-3/Os",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.22879828100008126,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/fgets/payload-4/O0",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.1915041800000381,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/fgets/payload-4/O2",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.22242407700014155,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/fgets/payload-4/Os",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.20513286099981087,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/sidedata/payload-0/O0",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.2279446069999267,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/sidedata/payload-0/O2",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.22828933400001006,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/sidedata/payload-0/Os",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.7873433090001072,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/sidedata/payload-1/O0",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.6417395050000323,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/sidedata/payload-1/O2",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.7107486849999987,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/sidedata/payload-1/Os",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.5943338270001277,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/sidedata/payload-2/O0",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.19266536399982215,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/sidedata/payload-2/O2",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.21097095400000399,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/sidedata/payload-2/Os",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.23422080299997106,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/sidedata/payload-3/O0",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.21435438599996814,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/sidedata/payload-3/O2",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.20092605500008176,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/sidedata/payload-3/Os",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.19817490399987037,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/sidedata/payload-4/O0",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.20946016900006725,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/sidedata/payload-4/O2",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.20930227200005902,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-1/literal-output-repair/sidedata/payload-4/Os",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 1,
+    "seconds": 0.2013559310000801,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/atoi/payload-0/O0",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.20131109799990554,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/atoi/payload-0/O2",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.19838618199992197,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/atoi/payload-0/Os",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.20835758999987775,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/atoi/payload-1/O0",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.17209112799992,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/atoi/payload-1/O2",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.20090852300018014,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/atoi/payload-1/Os",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.17053609100003086,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/atoi/payload-2/O0",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.17855635600017195,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/atoi/payload-2/O2",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.20608706699999857,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/atoi/payload-2/Os",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.20824609600003896,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/atoi/payload-3/O0",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.19133477299988044,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/atoi/payload-3/O2",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.2036030460001257,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/atoi/payload-3/Os",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.19202850000010585,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/atoi/payload-4/O0",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.16404859799990845,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/atoi/payload-4/O2",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.17164381499992487,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/atoi/payload-4/Os",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.19078629299997374,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/fgets/payload-0/O0",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.1841869229999702,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/fgets/payload-0/O2",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.1792127490000439,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/fgets/payload-0/Os",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.1667184850000467,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/fgets/payload-1/O0",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.16150904200003424,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/fgets/payload-1/O2",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.16716872200004218,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/fgets/payload-1/Os",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.17077255599997443,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/fgets/payload-2/O0",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.1575096039998698,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/fgets/payload-2/O2",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.161400274000016,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/fgets/payload-2/Os",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.17439737299991975,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/fgets/payload-3/O0",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.1687666860000263,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/fgets/payload-3/O2",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.1712995499999579,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/fgets/payload-3/Os",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.18724075499994797,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/fgets/payload-4/O0",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.16563906300007147,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/fgets/payload-4/O2",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.16895731799991154,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/fgets/payload-4/Os",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.17745924500013643,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/sidedata/payload-0/O0",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.15789242200003173,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/sidedata/payload-0/O2",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.1602118949999749,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/sidedata/payload-0/Os",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.14425798399997802,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/sidedata/payload-1/O0",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.14996536500007096,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/sidedata/payload-1/O2",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.16204223299996556,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/sidedata/payload-1/Os",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.17527020400007132,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/sidedata/payload-2/O0",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.16386980499987658,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/sidedata/payload-2/O2",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.16510847299991838,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/sidedata/payload-2/Os",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.15508600900011515,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/sidedata/payload-3/O0",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.14781575500001054,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/sidedata/payload-3/O2",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.17269942999996601,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/sidedata/payload-3/Os",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.18411283399996137,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/sidedata/payload-4/O0",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.18164075899994714,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/sidedata/payload-4/O2",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.17545313200002965,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/upstream/sidedata/payload-4/Os",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "INCONSISTENT",
+      "ER02": "SATISFIED",
+      "ER03": "INADMISSIBLE",
+      "ER04": "INADMISSIBLE"
+    },
+    "run": 2,
+    "seconds": 0.1687920629999553,
+    "variant": "upstream"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/atoi/payload-0/O0",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.16643489999978556,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/atoi/payload-0/O2",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.1578195140000389,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/atoi/payload-0/Os",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.15596912600017276,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/atoi/payload-1/O0",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.1517408780000551,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/atoi/payload-1/O2",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.17256445900011386,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/atoi/payload-1/Os",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.16467438800009404,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/atoi/payload-2/O0",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.16106187700006558,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/atoi/payload-2/O2",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.15969801899996128,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/atoi/payload-2/Os",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.14535908800007746,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/atoi/payload-3/O0",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.1478236589998687,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/atoi/payload-3/O2",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.1546605680000539,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/atoi/payload-3/Os",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.14857962499991118,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/atoi/payload-4/O0",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.16250150700011545,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/atoi/payload-4/O2",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.16740562299992234,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/atoi/payload-4/Os",
+    "interface": "atoi",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.15912532799984547,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/fgets/payload-0/O0",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.15549158299995725,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/fgets/payload-0/O2",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.17299702800005434,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/fgets/payload-0/Os",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.16340534599999046,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/fgets/payload-1/O0",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.16047846099991148,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/fgets/payload-1/O2",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.17065424099996562,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/fgets/payload-1/Os",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.15669301100001576,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/fgets/payload-2/O0",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.1564354929998899,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/fgets/payload-2/O2",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.15465797399997427,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/fgets/payload-2/Os",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.15123980700013817,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/fgets/payload-3/O0",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.13807979500006695,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/fgets/payload-3/O2",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.14915545899998506,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/fgets/payload-3/Os",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.1573481189998347,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/fgets/payload-4/O0",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.1513311869998688,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/fgets/payload-4/O2",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.14435779800010096,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/fgets/payload-4/Os",
+    "interface": "fgets",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.1467294070000662,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/sidedata/payload-0/O0",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.1322410719999425,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/sidedata/payload-0/O2",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.13942772399991554,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/sidedata/payload-0/Os",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "ABCD",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.14366976599990267,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/sidedata/payload-1/O0",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.13310236000006626,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/sidedata/payload-1/O2",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.14017014799992467,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/sidedata/payload-1/Os",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "A%%B",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.14121164599987424,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/sidedata/payload-2/O0",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.12902008599985493,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/sidedata/payload-2/O2",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.13674687999991875,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/sidedata/payload-2/Os",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%AB",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.13395081299995582,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/sidedata/payload-3/O0",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.12273937999998452,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/sidedata/payload-3/O2",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.131346528999984,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/sidedata/payload-3/Os",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "AB%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.1355293909998636,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/sidedata/payload-4/O0",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O0",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.1280500899999879,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/sidedata/payload-4/O2",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "O2",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.14170860199988056,
+    "variant": "literal-output-repair"
+  },
+  {
+    "action_statuses": {
+      "OK": 11
+    },
+    "command_count": 13,
+    "id": "pass-2/literal-output-repair/sidedata/payload-4/Os",
+    "interface": "sidedata",
+    "legacy": null,
+    "optimization": "Os",
+    "payload": "%%%%",
+    "primary": {
+      "ER01": "SATISFIED",
+      "ER02": "SATISFIED",
+      "ER03": "SATISFIED",
+      "ER04": "SATISFIED"
+    },
+    "run": 2,
+    "seconds": 0.136534040000015,
+    "variant": "literal-output-repair"
+  }
+]

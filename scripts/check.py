@@ -93,6 +93,10 @@ def quick_commands() -> list[dict]:
         {"name": "ELF observer controls", "command": [str(PYTHON), "-B", "-m", "unittest", "discover", "-s", "independent_observers/tests", "-v"], "timeout": 300},
         {"name": "optimized admission controls", "command": [str(PYTHON), "-O", "-B", "-m", "unittest", "-v", "tests.test_removal_admission", "tests.test_study_semantics"], "timeout": 300},
         {"name": "command line smoke", "command": [str(PYTHON), "-B", "-m", "toolchainmark.cli", "catalog"], "timeout": 120},
+        {"name": "host-input extension reception", "command": [str(PYTHON), "-B", "input_extension/verify.py", "--data", "results/input-extension/formal-01"], "timeout": 300},
+        {"name": "typed-oracle ablation", "command": [str(PYTHON), "-B", "scripts/derive_oracle_ablation.py", "--check"], "timeout": 300},
+        {"name": "end-to-end cost record", "command": [str(PYTHON), "-B", "scripts/measure_end_to_end.py", "--check", "results/end-to-end-cost/summary.json"], "timeout": 120},
+        {"name": "CTF correspondence arm", "command": [str(PYTHON), "-B", "-m", "evidence_correspondence.ctf_arm", "--check"], "timeout": 300, "requires": ["pandas", "numpy", "scipy"]},
     ]
 
 

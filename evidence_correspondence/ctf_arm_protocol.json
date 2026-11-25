@@ -1,0 +1,14 @@
+{
+  "schema": "toolchainmark-correspondence-ctf-arm-protocol-v1",
+  "frozen_before_execution": true,
+  "question": "Given the same 24 correspondence records, how many contradictions does the official Causal Testing Framework test-case path reject?",
+  "population": "All 24 records of results/evidence-correspondence/completed/cases (6 valid, 18 controlled contradictions); no record is added, removed, or re-labelled.",
+  "arms": {
+    "ctf-api": "ctf_comparison.oracle.compare_receipt: the official CausalTestCase.execute_test path with the exact-observation estimator and declared-predicate effect, followed by comparison of each recomputed stage outcome with the recorded stage verdict.",
+    "ctf-api-with-hash-binding": "The ctf-api arm preceded by the comparison harness's canonical plan and input digest checks (ctf_comparison.run)."
+  },
+  "decision_rule": "A record is rejected by an arm when the arm raises an input error or at least one recomputed stage outcome differs from the recorded verdict; otherwise it is accepted.",
+  "labels": "Validity labels are read only after every arm has produced its decision for every record.",
+  "success_criterion": "None. The counts are reported whatever they are; the comparison measures which associations each interface checks, not which framework is better.",
+  "fresh_native_execution": false
+}

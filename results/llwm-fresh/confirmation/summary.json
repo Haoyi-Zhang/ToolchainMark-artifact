@@ -1,0 +1,65 @@
+{
+  "boundary_cases": 12,
+  "boundary_command_count": 96,
+  "boundary_counts": {
+    "literal-output-repair": {
+      "True": 6
+    },
+    "upstream": {
+      "True": 6
+    }
+  },
+  "cases": 180,
+  "cases_per_pass": 90,
+  "command_count": 2340,
+  "counts": {
+    "literal-output-repair": {
+      "ER01": {
+        "SATISFIED": 90
+      },
+      "ER02": {
+        "SATISFIED": 90
+      },
+      "ER03": {
+        "SATISFIED": 90
+      },
+      "ER04": {
+        "SATISFIED": 90
+      }
+    },
+    "upstream": {
+      "ER01": {
+        "INCONSISTENT": 72,
+        "SATISFIED": 18
+      },
+      "ER02": {
+        "SATISFIED": 90
+      },
+      "ER03": {
+        "INADMISSIBLE": 72,
+        "SATISFIED": 18
+      },
+      "ER04": {
+        "INADMISSIBLE": 72,
+        "SATISFIED": 18
+      }
+    }
+  },
+  "passes": 2,
+  "producer_input_count": 35,
+  "producer_inputs_unchanged": true,
+  "schema": "llwm-native-literal-output-v1",
+  "scope": "One public deposit selected for an executable documented interface; not a sampled population of tools. Two techniques and three interfaces share one root cause.",
+  "timing": {
+    "main_case_seconds": {
+      "literal-output-repair": 9.078910113000006,
+      "upstream": 9.147231995000084
+    },
+    "pass_seconds_including_boundary": {
+      "first": 9.598388499999942,
+      "second": 9.798151809000046
+    },
+    "plugin_setup_command_seconds": 21.200280450999912,
+    "total_seconds_including_setup": 40.606469661000006
+  }
+}

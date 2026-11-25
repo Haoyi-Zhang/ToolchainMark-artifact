@@ -1,0 +1,28 @@
+{
+  "boundary_rows": 12,
+  "completed_utc": "2026-11-25T03:04:09.146919+00:00",
+  "main_rows": 180,
+  "producer_inputs_unchanged": true,
+  "raw_files": [
+    {
+      "bytes": 1681620,
+      "path": "first.jsonl",
+      "sha256": "e33df56fe69837ef8fb0bb3614e0c822143d308e576609c174d00dad17c53be8"
+    },
+    {
+      "bytes": 1685131,
+      "path": "second.jsonl",
+      "sha256": "41b4e74b2e4bb6bafa872f955abbc5ab3b70f0831acbf1e728fad1ac97d31d50"
+    },
+    {
+      "bytes": 37046,
+      "path": "first-boundary.jsonl",
+      "sha256": "21ee6243845df3031f51793ea82038e0db9c1521bdf7e93fb46b193f512445e8"
+    },
+    {
+      "bytes": 37199,
+      "path": "second-boundary.jsonl",
+      "sha256": "a293e07dab1c00c9a20c798ff19a9b60d6a27a31c72a358367c020c750052d4b"
+    }
+  ]
+}

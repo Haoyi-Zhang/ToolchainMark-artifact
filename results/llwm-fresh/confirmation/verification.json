@@ -1,0 +1,180 @@
+{
+  "boundary_cases": 12,
+  "boundary_counts": {
+    "literal-output-repair": {
+      "True": 6
+    },
+    "upstream": {
+      "True": 6
+    }
+  },
+  "checks": {
+    "actual_stdin_checks": 360,
+    "boundary_repeated_execution_fields": 120,
+    "case_file_bindings": 1128,
+    "elf_debug_postconditions": 180,
+    "executable_pre_post_bindings": 1128,
+    "main_repeated_execution_fields": 2700,
+    "ordinary_verdict_comparisons": 720,
+    "producer_input_bindings": 35,
+    "raw_command_records": 2436,
+    "repeated_case_judgments": 96,
+    "restricted_format_explanations": 180,
+    "setup_command_records": 6,
+    "setup_file_bindings": 33,
+    "upstream_vendor_file_bindings": 12
+  },
+  "counts": {
+    "literal-output-repair": {
+      "ER01": {
+        "SATISFIED": 90
+      },
+      "ER02": {
+        "SATISFIED": 90
+      },
+      "ER03": {
+        "SATISFIED": 90
+      },
+      "ER04": {
+        "SATISFIED": 90
+      }
+    },
+    "upstream": {
+      "ER01": {
+        "INCONSISTENT": 72,
+        "SATISFIED": 18
+      },
+      "ER02": {
+        "SATISFIED": 90
+      },
+      "ER03": {
+        "INADMISSIBLE": 72,
+        "SATISFIED": 18
+      },
+      "ER04": {
+        "INADMISSIBLE": 72,
+        "SATISFIED": 18
+      }
+    }
+  },
+  "main_cases": 180,
+  "negative_controls": {
+    "controls": [
+      "changed successful key stdout yields ER01 inconsistency",
+      "unavailable embedding yields ER01 inadmissibility",
+      "different relocated bytes yield ER03 inadmissibility",
+      "unestablished debug removal yields ER04 inadmissibility",
+      "wrong retained fgets stdin is rejected by invocation binding",
+      "changed post-execution digest is rejected by executable binding"
+    ],
+    "count": 6,
+    "scope": "In-memory receiver controls; not additional native executions or empirical defects."
+  },
+  "repair": {
+    "added_lines": 6,
+    "changed_headers": [
+      "include/llwm/Sidedata.hpp",
+      "include/llwm/semacall/AtoiPatcher.hpp",
+      "include/llwm/semacall/GetsPatcher.hpp"
+    ],
+    "removed_lines": 6,
+    "scope": "Exact comparison with the retained acquisition manifest and source snapshots. The public archive identity is recorded; this receiver does not fetch or re-extract the deposit."
+  },
+  "repetition": {
+    "boundary_change_indicators_repeated": true,
+    "boundary_projection_differences": [
+      {
+        "case": [
+          "literal-output-repair",
+          "atoi",
+          "known-prefix-boundary",
+          "O0"
+        ],
+        "field": "stdout_b64",
+        "first": "aG9zdDoxMjM0NQp3YXRlcmxWomg=",
+        "role": "marked-ordinary",
+        "second": "aG9zdDoxMjM0NQp3YXRlcoV78us="
+      },
+      {
+        "case": [
+          "literal-output-repair",
+          "atoi",
+          "known-prefix-boundary",
+          "O2"
+        ],
+        "field": "stdout_b64",
+        "first": "aG9zdDoxMjM0NQp3YXRlcmxWomg=",
+        "role": "marked-ordinary",
+        "second": "aG9zdDoxMjM0NQp3YXRlclk3lWs="
+      },
+      {
+        "case": [
+          "literal-output-repair",
+          "atoi",
+          "known-prefix-boundary",
+          "Os"
+        ],
+        "field": "stdout_b64",
+        "first": "aG9zdDoxMjM0NQp3YXRlcmxWomg=",
+        "role": "marked-ordinary",
+        "second": "aG9zdDoxMjM0NQp3YXRlclk3lWs="
+      },
+      {
+        "case": [
+          "upstream",
+          "atoi",
+          "known-prefix-boundary",
+          "O0"
+        ],
+        "field": "stdout_b64",
+        "first": "aG9zdDoxMjM0NQp3YXRlcm4ibWk=",
+        "role": "marked-ordinary",
+        "second": "aG9zdDoxMjM0NQp3YXRlcoV78us="
+      },
+      {
+        "case": [
+          "upstream",
+          "atoi",
+          "known-prefix-boundary",
+          "O2"
+        ],
+        "field": "stdout_b64",
+        "first": "aG9zdDoxMjM0NQp3YXRlcm4ibWk=",
+        "role": "marked-ordinary",
+        "second": "aG9zdDoxMjM0NQp3YXRlcoV78us="
+      },
+      {
+        "case": [
+          "upstream",
+          "atoi",
+          "known-prefix-boundary",
+          "Os"
+        ],
+        "field": "stdout_b64",
+        "first": "aG9zdDoxMjM0NQp3YXRlcmxWomg=",
+        "role": "marked-ordinary",
+        "second": "aG9zdDoxMjM0NQp3YXRlcoV78us="
+      }
+    ],
+    "excluded_from_equality_claim": [
+      "IR bytes",
+      "ELF bytes",
+      "randomized embedding choices",
+      "debug compilation paths",
+      "timings",
+      "complete command records"
+    ],
+    "interpretation": "Main output/exit/input observations repeat. All known-prefix boundary cases have extra output, but some raw output bytes vary between passes. The boundary output is not treated as stable recovery of the requested payload.",
+    "main_projection": [
+      "scientific judgments and gate prefixes",
+      "native invocation availability",
+      "exit status",
+      "actual standard input",
+      "raw standard output",
+      "raw standard error"
+    ],
+    "main_projection_differences": []
+  },
+  "scope": "Receiver rederivation from retained raw standard input/output, command arguments, source snapshots, directories and ELF bytes. Ordinary guarded checks receive the same information and agree with all stored judgments; this is not an additional native baseline arm. The local repair is confirmed in the retained executions, not claimed to be accepted or confirmed by maintainers. No historical execution attestation, universal wrong-key rejection, production prevalence, or whole-toolchain correctness is established.",
+  "verdict": "PASS"
+}

@@ -1,0 +1,31 @@
+{
+  "acceptance_decisions": 72,
+  "controlled_invalid_records": 18,
+  "declared_patch_operations_checked": 21,
+  "frozen_checker_replays": 24,
+  "frozen_source_files": 14,
+  "layers": {
+    "native-binding": {
+      "invalid_rejected": 18,
+      "valid_accepted": 6
+    },
+    "oracle-replay": {
+      "invalid_accepted": 17,
+      "invalid_rejected": 1,
+      "valid_accepted": 6
+    },
+    "plan-receiver": {
+      "invalid_accepted": 10,
+      "invalid_rejected": 8,
+      "valid_accepted": 6
+    }
+  },
+  "native_programs_reexecuted": false,
+  "official_ctf_api_called": false,
+  "records": 24,
+  "retained_dataset_bindings": 83,
+  "schema": "execution-correspondence-receiver-v1",
+  "scope": "Exact frozen record edits, externally selected cases, saved byte identities and observed checking-layer outcomes. A PASS validates the retained comparison; it does not require a desired detection result or certify historical acquisition.",
+  "valid_records": 6,
+  "verdict": "PASS"
+}

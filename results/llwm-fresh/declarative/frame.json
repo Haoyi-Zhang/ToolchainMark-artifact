@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "pass-1/upstream/atoi/payload-0/O0",
+    "interface": "atoi",
+    "optimization": "O0",
+    "payload": "ABCD",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/atoi/payload-0/O2",
+    "interface": "atoi",
+    "optimization": "O2",
+    "payload": "ABCD",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/atoi/payload-0/Os",
+    "interface": "atoi",
+    "optimization": "Os",
+    "payload": "ABCD",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/atoi/payload-1/O0",
+    "interface": "atoi",
+    "optimization": "O0",
+    "payload": "A%%B",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/atoi/payload-1/O2",
+    "interface": "atoi",
+    "optimization": "O2",
+    "payload": "A%%B",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/atoi/payload-1/Os",
+    "interface": "atoi",
+    "optimization": "Os",
+    "payload": "A%%B",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/atoi/payload-2/O0",
+    "interface": "atoi",
+    "optimization": "O0",
+    "payload": "%%AB",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/atoi/payload-2/O2",
+    "interface": "atoi",
+    "optimization": "O2",
+    "payload": "%%AB",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/atoi/payload-2/Os",
+    "interface": "atoi",
+    "optimization": "Os",
+    "payload": "%%AB",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/atoi/payload-3/O0",
+    "interface": "atoi",
+    "optimization": "O0",
+    "payload": "AB%%",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/atoi/payload-3/O2",
+    "interface": "atoi",
+    "optimization": "O2",
+    "payload": "AB%%",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/atoi/payload-3/Os",
+    "interface": "atoi",
+    "optimization": "Os",
+    "payload": "AB%%",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/atoi/payload-4/O0",
+    "interface": "atoi",
+    "optimization": "O0",
+    "payload": "%%%%",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/atoi/payload-4/O2",
+    "interface": "atoi",
+    "optimization": "O2",
+    "payload": "%%%%",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/atoi/payload-4/Os",
+    "interface": "atoi",
+    "optimization": "Os",
+    "payload": "%%%%",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/fgets/payload-0/O0",
+    "interface": "fgets",
+    "optimization": "O0",
+    "payload": "ABCD",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/fgets/payload-0/O2",
+    "interface": "fgets",
+    "optimization": "O2",
+    "payload": "ABCD",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/fgets/payload-0/Os",
+    "interface": "fgets",
+    "optimization": "Os",
+    "payload": "ABCD",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/fgets/payload-1/O0",
+    "interface": "fgets",
+    "optimization": "O0",
+    "payload": "A%%B",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/fgets/payload-1/O2",
+    "interface": "fgets",
+    "optimization": "O2",
+    "payload": "A%%B",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/fgets/payload-1/Os",
+    "interface": "fgets",
+    "optimization": "Os",
+    "payload": "A%%B",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/fgets/payload-2/O0",
+    "interface": "fgets",
+    "optimization": "O0",
+    "payload": "%%AB",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/fgets/payload-2/O2",
+    "interface": "fgets",
+    "optimization": "O2",
+    "payload": "%%AB",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/fgets/payload-2/Os",
+    "interface": "fgets",
+    "optimization": "Os",
+    "payload": "%%AB",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/fgets/payload-3/O0",
+    "interface": "fgets",
+    "optimization": "O0",
+    "payload": "AB%%",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/fgets/payload-3/O2",
+    "interface": "fgets",
+    "optimization": "O2",
+    "payload": "AB%%",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/fgets/payload-3/Os",
+    "interface": "fgets",
+    "optimization": "Os",
+    "payload": "AB%%",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/fgets/payload-4/O0",
+    "interface": "fgets",
+    "optimization": "O0",
+    "payload": "%%%%",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/fgets/payload-4/O2",
+    "interface": "fgets",
+    "optimization": "O2",
+    "payload": "%%%%",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/fgets/payload-4/Os",
+    "interface": "fgets",
+    "optimization": "Os",
+    "payload": "%%%%",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/sidedata/payload-0/O0",
+    "interface": "sidedata",
+    "optimization": "O0",
+    "payload": "ABCD",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/sidedata/payload-0/O2",
+    "interface": "sidedata",
+    "optimization": "O2",
+    "payload": "ABCD",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/sidedata/payload-0/Os",
+    "interface": "sidedata",
+    "optimization": "Os",
+    "payload": "ABCD",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/sidedata/payload-1/O0",
+    "interface": "sidedata",
+    "optimization": "O0",
+    "payload": "A%%B",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/sidedata/payload-1/O2",
+    "interface": "sidedata",
+    "optimization": "O2",
+    "payload": "A%%B",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/sidedata/payload-1/Os",
+    "interface": "sidedata",
+    "optimization": "Os",
+    "payload": "A%%B",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/sidedata/payload-2/O0",
+    "interface": "sidedata",
+    "optimization": "O0",
+    "payload": "%%AB",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/sidedata/payload-2/O2",
+    "interface": "sidedata",
+    "optimization": "O2",
+    "payload": "%%AB",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/sidedata/payload-2/Os",
+    "interface": "sidedata",
+    "optimization": "Os",
+    "payload": "%%AB",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/sidedata/payload-3/O0",
+    "interface": "sidedata",
+    "optimization": "O0",
+    "payload": "AB%%",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/sidedata/payload-3/O2",
+    "interface": "sidedata",
+    "optimization": "O2",
+    "payload": "AB%%",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/sidedata/payload-3/Os",
+    "interface": "sidedata",
+    "optimization": "Os",
+    "payload": "AB%%",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/sidedata/payload-4/O0",
+    "interface": "sidedata",
+    "optimization": "O0",
+    "payload": "%%%%",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/sidedata/payload-4/O2",
+    "interface": "sidedata",
+    "optimization": "O2",
+    "payload": "%%%%",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/upstream/sidedata/payload-4/Os",
+    "interface": "sidedata",
+    "optimization": "Os",
+    "payload": "%%%%",
+    "run": 1,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-1/literal-output-repair/atoi/payload-0/O0",
+    "interface": "atoi",
+    "optimization": "O0",
+    "payload": "ABCD",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/atoi/payload-0/O2",
+    "interface": "atoi",
+    "optimization": "O2",
+    "payload": "ABCD",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/atoi/payload-0/Os",
+    "interface": "atoi",
+    "optimization": "Os",
+    "payload": "ABCD",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/atoi/payload-1/O0",
+    "interface": "atoi",
+    "optimization": "O0",
+    "payload": "A%%B",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/atoi/payload-1/O2",
+    "interface": "atoi",
+    "optimization": "O2",
+    "payload": "A%%B",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/atoi/payload-1/Os",
+    "interface": "atoi",
+    "optimization": "Os",
+    "payload": "A%%B",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/atoi/payload-2/O0",
+    "interface": "atoi",
+    "optimization": "O0",
+    "payload": "%%AB",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/atoi/payload-2/O2",
+    "interface": "atoi",
+    "optimization": "O2",
+    "payload": "%%AB",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/atoi/payload-2/Os",
+    "interface": "atoi",
+    "optimization": "Os",
+    "payload": "%%AB",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/atoi/payload-3/O0",
+    "interface": "atoi",
+    "optimization": "O0",
+    "payload": "AB%%",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/atoi/payload-3/O2",
+    "interface": "atoi",
+    "optimization": "O2",
+    "payload": "AB%%",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/atoi/payload-3/Os",
+    "interface": "atoi",
+    "optimization": "Os",
+    "payload": "AB%%",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/atoi/payload-4/O0",
+    "interface": "atoi",
+    "optimization": "O0",
+    "payload": "%%%%",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/atoi/payload-4/O2",
+    "interface": "atoi",
+    "optimization": "O2",
+    "payload": "%%%%",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/atoi/payload-4/Os",
+    "interface": "atoi",
+    "optimization": "Os",
+    "payload": "%%%%",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/fgets/payload-0/O0",
+    "interface": "fgets",
+    "optimization": "O0",
+    "payload": "ABCD",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/fgets/payload-0/O2",
+    "interface": "fgets",
+    "optimization": "O2",
+    "payload": "ABCD",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/fgets/payload-0/Os",
+    "interface": "fgets",
+    "optimization": "Os",
+    "payload": "ABCD",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/fgets/payload-1/O0",
+    "interface": "fgets",
+    "optimization": "O0",
+    "payload": "A%%B",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/fgets/payload-1/O2",
+    "interface": "fgets",
+    "optimization": "O2",
+    "payload": "A%%B",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/fgets/payload-1/Os",
+    "interface": "fgets",
+    "optimization": "Os",
+    "payload": "A%%B",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/fgets/payload-2/O0",
+    "interface": "fgets",
+    "optimization": "O0",
+    "payload": "%%AB",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/fgets/payload-2/O2",
+    "interface": "fgets",
+    "optimization": "O2",
+    "payload": "%%AB",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/fgets/payload-2/Os",
+    "interface": "fgets",
+    "optimization": "Os",
+    "payload": "%%AB",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/fgets/payload-3/O0",
+    "interface": "fgets",
+    "optimization": "O0",
+    "payload": "AB%%",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/fgets/payload-3/O2",
+    "interface": "fgets",
+    "optimization": "O2",
+    "payload": "AB%%",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/fgets/payload-3/Os",
+    "interface": "fgets",
+    "optimization": "Os",
+    "payload": "AB%%",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/fgets/payload-4/O0",
+    "interface": "fgets",
+    "optimization": "O0",
+    "payload": "%%%%",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/fgets/payload-4/O2",
+    "interface": "fgets",
+    "optimization": "O2",
+    "payload": "%%%%",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/fgets/payload-4/Os",
+    "interface": "fgets",
+    "optimization": "Os",
+    "payload": "%%%%",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/sidedata/payload-0/O0",
+    "interface": "sidedata",
+    "optimization": "O0",
+    "payload": "ABCD",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/sidedata/payload-0/O2",
+    "interface": "sidedata",
+    "optimization": "O2",
+    "payload": "ABCD",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/sidedata/payload-0/Os",
+    "interface": "sidedata",
+    "optimization": "Os",
+    "payload": "ABCD",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/sidedata/payload-1/O0",
+    "interface": "sidedata",
+    "optimization": "O0",
+    "payload": "A%%B",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/sidedata/payload-1/O2",
+    "interface": "sidedata",
+    "optimization": "O2",
+    "payload": "A%%B",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/sidedata/payload-1/Os",
+    "interface": "sidedata",
+    "optimization": "Os",
+    "payload": "A%%B",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/sidedata/payload-2/O0",
+    "interface": "sidedata",
+    "optimization": "O0",
+    "payload": "%%AB",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/sidedata/payload-2/O2",
+    "interface": "sidedata",
+    "optimization": "O2",
+    "payload": "%%AB",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/sidedata/payload-2/Os",
+    "interface": "sidedata",
+    "optimization": "Os",
+    "payload": "%%AB",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/sidedata/payload-3/O0",
+    "interface": "sidedata",
+    "optimization": "O0",
+    "payload": "AB%%",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/sidedata/payload-3/O2",
+    "interface": "sidedata",
+    "optimization": "O2",
+    "payload": "AB%%",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/sidedata/payload-3/Os",
+    "interface": "sidedata",
+    "optimization": "Os",
+    "payload": "AB%%",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/sidedata/payload-4/O0",
+    "interface": "sidedata",
+    "optimization": "O0",
+    "payload": "%%%%",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/sidedata/payload-4/O2",
+    "interface": "sidedata",
+    "optimization": "O2",
+    "payload": "%%%%",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-1/literal-output-repair/sidedata/payload-4/Os",
+    "interface": "sidedata",
+    "optimization": "Os",
+    "payload": "%%%%",
+    "run": 1,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/upstream/atoi/payload-0/O0",
+    "interface": "atoi",
+    "optimization": "O0",
+    "payload": "ABCD",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/atoi/payload-0/O2",
+    "interface": "atoi",
+    "optimization": "O2",
+    "payload": "ABCD",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/atoi/payload-0/Os",
+    "interface": "atoi",
+    "optimization": "Os",
+    "payload": "ABCD",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/atoi/payload-1/O0",
+    "interface": "atoi",
+    "optimization": "O0",
+    "payload": "A%%B",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/atoi/payload-1/O2",
+    "interface": "atoi",
+    "optimization": "O2",
+    "payload": "A%%B",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/atoi/payload-1/Os",
+    "interface": "atoi",
+    "optimization": "Os",
+    "payload": "A%%B",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/atoi/payload-2/O0",
+    "interface": "atoi",
+    "optimization": "O0",
+    "payload": "%%AB",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/atoi/payload-2/O2",
+    "interface": "atoi",
+    "optimization": "O2",
+    "payload": "%%AB",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/atoi/payload-2/Os",
+    "interface": "atoi",
+    "optimization": "Os",
+    "payload": "%%AB",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/atoi/payload-3/O0",
+    "interface": "atoi",
+    "optimization": "O0",
+    "payload": "AB%%",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/atoi/payload-3/O2",
+    "interface": "atoi",
+    "optimization": "O2",
+    "payload": "AB%%",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/atoi/payload-3/Os",
+    "interface": "atoi",
+    "optimization": "Os",
+    "payload": "AB%%",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/atoi/payload-4/O0",
+    "interface": "atoi",
+    "optimization": "O0",
+    "payload": "%%%%",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/atoi/payload-4/O2",
+    "interface": "atoi",
+    "optimization": "O2",
+    "payload": "%%%%",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/atoi/payload-4/Os",
+    "interface": "atoi",
+    "optimization": "Os",
+    "payload": "%%%%",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/fgets/payload-0/O0",
+    "interface": "fgets",
+    "optimization": "O0",
+    "payload": "ABCD",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/fgets/payload-0/O2",
+    "interface": "fgets",
+    "optimization": "O2",
+    "payload": "ABCD",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/fgets/payload-0/Os",
+    "interface": "fgets",
+    "optimization": "Os",
+    "payload": "ABCD",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/fgets/payload-1/O0",
+    "interface": "fgets",
+    "optimization": "O0",
+    "payload": "A%%B",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/fgets/payload-1/O2",
+    "interface": "fgets",
+    "optimization": "O2",
+    "payload": "A%%B",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/fgets/payload-1/Os",
+    "interface": "fgets",
+    "optimization": "Os",
+    "payload": "A%%B",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/fgets/payload-2/O0",
+    "interface": "fgets",
+    "optimization": "O0",
+    "payload": "%%AB",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/fgets/payload-2/O2",
+    "interface": "fgets",
+    "optimization": "O2",
+    "payload": "%%AB",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/fgets/payload-2/Os",
+    "interface": "fgets",
+    "optimization": "Os",
+    "payload": "%%AB",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/fgets/payload-3/O0",
+    "interface": "fgets",
+    "optimization": "O0",
+    "payload": "AB%%",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/fgets/payload-3/O2",
+    "interface": "fgets",
+    "optimization": "O2",
+    "payload": "AB%%",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/fgets/payload-3/Os",
+    "interface": "fgets",
+    "optimization": "Os",
+    "payload": "AB%%",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/fgets/payload-4/O0",
+    "interface": "fgets",
+    "optimization": "O0",
+    "payload": "%%%%",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/fgets/payload-4/O2",
+    "interface": "fgets",
+    "optimization": "O2",
+    "payload": "%%%%",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/fgets/payload-4/Os",
+    "interface": "fgets",
+    "optimization": "Os",
+    "payload": "%%%%",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/sidedata/payload-0/O0",
+    "interface": "sidedata",
+    "optimization": "O0",
+    "payload": "ABCD",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/sidedata/payload-0/O2",
+    "interface": "sidedata",
+    "optimization": "O2",
+    "payload": "ABCD",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/sidedata/payload-0/Os",
+    "interface": "sidedata",
+    "optimization": "Os",
+    "payload": "ABCD",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/sidedata/payload-1/O0",
+    "interface": "sidedata",
+    "optimization": "O0",
+    "payload": "A%%B",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/sidedata/payload-1/O2",
+    "interface": "sidedata",
+    "optimization": "O2",
+    "payload": "A%%B",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/sidedata/payload-1/Os",
+    "interface": "sidedata",
+    "optimization": "Os",
+    "payload": "A%%B",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/sidedata/payload-2/O0",
+    "interface": "sidedata",
+    "optimization": "O0",
+    "payload": "%%AB",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/sidedata/payload-2/O2",
+    "interface": "sidedata",
+    "optimization": "O2",
+    "payload": "%%AB",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/sidedata/payload-2/Os",
+    "interface": "sidedata",
+    "optimization": "Os",
+    "payload": "%%AB",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/sidedata/payload-3/O0",
+    "interface": "sidedata",
+    "optimization": "O0",
+    "payload": "AB%%",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/sidedata/payload-3/O2",
+    "interface": "sidedata",
+    "optimization": "O2",
+    "payload": "AB%%",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/sidedata/payload-3/Os",
+    "interface": "sidedata",
+    "optimization": "Os",
+    "payload": "AB%%",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/sidedata/payload-4/O0",
+    "interface": "sidedata",
+    "optimization": "O0",
+    "payload": "%%%%",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/sidedata/payload-4/O2",
+    "interface": "sidedata",
+    "optimization": "O2",
+    "payload": "%%%%",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/upstream/sidedata/payload-4/Os",
+    "interface": "sidedata",
+    "optimization": "Os",
+    "payload": "%%%%",
+    "run": 2,
+    "variant": "upstream"
+  },
+  {
+    "id": "pass-2/literal-output-repair/atoi/payload-0/O0",
+    "interface": "atoi",
+    "optimization": "O0",
+    "payload": "ABCD",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/atoi/payload-0/O2",
+    "interface": "atoi",
+    "optimization": "O2",
+    "payload": "ABCD",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/atoi/payload-0/Os",
+    "interface": "atoi",
+    "optimization": "Os",
+    "payload": "ABCD",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/atoi/payload-1/O0",
+    "interface": "atoi",
+    "optimization": "O0",
+    "payload": "A%%B",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/atoi/payload-1/O2",
+    "interface": "atoi",
+    "optimization": "O2",
+    "payload": "A%%B",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/atoi/payload-1/Os",
+    "interface": "atoi",
+    "optimization": "Os",
+    "payload": "A%%B",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/atoi/payload-2/O0",
+    "interface": "atoi",
+    "optimization": "O0",
+    "payload": "%%AB",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/atoi/payload-2/O2",
+    "interface": "atoi",
+    "optimization": "O2",
+    "payload": "%%AB",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/atoi/payload-2/Os",
+    "interface": "atoi",
+    "optimization": "Os",
+    "payload": "%%AB",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/atoi/payload-3/O0",
+    "interface": "atoi",
+    "optimization": "O0",
+    "payload": "AB%%",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/atoi/payload-3/O2",
+    "interface": "atoi",
+    "optimization": "O2",
+    "payload": "AB%%",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/atoi/payload-3/Os",
+    "interface": "atoi",
+    "optimization": "Os",
+    "payload": "AB%%",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/atoi/payload-4/O0",
+    "interface": "atoi",
+    "optimization": "O0",
+    "payload": "%%%%",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/atoi/payload-4/O2",
+    "interface": "atoi",
+    "optimization": "O2",
+    "payload": "%%%%",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/atoi/payload-4/Os",
+    "interface": "atoi",
+    "optimization": "Os",
+    "payload": "%%%%",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/fgets/payload-0/O0",
+    "interface": "fgets",
+    "optimization": "O0",
+    "payload": "ABCD",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/fgets/payload-0/O2",
+    "interface": "fgets",
+    "optimization": "O2",
+    "payload": "ABCD",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/fgets/payload-0/Os",
+    "interface": "fgets",
+    "optimization": "Os",
+    "payload": "ABCD",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/fgets/payload-1/O0",
+    "interface": "fgets",
+    "optimization": "O0",
+    "payload": "A%%B",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/fgets/payload-1/O2",
+    "interface": "fgets",
+    "optimization": "O2",
+    "payload": "A%%B",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/fgets/payload-1/Os",
+    "interface": "fgets",
+    "optimization": "Os",
+    "payload": "A%%B",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/fgets/payload-2/O0",
+    "interface": "fgets",
+    "optimization": "O0",
+    "payload": "%%AB",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/fgets/payload-2/O2",
+    "interface": "fgets",
+    "optimization": "O2",
+    "payload": "%%AB",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/fgets/payload-2/Os",
+    "interface": "fgets",
+    "optimization": "Os",
+    "payload": "%%AB",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/fgets/payload-3/O0",
+    "interface": "fgets",
+    "optimization": "O0",
+    "payload": "AB%%",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/fgets/payload-3/O2",
+    "interface": "fgets",
+    "optimization": "O2",
+    "payload": "AB%%",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/fgets/payload-3/Os",
+    "interface": "fgets",
+    "optimization": "Os",
+    "payload": "AB%%",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/fgets/payload-4/O0",
+    "interface": "fgets",
+    "optimization": "O0",
+    "payload": "%%%%",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/fgets/payload-4/O2",
+    "interface": "fgets",
+    "optimization": "O2",
+    "payload": "%%%%",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/fgets/payload-4/Os",
+    "interface": "fgets",
+    "optimization": "Os",
+    "payload": "%%%%",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/sidedata/payload-0/O0",
+    "interface": "sidedata",
+    "optimization": "O0",
+    "payload": "ABCD",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/sidedata/payload-0/O2",
+    "interface": "sidedata",
+    "optimization": "O2",
+    "payload": "ABCD",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/sidedata/payload-0/Os",
+    "interface": "sidedata",
+    "optimization": "Os",
+    "payload": "ABCD",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/sidedata/payload-1/O0",
+    "interface": "sidedata",
+    "optimization": "O0",
+    "payload": "A%%B",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/sidedata/payload-1/O2",
+    "interface": "sidedata",
+    "optimization": "O2",
+    "payload": "A%%B",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/sidedata/payload-1/Os",
+    "interface": "sidedata",
+    "optimization": "Os",
+    "payload": "A%%B",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/sidedata/payload-2/O0",
+    "interface": "sidedata",
+    "optimization": "O0",
+    "payload": "%%AB",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/sidedata/payload-2/O2",
+    "interface": "sidedata",
+    "optimization": "O2",
+    "payload": "%%AB",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/sidedata/payload-2/Os",
+    "interface": "sidedata",
+    "optimization": "Os",
+    "payload": "%%AB",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/sidedata/payload-3/O0",
+    "interface": "sidedata",
+    "optimization": "O0",
+    "payload": "AB%%",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/sidedata/payload-3/O2",
+    "interface": "sidedata",
+    "optimization": "O2",
+    "payload": "AB%%",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/sidedata/payload-3/Os",
+    "interface": "sidedata",
+    "optimization": "Os",
+    "payload": "AB%%",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/sidedata/payload-4/O0",
+    "interface": "sidedata",
+    "optimization": "O0",
+    "payload": "%%%%",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/sidedata/payload-4/O2",
+    "interface": "sidedata",
+    "optimization": "O2",
+    "payload": "%%%%",
+    "run": 2,
+    "variant": "literal-output-repair"
+  },
+  {
+    "id": "pass-2/literal-output-repair/sidedata/payload-4/Os",
+    "interface": "sidedata",
+    "optimization": "Os",
+    "payload": "%%%%",
+    "run": 2,
+    "variant": "literal-output-repair"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "by_run": {
+    "1": {
+      "cases": 90,
+      "commands": 1170,
+      "verdicts": {
+        "INADMISSIBLE": 72,
+        "INCONSISTENT": 36,
+        "SATISFIED": 252
+      }
+    },
+    "2": {
+      "cases": 90,
+      "commands": 1170,
+      "verdicts": {
+        "INADMISSIBLE": 72,
+        "INCONSISTENT": 36,
+        "SATISFIED": 252
+      }
+    }
+  },
+  "cases": 180,
+  "legacy_primary_differences": [],
+  "producer_inputs_unchanged": true,
+  "purpose": "formal",
+  "seconds": 18.160717040999998,
+  "study": "llwm"
+}

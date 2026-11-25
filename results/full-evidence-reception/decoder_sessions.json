@@ -1,0 +1,450 @@
+{
+  "verdict": "PASS",
+  "activity_kind": "formal",
+  "counters": {
+    "input_capsule_files": 410,
+    "original_archive_byte_comparisons": 410,
+    "planned_words": 2808,
+    "planned_request_slots": 7488,
+    "input_available_words": 2268,
+    "input_available_request_slots": 6042,
+    "endpoint_maps": 15096,
+    "java_processes": 3526,
+    "process_timeouts": 0,
+    "nonzero_process_exits": 0,
+    "startup_timeouts": 0,
+    "shutdown_timeouts": 0,
+    "process_completion_journals": 3526,
+    "helper_requests_received": 6042,
+    "reported_algorithm_constructions": 4784,
+    "reported_application_constructions": 6042,
+    "attempted_request_slots": 6042,
+    "completed_request_slots": 6042,
+    "native_start_journals": 6042,
+    "native_end_journals": 6042,
+    "final_context_byte_comparisons": 9288,
+    "unique_endpoint_blobs": 141,
+    "blocked_words": 540
+  },
+  "judgments": {
+    "SATISFIED": 8178,
+    "INADMISSIBLE": 2022,
+    "INCONSISTENT": 96
+  },
+  "action_status": {
+    "OK": 13386,
+    "SKIPPED": 2526
+  },
+  "paired_analysis": {
+    "counts": {
+      "complete_three_arm_groups": 936,
+      "stable_fresh_process_groups": 744,
+      "O_qualified_revisit_comparisons": 744,
+      "O_process_lifetime_losses": 0,
+      "O_completed_typed_comparisons": 1512,
+      "O_typed_sequence_differences": 0,
+      "O_typed_multiset_differences": 0,
+      "O_typed_set_differences": 0,
+      "R_qualified_revisit_comparisons": 744,
+      "R_process_lifetime_losses": 0,
+      "R_object_lifetime_qualified_comparisons": 744,
+      "R_object_lifetime_losses": 0,
+      "R_completed_typed_comparisons": 1512,
+      "R_typed_sequence_differences": 0,
+      "R_typed_multiset_differences": 0,
+      "R_typed_set_differences": 0,
+      "O_extra_call_history_qualified_comparisons": 244,
+      "O_extra_call_history_losses": 0,
+      "O_intervening_request_qualified_comparisons": 244,
+      "O_intervening_request_associated_losses": 0,
+      "R_extra_call_history_qualified_comparisons": 244,
+      "R_extra_call_history_losses": 0,
+      "R_intervening_request_qualified_comparisons": 244,
+      "R_intervening_request_associated_losses": 0
+    },
+    "losses": [],
+    "typed_candidate_differences": [],
+    "interpretation": "Qualified recovery losses and descriptive typed candidate differences have separate denominators; repeated inputs are not independent defect samples."
+  },
+  "algorithm_accounting": [
+    {
+      "algorithm": "Add Expression",
+      "planned_words": 216,
+      "input_available_words": 216,
+      "completed_requests": 576,
+      "source_judgments": {
+        "SATISFIED": 576
+      },
+      "revisit_judgments": {
+        "SATISFIED": 216
+      },
+      "revisit_by_lifetime": {
+        "P": {
+          "SATISFIED": 72
+        },
+        "O": {
+          "SATISFIED": 72
+        },
+        "R": {
+          "SATISFIED": 72
+        }
+      }
+    },
+    {
+      "algorithm": "Add Initialization",
+      "planned_words": 216,
+      "input_available_words": 216,
+      "completed_requests": 576,
+      "source_judgments": {
+        "SATISFIED": 576
+      },
+      "revisit_judgments": {
+        "SATISFIED": 216
+      },
+      "revisit_by_lifetime": {
+        "P": {
+          "SATISFIED": 72
+        },
+        "O": {
+          "SATISFIED": 72
+        },
+        "R": {
+          "SATISFIED": 72
+        }
+      }
+    },
+    {
+      "algorithm": "Add Method and Field",
+      "planned_words": 216,
+      "input_available_words": 216,
+      "completed_requests": 576,
+      "source_judgments": {
+        "SATISFIED": 576
+      },
+      "revisit_judgments": {
+        "SATISFIED": 216
+      },
+      "revisit_by_lifetime": {
+        "P": {
+          "SATISFIED": 72
+        },
+        "O": {
+          "SATISFIED": 72
+        },
+        "R": {
+          "SATISFIED": 72
+        }
+      }
+    },
+    {
+      "algorithm": "Add Switch",
+      "planned_words": 216,
+      "input_available_words": 216,
+      "completed_requests": 576,
+      "source_judgments": {
+        "SATISFIED": 576
+      },
+      "revisit_judgments": {
+        "SATISFIED": 216
+      },
+      "revisit_by_lifetime": {
+        "P": {
+          "SATISFIED": 72
+        },
+        "O": {
+          "SATISFIED": 72
+        },
+        "R": {
+          "SATISFIED": 72
+        }
+      }
+    },
+    {
+      "algorithm": "Davidson/Myhrvold",
+      "planned_words": 216,
+      "input_available_words": 24,
+      "completed_requests": 60,
+      "source_judgments": {
+        "INADMISSIBLE": 516,
+        "SATISFIED": 60
+      },
+      "revisit_judgments": {
+        "INADMISSIBLE": 192,
+        "SATISFIED": 24
+      },
+      "revisit_by_lifetime": {
+        "P": {
+          "INADMISSIBLE": 64,
+          "SATISFIED": 8
+        },
+        "O": {
+          "INADMISSIBLE": 64,
+          "SATISFIED": 8
+        },
+        "R": {
+          "INADMISSIBLE": 64,
+          "SATISFIED": 8
+        }
+      }
+    },
+    {
+      "algorithm": "Graph Theoretic Watermark",
+      "planned_words": 216,
+      "input_available_words": 192,
+      "completed_requests": 510,
+      "source_judgments": {
+        "SATISFIED": 510,
+        "INADMISSIBLE": 66
+      },
+      "revisit_judgments": {
+        "SATISFIED": 192,
+        "INADMISSIBLE": 24
+      },
+      "revisit_by_lifetime": {
+        "P": {
+          "SATISFIED": 64,
+          "INADMISSIBLE": 8
+        },
+        "O": {
+          "SATISFIED": 64,
+          "INADMISSIBLE": 8
+        },
+        "R": {
+          "SATISFIED": 64,
+          "INADMISSIBLE": 8
+        }
+      }
+    },
+    {
+      "algorithm": "Monden",
+      "planned_words": 216,
+      "input_available_words": 216,
+      "completed_requests": 576,
+      "source_judgments": {
+        "SATISFIED": 576
+      },
+      "revisit_judgments": {
+        "SATISFIED": 216
+      },
+      "revisit_by_lifetime": {
+        "P": {
+          "SATISFIED": 72
+        },
+        "O": {
+          "SATISFIED": 72
+        },
+        "R": {
+          "SATISFIED": 72
+        }
+      }
+    },
+    {
+      "algorithm": "Qu/Potkonjak",
+      "planned_words": 216,
+      "input_available_words": 108,
+      "completed_requests": 288,
+      "source_judgments": {
+        "SATISFIED": 192,
+        "INCONSISTENT": 96,
+        "INADMISSIBLE": 288
+      },
+      "revisit_judgments": {
+        "SATISFIED": 72,
+        "INADMISSIBLE": 144
+      },
+      "revisit_by_lifetime": {
+        "P": {
+          "SATISFIED": 24,
+          "INADMISSIBLE": 48
+        },
+        "O": {
+          "SATISFIED": 24,
+          "INADMISSIBLE": 48
+        },
+        "R": {
+          "SATISFIED": 24,
+          "INADMISSIBLE": 48
+        }
+      }
+    },
+    {
+      "algorithm": "Register Types",
+      "planned_words": 216,
+      "input_available_words": 216,
+      "completed_requests": 576,
+      "source_judgments": {
+        "SATISFIED": 576
+      },
+      "revisit_judgments": {
+        "SATISFIED": 216
+      },
+      "revisit_by_lifetime": {
+        "P": {
+          "SATISFIED": 72
+        },
+        "O": {
+          "SATISFIED": 72
+        },
+        "R": {
+          "SATISFIED": 72
+        }
+      }
+    },
+    {
+      "algorithm": "Static Arboit",
+      "planned_words": 216,
+      "input_available_words": 216,
+      "completed_requests": 576,
+      "source_judgments": {
+        "SATISFIED": 576
+      },
+      "revisit_judgments": {
+        "SATISFIED": 216
+      },
+      "revisit_by_lifetime": {
+        "P": {
+          "SATISFIED": 72
+        },
+        "O": {
+          "SATISFIED": 72
+        },
+        "R": {
+          "SATISFIED": 72
+        }
+      }
+    },
+    {
+      "algorithm": "Steganography",
+      "planned_words": 216,
+      "input_available_words": 0,
+      "completed_requests": 0,
+      "source_judgments": {
+        "INADMISSIBLE": 576
+      },
+      "revisit_judgments": {
+        "INADMISSIBLE": 216
+      },
+      "revisit_by_lifetime": {
+        "P": {
+          "INADMISSIBLE": 72
+        },
+        "O": {
+          "INADMISSIBLE": 72
+        },
+        "R": {
+          "INADMISSIBLE": 72
+        }
+      }
+    },
+    {
+      "algorithm": "Stern",
+      "planned_words": 216,
+      "input_available_words": 216,
+      "completed_requests": 576,
+      "source_judgments": {
+        "SATISFIED": 576
+      },
+      "revisit_judgments": {
+        "SATISFIED": 216
+      },
+      "revisit_by_lifetime": {
+        "P": {
+          "SATISFIED": 72
+        },
+        "O": {
+          "SATISFIED": 72
+        },
+        "R": {
+          "SATISFIED": 72
+        }
+      }
+    },
+    {
+      "algorithm": "String Constant",
+      "planned_words": 216,
+      "input_available_words": 216,
+      "completed_requests": 576,
+      "source_judgments": {
+        "SATISFIED": 576
+      },
+      "revisit_judgments": {
+        "SATISFIED": 216
+      },
+      "revisit_by_lifetime": {
+        "P": {
+          "SATISFIED": 72
+        },
+        "O": {
+          "SATISFIED": 72
+        },
+        "R": {
+          "SATISFIED": 72
+        }
+      }
+    }
+  ],
+  "received_analysis": {
+    "verdict": "PASS",
+    "source_judgments": {
+      "SATISFIED": 5946,
+      "INADMISSIBLE": 1446,
+      "INCONSISTENT": 96
+    },
+    "revisit_judgments": {
+      "SATISFIED": 2232,
+      "INADMISSIBLE": 576
+    },
+    "raw_acquisition": {
+      "input_available_words": 2268,
+      "input_blocked_words": 540,
+      "planned_request_slots": 7488,
+      "adapter_request_attempts": 6042,
+      "completed_typed_returns": 6042,
+      "unavailable_requests": 0,
+      "unexecuted_request_slots": 1446,
+      "jvm_processes": 3526,
+      "processes_with_timeout": 0,
+      "processes_with_nonzero_exit": 0,
+      "helper_requests_received": 6042,
+      "algorithm_constructions_in_completed_processes": 4784,
+      "application_constructions_in_completed_processes": 6042,
+      "request_start_journals": 6042,
+      "request_end_journals": 6042
+    },
+    "lifetime_triple_counts": {
+      "planned_triples": 936,
+      "stable_fresh_process_control": 744,
+      "object_lifetime_associated_loss": 0,
+      "same_jvm_lifetime_associated_loss": 0,
+      "complete_return_triples": 756,
+      "complete_return_triples_with_sequence_difference": 0
+    },
+    "history_triplet_counts": {
+      "AA-vs-AAA:complete_final_return_pairs": 762,
+      "AA-vs-AAA:final_typed_sequence_differences": 0,
+      "AA-vs-AAA:final_typed_multiset_differences": 0,
+      "AA-vs-AAA:final_typed_set_differences": 0,
+      "AAA-vs-ABA:complete_final_return_pairs": 744,
+      "AAA-vs-ABA:final_typed_sequence_differences": 0,
+      "AAA-vs-ABA:final_typed_multiset_differences": 0,
+      "AAA-vs-ABA:final_typed_set_differences": 0,
+      "AA-vs-ABA:complete_final_return_pairs": 744,
+      "AA-vs-ABA:final_typed_sequence_differences": 0,
+      "AA-vs-ABA:final_typed_multiset_differences": 0,
+      "AA-vs-ABA:final_typed_set_differences": 0,
+      "planned_triplets": 936,
+      "stable_fresh_process_controls": 732,
+      "stable_fresh_process_repetition_controls": 750,
+      "intervening_request_associated_loss": 0,
+      "third_request_repetition_associated_loss": 0
+    },
+    "checked_lifetime_rows": 936,
+    "checked_history_rows": 936,
+    "file": {
+      "path": "paired-analysis.json",
+      "sha256": "7d84e7e613b9fb4aed6f4ce0c247583bcdc379918759ef9dada3e4eca0d0501f",
+      "bytes": 1540965
+    }
+  },
+  "scope": "Read-only independent frame, native command/request/lifecycle/context binding, common-plan interpretation, and paired derivation. No new Java execution; acquisition journals remain trusted observations."
+}

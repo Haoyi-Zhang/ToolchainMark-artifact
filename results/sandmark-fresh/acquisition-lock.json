@@ -1,0 +1,52 @@
+{
+  "schema": "sandmark-acquisition-lock-v1",
+  "access_date": "2026-11-19",
+  "archive_commit": "5e4642c83d802968cfa47c1a362fbecbd72f5802",
+  "artifacts": [
+    {
+      "name": "sandmark.jar",
+      "url": "https://raw.githubusercontent.com/JavaQualitasCorpus/sandmark-3.4/5e4642c83d802968cfa47c1a362fbecbd72f5802/lib/sandmark.jar",
+      "bytes": 5250019,
+      "sha256": "8310d3c80cc8adf13ec46f217fc458462ebe89ae498ce23c1c714ab878fb2ea9"
+    },
+    {
+      "name": "TTT.jar",
+      "url": "https://raw.githubusercontent.com/JavaQualitasCorpus/sandmark-3.4/5e4642c83d802968cfa47c1a362fbecbd72f5802/lib/TTT.jar",
+      "bytes": 11303,
+      "sha256": "8b1f89e54ea425c75020c105862235a7078f19e8a43df0912fd30aaabe98ad62"
+    },
+    {
+      "name": "antlr-2.7.7.tar.gz",
+      "url": "https://www.antlr2.org/download/antlr-2.7.7.tar.gz",
+      "bytes": 1816180,
+      "sha256": "853aeb021aef7586bda29e74a6b03006bcb565a755c86b66032d8ec31b67dbb9"
+    }
+  ],
+  "extracted_antlr_inputs": [
+    {
+      "path": "antlr-2.7.7/antlr.jar",
+      "bytes": 443876,
+      "sha256": "696969b10fb09f8d99e8f38d9b14947627fdaa28deeaeafea585f2667b1c3df0"
+    },
+    {
+      "path": "antlr-2.7.7/LICENSE.txt",
+      "bytes": 1195,
+      "sha256": "4834272e0b3ffbbd49b9a51d7f2e5deeb94872f3e6e4edf80ec0451ba7f06941"
+    },
+    {
+      "path": "antlr-2.7.7/examples/java/calc/calc.g",
+      "bytes": 679,
+      "sha256": "7a411773226127d73e2c058e85375eda150f2b42147b22889425d73383f6c022"
+    },
+    {
+      "path": "antlr-2.7.7/examples/java/exprAST/expr.g",
+      "bytes": 1946,
+      "sha256": "b121af3d0b504711b002b662804f328d63322aec0d95a283f586338aca96d7af"
+    },
+    {
+      "path": "antlr-2.7.7/examples/java/java/java.g",
+      "bytes": 33487,
+      "sha256": "6f7e1e261cd6297e5e1978a42da8382683faf576fda91b422d954843dcf7bebd"
+    }
+  ]
+}

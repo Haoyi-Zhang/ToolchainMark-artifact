@@ -1,0 +1,106 @@
+{
+  "actual_tested_extract_calls": 1872,
+  "common_cap": {
+    "actual_calls_per_configuration": {
+      "bfs": [
+        25
+      ],
+      "catalog": [
+        27
+      ]
+    },
+    "call_cap": 27,
+    "equal_spending_claim": false,
+    "exposed_implementations": {
+      "bfs": [
+        "latch-1"
+      ],
+      "catalog": [
+        "cross-object",
+        "latch-1"
+      ]
+    },
+    "unused_calls_per_configuration": {
+      "bfs": [
+        2
+      ],
+      "catalog": [
+        0
+      ]
+    }
+  },
+  "fresh_cases_checked": 900,
+  "native_bindings": {
+    "file_references": 24096,
+    "physical_byte_reobservations": 972,
+    "raw_process_output_bindings": 1944,
+    "typed_extraction_return_bindings": 1872,
+    "unique_blobs": 33
+  },
+  "native_programs_reexecuted": false,
+  "retained_derivation_inputs_checked": 4898,
+  "schema": "state-cost-receiver-v1",
+  "source_snapshot_files_checked": 49,
+  "strict_equal_spending": [
+    {
+      "configuration_pairs": 36,
+      "exactly_matched_configuration_pairs": 36,
+      "exposed_configurations": {
+        "bfs": 0,
+        "catalog": 0
+      },
+      "exposed_implementations": {
+        "bfs": [],
+        "catalog": []
+      },
+      "extract_call_point": 1
+    },
+    {
+      "configuration_pairs": 36,
+      "exactly_matched_configuration_pairs": 36,
+      "exposed_configurations": {
+        "bfs": 0,
+        "catalog": 0
+      },
+      "exposed_implementations": {
+        "bfs": [],
+        "catalog": []
+      },
+      "extract_call_point": 13
+    },
+    {
+      "configuration_pairs": 36,
+      "exactly_matched_configuration_pairs": 36,
+      "exposed_configurations": {
+        "bfs": 6,
+        "catalog": 0
+      },
+      "exposed_implementations": {
+        "bfs": [
+          "latch-1"
+        ],
+        "catalog": []
+      },
+      "extract_call_point": 19
+    },
+    {
+      "configuration_pairs": 36,
+      "exactly_matched_configuration_pairs": 36,
+      "exposed_configurations": {
+        "bfs": 6,
+        "catalog": 6
+      },
+      "exposed_implementations": {
+        "bfs": [
+          "latch-1"
+        ],
+        "catalog": [
+          "cross-object"
+        ]
+      },
+      "extract_call_point": 22
+    }
+  ],
+  "unavailable_actions": 0,
+  "verdict": "PASS"
+}

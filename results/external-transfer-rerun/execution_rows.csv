@@ -1,0 +1,1796 @@
+case,compatibility_header_applied,compile_rc,compile_seconds,compile_stderr,compile_warning_lines,compiler,compiler_version,mode,optimization,output_available,output_sha256,output_text,output_unavailable_reason,relocate_output_available,relocate_output_sha256,relocate_output_text,relocate_output_unavailable_reason,relocate_rc,relocation_match,relocation_verdict,run_rc,run_seconds,run_stderr,source_git_blob_sha1,source_label,source_sha256,variant
+119,False,0,0.117338,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O0,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.000784,,d67d0a2f8a6e74bbe4ef897087ded2271fac321e,119_before.c,b44941776bfd9da0e2c29066d6527ef1c2b9f2b0ba664d8a546365792863b16e,before
+119,False,0,0.119046,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O0,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.000967,,1f27e4b126d696bb2b98914072cc4769317e962f,119.c,711080318cea98ed7d15f274d8f5baebc4b61b0bf5ef800a53f5b5f81d213437,watermarked
+2929,False,0,0.131285,"EXTERNAL_SOURCE/2929_old.c: In function ‘linear_kmeans2’:
+EXTERNAL_SOURCE/2929_old.c:45:6: warning: implicit declaration of function ‘isnanf’; did you mean ‘isnan’? [-Wimplicit-function-declaration]
+   45 |   if(isnanf(sum0)) sum0 = 0;
+      |      ^~~~~~
+      |      isnan
+EXTERNAL_SOURCE/2929_old.c:10:17: warning: unused variable ‘step’ [-Wunused-variable]
+   10 |   unsigned long step = 0;
+      |                 ^~~~
+",2,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O0,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,0,True,SATISFIED,0,0.003034,,5e2755fa84dd417b3322df5820162e4515697c0c,2929_old.c,4e2669a9c43a4215b5f09097d14304de3c3e02176d9aa1b4ca9286cf0efe8ed6,before
+2929,False,0,0.116731,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O0,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,0,True,SATISFIED,0,0.001013,,d873869fb1c80ec2aaf411ff813ecad3a51cfcd2,2929.c,2adec180bd2bc2bb030d836ae6e4dbff27cb74cf16453b132338804369c14983,watermarked
+363,False,0,0.138398,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O0,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.001844,,6e8ddc3e3b241feea4360921fcc1c0f8becffe36,363_old.c,fcd390a5f0a20d2d63d6ec999a59c8c65aa09af5714ec4f58f8066a7fe502b1d,before
+363,False,0,0.128342,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O0,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.002411,,5e5b1dfae761760fd504807414149398cbc8b124,363.c,6f18e83e3c296d68f9039b75a7315e57abacddf332b9ef702150c047e87c45cd,watermarked
+119,False,0,0.105838,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O1,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.001019,,d67d0a2f8a6e74bbe4ef897087ded2271fac321e,119_before.c,b44941776bfd9da0e2c29066d6527ef1c2b9f2b0ba664d8a546365792863b16e,before
+119,False,0,0.091221,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O1,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.000764,,1f27e4b126d696bb2b98914072cc4769317e962f,119.c,711080318cea98ed7d15f274d8f5baebc4b61b0bf5ef800a53f5b5f81d213437,watermarked
+2929,False,0,0.147652,"EXTERNAL_SOURCE/2929_old.c: In function ‘linear_kmeans2’:
+EXTERNAL_SOURCE/2929_old.c:45:6: warning: implicit declaration of function ‘isnanf’; did you mean ‘isnan’? [-Wimplicit-function-declaration]
+   45 |   if(isnanf(sum0)) sum0 = 0;
+      |      ^~~~~~
+      |      isnan
+EXTERNAL_SOURCE/2929_old.c:10:17: warning: unused variable ‘step’ [-Wunused-variable]
+   10 |   unsigned long step = 0;
+      |                 ^~~~
+",2,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O1,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,0,True,SATISFIED,0,0.002051,,5e2755fa84dd417b3322df5820162e4515697c0c,2929_old.c,4e2669a9c43a4215b5f09097d14304de3c3e02176d9aa1b4ca9286cf0efe8ed6,before
+2929,False,0,0.113388,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O1,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,0,True,SATISFIED,0,0.000772,,d873869fb1c80ec2aaf411ff813ecad3a51cfcd2,2929.c,2adec180bd2bc2bb030d836ae6e4dbff27cb74cf16453b132338804369c14983,watermarked
+363,False,0,0.123741,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O1,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.001975,,6e8ddc3e3b241feea4360921fcc1c0f8becffe36,363_old.c,fcd390a5f0a20d2d63d6ec999a59c8c65aa09af5714ec4f58f8066a7fe502b1d,before
+363,False,0,0.132223,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O1,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.000626,,5e5b1dfae761760fd504807414149398cbc8b124,363.c,6f18e83e3c296d68f9039b75a7315e57abacddf332b9ef702150c047e87c45cd,watermarked
+119,False,0,0.110225,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O2,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.001698,,d67d0a2f8a6e74bbe4ef897087ded2271fac321e,119_before.c,b44941776bfd9da0e2c29066d6527ef1c2b9f2b0ba664d8a546365792863b16e,before
+119,False,0,0.129223,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O2,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.002105,,1f27e4b126d696bb2b98914072cc4769317e962f,119.c,711080318cea98ed7d15f274d8f5baebc4b61b0bf5ef800a53f5b5f81d213437,watermarked
+2929,False,0,0.100732,"EXTERNAL_SOURCE/2929_old.c: In function ‘linear_kmeans2’:
+EXTERNAL_SOURCE/2929_old.c:45:6: warning: implicit declaration of function ‘isnanf’; did you mean ‘isnan’? [-Wimplicit-function-declaration]
+   45 |   if(isnanf(sum0)) sum0 = 0;
+      |      ^~~~~~
+      |      isnan
+EXTERNAL_SOURCE/2929_old.c:10:17: warning: unused variable ‘step’ [-Wunused-variable]
+   10 |   unsigned long step = 0;
+      |                 ^~~~
+",2,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O2,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,0,True,SATISFIED,0,0.001711,,5e2755fa84dd417b3322df5820162e4515697c0c,2929_old.c,4e2669a9c43a4215b5f09097d14304de3c3e02176d9aa1b4ca9286cf0efe8ed6,before
+2929,False,0,0.110042,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O2,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,0,True,SATISFIED,0,0.000948,,d873869fb1c80ec2aaf411ff813ecad3a51cfcd2,2929.c,2adec180bd2bc2bb030d836ae6e4dbff27cb74cf16453b132338804369c14983,watermarked
+363,False,0,0.136444,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O2,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.000723,,6e8ddc3e3b241feea4360921fcc1c0f8becffe36,363_old.c,fcd390a5f0a20d2d63d6ec999a59c8c65aa09af5714ec4f58f8066a7fe502b1d,before
+363,False,0,0.158879,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O2,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.001975,,5e5b1dfae761760fd504807414149398cbc8b124,363.c,6f18e83e3c296d68f9039b75a7315e57abacddf332b9ef702150c047e87c45cd,watermarked
+119,False,0,0.121319,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O3,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.001894,,d67d0a2f8a6e74bbe4ef897087ded2271fac321e,119_before.c,b44941776bfd9da0e2c29066d6527ef1c2b9f2b0ba664d8a546365792863b16e,before
+119,False,0,0.113327,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O3,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.001858,,1f27e4b126d696bb2b98914072cc4769317e962f,119.c,711080318cea98ed7d15f274d8f5baebc4b61b0bf5ef800a53f5b5f81d213437,watermarked
+2929,False,0,0.12721,"EXTERNAL_SOURCE/2929_old.c: In function ‘linear_kmeans2’:
+EXTERNAL_SOURCE/2929_old.c:45:6: warning: implicit declaration of function ‘isnanf’; did you mean ‘isnan’? [-Wimplicit-function-declaration]
+   45 |   if(isnanf(sum0)) sum0 = 0;
+      |      ^~~~~~
+      |      isnan
+EXTERNAL_SOURCE/2929_old.c:10:17: warning: unused variable ‘step’ [-Wunused-variable]
+   10 |   unsigned long step = 0;
+      |                 ^~~~
+",2,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O3,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,0,True,SATISFIED,0,0.000863,,5e2755fa84dd417b3322df5820162e4515697c0c,2929_old.c,4e2669a9c43a4215b5f09097d14304de3c3e02176d9aa1b4ca9286cf0efe8ed6,before
+2929,False,0,0.141337,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O3,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,0,True,SATISFIED,0,0.002054,,d873869fb1c80ec2aaf411ff813ecad3a51cfcd2,2929.c,2adec180bd2bc2bb030d836ae6e4dbff27cb74cf16453b132338804369c14983,watermarked
+363,False,0,0.156588,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O3,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.000743,,6e8ddc3e3b241feea4360921fcc1c0f8becffe36,363_old.c,fcd390a5f0a20d2d63d6ec999a59c8c65aa09af5714ec4f58f8066a7fe502b1d,before
+363,False,0,0.144107,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,O3,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.000871,,5e5b1dfae761760fd504807414149398cbc8b124,363.c,6f18e83e3c296d68f9039b75a7315e57abacddf332b9ef702150c047e87c45cd,watermarked
+119,False,0,0.116278,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,Os,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.000789,,d67d0a2f8a6e74bbe4ef897087ded2271fac321e,119_before.c,b44941776bfd9da0e2c29066d6527ef1c2b9f2b0ba664d8a546365792863b16e,before
+119,False,0,0.148614,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,Os,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.001078,,1f27e4b126d696bb2b98914072cc4769317e962f,119.c,711080318cea98ed7d15f274d8f5baebc4b61b0bf5ef800a53f5b5f81d213437,watermarked
+2929,False,0,0.148235,"EXTERNAL_SOURCE/2929_old.c: In function ‘linear_kmeans2’:
+EXTERNAL_SOURCE/2929_old.c:45:6: warning: implicit declaration of function ‘isnanf’; did you mean ‘isnan’? [-Wimplicit-function-declaration]
+   45 |   if(isnanf(sum0)) sum0 = 0;
+      |      ^~~~~~
+      |      isnan
+EXTERNAL_SOURCE/2929_old.c:10:17: warning: unused variable ‘step’ [-Wunused-variable]
+   10 |   unsigned long step = 0;
+      |                 ^~~~
+",2,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,Os,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,0,True,SATISFIED,0,0.000773,,5e2755fa84dd417b3322df5820162e4515697c0c,2929_old.c,4e2669a9c43a4215b5f09097d14304de3c3e02176d9aa1b4ca9286cf0efe8ed6,before
+2929,False,0,0.136886,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,Os,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,0,True,SATISFIED,0,0.000887,,d873869fb1c80ec2aaf411ff813ecad3a51cfcd2,2929.c,2adec180bd2bc2bb030d836ae6e4dbff27cb74cf16453b132338804369c14983,watermarked
+363,False,0,0.148403,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,Os,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.001954,,6e8ddc3e3b241feea4360921fcc1c0f8becffe36,363_old.c,fcd390a5f0a20d2d63d6ec999a59c8c65aa09af5714ec4f58f8066a7fe502b1d,before
+363,False,0,0.148238,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,native,Os,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.002061,,5e5b1dfae761760fd504807414149398cbc8b124,363.c,6f18e83e3c296d68f9039b75a7315e57abacddf332b9ef702150c047e87c45cd,watermarked
+119,False,0,0.092464,"EXTERNAL_SOURCE/119_before.c:14:20: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   14 | void newton_raphson() {
+      |                    ^
+      |                     void
+EXTERNAL_SOURCE/119_before.c:37:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   37 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O0,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.002214,,d67d0a2f8a6e74bbe4ef897087ded2271fac321e,119_before.c,b44941776bfd9da0e2c29066d6527ef1c2b9f2b0ba664d8a546365792863b16e,before
+119,False,0,0.097421,"EXTERNAL_SOURCE/119.c:20:20: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   20 | void newton_raphson() {
+      |                    ^
+      |                     void
+EXTERNAL_SOURCE/119.c:60:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   60 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O0,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.000788,,1f27e4b126d696bb2b98914072cc4769317e962f,119.c,711080318cea98ed7d15f274d8f5baebc4b61b0bf5ef800a53f5b5f81d213437,watermarked
+2929,False,1,0.046789,"EXTERNAL_SOURCE/2929_old.c:45:6: error: call to undeclared function 'isnanf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   45 |   if(isnanf(sum0)) sum0 = 0;
+      |      ^
+EXTERNAL_SOURCE/2929_old.c:10:17: warning: unused variable 'step' [-Wunused-variable]
+   10 |   unsigned long step = 0;
+      |                 ^~~~
+EXTERNAL_SOURCE/2929_old.c:53:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   53 | int main() {
+      |         ^
+      |          void
+2 warnings and 1 error generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O0,False,,,Build or execution unavailable.,False,,,Relocated execution unavailable.,,False,INADMISSIBLE,,0.0,,5e2755fa84dd417b3322df5820162e4515697c0c,2929_old.c,4e2669a9c43a4215b5f09097d14304de3c3e02176d9aa1b4ca9286cf0efe8ed6,before
+2929,False,0,0.068601,"EXTERNAL_SOURCE/2929.c:54:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   54 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O0,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,0,True,SATISFIED,0,0.001052,,d873869fb1c80ec2aaf411ff813ecad3a51cfcd2,2929.c,2adec180bd2bc2bb030d836ae6e4dbff27cb74cf16453b132338804369c14983,watermarked
+363,False,0,0.110517,"EXTERNAL_SOURCE/363_old.c:26:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   26 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O0,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.002165,,6e8ddc3e3b241feea4360921fcc1c0f8becffe36,363_old.c,fcd390a5f0a20d2d63d6ec999a59c8c65aa09af5714ec4f58f8066a7fe502b1d,before
+363,False,0,0.111769,"EXTERNAL_SOURCE/363.c:30:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   30 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O0,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.001824,,5e5b1dfae761760fd504807414149398cbc8b124,363.c,6f18e83e3c296d68f9039b75a7315e57abacddf332b9ef702150c047e87c45cd,watermarked
+119,False,0,0.083212,"EXTERNAL_SOURCE/119_before.c:14:20: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   14 | void newton_raphson() {
+      |                    ^
+      |                     void
+EXTERNAL_SOURCE/119_before.c:37:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   37 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O1,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.00074,,d67d0a2f8a6e74bbe4ef897087ded2271fac321e,119_before.c,b44941776bfd9da0e2c29066d6527ef1c2b9f2b0ba664d8a546365792863b16e,before
+119,False,0,0.084822,"EXTERNAL_SOURCE/119.c:20:20: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   20 | void newton_raphson() {
+      |                    ^
+      |                     void
+EXTERNAL_SOURCE/119.c:60:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   60 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O1,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.00085,,1f27e4b126d696bb2b98914072cc4769317e962f,119.c,711080318cea98ed7d15f274d8f5baebc4b61b0bf5ef800a53f5b5f81d213437,watermarked
+2929,False,1,0.06201,"EXTERNAL_SOURCE/2929_old.c:45:6: error: call to undeclared function 'isnanf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   45 |   if(isnanf(sum0)) sum0 = 0;
+      |      ^
+EXTERNAL_SOURCE/2929_old.c:10:17: warning: unused variable 'step' [-Wunused-variable]
+   10 |   unsigned long step = 0;
+      |                 ^~~~
+EXTERNAL_SOURCE/2929_old.c:53:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   53 | int main() {
+      |         ^
+      |          void
+2 warnings and 1 error generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O1,False,,,Build or execution unavailable.,False,,,Relocated execution unavailable.,,False,INADMISSIBLE,,0.0,,5e2755fa84dd417b3322df5820162e4515697c0c,2929_old.c,4e2669a9c43a4215b5f09097d14304de3c3e02176d9aa1b4ca9286cf0efe8ed6,before
+2929,False,0,0.097838,"EXTERNAL_SOURCE/2929.c:54:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   54 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O1,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,0,True,SATISFIED,0,0.001817,,d873869fb1c80ec2aaf411ff813ecad3a51cfcd2,2929.c,2adec180bd2bc2bb030d836ae6e4dbff27cb74cf16453b132338804369c14983,watermarked
+363,False,0,0.138651,"EXTERNAL_SOURCE/363_old.c:26:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   26 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O1,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.000822,,6e8ddc3e3b241feea4360921fcc1c0f8becffe36,363_old.c,fcd390a5f0a20d2d63d6ec999a59c8c65aa09af5714ec4f58f8066a7fe502b1d,before
+363,False,0,0.115021,"EXTERNAL_SOURCE/363.c:30:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   30 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O1,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.001914,,5e5b1dfae761760fd504807414149398cbc8b124,363.c,6f18e83e3c296d68f9039b75a7315e57abacddf332b9ef702150c047e87c45cd,watermarked
+119,False,0,0.112847,"EXTERNAL_SOURCE/119_before.c:14:20: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   14 | void newton_raphson() {
+      |                    ^
+      |                     void
+EXTERNAL_SOURCE/119_before.c:37:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   37 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O2,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.002236,,d67d0a2f8a6e74bbe4ef897087ded2271fac321e,119_before.c,b44941776bfd9da0e2c29066d6527ef1c2b9f2b0ba664d8a546365792863b16e,before
+119,False,0,0.10362,"EXTERNAL_SOURCE/119.c:20:20: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   20 | void newton_raphson() {
+      |                    ^
+      |                     void
+EXTERNAL_SOURCE/119.c:60:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   60 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O2,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.002613,,1f27e4b126d696bb2b98914072cc4769317e962f,119.c,711080318cea98ed7d15f274d8f5baebc4b61b0bf5ef800a53f5b5f81d213437,watermarked
+2929,False,1,0.047177,"EXTERNAL_SOURCE/2929_old.c:45:6: error: call to undeclared function 'isnanf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   45 |   if(isnanf(sum0)) sum0 = 0;
+      |      ^
+EXTERNAL_SOURCE/2929_old.c:10:17: warning: unused variable 'step' [-Wunused-variable]
+   10 |   unsigned long step = 0;
+      |                 ^~~~
+EXTERNAL_SOURCE/2929_old.c:53:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   53 | int main() {
+      |         ^
+      |          void
+2 warnings and 1 error generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O2,False,,,Build or execution unavailable.,False,,,Relocated execution unavailable.,,False,INADMISSIBLE,,0.0,,5e2755fa84dd417b3322df5820162e4515697c0c,2929_old.c,4e2669a9c43a4215b5f09097d14304de3c3e02176d9aa1b4ca9286cf0efe8ed6,before
+2929,False,0,0.082496,"EXTERNAL_SOURCE/2929.c:54:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   54 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O2,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,0,True,SATISFIED,0,0.000854,,d873869fb1c80ec2aaf411ff813ecad3a51cfcd2,2929.c,2adec180bd2bc2bb030d836ae6e4dbff27cb74cf16453b132338804369c14983,watermarked
+363,False,0,0.122414,"EXTERNAL_SOURCE/363_old.c:26:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   26 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O2,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.000936,,6e8ddc3e3b241feea4360921fcc1c0f8becffe36,363_old.c,fcd390a5f0a20d2d63d6ec999a59c8c65aa09af5714ec4f58f8066a7fe502b1d,before
+363,False,0,0.143312,"EXTERNAL_SOURCE/363.c:30:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   30 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O2,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.002886,,5e5b1dfae761760fd504807414149398cbc8b124,363.c,6f18e83e3c296d68f9039b75a7315e57abacddf332b9ef702150c047e87c45cd,watermarked
+119,False,0,0.07593,"EXTERNAL_SOURCE/119_before.c:14:20: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   14 | void newton_raphson() {
+      |                    ^
+      |                     void
+EXTERNAL_SOURCE/119_before.c:37:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   37 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O3,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.000816,,d67d0a2f8a6e74bbe4ef897087ded2271fac321e,119_before.c,b44941776bfd9da0e2c29066d6527ef1c2b9f2b0ba664d8a546365792863b16e,before
+119,False,0,0.068274,"EXTERNAL_SOURCE/119.c:20:20: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   20 | void newton_raphson() {
+      |                    ^
+      |                     void
+EXTERNAL_SOURCE/119.c:60:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   60 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O3,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.000803,,1f27e4b126d696bb2b98914072cc4769317e962f,119.c,711080318cea98ed7d15f274d8f5baebc4b61b0bf5ef800a53f5b5f81d213437,watermarked
+2929,False,1,0.046412,"EXTERNAL_SOURCE/2929_old.c:45:6: error: call to undeclared function 'isnanf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   45 |   if(isnanf(sum0)) sum0 = 0;
+      |      ^
+EXTERNAL_SOURCE/2929_old.c:10:17: warning: unused variable 'step' [-Wunused-variable]
+   10 |   unsigned long step = 0;
+      |                 ^~~~
+EXTERNAL_SOURCE/2929_old.c:53:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   53 | int main() {
+      |         ^
+      |          void
+2 warnings and 1 error generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O3,False,,,Build or execution unavailable.,False,,,Relocated execution unavailable.,,False,INADMISSIBLE,,0.0,,5e2755fa84dd417b3322df5820162e4515697c0c,2929_old.c,4e2669a9c43a4215b5f09097d14304de3c3e02176d9aa1b4ca9286cf0efe8ed6,before
+2929,False,0,0.093627,"EXTERNAL_SOURCE/2929.c:54:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   54 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O3,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,0,True,SATISFIED,0,0.001929,,d873869fb1c80ec2aaf411ff813ecad3a51cfcd2,2929.c,2adec180bd2bc2bb030d836ae6e4dbff27cb74cf16453b132338804369c14983,watermarked
+363,False,0,0.109512,"EXTERNAL_SOURCE/363_old.c:26:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   26 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O3,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.000811,,6e8ddc3e3b241feea4360921fcc1c0f8becffe36,363_old.c,fcd390a5f0a20d2d63d6ec999a59c8c65aa09af5714ec4f58f8066a7fe502b1d,before
+363,False,0,0.121108,"EXTERNAL_SOURCE/363.c:30:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   30 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,O3,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.00078,,5e5b1dfae761760fd504807414149398cbc8b124,363.c,6f18e83e3c296d68f9039b75a7315e57abacddf332b9ef702150c047e87c45cd,watermarked
+119,False,0,0.084294,"EXTERNAL_SOURCE/119_before.c:14:20: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   14 | void newton_raphson() {
+      |                    ^
+      |                     void
+EXTERNAL_SOURCE/119_before.c:37:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   37 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,Os,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.001015,,d67d0a2f8a6e74bbe4ef897087ded2271fac321e,119_before.c,b44941776bfd9da0e2c29066d6527ef1c2b9f2b0ba664d8a546365792863b16e,before
+119,False,0,0.085277,"EXTERNAL_SOURCE/119.c:20:20: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   20 | void newton_raphson() {
+      |                    ^
+      |                     void
+EXTERNAL_SOURCE/119.c:60:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   60 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,Os,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.00099,,1f27e4b126d696bb2b98914072cc4769317e962f,119.c,711080318cea98ed7d15f274d8f5baebc4b61b0bf5ef800a53f5b5f81d213437,watermarked
+2929,False,1,0.048101,"EXTERNAL_SOURCE/2929_old.c:45:6: error: call to undeclared function 'isnanf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   45 |   if(isnanf(sum0)) sum0 = 0;
+      |      ^
+EXTERNAL_SOURCE/2929_old.c:10:17: warning: unused variable 'step' [-Wunused-variable]
+   10 |   unsigned long step = 0;
+      |                 ^~~~
+EXTERNAL_SOURCE/2929_old.c:53:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   53 | int main() {
+      |         ^
+      |          void
+2 warnings and 1 error generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,Os,False,,,Build or execution unavailable.,False,,,Relocated execution unavailable.,,False,INADMISSIBLE,,0.0,,5e2755fa84dd417b3322df5820162e4515697c0c,2929_old.c,4e2669a9c43a4215b5f09097d14304de3c3e02176d9aa1b4ca9286cf0efe8ed6,before
+2929,False,0,0.084871,"EXTERNAL_SOURCE/2929.c:54:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   54 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,Os,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,0,True,SATISFIED,0,0.00214,,d873869fb1c80ec2aaf411ff813ecad3a51cfcd2,2929.c,2adec180bd2bc2bb030d836ae6e4dbff27cb74cf16453b132338804369c14983,watermarked
+363,False,0,0.100726,"EXTERNAL_SOURCE/363_old.c:26:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   26 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,Os,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.001882,,6e8ddc3e3b241feea4360921fcc1c0f8becffe36,363_old.c,fcd390a5f0a20d2d63d6ec999a59c8c65aa09af5714ec4f58f8066a7fe502b1d,before
+363,False,0,0.133977,"EXTERNAL_SOURCE/363.c:30:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   30 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),native,Os,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.000898,,5e5b1dfae761760fd504807414149398cbc8b124,363.c,6f18e83e3c296d68f9039b75a7315e57abacddf332b9ef702150c047e87c45cd,watermarked
+119,True,0,0.135238,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O0,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.001063,,d67d0a2f8a6e74bbe4ef897087ded2271fac321e,119_before.c,b44941776bfd9da0e2c29066d6527ef1c2b9f2b0ba664d8a546365792863b16e,before
+119,True,0,0.113071,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O0,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.000835,,1f27e4b126d696bb2b98914072cc4769317e962f,119.c,711080318cea98ed7d15f274d8f5baebc4b61b0bf5ef800a53f5b5f81d213437,watermarked
+2929,True,0,0.118931,"EXTERNAL_SOURCE/2929_old.c: In function ‘linear_kmeans2’:
+EXTERNAL_SOURCE/2929_old.c:10:17: warning: unused variable ‘step’ [-Wunused-variable]
+   10 |   unsigned long step = 0;
+      |                 ^~~~
+",1,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O0,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,0,True,SATISFIED,0,0.002068,,5e2755fa84dd417b3322df5820162e4515697c0c,2929_old.c,4e2669a9c43a4215b5f09097d14304de3c3e02176d9aa1b4ca9286cf0efe8ed6,before
+2929,True,0,0.156697,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O0,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,0,True,SATISFIED,0,0.002247,,d873869fb1c80ec2aaf411ff813ecad3a51cfcd2,2929.c,2adec180bd2bc2bb030d836ae6e4dbff27cb74cf16453b132338804369c14983,watermarked
+363,True,0,0.14106,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O0,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.000655,,6e8ddc3e3b241feea4360921fcc1c0f8becffe36,363_old.c,fcd390a5f0a20d2d63d6ec999a59c8c65aa09af5714ec4f58f8066a7fe502b1d,before
+363,True,0,0.136903,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O0,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.000814,,5e5b1dfae761760fd504807414149398cbc8b124,363.c,6f18e83e3c296d68f9039b75a7315e57abacddf332b9ef702150c047e87c45cd,watermarked
+119,True,0,0.150669,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O1,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.00092,,d67d0a2f8a6e74bbe4ef897087ded2271fac321e,119_before.c,b44941776bfd9da0e2c29066d6527ef1c2b9f2b0ba664d8a546365792863b16e,before
+119,True,0,0.122639,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O1,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.001036,,1f27e4b126d696bb2b98914072cc4769317e962f,119.c,711080318cea98ed7d15f274d8f5baebc4b61b0bf5ef800a53f5b5f81d213437,watermarked
+2929,True,0,0.179035,"EXTERNAL_SOURCE/2929_old.c: In function ‘linear_kmeans2’:
+EXTERNAL_SOURCE/2929_old.c:10:17: warning: unused variable ‘step’ [-Wunused-variable]
+   10 |   unsigned long step = 0;
+      |                 ^~~~
+",1,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O1,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,0,True,SATISFIED,0,0.000963,,5e2755fa84dd417b3322df5820162e4515697c0c,2929_old.c,4e2669a9c43a4215b5f09097d14304de3c3e02176d9aa1b4ca9286cf0efe8ed6,before
+2929,True,0,0.127701,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O1,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,0,True,SATISFIED,0,0.000866,,d873869fb1c80ec2aaf411ff813ecad3a51cfcd2,2929.c,2adec180bd2bc2bb030d836ae6e4dbff27cb74cf16453b132338804369c14983,watermarked
+363,True,0,0.158017,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O1,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.001184,,6e8ddc3e3b241feea4360921fcc1c0f8becffe36,363_old.c,fcd390a5f0a20d2d63d6ec999a59c8c65aa09af5714ec4f58f8066a7fe502b1d,before
+363,True,0,0.793254,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O1,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.007255,,5e5b1dfae761760fd504807414149398cbc8b124,363.c,6f18e83e3c296d68f9039b75a7315e57abacddf332b9ef702150c047e87c45cd,watermarked
+119,True,0,0.45376,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O2,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.001076,,d67d0a2f8a6e74bbe4ef897087ded2271fac321e,119_before.c,b44941776bfd9da0e2c29066d6527ef1c2b9f2b0ba664d8a546365792863b16e,before
+119,True,0,0.136987,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O2,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.00073,,1f27e4b126d696bb2b98914072cc4769317e962f,119.c,711080318cea98ed7d15f274d8f5baebc4b61b0bf5ef800a53f5b5f81d213437,watermarked
+2929,True,0,0.146547,"EXTERNAL_SOURCE/2929_old.c: In function ‘linear_kmeans2’:
+EXTERNAL_SOURCE/2929_old.c:10:17: warning: unused variable ‘step’ [-Wunused-variable]
+   10 |   unsigned long step = 0;
+      |                 ^~~~
+",1,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O2,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,0,True,SATISFIED,0,0.000988,,5e2755fa84dd417b3322df5820162e4515697c0c,2929_old.c,4e2669a9c43a4215b5f09097d14304de3c3e02176d9aa1b4ca9286cf0efe8ed6,before
+2929,True,0,0.145361,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O2,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,0,True,SATISFIED,0,0.002069,,d873869fb1c80ec2aaf411ff813ecad3a51cfcd2,2929.c,2adec180bd2bc2bb030d836ae6e4dbff27cb74cf16453b132338804369c14983,watermarked
+363,True,0,0.172764,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O2,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.000999,,6e8ddc3e3b241feea4360921fcc1c0f8becffe36,363_old.c,fcd390a5f0a20d2d63d6ec999a59c8c65aa09af5714ec4f58f8066a7fe502b1d,before
+363,True,0,0.165692,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O2,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.000959,,5e5b1dfae761760fd504807414149398cbc8b124,363.c,6f18e83e3c296d68f9039b75a7315e57abacddf332b9ef702150c047e87c45cd,watermarked
+119,True,0,0.131236,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O3,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.000706,,d67d0a2f8a6e74bbe4ef897087ded2271fac321e,119_before.c,b44941776bfd9da0e2c29066d6527ef1c2b9f2b0ba664d8a546365792863b16e,before
+119,True,0,0.154182,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O3,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.001912,,1f27e4b126d696bb2b98914072cc4769317e962f,119.c,711080318cea98ed7d15f274d8f5baebc4b61b0bf5ef800a53f5b5f81d213437,watermarked
+2929,True,0,0.150277,"EXTERNAL_SOURCE/2929_old.c: In function ‘linear_kmeans2’:
+EXTERNAL_SOURCE/2929_old.c:10:17: warning: unused variable ‘step’ [-Wunused-variable]
+   10 |   unsigned long step = 0;
+      |                 ^~~~
+",1,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O3,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,0,True,SATISFIED,0,0.000962,,5e2755fa84dd417b3322df5820162e4515697c0c,2929_old.c,4e2669a9c43a4215b5f09097d14304de3c3e02176d9aa1b4ca9286cf0efe8ed6,before
+2929,True,0,0.162999,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O3,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,0,True,SATISFIED,0,0.00066,,d873869fb1c80ec2aaf411ff813ecad3a51cfcd2,2929.c,2adec180bd2bc2bb030d836ae6e4dbff27cb74cf16453b132338804369c14983,watermarked
+363,True,0,0.191483,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O3,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.002936,,6e8ddc3e3b241feea4360921fcc1c0f8becffe36,363_old.c,fcd390a5f0a20d2d63d6ec999a59c8c65aa09af5714ec4f58f8066a7fe502b1d,before
+363,True,0,0.17862,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,O3,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.000677,,5e5b1dfae761760fd504807414149398cbc8b124,363.c,6f18e83e3c296d68f9039b75a7315e57abacddf332b9ef702150c047e87c45cd,watermarked
+119,True,0,0.130257,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,Os,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.001056,,d67d0a2f8a6e74bbe4ef897087ded2271fac321e,119_before.c,b44941776bfd9da0e2c29066d6527ef1c2b9f2b0ba664d8a546365792863b16e,before
+119,True,0,0.122253,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,Os,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.000636,,1f27e4b126d696bb2b98914072cc4769317e962f,119.c,711080318cea98ed7d15f274d8f5baebc4b61b0bf5ef800a53f5b5f81d213437,watermarked
+2929,True,0,0.138645,"EXTERNAL_SOURCE/2929_old.c: In function ‘linear_kmeans2’:
+EXTERNAL_SOURCE/2929_old.c:10:17: warning: unused variable ‘step’ [-Wunused-variable]
+   10 |   unsigned long step = 0;
+      |                 ^~~~
+",1,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,Os,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,0,True,SATISFIED,0,0.001121,,5e2755fa84dd417b3322df5820162e4515697c0c,2929_old.c,4e2669a9c43a4215b5f09097d14304de3c3e02176d9aa1b4ca9286cf0efe8ed6,before
+2929,True,0,0.163498,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,Os,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,0,True,SATISFIED,0,0.002038,,d873869fb1c80ec2aaf411ff813ecad3a51cfcd2,2929.c,2adec180bd2bc2bb030d836ae6e4dbff27cb74cf16453b132338804369c14983,watermarked
+363,True,0,0.15258,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,Os,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.000693,,6e8ddc3e3b241feea4360921fcc1c0f8becffe36,363_old.c,fcd390a5f0a20d2d63d6ec999a59c8c65aa09af5714ec4f58f8066a7fe502b1d,before
+363,True,0,0.138595,,0,gcc,gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0,compatibility,Os,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.002089,,5e5b1dfae761760fd504807414149398cbc8b124,363.c,6f18e83e3c296d68f9039b75a7315e57abacddf332b9ef702150c047e87c45cd,watermarked
+119,True,0,0.077476,"EXTERNAL_SOURCE/119_before.c:14:20: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   14 | void newton_raphson() {
+      |                    ^
+      |                     void
+EXTERNAL_SOURCE/119_before.c:37:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   37 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O0,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.001269,,d67d0a2f8a6e74bbe4ef897087ded2271fac321e,119_before.c,b44941776bfd9da0e2c29066d6527ef1c2b9f2b0ba664d8a546365792863b16e,before
+119,True,0,0.090906,"EXTERNAL_SOURCE/119.c:20:20: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   20 | void newton_raphson() {
+      |                    ^
+      |                     void
+EXTERNAL_SOURCE/119.c:60:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   60 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O0,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.000856,,1f27e4b126d696bb2b98914072cc4769317e962f,119.c,711080318cea98ed7d15f274d8f5baebc4b61b0bf5ef800a53f5b5f81d213437,watermarked
+2929,True,0,0.109423,"EXTERNAL_SOURCE/2929_old.c:10:17: warning: unused variable 'step' [-Wunused-variable]
+   10 |   unsigned long step = 0;
+      |                 ^~~~
+EXTERNAL_SOURCE/2929_old.c:53:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   53 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O0,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,0,True,SATISFIED,0,0.001571,,5e2755fa84dd417b3322df5820162e4515697c0c,2929_old.c,4e2669a9c43a4215b5f09097d14304de3c3e02176d9aa1b4ca9286cf0efe8ed6,before
+2929,True,0,0.095826,"EXTERNAL_SOURCE/2929.c:54:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   54 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O0,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,0,True,SATISFIED,0,0.000932,,d873869fb1c80ec2aaf411ff813ecad3a51cfcd2,2929.c,2adec180bd2bc2bb030d836ae6e4dbff27cb74cf16453b132338804369c14983,watermarked
+363,True,0,0.133862,"EXTERNAL_SOURCE/363_old.c:26:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   26 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O0,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.002665,,6e8ddc3e3b241feea4360921fcc1c0f8becffe36,363_old.c,fcd390a5f0a20d2d63d6ec999a59c8c65aa09af5714ec4f58f8066a7fe502b1d,before
+363,True,0,0.136528,"EXTERNAL_SOURCE/363.c:30:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   30 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O0,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.000787,,5e5b1dfae761760fd504807414149398cbc8b124,363.c,6f18e83e3c296d68f9039b75a7315e57abacddf332b9ef702150c047e87c45cd,watermarked
+119,True,0,0.09415,"EXTERNAL_SOURCE/119_before.c:14:20: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   14 | void newton_raphson() {
+      |                    ^
+      |                     void
+EXTERNAL_SOURCE/119_before.c:37:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   37 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O1,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.001156,,d67d0a2f8a6e74bbe4ef897087ded2271fac321e,119_before.c,b44941776bfd9da0e2c29066d6527ef1c2b9f2b0ba664d8a546365792863b16e,before
+119,True,0,0.10074,"EXTERNAL_SOURCE/119.c:20:20: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   20 | void newton_raphson() {
+      |                    ^
+      |                     void
+EXTERNAL_SOURCE/119.c:60:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   60 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O1,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.002507,,1f27e4b126d696bb2b98914072cc4769317e962f,119.c,711080318cea98ed7d15f274d8f5baebc4b61b0bf5ef800a53f5b5f81d213437,watermarked
+2929,True,0,0.107681,"EXTERNAL_SOURCE/2929_old.c:10:17: warning: unused variable 'step' [-Wunused-variable]
+   10 |   unsigned long step = 0;
+      |                 ^~~~
+EXTERNAL_SOURCE/2929_old.c:53:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   53 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O1,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,0,True,SATISFIED,0,0.000911,,5e2755fa84dd417b3322df5820162e4515697c0c,2929_old.c,4e2669a9c43a4215b5f09097d14304de3c3e02176d9aa1b4ca9286cf0efe8ed6,before
+2929,True,0,0.095248,"EXTERNAL_SOURCE/2929.c:54:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   54 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O1,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,0,True,SATISFIED,0,0.000724,,d873869fb1c80ec2aaf411ff813ecad3a51cfcd2,2929.c,2adec180bd2bc2bb030d836ae6e4dbff27cb74cf16453b132338804369c14983,watermarked
+363,True,0,0.149382,"EXTERNAL_SOURCE/363_old.c:26:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   26 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O1,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.001941,,6e8ddc3e3b241feea4360921fcc1c0f8becffe36,363_old.c,fcd390a5f0a20d2d63d6ec999a59c8c65aa09af5714ec4f58f8066a7fe502b1d,before
+363,True,0,0.115995,"EXTERNAL_SOURCE/363.c:30:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   30 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O1,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.000773,,5e5b1dfae761760fd504807414149398cbc8b124,363.c,6f18e83e3c296d68f9039b75a7315e57abacddf332b9ef702150c047e87c45cd,watermarked
+119,True,0,0.081871,"EXTERNAL_SOURCE/119_before.c:14:20: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   14 | void newton_raphson() {
+      |                    ^
+      |                     void
+EXTERNAL_SOURCE/119_before.c:37:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   37 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O2,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.000866,,d67d0a2f8a6e74bbe4ef897087ded2271fac321e,119_before.c,b44941776bfd9da0e2c29066d6527ef1c2b9f2b0ba664d8a546365792863b16e,before
+119,True,0,0.07756,"EXTERNAL_SOURCE/119.c:20:20: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   20 | void newton_raphson() {
+      |                    ^
+      |                     void
+EXTERNAL_SOURCE/119.c:60:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   60 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O2,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.000863,,1f27e4b126d696bb2b98914072cc4769317e962f,119.c,711080318cea98ed7d15f274d8f5baebc4b61b0bf5ef800a53f5b5f81d213437,watermarked
+2929,True,0,0.102059,"EXTERNAL_SOURCE/2929_old.c:10:17: warning: unused variable 'step' [-Wunused-variable]
+   10 |   unsigned long step = 0;
+      |                 ^~~~
+EXTERNAL_SOURCE/2929_old.c:53:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   53 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O2,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,0,True,SATISFIED,0,0.002106,,5e2755fa84dd417b3322df5820162e4515697c0c,2929_old.c,4e2669a9c43a4215b5f09097d14304de3c3e02176d9aa1b4ca9286cf0efe8ed6,before
+2929,True,0,0.095409,"EXTERNAL_SOURCE/2929.c:54:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   54 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O2,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,0,True,SATISFIED,0,0.001826,,d873869fb1c80ec2aaf411ff813ecad3a51cfcd2,2929.c,2adec180bd2bc2bb030d836ae6e4dbff27cb74cf16453b132338804369c14983,watermarked
+363,True,0,0.140403,"EXTERNAL_SOURCE/363_old.c:26:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   26 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O2,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.002074,,6e8ddc3e3b241feea4360921fcc1c0f8becffe36,363_old.c,fcd390a5f0a20d2d63d6ec999a59c8c65aa09af5714ec4f58f8066a7fe502b1d,before
+363,True,0,0.133562,"EXTERNAL_SOURCE/363.c:30:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   30 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O2,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.000716,,5e5b1dfae761760fd504807414149398cbc8b124,363.c,6f18e83e3c296d68f9039b75a7315e57abacddf332b9ef702150c047e87c45cd,watermarked
+119,True,0,0.099449,"EXTERNAL_SOURCE/119_before.c:14:20: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   14 | void newton_raphson() {
+      |                    ^
+      |                     void
+EXTERNAL_SOURCE/119_before.c:37:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   37 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O3,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.00092,,d67d0a2f8a6e74bbe4ef897087ded2271fac321e,119_before.c,b44941776bfd9da0e2c29066d6527ef1c2b9f2b0ba664d8a546365792863b16e,before
+119,True,0,0.102179,"EXTERNAL_SOURCE/119.c:20:20: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   20 | void newton_raphson() {
+      |                    ^
+      |                     void
+EXTERNAL_SOURCE/119.c:60:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   60 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O3,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.002121,,1f27e4b126d696bb2b98914072cc4769317e962f,119.c,711080318cea98ed7d15f274d8f5baebc4b61b0bf5ef800a53f5b5f81d213437,watermarked
+2929,True,0,0.114279,"EXTERNAL_SOURCE/2929_old.c:10:17: warning: unused variable 'step' [-Wunused-variable]
+   10 |   unsigned long step = 0;
+      |                 ^~~~
+EXTERNAL_SOURCE/2929_old.c:53:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   53 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O3,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,0,True,SATISFIED,0,0.003152,,5e2755fa84dd417b3322df5820162e4515697c0c,2929_old.c,4e2669a9c43a4215b5f09097d14304de3c3e02176d9aa1b4ca9286cf0efe8ed6,before
+2929,True,0,0.106445,"EXTERNAL_SOURCE/2929.c:54:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   54 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O3,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,0,True,SATISFIED,0,0.002261,,d873869fb1c80ec2aaf411ff813ecad3a51cfcd2,2929.c,2adec180bd2bc2bb030d836ae6e4dbff27cb74cf16453b132338804369c14983,watermarked
+363,True,0,0.123818,"EXTERNAL_SOURCE/363_old.c:26:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   26 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O3,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.000728,,6e8ddc3e3b241feea4360921fcc1c0f8becffe36,363_old.c,fcd390a5f0a20d2d63d6ec999a59c8c65aa09af5714ec4f58f8066a7fe502b1d,before
+363,True,0,0.132145,"EXTERNAL_SOURCE/363.c:30:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   30 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,O3,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.00404,,5e5b1dfae761760fd504807414149398cbc8b124,363.c,6f18e83e3c296d68f9039b75a7315e57abacddf332b9ef702150c047e87c45cd,watermarked
+119,True,0,0.090448,"EXTERNAL_SOURCE/119_before.c:14:20: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   14 | void newton_raphson() {
+      |                    ^
+      |                     void
+EXTERNAL_SOURCE/119_before.c:37:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   37 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,Os,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.00079,,d67d0a2f8a6e74bbe4ef897087ded2271fac321e,119_before.c,b44941776bfd9da0e2c29066d6527ef1c2b9f2b0ba664d8a546365792863b16e,before
+119,True,0,0.085475,"EXTERNAL_SOURCE/119.c:20:20: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   20 | void newton_raphson() {
+      |                    ^
+      |                     void
+EXTERNAL_SOURCE/119.c:60:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   60 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,Os,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,True,bbda4737976e7abf8aaae06cafe87f813ed57f99f3d5e53755fce43c7b84f387,"0.500000 -8.750000 1.000000
+9.250000 76.562500 18.500000
+5.111486 17.127294 10.222973
+3.436113 2.806875 6.872227
+3.027676 0.166821 6.055352
+3.000126 0.000759 6.000253
+3.000000 0.000000 6.000000
+",,0,True,SATISFIED,0,0.000903,,1f27e4b126d696bb2b98914072cc4769317e962f,119.c,711080318cea98ed7d15f274d8f5baebc4b61b0bf5ef800a53f5b5f81d213437,watermarked
+2929,True,0,0.10502,"EXTERNAL_SOURCE/2929_old.c:10:17: warning: unused variable 'step' [-Wunused-variable]
+   10 |   unsigned long step = 0;
+      |                 ^~~~
+EXTERNAL_SOURCE/2929_old.c:53:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   53 | int main() {
+      |         ^
+      |          void
+2 warnings generated.
+",2,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,Os,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,True,d41ad7d5f9ce8d151bf1d2e79e3cd853e115468b3fafa78f1beab4185747eb1f,"mean variance: 0.042442
+",,0,True,SATISFIED,0,0.001098,,5e2755fa84dd417b3322df5820162e4515697c0c,2929_old.c,4e2669a9c43a4215b5f09097d14304de3c3e02176d9aa1b4ca9286cf0efe8ed6,before
+2929,True,0,0.09672,"EXTERNAL_SOURCE/2929.c:54:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   54 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,Os,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,True,9c05c8b600579ba4f248a5fbb74d516f0cbb059f65a2656b492f8c7eb790e28b,"mean variance: 0.077331
+",,0,True,SATISFIED,0,0.000938,,d873869fb1c80ec2aaf411ff813ecad3a51cfcd2,2929.c,2adec180bd2bc2bb030d836ae6e4dbff27cb74cf16453b132338804369c14983,watermarked
+363,True,0,0.123039,"EXTERNAL_SOURCE/363_old.c:26:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   26 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,Os,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.001125,,6e8ddc3e3b241feea4360921fcc1c0f8becffe36,363_old.c,fcd390a5f0a20d2d63d6ec999a59c8c65aa09af5714ec4f58f8066a7fe502b1d,before
+363,True,0,0.15136,"EXTERNAL_SOURCE/363.c:30:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   30 | int main() {
+      |         ^
+      |          void
+1 warning generated.
+",1,clang,clang version 23.1.6 (https://github.com/conda-forge/clangdev-feedstock 2607ad814147f37fdd84f5bb58ac45576da1a85b),compatibility,Os,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,True,eccdf2eb209b3388d9e5affd161b044f3534105627af6f27c94d9473dc0d2312,"mixed=0x1.8p+1
+zeros=0x0p+0
+zero_weight=0x0p+0
+range=0x1.0d6772p+15
+null_values=0x0p+0
+null_weights=0x0p+0
+zero_size=0x0p+0
+",,0,True,SATISFIED,0,0.001794,,5e5b1dfae761760fd504807414149398cbc8b124,363.c,6f18e83e3c296d68f9039b75a7315e57abacddf332b9ef702150c047e87c45cd,watermarked

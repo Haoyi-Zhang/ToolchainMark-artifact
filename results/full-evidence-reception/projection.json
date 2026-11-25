@@ -1,0 +1,198 @@
+{
+  "all_measurement_rows_and_derived_aggregates_recomputed": true,
+  "all_original_plan_receipt_bindings_checked": true,
+  "all_target_keys_unique_and_complete": true,
+  "complete_target_judgments_preserved": true,
+  "context_binding_scope": "Current validation against retained original metadata, not a new pre-execution freeze.",
+  "elapsed_seconds": 195.01012816900004,
+  "fresh_native_executions": 0,
+  "frozen_source_files_checked": 15,
+  "full_native_byte_revalidation_for_all_targets": false,
+  "historical_membership_scope": "Derived projections are compared with available bound original receipts; the standalone prefix receiver alone does not authenticate unavailable history.",
+  "independent_prefix_and_reference_closures_checked": true,
+  "inputs": {
+    "complete.json": {
+      "bytes": 379,
+      "sha256": "4159516942f3dc5bdcbbf91cac35c9fe439f35690c5a07c4af7ee57440003170"
+    },
+    "frame.json": {
+      "bytes": 7095039,
+      "sha256": "e44d9513a2746db143b459c6995976a263d60f542e7922c224202b5bd247d48c"
+    },
+    "measurements.jsonl": {
+      "bytes": 10860828,
+      "sha256": "66096246efb1bba1145ba59911d3dfa1298ad2c2ef30d707702df7a4ebe2157b"
+    },
+    "summary.json": {
+      "bytes": 14348,
+      "sha256": "f081892e8e6b2d5d87b76d738d7e9a9e79ad200a666d212a04fe7f3b794d8e59"
+    }
+  },
+  "measurement_recomputation_scope": "All measurement rows and derived aggregates are recomputed. Historical elapsed_seconds is only checked for a finite, nonnegative value; interpretation is only checked to be a string.",
+  "native_byte_scope": "Every retained exported example is rechecked; original full native studies are checked by their dedicated receivers. This check does not rerun native tools.",
+  "native_context_bindings": [
+    {
+      "bytes": 1094,
+      "path": "results/declarative/reference/environment.json",
+      "sha256": "9e9a0a567a40134b30f183fbd3797fd2f8b246c467f441979c945cb6f0d5acd6"
+    },
+    {
+      "bytes": 1094,
+      "path": "results/declarative/declarations/environment.json",
+      "sha256": "fda9d2dbca53311c4d3d2d1c8ebe01cc4b3da62fb91a5986846e44fb9eccbe4b"
+    },
+    {
+      "bytes": 1094,
+      "path": "results/declarative/identity/environment.json",
+      "sha256": "fda9d2dbca53311c4d3d2d1c8ebe01cc4b3da62fb91a5986846e44fb9eccbe4b"
+    },
+    {
+      "bytes": 1094,
+      "path": "results/declarative/state/environment.json",
+      "sha256": "9e9a0a567a40134b30f183fbd3797fd2f8b246c467f441979c945cb6f0d5acd6"
+    },
+    {
+      "bytes": 1094,
+      "path": "results/declarative/state-baseline/environment.json",
+      "sha256": "fda9d2dbca53311c4d3d2d1c8ebe01cc4b3da62fb91a5986846e44fb9eccbe4b"
+    },
+    {
+      "bytes": 1101,
+      "path": "results/declarative/llwm/environment.json",
+      "sha256": "30e9f2594ef714eef17e233860320ef265ea9e72223efc8008eb0b2ca1406972"
+    },
+    {
+      "bytes": 48316,
+      "path": "results/declarative/llwm/producer-freeze.json",
+      "sha256": "aeffc63b0cd0aa933d471cff52a8fa6639bf64a9d1e574c0e0ca3af240ef35af"
+    },
+    {
+      "bytes": 5891,
+      "path": "results/declarative/llwm/setup/files.json",
+      "sha256": "5e0512cb5249ddbed6db45b60e5ae1c17d5d331012c7023d528f7a0973938d54"
+    },
+    {
+      "bytes": 5497,
+      "path": "results/external-sandmark/formal-01/protocol-freeze.json",
+      "sha256": "4bb39135ef7891b14d09ee43f94c5ed433d24aef7f63c13b4ef419cffd4c7055"
+    },
+    {
+      "bytes": 19505,
+      "path": "results/external-sandmark/formal-01/producer-snapshot/external_sandmark/algorithm-contracts.json",
+      "sha256": "9638908b562883776689b9c703e4c9fdcd1daa74cf280c27a688c1aa2a63368d"
+    },
+    {
+      "bytes": 1823,
+      "path": "results/external-sandmark/formal-01/acquisition-lock.json",
+      "sha256": "8784b84c812b97735f164138032dcbbe5a4bedfbb6c32f54168e0d91264fda93"
+    }
+  ],
+  "native_contexts_checked": 7,
+  "native_example_members_and_bytes_checked": true,
+  "native_examples_checked": 18,
+  "reference_comparator_scope": "Equality of mapped verdicts over the explicit reference closure; not equality of all diagnostic fields or a fresh causal estimate.",
+  "schema": "toolchainmark-projection-results-receiver-v1",
+  "source_lineage": {
+    "additional_current_validation_dependencies": [
+      {
+        "bytes": 6475,
+        "path": "independent_observers/elf_observer.py",
+        "sha256": "dab8503ccf1d253e3296879bb9358540c5644c7eaac98264978aa6db579dd192"
+      }
+    ],
+    "current_files_matching_historical_producer": 9,
+    "current_native_validation_files": [
+      {
+        "current_validation": {
+          "bytes": 6876,
+          "sha256": "f12ac789724f479375c681302db8ab09a0c236b36764c1309624116631c6c12d"
+        },
+        "historical_producer": {
+          "bytes": 6470,
+          "sha256": "f69a76ab64347833890f81eabc27c7e100dd89ba35f8353f9b4f93e7be2b56d3"
+        },
+        "path": "declarative_study/native_io.py"
+      },
+      {
+        "current_validation": {
+          "bytes": 35146,
+          "sha256": "a84da63ffbf9dec4041b531f45fe2fc7844fd9da08e108fecaea587623d2347b"
+        },
+        "historical_producer": {
+          "bytes": 34375,
+          "sha256": "7feea312182c1e908d174b36df0773c175ecc3c73538bcb62faf2832edb5ac21"
+        },
+        "path": "declarative_study/verify.py"
+      },
+      {
+        "current_validation": {
+          "bytes": 17474,
+          "sha256": "741415a6af4082cc0154fd4486119e0a840375c879b2af29ec818dce45864d7c"
+        },
+        "historical_producer": {
+          "bytes": 16961,
+          "sha256": "0eadd6cbbb1550f28519c192ee44318206e7fc82d0c45f4a705798a445e8cec1"
+        },
+        "path": "external_sandmark/verify_study.py"
+      }
+    ],
+    "current_producer_profile": "approved-fresh-run-lineage-fix",
+    "current_registered_producer_only_files": [
+      {
+        "current_producer": {
+          "bytes": 14466,
+          "sha256": "f2ea1297abaf32e5d3a96d983d6c12dbf1d7d63a587bfb1d7a812c56cb0f742e"
+        },
+        "historical_producer": {
+          "bytes": 14169,
+          "sha256": "35c866e2591e913bc0422d57425a09b938541bfbc1f10ae8ffcf41b3e840440d"
+        },
+        "path": "evidence_projection/run.py"
+      },
+      {
+        "current_producer": {
+          "bytes": 10061,
+          "sha256": "43e4411a3b8e64435bd26c9c88d01614ed406995504aee9f58b808a9fbf9d6d0"
+        },
+        "historical_producer": {
+          "bytes": 10050,
+          "sha256": "6d1876aeeb6ba7e3e7e9bb7afd148a69b120f3bad4e4c7515aa329559256ac39"
+        },
+        "path": "evidence_projection/run_history_control.py"
+      },
+      {
+        "current_producer": {
+          "bytes": 7835,
+          "sha256": "82dd90758defbdaa9adfdbc07423604ecff64797a48ae09b1b090491f48cf6c3"
+        },
+        "historical_producer": {
+          "bytes": 7838,
+          "sha256": "e82a5ae7c53a27f3441dcba9c103646700043dc14d8782a1f8b247fcc6d1d1a0"
+        },
+        "path": "evidence_projection/test_receiver.py"
+      }
+    ],
+    "current_registered_repaired_files": 3,
+    "current_validation_profile": "approved-repaired-native-validation",
+    "fresh_source_freeze": null,
+    "historical_snapshot_files_checked": 15,
+    "historical_source_freeze": {
+      "bytes": 2572,
+      "sha256": "96b79a7c691689698fff0da5ecace19f1055b5eb3dcc33ff75da7d6dcb72c292"
+    },
+    "producer_mode": "published-historical-producer",
+    "scope": "The retained freeze and all producer snapshot bytes are checked unchanged. An approved repaired profile identifies current validation only; it does not relabel historical measurements, replace their producer, or record new acquisition. A separately pinned producer-only fix may enable new runs but is not used to validate old rows.",
+    "snapshot_files_checked": 15
+  },
+  "source_receipts_checked": 7380,
+  "targets_checked": 10134,
+  "transport_accounting_checked": true,
+  "transport_targets_checked": 10134,
+  "validation_source": {
+    "bytes": 43570,
+    "path": "evidence_projection/verify_results.py",
+    "sha256": "d9b7450c8882aa411c8205c1b6219799faa25d0c1967aa7c66bef1098196fc17"
+  },
+  "validation_source_created_after_acquisition": true,
+  "verdict": "PASS"
+}

@@ -91,6 +91,9 @@ def verify(data, artifact=ARTIFACT):
     legacy = compatibility_root / 'results' / 'declarative-v6'
     legacy.parent.mkdir(parents=True, exist_ok=True)
     shutil.copytree(artifact / 'results' / 'declarative', legacy)
+    # Records frozen by the current runner name the neutral directory; expose
+    # the same copied bytes under that name too, so fresh comparisons replay.
+    (compatibility_root / 'results' / 'declarative').symlink_to(legacy, target_is_directory=True)
     try:
         protocol = read(data / 'protocol.json')
         freeze, start, completion, summary = [read(data / name) for name in

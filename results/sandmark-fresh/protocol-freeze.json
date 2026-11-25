@@ -1,0 +1,114 @@
+{
+  "schema": "sandmark-study-freeze-v1",
+  "frozen_unix_ns": 1795576302526507834,
+  "execution_root": "/home/research/tmwork/sandmark-run-01",
+  "source_bindings": {
+    "contract_runtime/core.py": "a266350ba598daa4c7b773afeba5763d60cfd28f795ba7579298da7b443508b0",
+    "external_sandmark/SandmarkBridge.java": "d0609af4329ef5d451ad0a5f4f1390da9ac7b34d37bfdebe2b5d72da57f64aae",
+    "external_sandmark/acquire.py": "d471b0c479c83537d50816e686f6709388bd436da9eec9d6bc16a2949134d6c6",
+    "external_sandmark/acquisition-lock.json": "8784b84c812b97735f164138032dcbbe5a4bedfbb6c32f54168e0d91264fda93",
+    "external_sandmark/adapter.py": "31d6be914377cbb8b92862e5117fe06d25265dfdb685e52e456c9090ce3b9941",
+    "external_sandmark/algorithm-contracts.json": "9638908b562883776689b9c703e4c9fdcd1daa74cf280c27a688c1aa2a63368d",
+    "external_sandmark/plan.json": "9a8dc739bb5266129b32f85d985278c448d92c6c2cefbe9f290b72d788bf2cd5",
+    "external_sandmark/run_study.py": "1cff10842b634aae3176e007624b2b43258197b097816c3010866ffb383a0e48",
+    "external_sandmark/study-frame.json": "fdf5922c7a831b67be1e67de0e2f4d797a826e733d1cae4695bacbb437c5f10b"
+  },
+  "acquisition_lock_sha256": "8784b84c812b97735f164138032dcbbe5a4bedfbb6c32f54168e0d91264fda93",
+  "acquisition": {
+    "schema": "sandmark-acquisition-receipt-v1",
+    "artifacts": [
+      {
+        "name": "sandmark.jar",
+        "url": "https://raw.githubusercontent.com/JavaQualitasCorpus/sandmark-3.4/5e4642c83d802968cfa47c1a362fbecbd72f5802/lib/sandmark.jar",
+        "bytes": 5250019,
+        "sha256": "8310d3c80cc8adf13ec46f217fc458462ebe89ae498ce23c1c714ab878fb2ea9",
+        "local_path": "/home/research/tmwork/sandmark-cache/sandmark.jar",
+        "acquired_from": "existing verified cache"
+      },
+      {
+        "name": "TTT.jar",
+        "url": "https://raw.githubusercontent.com/JavaQualitasCorpus/sandmark-3.4/5e4642c83d802968cfa47c1a362fbecbd72f5802/lib/TTT.jar",
+        "bytes": 11303,
+        "sha256": "8b1f89e54ea425c75020c105862235a7078f19e8a43df0912fd30aaabe98ad62",
+        "local_path": "/home/research/tmwork/sandmark-cache/TTT.jar",
+        "acquired_from": "existing verified cache"
+      },
+      {
+        "name": "antlr-2.7.7.tar.gz",
+        "url": "https://www.antlr2.org/download/antlr-2.7.7.tar.gz",
+        "bytes": 1816180,
+        "sha256": "853aeb021aef7586bda29e74a6b03006bcb565a755c86b66032d8ec31b67dbb9",
+        "local_path": "/home/research/tmwork/sandmark-cache/antlr-2.7.7.tar.gz",
+        "acquired_from": "existing verified cache"
+      }
+    ],
+    "antlr_input_files": [
+      "antlr.jar",
+      "LICENSE.txt",
+      "examples/java/calc/calc.g",
+      "examples/java/exprAST/expr.g",
+      "examples/java/java/java.g"
+    ],
+    "extracted_input_bindings": [
+      {
+        "path": "antlr-2.7.7/antlr.jar",
+        "bytes": 443876,
+        "sha256": "696969b10fb09f8d99e8f38d9b14947627fdaa28deeaeafea585f2667b1c3df0"
+      },
+      {
+        "path": "antlr-2.7.7/LICENSE.txt",
+        "bytes": 1195,
+        "sha256": "4834272e0b3ffbbd49b9a51d7f2e5deeb94872f3e6e4edf80ec0451ba7f06941"
+      },
+      {
+        "path": "antlr-2.7.7/examples/java/calc/calc.g",
+        "bytes": 679,
+        "sha256": "7a411773226127d73e2c058e85375eda150f2b42147b22889425d73383f6c022"
+      },
+      {
+        "path": "antlr-2.7.7/examples/java/exprAST/expr.g",
+        "bytes": 1946,
+        "sha256": "b121af3d0b504711b002b662804f328d63322aec0d95a283f586338aca96d7af"
+      },
+      {
+        "path": "antlr-2.7.7/examples/java/java/java.g",
+        "bytes": 33487,
+        "sha256": "6f7e1e261cd6297e5e1978a42da8382683faf576fda91b422d954843dcf7bebd"
+      }
+    ]
+  },
+  "runtime": {
+    "executable": "/home/research/deps/toolchainmark/env-jdk21/lib/jvm/bin/java",
+    "executable_sha256": "1196dd730fdc5058f496eddf7455e3c9e793f2b6f67c3933fb2dd7be7d3e40e5",
+    "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "version_record": {
+      "argv": [
+        "/home/research/deps/toolchainmark/env-jdk21/lib/jvm/bin/java",
+        "-version"
+      ],
+      "cwd": "/home/research/tmwork/sandmark-run-01",
+      "stdin_hex": "",
+      "returncode": 0,
+      "timeout": false,
+      "timeout_seconds": 15,
+      "start_unix_ns": 1795576302350013086,
+      "elapsed_ns": 32239716,
+      "stdout_hex": "",
+      "stderr_hex": "4e4f54453a205069636b6564207570204a444b5f4a4156415f4f5054494f4e533a202d58626f6f74636c617373706174682f613a2f686f6d652f72657365617263682f746d776f726b2f6774772d6b65792d7265706c6179202d446a6176612e73656375726974792e70726f706572746965733d2f686f6d652f72657365617263682f746d776f726b2f746d2d646973706f7361626c652f65787465726e616c5f73616e646d61726b2f6774772d6b65792d7265706c61792e7365637572697479202d44746f6f6c636861696e6d61726b2e6774772e6b65792e7265706c61793d2f686f6d652f72657365617263682f746d776f726b2f746d2d646973706f7361626c652f726573756c74732f65787465726e616c2d73616e646d61726b2f666f726d616c2d30312f63617365730a6f70656e6a646b2076657273696f6e202232312e302e31332e312d636f6e6461666f7267652220323032362d31312d31370a4f70656e4a444b2052756e74696d6520456e7669726f6e6d656e7420286275696c642032312e302e31332e312d636f6e6461666f726765290a4f70656e4a444b2036342d4269742053657276657220564d20286275696c642032312e302e31332e312d636f6e6461666f7267652c206d69786564206d6f64652c2073686172696e67290a"
+    },
+    "release": {
+      "sha256": "f57ea94ee31cdca3a63d1a4db92a974e1f13d6397c56aaca9454ab68d908bc52",
+      "bytes": 1201
+    },
+    "lib/modules": {
+      "sha256": "7973c7106f2cd86bf27551aa70b035867dff60a1ce2d7a03802dbdd2e7884c05",
+      "bytes": 141092647
+    }
+  },
+  "bridge_sha256": "1d9a4fbd057013d407cf44517b33ba3579fa0c7f70b16739d0480ad77255d0d2",
+  "plan_sha256": "9a8dc739bb5266129b32f85d985278c448d92c6c2cefbe9f290b72d788bf2cd5",
+  "frame_sha256": "fdf5922c7a831b67be1e67de0e2f4d797a826e733d1cae4695bacbb437c5f10b",
+  "max_workers": 2,
+  "formal_execution_started": false
+}

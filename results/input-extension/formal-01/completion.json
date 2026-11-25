@@ -1,0 +1,9 @@
+{
+  "completed_utc": "2026-11-25T03:03:15.978176+00:00",
+  "elapsed_seconds": 25.95771824999997,
+  "observations_sha256": "462fc3cd689eb323464085635a0145b72d8fcb2d2ba13968e2cb98b270e6177a",
+  "records": 1026,
+  "schema": "toolchainmark-input-extension-v1-completion",
+  "started_utc": "2026-11-25T03:02:49.788028+00:00",
+  "workers": 16
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "sandmark-study-receiver-v1",
+  "verdict": "PASS",
+  "kind": "formal-full-frame",
+  "configurations": 156,
+  "obligations": 1248,
+  "judgments": {
+    "SATISFIED": 1004,
+    "INADMISSIBLE": 236,
+    "INCONSISTENT": 8
+  },
+  "checks": {
+    "retained_files": 15897,
+    "reobserved_actions": 1455,
+    "command_records": 2136,
+    "retained_target_endpoint_pairs": 381,
+    "archive_byte_comparisons": 127,
+    "entry_byte_comparisons": 15442,
+    "host_generated_file_byte_comparisons": 3900
+  },
+  "protocol_freeze_sha256": "4bb39135ef7891b14d09ee43f94c5ed433d24aef7f63c13b4ef419cffd4c7055",
+  "scope": "Independent declaration replay and saved-byte/API-result reobservation; no upstream bug confirmation, universal runtime guarantee, or atomic decoder-read attestation."
+}

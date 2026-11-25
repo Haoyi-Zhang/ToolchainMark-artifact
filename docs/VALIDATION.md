@@ -11,12 +11,15 @@ python3 scripts/install_local.py .venv
 ```
 
 The core environment exposes only this checkout and the Python standard library.
-The quick suite executes 14 checks and reports the CTF API control as one explicit
-skip when its scientific dependencies are absent. The executed controls include
+The quick suite executes 17 checks and reports the CTF API control and the CTF
+correspondence arm as explicit skips when their scientific dependencies are
+absent. The executed controls include
 148 core-model tests, 44 contract-runtime tests, 20 native-binding tests, 6
 correspondence tests, 31 projection tests, 5 history tests, 7 state-budget tests,
 8 GeMTest receiver tests, 5 ELF-observer tests, and 23 optimized-Python admission
-tests, followed by command-line and native-acquisition smoke checks.
+tests, followed by command-line smoke, the receivers of the records added in the
+revision (host-input extension, typed-oracle ablation, end-to-end cost record),
+and a native-acquisition smoke check.
 
 ## Science environment
 
@@ -26,7 +29,8 @@ python3 scripts/install_local.py .venv-science --with-system-science
 ```
 
 This mode records and verifies the base interpreter's NumPy, Pandas, and SciPy
-versions. It executes all 15 quick checks, including 13 CTF API controls. No
+versions. It executes all 19 quick checks, including 13 CTF API controls and the
+CTF arm of the correspondence challenge. No
 packages are downloaded by the installer.
 
 ## Complete evidence

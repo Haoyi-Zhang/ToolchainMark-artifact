@@ -25,6 +25,10 @@ FIXED_MAPPINGS = (
 )
 
 
+# Repository records added after the evidence object was deposited.
+REPOSITORY_ONLY = {"evidence-correspondence": ("ctf-arm",)}
+
+
 def count_tree(root: Path) -> tuple[int, int]:
     files = 0
     size = 0
@@ -50,14 +54,32 @@ def locate_declarative(results: Path) -> Path:
 
 
 def copy_tree(source: Path, destination: Path, *, replace: bool, link: bool) -> dict:
+    kept: list[str] = []
+    holding = destination.parent / f".{destination.name}.repository-only"
     if destination.exists():
         if not replace:
             raise FileExistsError(f"destination exists; use --replace in a disposable checkout: {destination}")
+        # Records that exist only in the repository and are not part of the
+        # evidence object (REPOSITORY_ONLY) are kept; everything else is replaced.
+        if holding.exists():
+            shutil.rmtree(holding)
+        for child in sorted(destination.iterdir()):
+            if child.name in REPOSITORY_ONLY.get(destination.name, ()) and not (source / child.name).exists():
+                holding.mkdir(exist_ok=True)
+                shutil.move(str(child), holding / child.name)
+                kept.append(child.name)
         shutil.rmtree(destination)
     destination.parent.mkdir(parents=True, exist_ok=True)
     shutil.copytree(source, destination, copy_function=os.link if link else shutil.copy2)
+    for name in kept:
+        shutil.move(str(holding / name), destination / name)
+    if holding.exists():
+        holding.rmdir()
     files, size = count_tree(destination)
-    return {"dataset": destination.name, "files": files, "bytes": size}
+    row = {"dataset": destination.name, "files": files, "bytes": size}
+    if kept:
+        row["repository_only_kept"] = kept
+    return row
 
 
 def add_compatibility_paths(destination: Path, historical_declarative_name: str) -> list[str]:

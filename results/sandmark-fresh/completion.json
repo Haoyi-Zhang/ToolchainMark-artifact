@@ -1,0 +1,17 @@
+{
+  "completed_unix_ns": 1795576686670970790,
+  "configuration_count": 156,
+  "summary_sha256": "2684c03bc4a9976e0f9bfd592fcceefb573537d30f570318b75c605c9a7d1844",
+  "protocol_freeze_sha256": "484182f6ff182686ba2e12c2c0d0a46c7e4b1786db7c2caf970aaa022f10ce0b",
+  "source_bindings_after_execution": {
+    "contract_runtime/core.py": "a266350ba598daa4c7b773afeba5763d60cfd28f795ba7579298da7b443508b0",
+    "external_sandmark/SandmarkBridge.java": "d0609af4329ef5d451ad0a5f4f1390da9ac7b34d37bfdebe2b5d72da57f64aae",
+    "external_sandmark/acquire.py": "d471b0c479c83537d50816e686f6709388bd436da9eec9d6bc16a2949134d6c6",
+    "external_sandmark/acquisition-lock.json": "8784b84c812b97735f164138032dcbbe5a4bedfbb6c32f54168e0d91264fda93",
+    "external_sandmark/adapter.py": "31d6be914377cbb8b92862e5117fe06d25265dfdb685e52e456c9090ce3b9941",
+    "external_sandmark/algorithm-contracts.json": "9638908b562883776689b9c703e4c9fdcd1daa74cf280c27a688c1aa2a63368d",
+    "external_sandmark/plan.json": "9a8dc739bb5266129b32f85d985278c448d92c6c2cefbe9f290b72d788bf2cd5",
+    "external_sandmark/run_study.py": "1cff10842b634aae3176e007624b2b43258197b097816c3010866ffb383a0e48",
+    "external_sandmark/study-frame.json": "fdf5922c7a831b67be1e67de0e2f4d797a826e733d1cae4695bacbb437c5f10b"
+  }
+}

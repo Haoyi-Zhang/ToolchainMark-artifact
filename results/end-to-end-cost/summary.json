@@ -1,0 +1,149 @@
+{
+  "adaptation_surface": {
+    "LLVM SemaCall/SideData": {
+      "adapter_files": [
+        "declarative_study/llwm_adapter.py",
+        "declarative_study/build_llwm_plan.py"
+      ],
+      "adapter_lines": 136,
+      "plan_actions": 33,
+      "plan_obligations": 12,
+      "plan_requirements": 66,
+      "plans": 3
+    },
+    "SandMark decoder sessions": {
+      "adapter_files": [
+        "decoder_sessions/adapter.py",
+        "decoder_sessions/SessionBridge.java"
+      ],
+      "adapter_lines": 353
+    },
+    "SandMark static algorithms": {
+      "adapter_files": [
+        "external_sandmark/adapter.py",
+        "external_sandmark/SandmarkBridge.java"
+      ],
+      "adapter_lines": 333
+    },
+    "counting_rule": "Lines excluding blank and full-line # or // comments; docstrings count.",
+    "reference ELF carriers": {
+      "adapter_files": [
+        "declarative_study/reference_adapter.py"
+      ],
+      "adapter_lines": 140,
+      "plan_actions": 87,
+      "plan_obligations": 21,
+      "plan_requirements": 99,
+      "plans": 15
+    }
+  },
+  "cpu_count": 20,
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "reproduction": {
+    "correspondence_rejections": {
+      "native-binding": 18,
+      "oracle-replay": 1,
+      "plan-receiver": 8
+    },
+    "projection_judgments": {
+      "INADMISSIBLE": 535,
+      "INCONSISTENT": 1536,
+      "SATISFIED": 8063
+    },
+    "projection_transport": {
+      "compact": {
+        "fresh": {
+          "larger": 7044,
+          "max": 1.0064516129032257,
+          "median": 1.0021879843194457,
+          "smaller": 3090
+        },
+        "retained": {
+          "larger": 7044,
+          "max": 1.0064516129032257,
+          "median": 1.0021879843194457,
+          "smaller": 3090
+        }
+      },
+      "identical": true,
+      "indented": {
+        "fresh": {
+          "larger": 7044,
+          "max": 1.006841246828561,
+          "median": 1.0022035219748537,
+          "smaller": 3090
+        },
+        "retained": {
+          "larger": 7044,
+          "max": 1.006841246828561,
+          "median": 1.0022035219748537,
+          "smaller": 3090
+        }
+      }
+    },
+    "state_budget": {
+      "actual_tested_extract_calls": 1872,
+      "fresh_cases": 900
+    }
+  },
+  "schema": "toolchainmark-end-to-end-cost-v1",
+  "scope": "Sequential documented producer and receiver commands; wall time includes process start, workspace creation, native tool invocations, record writing and cleanup.",
+  "steps": [
+    {
+      "commands": [
+        "python -B -m evidence_correspondence.run freeze --out reruns/end-to-end/correspondence",
+        "python -B -m evidence_correspondence.run execute --out reruns/end-to-end/correspondence",
+        "python -B -m evidence_correspondence.verify --data reruns/end-to-end/correspondence"
+      ],
+      "output_bytes": 2722090,
+      "peak_child_rss_mib": 23.3,
+      "status": "PASS",
+      "step": "correspondence-challenge",
+      "system_cpu_seconds": 6.615,
+      "user_cpu_seconds": 4.677,
+      "wall_seconds": 11.404
+    },
+    {
+      "commands": [
+        "python -B -m evidence_projection.run_history_control --out reruns/end-to-end/history",
+        "python -B -m evidence_projection.verify_history --data reruns/end-to-end/history"
+      ],
+      "output_bytes": 2348707,
+      "peak_child_rss_mib": 25.0,
+      "status": "PASS",
+      "step": "history-control",
+      "system_cpu_seconds": 0.473,
+      "user_cpu_seconds": 1.905,
+      "wall_seconds": 3.78
+    },
+    {
+      "commands": [
+        "python -B -m state_budget.run freeze --out reruns/end-to-end/state-budget",
+        "python -B -m state_budget.run execute --out reruns/end-to-end/state-budget",
+        "python -B -m state_budget.verify --data reruns/end-to-end/state-budget"
+      ],
+      "output_bytes": 85871609,
+      "peak_child_rss_mib": 114.6,
+      "status": "PASS",
+      "step": "state-budget",
+      "system_cpu_seconds": 16.856,
+      "user_cpu_seconds": 53.243,
+      "wall_seconds": 118.046
+    },
+    {
+      "commands": [
+        "python -B -m evidence_projection.run --out reruns/end-to-end/projection",
+        "python -B -m evidence_projection.analyze_transport --data reruns/end-to-end/projection",
+        "python -B -m evidence_projection.verify_results --data reruns/end-to-end/projection"
+      ],
+      "output_bytes": 31764122,
+      "peak_child_rss_mib": 138.8,
+      "status": "PASS",
+      "step": "projection-population",
+      "system_cpu_seconds": 46.942,
+      "user_cpu_seconds": 821.398,
+      "wall_seconds": 869.165
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "by_relation": {
+    "MR03": {
+      "INCONSISTENT->INCONSISTENT": 54,
+      "INCONSISTENT->SATISFIED": 54,
+      "SATISFIED->SATISFIED": 1242
+    },
+    "MR04": {
+      "INCONSISTENT->INCONSISTENT": 162,
+      "SATISFIED->SATISFIED": 1134
+    },
+    "MR09": {
+      "INCONSISTENT->INCONSISTENT": 108,
+      "INCONSISTENT->SATISFIED": 108,
+      "SATISFIED->SATISFIED": 972
+    },
+    "MR10": {
+      "INCONSISTENT->INCONSISTENT": 162,
+      "INCONSISTENT->SATISFIED": 108,
+      "SATISFIED->SATISFIED": 936
+    }
+  },
+  "changed_rows_by_operator": {
+    "M07": {
+      "MR03": 54,
+      "MR09": 54,
+      "MR10": 54
+    },
+    "M17": {
+      "MR09": 54,
+      "MR10": 54
+    }
+  },
+  "clean_rows_not_satisfied": 0,
+  "exposed_units": {
+    "typed": 1242,
+    "untyped": 1242
+  },
+  "fault_units": 1296,
+  "fresh_native_execution": false,
+  "gate": {
+    "inadmissible_rows": 1008,
+    "note": "Admission is identical in both arms; inadmissible rows cannot be exposures."
+  },
+  "negative_relation_transitions": {
+    "INCONSISTENT->INCONSISTENT": 486,
+    "INCONSISTENT->SATISFIED": 270,
+    "SATISFIED->SATISFIED": 4284
+  },
+  "row_verdicts": {
+    "typed": {
+      "INADMISSIBLE": 1008,
+      "INCONSISTENT": 4266,
+      "SATISFIED": 13626
+    },
+    "untyped": {
+      "INADMISSIBLE": 1008,
+      "INCONSISTENT": 3996,
+      "SATISFIED": 13896
+    }
+  },
+  "rows": 18900,
+  "schema": "toolchainmark-oracle-ablation-v1",
+  "units_exposed_only_by_typed_rejection": []
+}
