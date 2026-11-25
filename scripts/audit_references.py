@@ -460,17 +460,62 @@ def structural_audit(tex: str, bib: dict, records: list, receipts: list) -> dict
       'numeric_citation_ranges':sum(bool(re.search(r'\d\s*[-–]\s*\d', command)) for command in commands),
       'full_text_review_claimed':False}
 
+def bibliography_audit(tex: str, bib: dict) -> dict:
+    """Citation/bibliography consistency when no per-reference support records exist.
+
+    Checks only what the manuscript sources themselves determine: every cited key
+    resolves, every entry is cited, DOIs are well formed and unique, titles are
+    unique, and a compiled bibliography (if present) has exactly the cited keys.
+    It writes nothing and makes no claim about source support.
+    """
+    commands = [match.group(1) for match in parsed_citations(tex)]
+    keys = [k.strip() for c in commands for k in c.split(',') if k.strip()]
+    dois = [f.get('doi', '').strip().casefold() for f in bib.values() if f.get('doi', '').strip()]
+    malformed = sorted(k for k, f in bib.items()
+                       if f.get('doi', '').strip() and not re.fullmatch(r'10\.[0-9]{4,9}/\S+', f['doi'].strip()))
+    titles = [re.sub(r'[^a-z0-9]', '', strip_tex(f.get('title', '')).lower()) for f in bib.values()]
+    untitled = sorted(k for k, f in bib.items() if not f.get('title', '').strip())
+    bbl = PAPER / 'main.bbl'
+    bbl_mismatch = None
+    if bbl.is_file():
+        order = re.findall(r'\\bibitem\[.*?\]%?\s*\{([^{}]+)\}', bbl.read_text(encoding='utf-8'), re.S)
+        bbl_mismatch = sorted(set(order) ^ set(keys)) if set(order) != set(keys) or len(order) != len(set(order)) else []
+    result = {'mode': 'bibliography-only', 'bibliography_entries': len(bib), 'citation_commands': len(commands),
+              'unique_citation_keys': len(set(keys)),
+              'missing_bibliography_keys': sorted(set(keys) - set(bib)),
+              'uncited_bibliography_keys': sorted(set(bib) - set(keys)),
+              'doi_entries': len(dois), 'duplicate_dois': sorted({d for d in dois if dois.count(d) > 1}),
+              'malformed_dois': malformed, 'entries_without_title': untitled,
+              'duplicate_titles': len(titles) - len(set(titles)),
+              'compiled_bibliography_key_mismatch': bbl_mismatch,
+              'support_records_present': False, 'full_text_review_claimed': False}
+    ok = not (result['missing_bibliography_keys'] or result['uncited_bibliography_keys'] or result['duplicate_dois']
+              or malformed or untitled or result['duplicate_titles'] or bbl_mismatch)
+    result['verdict'] = 'PASS' if ok else 'FAIL'
+    return result
+
+
 def main(argv=None) -> None:
     parser = argparse.ArgumentParser(description='Audit current citation identities and scoped support records.')
     parser.add_argument('--check', action='store_true',
                         help='Compare generated audits with current sources without writing any file.')
     args = parser.parse_args(argv)
-    missing = [path.relative_to(ROOT).as_posix() for path in (TEX, BIB, RECORDS) if not path.is_file()]
+    missing = [path.relative_to(ROOT).as_posix() for path in (TEX, BIB) if not path.is_file()]
     if missing:
         # The citation audit needs the manuscript sources in a sibling paper/
         # directory; they are not part of the standalone artifact repository.
         print(json.dumps({'verdict': 'SKIPPED', 'reason': 'manuscript sources not present',
                           'missing_inputs': missing}, indent=2))
+        return
+    if not RECORDS.is_file():
+        # Manuscript sources without per-reference support records: audit the
+        # citations against the bibliography only.
+        source_lines = tex_source_lines(TEX)
+        result = bibliography_audit('\n'.join(line for _, _, line in source_lines),
+                                    parse_bib(BIB.read_text(encoding='utf-8')))
+        print(json.dumps(result, indent=2))
+        if result['verdict'] != 'PASS':
+            raise SystemExit(1)
         return
     source_lines=tex_source_lines(TEX)
     tex='\n'.join(line for _,_,line in source_lines); bib=parse_bib(BIB.read_text(encoding='utf-8')); records=json.loads(RECORDS.read_text(encoding='utf-8'))

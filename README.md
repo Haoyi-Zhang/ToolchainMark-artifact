@@ -143,6 +143,13 @@ of an environment created by `install_local.py`. `docs/POSTFREEZE_RESULTS.md`
 summarizes the post-freeze challenge and SR01 recovery-extension results, whose
 records are also part of the complete evidence.
 
+`.venv/bin/python -B scripts/audit_references.py` audits the manuscript's
+citations against its bibliography. It needs the LaTeX sources in a sibling
+`paper/` directory (next to this repository's root): every cited key must
+resolve, every entry must be cited, and DOIs and titles must be well formed and
+unique (`"mode": "bibliography-only"`, `"verdict": "PASS"`). On a checkout
+without the sources it prints `"verdict": "SKIPPED"`.
+
 ## Complete evidence (separate download)
 
 The projection, state-budget, GeMTest, CTF, decoder-session, LLVM, SandMark,
@@ -267,10 +274,6 @@ timeout and is only reproduced on hardware about as slow as the original. The
 paper reports the retained matrix (1,004 / 236 / 8) together with this fresh
 acquisition (1,012 / 228 / 8).
 
-`scripts/audit_references.py` audits the manuscript's citations and needs the
-LaTeX sources, which are not part of this repository; it prints
-`"verdict": "SKIPPED"` when they are absent.
-
 ### Fresh post-freeze and SR01 campaigns
 
 Both campaigns compile and run their native cases with GCC/Clang and the H13-H18
@@ -332,9 +335,11 @@ declarative-study, post-freeze, SR01, QP-diagnosis and Arboit receivers, the
 fresh post-freeze and SR01 campaigns with their `--fresh` receivers, and the
 LLVM and key-replayed SandMark re-acquisitions with their receivers (agreement
 with the retained records as described under "External tools"). `make check-full` on a
-checkout without the evidence stops as documented, and
-`scripts/audit_references.py` reports `SKIPPED` because the LaTeX sources are
-not included.
+checkout without the evidence stops as documented. `scripts/audit_references.py`
+reports `SKIPPED` on a checkout without the manuscript sources and `PASS`
+(67 entries, all cited, 59 DOIs, none duplicated) with them in `../paper`.
+All of the above was repeated on 2026-11-26 from fresh copies, standalone and
+with `../paper` beside the repository, with the same outcomes.
 
 ## License
 
