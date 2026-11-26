@@ -1,7 +1,7 @@
 # ToolchainMark
 
 Research artifact for the paper *Execution Correspondence for Metamorphic Tests
-of Software Watermark Toolchains: Reference Contracts and Controlled
+of Software Watermark Toolchains Evaluated on Reference Contracts and Controlled
 Mechanisms* by Haoyi Zhang, Huaijin Ran, Xunzhu Tang and Kisub Kim (submitted to ACM TOSEM).
 
 ToolchainMark checks whether a metamorphic-test judgment is supported by the
